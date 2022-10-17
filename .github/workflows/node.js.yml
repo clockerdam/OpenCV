@@ -11,16 +11,17 @@ on:
 
 jobs:
   build:
-
+    defaults: 
+      run:
+        working-directory: ./root/frontend/
+        
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [14.x, 16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    defaults:
-      run:
-        working-directory: ./root/frontend
+        
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -28,10 +29,11 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        
-    # 1. Run a clean install of dependencies
+        cache-dependency-path: './root/frontend/package-lock.json'
+    
+    # Run a clean install of dependencies
     - run: npm ci
-    # 2. Build project
+    # Build project
     - run: npm run build --if-present
-    # 3. Run all tests
+    # Run all tests
     - run: npm test a
