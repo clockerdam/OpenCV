@@ -18,7 +18,9 @@ jobs:
       matrix:
         node-version: [14.x, 16.x, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
+    defaults:
+      run:
+        working-directory: ./root/frontend
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
@@ -26,13 +28,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-        cache-dependency-path: 'root/frontend/package-lock.json'
         
-    # 1. Go to frontend
-    - run: cd root/frontend
-    # 2. Run a clean install of dependencies
+    # 1. Run a clean install of dependencies
     - run: npm ci
-    # 3. Build project
+    # 2. Build project
     - run: npm run build --if-present
-    # 4. Run all tests
+    # 3. Run all tests
     - run: npm test a
