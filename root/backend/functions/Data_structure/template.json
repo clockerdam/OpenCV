@@ -1,29 +1,82 @@
 {
-
-"ContactInfo": [
-
-    {
-
-        "Address": "VALUE",
-        
-        "Website": "VALUE",
-        
-        "Linkedin": "VALUE",
-        
-        "Name": "VALUE",
-        
-        "PhoneNumber": "VALUE",
-        
-        "Email": "VALUE",
-        
-        "Github": "VALUE",
-        
-        "Birthday": "VALUE",
-        
-        "Family": "VALUE"
-    }
-
-    ]
-    
+    "Title": "VALUE",
+    "ContactInfo": [
+        {
+            "Address": "VALUE",
+            "Website": "VALUE",
+            "Linkedin": "VALUE",
+            "Name": "VALUE",
+            "PhoneNumber": "VALUE",
+            "Email": "VALUE",
+            "Github": "VALUE",
+            "Birthday": "VALUE",
+            "Family": "VALUE"
+        }
+        ],
+    "Summary": "VALUE",
+    "Experience": [
+        {
+            "Company": "VALUE",
+            "Title": "VALUE",
+            "From": "VALUE",
+            "To": "VALUE",
+            "Description": "VALUE"
+        }
+        ],
+    "Education": [
+        {
+            "Institution": "VALUE",
+            "Title": "VALUE",
+            "From": "VALUE",
+            "To": "VALUE",
+            "Description": "VALUE"
+        }   
+        ],
+    "Interests": [
+            "VALUE",
+            "VALUE"
+        ],
+    "Accomplishments": [
+            "VALUE",
+            "VALUE"
+        ],
+    "Languages": [
+        {
+        "KEY (Language 1)": "Proficiency (Float)",
+        "KEY (Language 2)": "Proficiency (Float)"
+        }
+        ],
+    "Projects": [
+        "VALUE",
+        "VALUE"
+        ],
+    "Soft Skills": [
+        {
+            "KEY (Soft skill 1)": "Proficiency (Float)",
+            "KEY (Soft skill 2)": "Proficiency (Float)"
+        }
+        ],
+    "Hard Skills": [
+        {
+            "KEY (Hard skill 1)": "Proficiency (Float)",
+            "KEY (Hard skill 2)": "Proficiency (Float)"
+        }
+        ],  
+    "Certifications": [
+        {
+            "Name": "VALUE",
+            "Level": "VALUE",
+            "Description": "VALUE"
+        }
+        ],
+    "Patents": [
+        "VALUE",
+        "VALUE"
+        ],
+    "Extracurriculars": [
+        "VALUE",
+        "VALUE"
+        ]
 }
+
 
