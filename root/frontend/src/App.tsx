@@ -1,18 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { cvUpload } from './api/api';
+import { CVForm } from './CVForm/CVForm';
 
 function App() {
-  return (
-    <button onClick={handleClick}>Upload CV</button>
-  );
-
-  function handleClick() {
-    cvUpload().then(res => 
-      console.log(res)
-    )
-  }
+  return <CVForm></CVForm>
 }
 
 export default App;
