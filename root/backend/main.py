@@ -1,22 +1,25 @@
 import flask
+from flask_cors import CORS
 from prediction import improve_cv
 
+
 app = flask.Flask(__name__)
+CORS(app)
 
 
-@app.route('/')
+@app.route("/")
 def main():
     print("hello response")
-    return 'Hello World'
+    return "Hello World"
 
 
-@app.post('/labeledupload')
+@app.post("/labeledupload")
 def labeledupload():
     print("labeledupload response")
-    return 'labeledupload'
+    return "labeledupload"
 
 
-@app.post('/cvupload')
+@app.post("/cvupload")
 def cvupload():
     return improve_cv()
 
