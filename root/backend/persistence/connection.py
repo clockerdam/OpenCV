@@ -1,9 +1,13 @@
-from dotenv import dotenv_values
-from pymongo import MongoClient, InsertOne
-from pymongo.server_api import ServerApi
 import json
 
-config = dotenv_values(".env")
+import pydantic.error_wrappers
+from dotenv import dotenv_values
+from pymongo import MongoClient
+from pymongo.server_api import ServerApi
+
+from models.resume import Resume
+
+config = dotenv_values("root/backend/.env")
 
 
 class Connection:
@@ -29,19 +33,19 @@ class Connection:
         print("Connection to DB closed")
 
     def fetch_all_resumes(self):
-        return list(self.resume_collection.find({}))
+        return list(map(Resume.parse_obj, self.resume_collection.find({})))
 
     def insert_resume_from_file(self, filename: str):
         f = open(filename)
         my_dict = json.load(f)
+        self.insert_one_resume(my_dict)
 
-        self.insert_resume(my_dict)
-
-    def insert_one_resume(self, resume_json: dict):
-        result = self.resume_collection.insert_one(resume_json)
+    def insert_one_resume(self, resume: dict):
+        if Resume.parse_obj(resume):
+            self.resume_collection.insert_one(resume)
 
 
 db = Connection()
 resumes = db.fetch_all_resumes()
-print(resumes)
+db.insert_resume_from_file("DS2.json")
 db.shutdown_connection()
