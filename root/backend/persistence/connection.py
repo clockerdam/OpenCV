@@ -6,6 +6,7 @@ from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
 from models.resume import Resume
+from bson import json_util
 
 config = dotenv_values("root/backend/.env")
 
@@ -33,7 +34,9 @@ class Connection:
         print("Connection to DB closed")
 
     def fetch_all_resumes(self):
-        return list(map(Resume.parse_obj, self.resume_collection.find({})))
+        map(Resume.parse_obj, self.resume_collection.find({}))
+        result = list(self.resume_collection.find({}))
+        return json_util.dumps(result)
 
     def insert_resume_from_file(self, filename: str):
         f = open(filename)
@@ -41,11 +44,37 @@ class Connection:
         self.insert_one_resume(my_dict)
 
     def insert_one_resume(self, resume: dict):
+        print(resume)
+        written = False
         if Resume.parse_obj(resume):
             self.resume_collection.insert_one(resume)
+            written = True
+        return written
+
+
+
 
 
 db = Connection()
 resumes = db.fetch_all_resumes()
-db.insert_resume_from_file("DS2.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS2.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS1.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS3.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS4.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS5.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS6.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS7.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS8.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS9.json")
+# db.insert_resume_from_file("root/backend/persistence/data/DS10.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE1.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE2.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE3.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE4.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE5.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE6.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE7.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE8.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE9.json")
+# db.insert_resume_from_file("root/backend/persistence/data/SE10.json")
 db.shutdown_connection()
