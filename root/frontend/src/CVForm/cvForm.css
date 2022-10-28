@@ -5,5 +5,9 @@ label {
 
 input {
     margin-left: 1%;
-    display: block
+    display: inline-block;
+}
+
+.inner {
+    margin-left: 2%;
 }
