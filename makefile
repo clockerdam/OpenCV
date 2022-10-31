@@ -5,3 +5,9 @@ start-backend:
 reload-backend: 
 	@echo "reloading the backend with docker compose (no db reload)"
 	docker compose up -d --build backend
+
+stop-backend:
+	@echo "Stopping the entire backend with database"
+	docker compose down
+
+
