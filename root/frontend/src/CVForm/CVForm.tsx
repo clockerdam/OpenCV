@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import './cvForm.css'
+import { cvUpload } from "../api/api";
 
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
 function CVForm() {
@@ -63,7 +64,8 @@ function CVForm() {
         To = "to",
         Description = "description",
         Level = "level",
-        Institution = "institution"
+        Institution = "institution",
+        Empty = ""
     }
 
     return <form onSubmit={handleSubmit}>
@@ -94,7 +96,7 @@ function CVForm() {
                             name="interest"
                             placeholder="Interest"
                             value={interest}
-                            onChange={e => change(Field.Interests, e, index, SubField.Address)} // TODO: Fix this, no address
+                            onChange={e => change(Field.Interests, e, index)}
                         />
                         <button onClick={() => remove(Field.Interests, index)}>-</button>
                     </div>)
@@ -108,63 +110,63 @@ function CVForm() {
                     name="address"
                     placeholder="Address"
                     value={state.contactInfo.address}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.Address)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Address)}
                 />
                 <p>Website</p>
                 <input 
                     name="website"
                     placeholder="Website"
                     value={state.contactInfo.website}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.Website)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Website)}
                 />
                 <p>LinkedIn</p>
                 <input 
                     name="linkedIn"
                     placeholder="LinkedIn"
                     value={state.contactInfo.linkedIn}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.LinkedIn)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.LinkedIn)}
                 />
                 <p>Name</p>
                 <input 
                     name="name"
                     placeholder="Name"
                     value={state.contactInfo.name}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.Name)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Name)}
                 />
                 <p>Phone Number</p>
                 <input 
                     name="phoneNumber"
                     placeholder="Phone Number"
                     value={state.contactInfo.phoneNumber}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.PhoneNumber)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.PhoneNumber)}
                 />
                 <p>Email</p>
                 <input 
                     name="email"
                     placeholder="Email"
                     value={state.contactInfo.email}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.Email)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Email)}
                 />
                 <p>GitHub</p>
                 <input 
                     name="github"
                     placeholder="GitHub"
                     value={state.contactInfo.github}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.GitHub)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.GitHub)}
                 />
                 <p>Birthday</p>
                 <input 
                     name="birthday"
                     placeholder="Birthday"
                     value={state.contactInfo.birthday}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.Birthday)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Birthday)}
                 />
                 <p>Family</p>
                 <input 
                     name="family"
                     placeholder="Family"
                     value={state.contactInfo.family}
-                    onChange={(e) => change(Field.ContactInfo, e, 0, SubField.Family)}
+                    onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Family)}
                 />
             </div>
             <label>
@@ -238,7 +240,7 @@ function CVForm() {
                             name="name"
                             placeholder="Name"
                             value={hardSkill.name}
-                            onChange={e => change(Field.SoftSkills, e, index, SubField.Name)}
+                            onChange={e => change(Field.HardSkills, e, index, SubField.Name)}
                         />
                         <input
                             name="proficiency"
@@ -389,7 +391,7 @@ function CVForm() {
                             name="patent"
                             placeholder="Patent"
                             value={patent}
-                            onChange={e => change(Field.Patents, e, index, SubField.Address)} // TODO: Fix this, no address
+                            onChange={e => change(Field.Patents, e, index)}
                         />
                         <button onClick={() => remove(Field.Patents, index)}>-</button>
                     </div>)
@@ -404,7 +406,7 @@ function CVForm() {
                             name="extracurricular"
                             placeholder="Extracurricular"
                             value={extracurricular}
-                            onChange={e => change(Field.Extracurriculars, e, index, SubField.Address)} // TODO: Fix this, no address
+                            onChange={e => change(Field.Extracurriculars, e, index)}
                         />
                         <button onClick={() => remove(Field.Extracurriculars, index)}>-</button>
                     </div>)
@@ -415,7 +417,7 @@ function CVForm() {
         <button onSubmit={(e) => handleSubmit(e)}>Submit</button>
     </form>
 
-    function change(field: Field, event: any, index: number, subField: SubField) {
+    function change(field: Field, event: any, index: number = 0, subField?: SubField) {
         let data: any
         switch (field) {
             case Field.Interests:
@@ -588,6 +590,7 @@ function CVForm() {
     function handleSubmit(e: FormEvent) {
         e.preventDefault()
         console.log(state)
+        cvUpload().then(e => console.log(e))
     }
 }
 

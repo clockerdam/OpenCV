@@ -9,7 +9,7 @@ async function cvUpload(cv?: CV) {
         body: JSON.stringify(cv),
         headers: { 'Content-Type': 'application/json' }
     })
-    return response
+    return response.json()
 }
 
 export { cvUpload }
