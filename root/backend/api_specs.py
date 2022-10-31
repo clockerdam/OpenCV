@@ -229,45 +229,6 @@ resume_dict = {
         }
     }
 }
-get_resume_spec = {
-    "parameters": [
-        {
-            "name": "palette",
-            "in": "path",
-            "type": "string",
-            "enum": [
-                "all",
-                "rgb",
-                "cmyk"
-            ],
-            "required": "true",
-            "default": "all"
-        }
-    ],
-    "definitions": {
-        "ResumeList": {
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/Resume"
-            }
-        }
-    },
-    "responses": {
-        "200": {
-            "description": "A list of colors (may be filtered by palette)",
-            "schema": {
-                "$ref": "#/definitions/ResumeList"
-            },
-            "examples": {
-                "rgb": [
-                    "red",
-                    "green",
-                    "blue"
-                ]
-            }
-        }
-    }
-}
 get_all_unlabeled_resumes_spec = {
     "tags": [
         "Unlabeled Resumes"
@@ -287,14 +248,21 @@ get_all_unlabeled_resumes_spec = {
     },
     "responses": {
         "200": {
-            "description": "List of unlabeled resumes",
-            "content": "application/json",
-            "schema": {
-                "$ref": "#/definitions/ResumeList"
-            },
-            "examples": [{
-                "title": "Data scientist",
-                "contactInfo":
+                  "description": "A complex object array response",
+                  "content": {
+                    "application/json": {
+                      "schema": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/components/schemas/Resume"
+                        }
+                      }
+                    }
+                  },
+
+                "examples": [{
+                    "title": "Data scientist",
+                    "contactInfo":
                     {
                         "address": "Stockholmsvägen 15",
                         "website": "",
