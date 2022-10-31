@@ -1,7 +1,7 @@
 import json
 
 from bson import json_util
-from flask import Flask, request, Response
+from flask import Flask, request, Response, jsonify
 from flasgger import Swagger
 from flasgger.utils import swag_from
 
@@ -54,7 +54,8 @@ def upload_unlabeled_resume():
 @swag_from(get_all_unlabeled_resumes_spec)
 def get_all_unlabeled_resumes():
     """Endpoint returning a list of all unlabeled resumes stored in the database"""
-    return json_util.dumps(db.fetch_all_resumes())
+    resumes = db.fetch_all_resumes()
+    return Response(json_util.dumps(resumes),  mimetype='application/json')
 
 
 if __name__ == "__main__":

@@ -1,6 +1,7 @@
 import json
 
 from dotenv import dotenv_values
+from pydantic import ValidationError
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
@@ -33,9 +34,15 @@ class Connection:
         print("Connection to DB closed")
 
     def fetch_all_resumes(self):
-        map(Resume.parse_obj, self.resume_collection.find({}))
-        result = list(self.resume_collection.find({}))
-        return json_util.dumps(result)
+        resumes = self.resume_collection.find({})
+        try:
+            map(Resume.parse_obj, resumes)
+        except ValidationError as e:
+            print(e)
+
+        result = list(resumes)
+        return result
+
 
     def insert_resume_from_file(self, filename: str):
         f = open(filename)
