@@ -17,14 +17,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-    - id: 'auth'
-      uses: 'google-github-actions/auth@v0'
-      with:
-        credentials_json: '${{ secrets.GCP_SA_KEY }}'
+      - id: "auth"
+        uses: "google-github-actions/auth@v0"
+        with:
+          credentials_json: "${{ secrets.GCP_SA_KEY }}"
 
-    - id: 'deploy'
-      uses: 'google-github-actions/deploy-appengine@v0'
-      deliverables: ./root/backend/app.yaml
+      - id: "deploy"
+        uses: "google-github-actions/deploy-appengine@v0"
+        with:
+          working-directory: ./root/backend
+          deliverables: app.yaml
 
   build:
     defaults:
