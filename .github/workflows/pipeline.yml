@@ -10,7 +10,7 @@ on:
     branches: ["main"]
 
 jobs:
-  deploy-backend:
+  deploybackend:
     defaults:
       run:
         working-directory: ./root/backend
