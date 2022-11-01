@@ -25,7 +25,7 @@ jobs:
       - id: "deploy"
         uses: "google-github-actions/deploy-appengine@v0"
         with:
-          working-directory: ./root/backend
+          working_directory: ./root/backend
           deliverables: app.yaml
 
   build:
