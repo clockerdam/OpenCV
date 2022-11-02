@@ -37,3 +37,10 @@ Simply run the command
 gcloud app deploy
 ```
 while inside the `root/backend` directory.
+
+### Developing
+#### API Documentation
+Our Backend API endpoints are documented and can be tested under: http://localhost:5000/apidocs/
+
+To update or add to the API, see root/backend/main.py and make sure to update/add documentation in the api_specs.py file. 
+
