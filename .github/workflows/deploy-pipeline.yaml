@@ -1,0 +1,20 @@
+name: CI/CD pipeline
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - id: "auth"
+        uses: "google-github-actions/auth@v0"
+        with:
+          credentials_json: "${{ secrets.GCP_SA_KEY }}"
+
+      - id: "deploy"
+        uses: "google-github-actions/deploy-appengine@v0"
+        with:
+          working_directory: ./root/backend
+          deliverables: app.yaml

@@ -5,27 +5,30 @@ from flask import Flask, request, Response, jsonify
 from flasgger import Swagger
 from flasgger.utils import swag_from
 
+from flask_cors import CORS
+
 from api_specs import *
 from prediction import improve_cv
 from persistence import Connection as Database
 
+
 app = Flask(__name__)
+CORS(app)
 swagger = Swagger(app)
 db = Database()
 
-@app.route('/')
+@app.route("/")
 def main():
     print("hello response")
-    return 'Hello World'
+    return "Hello World"
 
 
 @app.post('/labeled')
 @swag_from(upload_labeled_resume_spec)
 def upload_labeled_resume():
     """Post labeled resume to the database"""
-
     print("labeledupload response")
-    return 'labeledupload'
+    return "labeledupload"
 
 
 @app.post('/analysis')
