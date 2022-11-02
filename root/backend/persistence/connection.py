@@ -24,7 +24,7 @@ class Connection:
 
     def establish_connection(self):
         self.mongodb_client = MongoClient(config["ATLAS_URI"])
-        self.database = self.mongodb_client[config["DEV_DB"]]
+        self.database = self.mongodb_client[config["DEV_DB"]] # CHANGE TO PROD_DB to work with only valid data. # CHANGE TO DEV_DB for developing
         self.server_api = ServerApi('1')
         self.resume_collection = self.database[config["RESUME_COLLECTION"]]
         print("Connected to DB")
