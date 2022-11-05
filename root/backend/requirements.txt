@@ -3,4 +3,5 @@ Flask==2.2.2
 Pymongo==3.12.0
 Python-dotenv==0.21.0
 Flask-Cors==3.0.10
+Flasgger==0.9.5
 

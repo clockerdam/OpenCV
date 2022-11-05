@@ -22,15 +22,6 @@ def main():
     print("hello response")
     return "Hello World"
 
-
-@app.post('/labeled')
-@swag_from(upload_labeled_resume_spec)
-def upload_labeled_resume():
-    """Post labeled resume to the database"""
-    print("labeledupload response")
-    return "labeledupload"
-
-
 @app.post('/analysis')
 @swag_from(analyze_resume_spec)
 def analyze_resume():
@@ -40,13 +31,33 @@ def analyze_resume():
     return improve_cv(payload)
 
 
+@app.get('/labeled')
+@swag_from(get_all_labeled_resumes_spec)
+def get_all_labeled_resumes():
+    """Endpoint returning a list of all labeled resumes stored in the database"""
+    resumes = db.fetch_all_labeled_resumes()
+    return Response(json_util.dumps(resumes),  mimetype='application/json')
+
+
+@app.post('/labeled')
+@swag_from(upload_labeled_resume_spec)
+def upload_labeled_resume():
+    """Post labeled resume to the database"""
+    payload = request.get_json()
+    is_success = db.insert_labeled_resume(payload)
+    if is_success:
+        return Response(status=201, mimetype='application/json')
+    else:
+        return Response(status=400, mimetype='application/json')
+
+
 @app.post('/unlabeled')
 @swag_from(upload_unlabeled_resume_spec)
 def upload_unlabeled_resume():
     """Post unlabeled resume to the database"""
 
     payload = request.get_json()
-    is_success = db.insert_one_resume(payload)
+    is_success = db.insert_unlabeled_resume(payload)
     if is_success:
         return Response(status=201, mimetype='application/json')
     else:
@@ -57,7 +68,7 @@ def upload_unlabeled_resume():
 @swag_from(get_all_unlabeled_resumes_spec)
 def get_all_unlabeled_resumes():
     """Endpoint returning a list of all unlabeled resumes stored in the database"""
-    resumes = db.fetch_all_resumes()
+    resumes = db.fetch_all_unlabeled_resumes()
     return Response(json_util.dumps(resumes),  mimetype='application/json')
 
 
