@@ -7,8 +7,7 @@ from pymongo.server_api import ServerApi
 
 from .models import Resume
 
-config = dotenv_values("root/backend/.env")
-
+config = dotenv_values(".env")
 
 class Connection:
 
@@ -82,7 +81,7 @@ class Connection:
 
 db = Connection()
 resumes = db.fetch_all_labeled_resumes()
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS2.json")
+'''db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS2.json")
 db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS1.json")
 db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS3.json")
 db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS4.json")
@@ -101,7 +100,7 @@ db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE6.json")
 db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE7.json")
 db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE8.json")
 db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE9.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE10.json")
+db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE10.json")'''
 db.shutdown_connection()
 
 

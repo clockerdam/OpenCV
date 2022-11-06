@@ -1,6 +1,6 @@
 from pydantic import BaseModel, Field as PydanticField
 from bson import ObjectId
-from resume import ContactInfo
+from .resume import ContactInfo
 
 class LabeledList:
     value: list
@@ -47,6 +47,7 @@ class LabeledExperienceFields(BaseModel):
 
     class Config:
         allow_population_by_field_name = True
+        arbitrary_types_allowed = True
         schema_extra = {
             "example": {
                 "company": "Hyundai",
@@ -73,6 +74,7 @@ class LabeledEducationFields(BaseModel):
 
     class Config:
         allow_population_by_field_name = True
+        arbitrary_types_allowed = True
         schema_extra = {
             "example": {
                 "company": "Hyundai",
@@ -97,6 +99,7 @@ class LabeledExtracurricularFields(BaseModel):
 
     class Config:
         allow_population_by_field_name = True
+        arbitrary_types_allowed = True
         schema_extra = {
             "example": {
                 "name": "Shepard",
@@ -117,6 +120,7 @@ class LabeledSkillFields(BaseModel):
 
     class Config:
         allow_population_by_field_name = True
+        arbitrary_types_allowed = True
         schema_extra = {
             "example": {
                 "name": "Korean",
@@ -137,6 +141,7 @@ class LabeledCertificationFields(BaseModel):
 
     class Config:
         allow_population_by_field_name = True
+        arbitrary_types_allowed = True
         schema_extra = {
             "example": {
                 "title": "CFA",
@@ -153,7 +158,7 @@ class LabeledCertification(BaseModel):
 
 
 class PyObjectId(ObjectId):
-     @classmethod
+    @classmethod
     def __get_validators__(cls):
         yield cls.validate
 
