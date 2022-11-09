@@ -6,6 +6,7 @@ from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
 from persistence.models.resume import Resume
+from persistence.models.labeled_resume import Resume as LabeledResume
 from bson import json_util
 
 config = dotenv_values(".env")
@@ -48,7 +49,7 @@ class Connection:
     def fetch_all_labeled_resumes(self):
         resumes = self.labeled_resume_collection.find({})
         try:
-            map(Resume.parse_obj, resumes)
+            map(LabeledResume.parse_obj, resumes)
         except ValidationError as e:
             print(e)
 
@@ -79,29 +80,4 @@ class Connection:
             self.unlabeled_resume_collection.insert_one(resume)
             written = True
         return written
-
-db = Connection()
-resumes = db.fetch_all_labeled_resumes()
-'''db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS2.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS1.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS3.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS4.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS5.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS6.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS7.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS8.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS9.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS10.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE1.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE2.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE3.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE4.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE5.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE6.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE7.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE8.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE9.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE10.json")'''
-db.shutdown_connection()
-
 

@@ -9,3 +9,6 @@ pymongo[srv]
 gensim==4.2.0
 nltk==3.7
 transformers==4.24.0
+spacy==3.4.2
+spacy-legacy==3.0.10
+spacy-loggers==1.0.3
