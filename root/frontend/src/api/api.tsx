@@ -1,18 +1,16 @@
-import { CV } from "./cv"
-
 let port = 8080
 let endpoint = "http://localhost:" + port
 
-async function cvUpload(cv?: CV) {
-    const response = await fetch(endpoint + "/cvupload", {
+async function uploadUnlabeled(resume: string) {
+    const response = await fetch(endpoint + "/unlabeled", {
         method: "POST",
-        body: JSON.stringify(cv),
+        body: resume,
         headers: { 'Content-Type': 'application/json' }
     })
-    return response.json()
+    return response
 }
 
-export { cvUpload }
+export { uploadUnlabeled }
 
 
 
