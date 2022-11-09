@@ -90,14 +90,14 @@ class Extracurricular(BaseModel):
 
 class Skill(BaseModel):
     name: str
-    proficiency: str
+    proficiency: int
 
     class Config:
         allow_population_by_field_name = True
         schema_extra = {
             "example": {
                 "name": "Korean",
-                "proficiency": "Fluent",
+                "proficiency": 5,
             }
         }
 class Certification(BaseModel):

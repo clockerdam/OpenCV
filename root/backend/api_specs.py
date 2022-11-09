@@ -955,15 +955,15 @@ unlabeled_example = {
     "languages": [
         {
             "name": "Spanish",
-            "proficiency": "Native"
+            "proficiency": 5
         },
         {
             "name": "Korean",
-            "proficiency": "Fluent"
+            "proficiency": 4
         },
         {
             "name": "English",
-            "proficiency": "Beginner"
+            "proficiency": 1
         }
     ],
     "projects": [
@@ -977,25 +977,25 @@ unlabeled_example = {
     "softSkills": [
         {
             "name": "Presenting",
-            "proficiency": "5"
+            "proficiency": 5
         },
         {
             "name": "Debating",
-            "proficiency": "2"
+            "proficiency": 2
         }
     ],
     "hardSkills": [
         {
             "name": "R",
-            "proficiency": "5"
+            "proficiency": 5
         },
         {
             "name": "Python",
-            "proficiency": "Fluent"
+            "proficiency": 5
         },
         {
             "name": "Machine Learning",
-            "proficiency": "4"
+            "proficiency": 4
         }
     ],
     "certifications": [
@@ -1195,14 +1195,14 @@ labeled_example = {
             {
                 "value": {
                     "name": "English",
-                    "proficiency": "5"
+                    "proficiency": 5
                 },
                 "label": 0
             },
             {
                 "value": {
                     "name": "Swedish",
-                    "proficiency": "3"
+                    "proficiency": 3
                 },
                 "label": 0
             }
@@ -1222,21 +1222,21 @@ labeled_example = {
             {
                 "value": {
                     "name": "C#",
-                    "proficiency": "5"
+                    "proficiency": 5
                 },
                 "label": 0
             },
             {
                 "value": {
                     "name": "Unity",
-                    "proficiency": "5"
+                    "proficiency": 5
                 },
                 "label": 0
             },
             {
                 "value": {
                     "name": "Scrum",
-                    "proficiency": "5"
+                    "proficiency": 5
                 },
                 "label": 0
             }
