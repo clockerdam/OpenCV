@@ -5,7 +5,8 @@ from pydantic import ValidationError
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
-from .models import Resume
+from persistence.models.resume import Resume
+from bson import json_util
 
 config = dotenv_values(".env")
 

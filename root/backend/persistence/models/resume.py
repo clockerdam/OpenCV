@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field as PydanticField
 from bson import ObjectId
+from typing import List
 
 
 class ContactInfo(BaseModel):
@@ -135,17 +136,17 @@ class Resume(BaseModel):
     title: str = PydanticField(...)
     contactInfo: ContactInfo = PydanticField(...)
     summary: str = PydanticField()
-    experience: list[Experience]
-    education: list[Education]
-    softSkills: list[Skill]
-    hardSkills: list[Skill]
-    languages: list[Skill]
-    certifications: list[Certification]
-    accomplishments: list[Extracurricular]
-    projects: list[Extracurricular]
-    extracurriculars: list[Extracurricular]
-    patents: list[str]
-    interests: list[str]
+    experience: List[Experience]
+    education: List[Education]
+    softSkills: List[Skill]
+    hardSkills: List[Skill]
+    languages: List[Skill]
+    certifications: List[Certification]
+    accomplishments: List[Extracurricular]
+    projects: List[Extracurricular]
+    extracurriculars: List[Extracurricular]
+    patents: List[str]
+    interests: List[str]
 
     class Config:
         allow_population_by_field_name = True

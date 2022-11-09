@@ -1,9 +1,11 @@
 black==22.10.0
 Flask==2.2.2
-Pymongo==3.12.0
+pymongo==3.12.0
 Python-dotenv==0.21.0
 Flask-Cors==3.0.10
 Flasgger==0.9.5
 Pydantic==1.9.0
 pymongo[srv]
-
+gensim==4.2.0
+nltk==3.7
+transformers==4.24.0
