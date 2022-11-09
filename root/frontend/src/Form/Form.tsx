@@ -1,35 +1,10 @@
 import { FormEvent, useState } from "react";
-import './cvForm.css'
-import { uploadUnlabeled } from "../api/api";
+import { CV } from "../CV/CV";
+import './form.css'
 
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
-function CVForm() {
-    const [state, setState] = useState({
-        title: '',
-        summary: '',
-        interests: [] as string[],
-        contactInfo: {
-            address: '',
-            website: '',
-            linkedin: '',
-            name: '',
-            phoneNumber: '',
-            email: '',
-            github: '',
-            birthday: '',
-            family: ''
-        },
-        accomplishments: [] as {title: string, fromDate: Date, toDate: Date, description: string}[],
-        projects: [] as {title: string, fromDate: Date, toDate: Date, description: string}[],
-        softSkills: [] as {name: string, proficiency: number}[],
-        hardSkills: [] as {name: string, proficiency: number}[],
-        languages: [] as {name: string, proficiency: number}[],
-        experience: [] as {company: string, title: string, location: string, fromDate: Date, toDate: Date, description: string}[],
-        certifications: [] as {title: string, level: string, description: string, date: Date}[],
-        education: [] as {institution: string, title: string, location: string, fromDate: Date, toDate: Date, description: string}[],
-        patents: [] as string[],
-        extracurriculars: [] as {title: string, fromDate: Date, toDate: Date, description: string}[],
-    })
+function Form() {
+    const [cv, setCV] = useState(new CV())
 
     enum Field {
         Interests = "interests",
@@ -77,8 +52,8 @@ function CVForm() {
                 <input 
                     name="title"
                     placeholder="Title"
-                    value={state.title}
-                    onChange={(e) => setState(prevState => ({ ...prevState, title: e.target.value }))}
+                    value={cv.title}
+                    onChange={(e) => setCV(prevState => ({ ...prevState, title: e.target.value }))}
                 />
             </label>
             <label>
@@ -86,13 +61,13 @@ function CVForm() {
                 <input 
                     name="summary"
                     placeholder="Summary"
-                    value={state.summary}
-                    onChange={(e) => setState(prevState => ({ ...prevState, summary: e.target.value }))}
+                    value={cv.summary}
+                    onChange={(e) => setCV(prevState => ({ ...prevState, summary: e.target.value }))}
                 />
             </label>
             <label>
                 <p>Interests</p>
-                {state.interests.map((interest, index) => {
+                {cv.interests.map((interest, index) => {
                 return (<div key={index}>
                         <input
                             name="interest"
@@ -111,69 +86,69 @@ function CVForm() {
                 <input 
                     name="address"
                     placeholder="Address"
-                    value={state.contactInfo.address}
+                    value={cv.contactInfo.address}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Address)}
                 />
                 <p>Website</p>
                 <input 
                     name="website"
                     placeholder="Website"
-                    value={state.contactInfo.website}
+                    value={cv.contactInfo.website}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Website)}
                 />
                 <p>LinkedIn</p>
                 <input 
                     name="linkedIn"
                     placeholder="LinkedIn"
-                    value={state.contactInfo.linkedin}
+                    value={cv.contactInfo.linkedin}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.LinkedIn)}
                 />
                 <p>Name</p>
                 <input 
                     name="name"
                     placeholder="Name"
-                    value={state.contactInfo.name}
+                    value={cv.contactInfo.name}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Name)}
                 />
                 <p>Phone Number</p>
                 <input 
                     name="phoneNumber"
                     placeholder="Phone Number"
-                    value={state.contactInfo.phoneNumber}
+                    value={cv.contactInfo.phoneNumber}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.PhoneNumber)}
                 />
                 <p>Email</p>
                 <input 
                     name="email"
                     placeholder="Email"
-                    value={state.contactInfo.email}
+                    value={cv.contactInfo.email}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Email)}
                 />
                 <p>GitHub</p>
                 <input 
                     name="github"
                     placeholder="GitHub"
-                    value={state.contactInfo.github}
+                    value={cv.contactInfo.github}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.GitHub)}
                 />
                 <p>Birthday</p>
                 <input 
                     name="birthday"
                     placeholder="Birthday"
-                    value={state.contactInfo.birthday}
+                    value={cv.contactInfo.birthday}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Birthday)}
                 />
                 <p>Family</p>
                 <input 
                     name="family"
                     placeholder="Family"
-                    value={state.contactInfo.family}
+                    value={cv.contactInfo.family}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Family)}
                 />
             </div>
             <label>
                 <p>Accomplishments</p>
-                {state.accomplishments.map((accomplishment, index) => {
+                {cv.accomplishments.map((accomplishment, index) => {
                 return (<div key={index}>
                         <input
                             name="title"
@@ -208,7 +183,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Projects</p>
-                {state.projects.map((project, index) => {
+                {cv.projects.map((project, index) => {
                 return (<div key={index}>
                         <input
                             name="title"
@@ -243,7 +218,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Soft Skills</p>
-                {state.softSkills.map((softSkill, index) => {
+                {cv.softSkills.map((softSkill, index) => {
                 return (<div key={index}>
                         <input
                             name="name"
@@ -264,7 +239,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Hard Skills</p>
-                {state.hardSkills.map((hardSkill, index) => {
+                {cv.hardSkills.map((hardSkill, index) => {
                 return (<div key={index}>
                         <input
                             name="name"
@@ -285,7 +260,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Languages</p>
-                {state.languages.map((language, index) => {
+                {cv.languages.map((language, index) => {
                 return (<div key={index}>
                         <input
                             name="name"
@@ -306,7 +281,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Experience</p>
-                {state.experience.map((experience, index) => {
+                {cv.experience.map((experience, index) => {
                 return (<div key={index}>
                         <input
                             name="company"
@@ -353,7 +328,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Certifications</p>
-                {state.certifications.map((certification, index) => {
+                {cv.certifications.map((certification, index) => {
                 return (<div key={index}>
                         <input
                             name="Title"
@@ -387,7 +362,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Education</p>
-                {state.education.map((education, index) => {
+                {cv.education.map((education, index) => {
                 return (<div key={index}>
                         <input
                             name="institution"
@@ -434,7 +409,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Patents</p>
-                {state.patents.map((patent, index) => {
+                {cv.patents.map((patent, index) => {
                 return (<div key={index}>
                         <input
                             name="patent"
@@ -449,7 +424,7 @@ function CVForm() {
             </label>
             <label>
                 <p>Extracurriculars</p>
-                {state.extracurriculars.map((extracurricular, index) => {
+                {cv.extracurriculars.map((extracurricular, index) => {
                 return (<div key={index}>
                         <input
                             name="title"
@@ -491,7 +466,7 @@ function CVForm() {
         switch (field) {
             case Field.Interests:
             case Field.Patents:
-                data = state[field]
+                data = cv[field]
                 data[index] = event.target.value
                 break
             case Field.ContactInfo:
@@ -505,7 +480,7 @@ function CVForm() {
                     case SubField.GitHub:
                     case SubField.Birthday:     
                     case SubField.Family:
-                        data = state[field]
+                        data = cv[field]
                         data[subField] = event.target.value
                         break
                     default:
@@ -516,7 +491,7 @@ function CVForm() {
             case Field.Extracurriculars:
             case Field.Accomplishments:
             case Field.Projects:
-                data = state[field]
+                data = cv[field]
                 switch (subField) {
                     case SubField.Title:  
                     case SubField.Description:  
@@ -534,7 +509,7 @@ function CVForm() {
             case Field.SoftSkills: 
             case Field.HardSkills:
             case Field.Languages:
-                data = state[field]
+                data = cv[field]
                 switch (subField) {
                     case SubField.Name:  
                         data[index][subField] = event.target.value
@@ -548,7 +523,7 @@ function CVForm() {
                 }
                 break
             case Field.Experience:
-                data = state[field]
+                data = cv[field]
                 switch (subField) {
                     case SubField.Company:
                     case SubField.Title:
@@ -566,7 +541,7 @@ function CVForm() {
                 }
             break
             case Field.Certifications:
-                data = state[field]
+                data = cv[field]
                 switch (subField) {
                     case SubField.Title:  
                     case SubField.Level: 
@@ -582,7 +557,7 @@ function CVForm() {
                 }
                 break
             case Field.Education:
-                data = state[field]
+                data = cv[field]
                 switch (subField) {
                     case SubField.Institution:
                     case SubField.Title:
@@ -603,7 +578,7 @@ function CVForm() {
                 console.log("Unknown field: " + field)
                 return
         }
-        setState(prevState => ({...prevState, [field]: data}))
+        setCV(prevState => ({...prevState, [field]: data}))
     }
 
     function remove(field: Field, index: number) {
@@ -620,14 +595,14 @@ function CVForm() {
             case Field.Education:
             case Field.Patents:
             case Field.Extracurriculars:
-                data = state[field]
+                data = cv[field]
                 data.splice(index, 1)
                 break
             default:
                 console.log("Unknown field: " + field)
                 return
         }
-        setState(prevState => ({...prevState, [field]: data}))
+        setCV(prevState => ({...prevState, [field]: data}))
     }
 
     function add(field: string) { 
@@ -660,17 +635,17 @@ function CVForm() {
                 console.log("Unknown field: " + field)
                 return
         }
-        let data = state[field]
+        let data = cv[field]
         data.push(newItem)
-        setState(prevState => ({...prevState, [field]: data}))
+        setCV(prevState => ({...prevState, [field]: data}))
     }
 
     function handleSubmit(e: FormEvent) {
         e.preventDefault()
-        let json = JSON.stringify(state)
+        let json = JSON.stringify(cv)
         console.log(json)
-        uploadUnlabeled(json).then(e => console.log(e))
+        //uploadUnlabeled(json).then(e => console.log(e))
     }
 }
 
-export { CVForm }
+export { Form }

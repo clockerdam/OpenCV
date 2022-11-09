@@ -1,8 +1,8 @@
 import './App.css';
-import { CVForm } from './CVForm/CVForm';
+import { Form } from './Form/Form';
 
 function App() {
-  return <CVForm></CVForm>
+  return <Form></Form>
 }
 
 export default App;

@@ -26,6 +26,10 @@ def main():
 @swag_from(analyze_resume_spec)
 def analyze_resume():
     """Analyze resume and receive an improved version of it"""
+    # Input: unlabeled resume
+    # User input is saved in DB
+    # Input is passed to model, model returns CV in shortened format.
+    # Return: CV in shortened format
 
     payload = request.get_json()
     return improve_cv(payload)
@@ -38,6 +42,16 @@ def get_all_labeled_resumes():
     resumes = db.fetch_all_labeled_resumes()
     return Response(json_util.dumps(resumes),  mimetype='application/json')
 
+
+@app.post('/label')
+def label_unlabeled_resume():
+    # ID used to remove unlabeled CV from the unlabeled cv collection
+
+    # Insert labeled cv
+
+    """Endpoint returning a list of all labeled resumes stored in the database"""
+    resumes = db.fetch_all_labeled_resumes()
+    return Response(json_util.dumps(resumes),  mimetype='application/json')
 
 @app.post('/labeled')
 @swag_from(upload_labeled_resume_spec)
@@ -63,14 +77,18 @@ def upload_unlabeled_resume():
     else:
         return Response(status=400, mimetype='application/json')
 
-
-@app.get('/unlabeled')
+@app.get('/unlabeled/all')
 @swag_from(get_all_unlabeled_resumes_spec)
 def get_all_unlabeled_resumes():
     """Endpoint returning a list of all unlabeled resumes stored in the database"""
     resumes = db.fetch_all_unlabeled_resumes()
     return Response(json_util.dumps(resumes),  mimetype='application/json')
 
+@app.get('/unlabeled')
+def get_unlabeled_resume():
+    """Endpoint returning an unlabeled resume stored in the database"""
+    resume = db.fetch_unlabeled_resume()
+    return Response(json_util.dumps(resume),  mimetype='application/json')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)

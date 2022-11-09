@@ -10,6 +10,11 @@ async function uploadUnlabeled(resume: string) {
     return response
 }
 
+async function getUnlabeled() {
+    const response = await fetch(endpoint + "/unlabeled")  
+    return await response.json()
+}
+
 export { uploadUnlabeled }
 
 
