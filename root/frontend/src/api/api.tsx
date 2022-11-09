@@ -15,7 +15,7 @@ async function getUnlabeled() {
     return await response.json()
 }
 
-export { uploadUnlabeled }
+export { uploadUnlabeled, getUnlabeled }
 
 
 

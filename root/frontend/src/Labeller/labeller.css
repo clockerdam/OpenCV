@@ -1,0 +1,19 @@
+.item {
+    margin-left: 2%;
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.rating {
+    display:flex;
+    align-items:center;
+}
+
+.light {
+    background-color: gainsboro;
+}
+
+.dark {
+    background-color: lightgray;
+}
