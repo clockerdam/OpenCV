@@ -13,6 +13,11 @@ from persistence import Connection as Database
 
 
 app = Flask(__name__)
+app.config['SWAGGER'] = {
+    'title': 'My API',
+    'uiversion': 3,
+    'openapi': '3.0.2'
+}
 CORS(app)
 swagger = Swagger(app)
 db = Database()
