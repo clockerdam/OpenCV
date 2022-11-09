@@ -2,12 +2,22 @@ name: CI/CD pipeline
 on:
   push:
     branches: ["main"]
+    paths:
+      - "root/backend/**"
 
 jobs:
   backend:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - id: "create-env"
+        with:
+          ATLAS_URI: "${ATLAS_URI}"
+          PROD_DB: "${PROD_DB}"
+          DEV_DB: "${DEV_DB}"
+          UNLABELED_RESUME_COLLECTION: "${UNLABELED_RESUME_COLLECTION}"
+          LABELED_RESUME_COLLECTION: "${LABELED_RESUME_COLLECTION}"
+        run: "make create-env"
       - id: "auth"
         uses: "google-github-actions/auth@v0"
         with:
