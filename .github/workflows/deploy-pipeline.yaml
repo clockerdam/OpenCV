@@ -2,9 +2,6 @@ name: CI/CD pipeline
 on:
   push:
     branches: ["main", "fix/env-vars-backend"]
-    paths:
-      - "root/backend/**"
-      - ".github/deploy-pipeline.yaml"
 
 jobs:
   backend:
