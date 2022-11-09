@@ -10,4 +10,8 @@ stop-backend:
 	@echo "Stopping the entire backend with database"
 	docker compose down
 
-
+# Only for use in the pipeline
+create-env: 
+	@echo "Creating .env file"
+	touch root/backend/.env
+	printenv > root/backend/.env

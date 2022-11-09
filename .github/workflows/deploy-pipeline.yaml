@@ -6,8 +6,14 @@ on:
 jobs:
   backend:
     runs-on: ubuntu-latest
+    env:
+      ATLAS_URI: "${{ secrets.ATLAS_URI }}"
+      DB: "${{ secrets.DB }}"
+      UNLABELED_RESUME_COLLECTION: "${{ secrets.UNLABELED_RESUME_COLLECTION }}"
+      LABELED_RESUME_COLLECTION: "${{ secrets.LABELED_RESUME_COLLECTION }}"
     steps:
       - uses: actions/checkout@v3
+      - run: "make create-env"
       - id: "auth"
         uses: "google-github-actions/auth@v0"
         with:
