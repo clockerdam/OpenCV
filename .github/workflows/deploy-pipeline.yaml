@@ -1,7 +1,7 @@
 name: CI/CD pipeline
 on:
   push:
-    branches: ["main", "fix/env-vars-backend"]
+    branches: ["main"]
 
 jobs:
   backend:
