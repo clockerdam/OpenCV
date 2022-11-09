@@ -24,7 +24,7 @@ class Connection:
     def establish_connection(self):
         self.mongodb_client = MongoClient(config["ATLAS_URI"])
         self.database = self.mongodb_client[
-            config["DEV_DB"]]  # CHANGE TO PROD_DB to work with only valid data. # CHANGE TO DEV_DB for developing
+            config["DB"]]  
         self.server_api = ServerApi('1')
         self.labeled_resume_collection = self.database[config["LABELED_RESUME_COLLECTION"]]
         self.unlabeled_resume_collection = self.database[config["UNLABELED_RESUME_COLLECTION"]]
