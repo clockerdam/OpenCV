@@ -8,8 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       ATLAS_URI: "${{ secrets.ATLAS_URI }}"
-      PROD_DB: "${{ secrets.PROD_DB }}"
-      DEV_DB: "${{ secrets.DEV_DB }}"
+      DB: "${{ secrets.DB }}"
       UNLABELED_RESUME_COLLECTION: "${{ secrets.UNLABELED_RESUME_COLLECTION }}"
       LABELED_RESUME_COLLECTION: "${{ secrets.LABELED_RESUME_COLLECTION }}"
     steps:
