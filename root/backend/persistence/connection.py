@@ -67,7 +67,6 @@ class Connection:
     def insert_labeled_resume(self, resume: dict):
         written = False
         # if Resume.parse_obj(resume):
-        print(type(resume))
         self.labeled_resume_collection.insert_one(resume)
         written = True
         return written
