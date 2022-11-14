@@ -12,7 +12,7 @@ function Output() {
 }
 
 function representCV(cv: CV) {
-    return <p>Representation of CV: {cv.title}</p>
+    return <p>Representation of CV: {cv.title.value}</p>
 }
 
 export { Output }

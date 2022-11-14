@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { CV } from "../CV/CV";
+import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../CV/CV";
 import './form.css'
 
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
@@ -52,8 +52,8 @@ function Form() {
                 <input 
                     name="title"
                     placeholder="Title"
-                    value={cv.title}
-                    onChange={(e) => setCV(prevState => ({ ...prevState, title: e.target.value }))}
+                    value={cv.title.value}
+                    onChange={(e) => setCV(prevState => ({ ...prevState, title: {value: e.target.value, label: 0}}))}
                 />
             </label>
             <label>
@@ -61,8 +61,8 @@ function Form() {
                 <input 
                     name="summary"
                     placeholder="Summary"
-                    value={cv.summary}
-                    onChange={(e) => setCV(prevState => ({ ...prevState, summary: e.target.value }))}
+                    value={cv.summary.value}
+                    onChange={(e) => setCV(prevState => ({ ...prevState, summary: {value: e.target.value, label: 0}}))}
                 />
             </label>
             <label>
@@ -72,7 +72,7 @@ function Form() {
                         <input
                             name="interest"
                             placeholder="Interest"
-                            value={interest}
+                            value={interest.value}
                             onChange={e => change(Field.Interests, e, index)}
                         />
                         <button onClick={() => remove(Field.Interests, index)}>-</button>
@@ -86,63 +86,63 @@ function Form() {
                 <input 
                     name="address"
                     placeholder="Address"
-                    value={cv.contactInfo.address}
+                    value={cv.contactInfo.address.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Address)}
                 />
                 <p>Website</p>
                 <input 
                     name="website"
                     placeholder="Website"
-                    value={cv.contactInfo.website}
+                    value={cv.contactInfo.website.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Website)}
                 />
                 <p>LinkedIn</p>
                 <input 
                     name="linkedIn"
                     placeholder="LinkedIn"
-                    value={cv.contactInfo.linkedin}
+                    value={cv.contactInfo.linkedin.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.LinkedIn)}
                 />
                 <p>Name</p>
                 <input 
                     name="name"
                     placeholder="Name"
-                    value={cv.contactInfo.name}
+                    value={cv.contactInfo.name.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Name)}
                 />
                 <p>Phone Number</p>
                 <input 
                     name="phoneNumber"
                     placeholder="Phone Number"
-                    value={cv.contactInfo.phoneNumber}
+                    value={cv.contactInfo.phoneNumber.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.PhoneNumber)}
                 />
                 <p>Email</p>
                 <input 
                     name="email"
                     placeholder="Email"
-                    value={cv.contactInfo.email}
+                    value={cv.contactInfo.email.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Email)}
                 />
                 <p>GitHub</p>
                 <input 
                     name="github"
                     placeholder="GitHub"
-                    value={cv.contactInfo.github}
+                    value={cv.contactInfo.github.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.GitHub)}
                 />
                 <p>Birthday</p>
                 <input 
                     name="birthday"
                     placeholder="Birthday"
-                    value={cv.contactInfo.birthday}
+                    value={cv.contactInfo.birthday.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Birthday)}
                 />
                 <p>Family</p>
                 <input 
                     name="family"
                     placeholder="Family"
-                    value={cv.contactInfo.family}
+                    value={cv.contactInfo.family.value}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Family)}
                 />
             </div>
@@ -153,7 +153,7 @@ function Form() {
                         <input
                             name="title"
                             placeholder="Title"
-                            value={accomplishment.title}
+                            value={accomplishment.value.title}
                             onChange={e => change(Field.Accomplishments, e, index, SubField.Title)}
                         />
                         <input
@@ -173,7 +173,7 @@ function Form() {
                         <input
                             name="description"
                             placeholder="Description"
-                            value={accomplishment.description}
+                            value={accomplishment.value.description}
                             onChange={e => change(Field.Accomplishments, e, index, SubField.Description)}
                         />
                         <button onClick={() => remove(Field.Accomplishments, index)}>-</button>
@@ -188,7 +188,7 @@ function Form() {
                         <input
                             name="title"
                             placeholder="Title"
-                            value={project.title}
+                            value={project.value.title}
                             onChange={e => change(Field.Projects, e, index, SubField.Title)}
                         />
                         <input
@@ -208,7 +208,7 @@ function Form() {
                         <input
                             name="description"
                             placeholder="Description"
-                            value={project.description}
+                            value={project.value.description}
                             onChange={e => change(Field.Projects, e, index, SubField.Description)}
                         />
                         <button onClick={() => remove(Field.Projects, index)}>-</button>
@@ -223,13 +223,13 @@ function Form() {
                         <input
                             name="name"
                             placeholder="Name"
-                            value={softSkill.name}
+                            value={softSkill.value.name}
                             onChange={e => change(Field.SoftSkills, e, index, SubField.Name)}
                         />
                         <input
                             name="proficiency"
                             placeholder="Proficiency"
-                            value={softSkill.proficiency}
+                            value={softSkill.value.proficiency}
                             onChange={e => change(Field.SoftSkills, e, index, SubField.Proficiency)}
                         />
                         <button onClick={() => remove(Field.SoftSkills, index)}>-</button>
@@ -244,13 +244,13 @@ function Form() {
                         <input
                             name="name"
                             placeholder="Name"
-                            value={hardSkill.name}
+                            value={hardSkill.value.name}
                             onChange={e => change(Field.HardSkills, e, index, SubField.Name)}
                         />
                         <input
                             name="proficiency"
                             placeholder="Proficiency"
-                            value={hardSkill.proficiency}
+                            value={hardSkill.value.proficiency}
                             onChange={e => change(Field.HardSkills, e, index, SubField.Proficiency)}
                         />
                         <button onClick={() => remove(Field.HardSkills, index)}>-</button>
@@ -265,13 +265,13 @@ function Form() {
                         <input
                             name="name"
                             placeholder="Name"
-                            value={language.name}
+                            value={language.value.name}
                             onChange={e => change(Field.Languages, e, index, SubField.Name)}
                         />
                         <input
                             name="proficiency"
                             placeholder="Proficiency"
-                            value={language.proficiency}
+                            value={language.value.proficiency}
                             onChange={e => change(Field.Languages, e, index, SubField.Proficiency)}
                         />
                         <button onClick={() => remove(Field.Languages, index)}>-</button>
@@ -286,19 +286,19 @@ function Form() {
                         <input
                             name="company"
                             placeholder="Company"
-                            value={experience.company}
+                            value={experience.value.company}
                             onChange={e => change(Field.Experience, e, index, SubField.Company)}
                         />
                         <input
                             name="title"
                             placeholder="Title"
-                            value={experience.title}
+                            value={experience.value.title}
                             onChange={e => change(Field.Experience, e, index, SubField.Title)}
                         />
                         <input
                             name="location"
                             placeholder="Location"
-                            value={experience.location}
+                            value={experience.value.location}
                             onChange={e => change(Field.Experience, e, index, SubField.Location)}
                         />
                         <input
@@ -318,7 +318,7 @@ function Form() {
                         <input
                             name="description"
                             placeholder="Description"
-                            value={experience.description}
+                            value={experience.value.description}
                             onChange={e => change(Field.Experience, e, index, SubField.Description)}
                         />
                         <button onClick={() => remove(Field.Experience, index)}>-</button>
@@ -333,19 +333,19 @@ function Form() {
                         <input
                             name="Title"
                             placeholder="Title"
-                            value={certification.title}
+                            value={certification.value.title}
                             onChange={e => change(Field.Certifications, e, index, SubField.Title)}
                         />
                         <input
                             name="level"
                             placeholder="Level"
-                            value={certification.level}
+                            value={certification.value.level}
                             onChange={e => change(Field.Certifications, e, index, SubField.Level)}
                         />
                         <input
                             name="description"
                             placeholder="Description"
-                            value={certification.description}
+                            value={certification.value.description}
                             onChange={e => change(Field.Certifications, e, index, SubField.Description)}
                         />
                         <input
@@ -367,19 +367,19 @@ function Form() {
                         <input
                             name="institution"
                             placeholder="Institution"
-                            value={education.institution}
+                            value={education.value.institution}
                             onChange={e => change(Field.Education, e, index, SubField.Institution)}
                         />
                         <input
                             name="location"
                             placeholder="Location"
-                            value={education.location}
+                            value={education.value.location}
                             onChange={e => change(Field.Education, e, index, SubField.Location)}
                         />
                         <input
                             name="title"
                             placeholder="Title"
-                            value={education.title}
+                            value={education.value.title}
                             onChange={e => change(Field.Education, e, index, SubField.Title)}
                         />
                         <input
@@ -399,7 +399,7 @@ function Form() {
                         <input
                             name="description"
                             placeholder="Description"
-                            value={education.description}
+                            value={education.value.description}
                             onChange={e => change(Field.Education, e, index, SubField.Description)}
                         />
                         <button onClick={() => remove(Field.Education, index)}>-</button>
@@ -414,7 +414,7 @@ function Form() {
                         <input
                             name="patent"
                             placeholder="Patent"
-                            value={patent}
+                            value={patent.value}
                             onChange={e => change(Field.Patents, e, index)}
                         />
                         <button onClick={() => remove(Field.Patents, index)}>-</button>
@@ -429,7 +429,7 @@ function Form() {
                         <input
                             name="title"
                             placeholder="Title"
-                            value={extracurricular.title}
+                            value={extracurricular.value.title}
                             onChange={e => change(Field.Extracurriculars, e, index, SubField.Title)}
                         />
                         <input
@@ -449,7 +449,7 @@ function Form() {
                         <input
                             name="description"
                             placeholder="Description"
-                            value={extracurricular.description}
+                            value={extracurricular.value.description}
                             onChange={e => change(Field.Extracurriculars, e, index, SubField.Description)}
                         />
                         <button onClick={() => remove(Field.Extracurriculars, index)}>-</button>
@@ -467,7 +467,7 @@ function Form() {
             case Field.Interests:
             case Field.Patents:
                 data = cv[field]
-                data[index] = event.target.value
+                data[index].value = event.target.value
                 break
             case Field.ContactInfo:
                 switch (subField) {
@@ -481,7 +481,7 @@ function Form() {
                     case SubField.Birthday:     
                     case SubField.Family:
                         data = cv[field]
-                        data[subField] = event.target.value
+                        data[subField].value = event.target.value
                         break
                     default:
                         console.log("Unknown field: " + field)
@@ -495,11 +495,11 @@ function Form() {
                 switch (subField) {
                     case SubField.Title:  
                     case SubField.Description:  
-                        data[index][subField] = event.target.value
+                        data[index].value[subField] = event.target.value
                         break
                     case SubField.ToDate:
                     case SubField.FromDate:
-                        data[index][subField] = new Date(event.target.value)
+                        data[index].value[subField] = new Date(event.target.value)
                         break
                     default:
                         console.log("Unknown field: " + field)
@@ -512,10 +512,10 @@ function Form() {
                 data = cv[field]
                 switch (subField) {
                     case SubField.Name:  
-                        data[index][subField] = event.target.value
+                        data[index].value[subField] = event.target.value
                         break
                     case SubField.Proficiency: 
-                        data[index][subField] = +event.target.value
+                        data[index].value[subField] = +event.target.value
                         break
                     default:
                         console.log("Unknown field: " + field)
@@ -529,11 +529,11 @@ function Form() {
                     case SubField.Title:
                     case SubField.Location:
                     case SubField.Description:
-                        data[index][subField] = event.target.value
+                        data[index].value[subField] = event.target.value
                         break
                     case SubField.FromDate:
                     case SubField.ToDate:
-                        data[index][subField] = new Date(event.target.value)
+                        data[index].value[subField] = new Date(event.target.value)
                         break
                     default:
                         console.log("Unknown field: " + field)
@@ -546,10 +546,10 @@ function Form() {
                     case SubField.Title:  
                     case SubField.Level: 
                     case SubField.Description:
-                        data[index][subField] = event.target.value
+                        data[index].value[subField] = event.target.value
                         break
                     case SubField.Date:
-                        data[index][subField] = new Date(event.target.value)
+                        data[index].value[subField] = new Date(event.target.value)
                         break
                     default:
                         console.log("Unknown field: " + field)
@@ -563,11 +563,11 @@ function Form() {
                     case SubField.Title:
                     case SubField.Location:
                     case SubField.Description:
-                        data[index][subField] = event.target.value
+                        data[index].value[subField] = event.target.value
                         break
                     case SubField.FromDate:
                     case SubField.ToDate:
-                        data[index][subField] = new Date(event.target.value)
+                        data[index].value[subField] = new Date(event.target.value)
                         break
                     default:
                         console.log("Unknown field: " + field)
@@ -610,26 +610,26 @@ function Form() {
         switch (field) {
             case Field.Interests:
             case Field.Patents:
-                newItem = ''
+                newItem = new LabelledString()
                 break
             case Field.Extracurriculars:
             case Field.Accomplishments:
             case Field.Projects:
-                newItem = {title: '', fromDate: new Date(), toDate: new Date(), description: ''}
+                newItem = new LabelledProject()
                 break
             case Field.SoftSkills:
             case Field.HardSkills:
             case Field.Languages:
-                newItem = {name: '', proficiency: 0}
+                newItem = new LabelledSkill()
                 break
             case Field.Experience:
-                newItem = {company: '', title: '', location: '', fromDate: new Date(), toDate: new Date(), description: ''}
+                newItem = new LabelledExperience()
                 break
             case Field.Certifications:
-                newItem = {title: '', level: '', date: new Date(), description: ''}
+                newItem = new LabelledCertification()
                 break
             case Field.Education:
-                newItem = {institution: '', title: '', location: '', fromDate: new Date(), toDate: new Date(), description: ''}
+                newItem = new LabelledEducation()
                 break
             default:
                 console.log("Unknown field: " + field)
