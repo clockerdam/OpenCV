@@ -1,4 +1,4 @@
-from typing import List, Dict
+from typing import List, Dict, Tuple
 
 
 class Job(object): 
@@ -9,7 +9,22 @@ class Job(object):
     def set_keywords(self, keywords): 
         self.keywords = keywords
         
-    def relevance(self, keyword_list: List[str]) -> float:
-        return sum(list([self.keywords.get(k, 0) for k in keyword_list]))
+    
+    
+    def load_from_csv_data(self, csv_data: str): 
+        """Loads keyword scores from a pretrained csv file"""
+        for line in csv_data.split("\n"):
+            word, score = line.split(",")
+            self.keywords[word] = score
         
         
+    def weights_to_csv(self) -> str: 
+        """Output the trained weights as csv format"""
+        output = ""
+        for key, score in self.keywords: 
+            output.append(f"{key},{value}\n")
+        return output
+    
+    def save_to_gs_bucket(self): 
+        """Save model to gs bucket for reuse"""
+        pass
