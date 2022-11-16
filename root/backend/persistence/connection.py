@@ -89,8 +89,8 @@ class Connection:
             written = True
         return written
 
-db = Connection()
-resumes = db.fetch_all_labeled_resumes()
+# db = Connection()
+# resumes = db.fetch_all_labeled_resumes()
 # db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS1.json")
 # db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS2.json")
 # db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS3.json")
