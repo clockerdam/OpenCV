@@ -1,11 +1,12 @@
 import json
 
+from bson import ObjectId
 from dotenv import dotenv_values
 from pydantic import ValidationError
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
-from .models import Resume
+from .models import Resume, IdentifiableResume
 
 config = dotenv_values("/Users/noahmautner/Documents/code/OpenCV/root/backend/.env")
 
@@ -77,6 +78,10 @@ class Connection:
 
     def insert_labeled_resume(self, resume: dict):
         written = False
+
+        print(resume['_id'])
+        print(type(resume['_id']['$oid']))
+        resume['_id'] = ObjectId(resume['_id']['$oid'])
         if Resume.parse_obj(resume):
             self.labeled_resume_collection.insert_one(resume)
         written = True
@@ -88,6 +93,19 @@ class Connection:
             self.unlabeled_resume_collection.insert_one(resume)
             written = True
         return written
+
+
+    def delete_unlabeled_resume(self, resume_id: str):
+        query = {"_id": ObjectId(resume_id)}
+
+        found = self.unlabeled_resume_collection.find_one(query)
+        if found is None:
+            raise KeyError("No unlabeled resume with this id found")
+
+        deleted = self.unlabeled_resume_collection.delete_one(query)
+        return deleted
+
+
 
 # db = Connection()
 # resumes = db.fetch_all_labeled_resumes()
