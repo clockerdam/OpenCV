@@ -86,63 +86,63 @@ function Form() {
                 <input 
                     name="address"
                     placeholder="Address"
-                    value={cv.contactInfo.address.value}
+                    value={cv.contactInfo.address}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Address)}
                 />
                 <p>Website</p>
                 <input 
                     name="website"
                     placeholder="Website"
-                    value={cv.contactInfo.website.value}
+                    value={cv.contactInfo.website}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Website)}
                 />
                 <p>LinkedIn</p>
                 <input 
                     name="linkedIn"
                     placeholder="LinkedIn"
-                    value={cv.contactInfo.linkedin.value}
+                    value={cv.contactInfo.linkedin}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.LinkedIn)}
                 />
                 <p>Name</p>
                 <input 
                     name="name"
                     placeholder="Name"
-                    value={cv.contactInfo.name.value}
+                    value={cv.contactInfo.name}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Name)}
                 />
                 <p>Phone Number</p>
                 <input 
                     name="phoneNumber"
                     placeholder="Phone Number"
-                    value={cv.contactInfo.phoneNumber.value}
+                    value={cv.contactInfo.phoneNumber}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.PhoneNumber)}
                 />
                 <p>Email</p>
                 <input 
                     name="email"
                     placeholder="Email"
-                    value={cv.contactInfo.email.value}
+                    value={cv.contactInfo.email}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Email)}
                 />
                 <p>GitHub</p>
                 <input 
                     name="github"
                     placeholder="GitHub"
-                    value={cv.contactInfo.github.value}
+                    value={cv.contactInfo.github}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.GitHub)}
                 />
                 <p>Birthday</p>
                 <input 
                     name="birthday"
                     placeholder="Birthday"
-                    value={cv.contactInfo.birthday.value}
+                    value={cv.contactInfo.birthday}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Birthday)}
                 />
                 <p>Family</p>
                 <input 
                     name="family"
                     placeholder="Family"
-                    value={cv.contactInfo.family.value}
+                    value={cv.contactInfo.family}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Family)}
                 />
             </div>
@@ -481,7 +481,7 @@ function Form() {
                     case SubField.Birthday:     
                     case SubField.Family:
                         data = cv[field]
-                        data[subField].value = event.target.value
+                        data[subField] = event.target.value
                         setCV(prevState => ({...prevState, [field]: data}))
                         return 
                     default:

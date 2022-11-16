@@ -118,15 +118,15 @@ class LabelledEducations {
 }
 
 class ContactInfo {
-    address: LabelledString = new LabelledString();
-    website: LabelledString = new LabelledString();
-    linkedin: LabelledString = new LabelledString();
-    name: LabelledString = new LabelledString();
-    phoneNumber: LabelledString = new LabelledString();
-    email: LabelledString = new LabelledString();
-    github: LabelledString = new LabelledString();
-    birthday: LabelledString = new LabelledString();
-    family: LabelledString = new LabelledString();
+    address: string = '';
+    website: string = '';
+    linkedin: string = '';
+    name: string = '';
+    phoneNumber: string = '';
+    email: string = '';
+    github: string = '';
+    birthday: string = '';
+    family: string = '';
 }
 
 export class CV {

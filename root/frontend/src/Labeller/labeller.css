@@ -20,4 +20,5 @@
 
 .section {
     background-color: whitesmoke;
+    border-top: 1px solid gray;
 }
