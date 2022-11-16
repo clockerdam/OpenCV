@@ -7,7 +7,7 @@ from pymongo.server_api import ServerApi
 
 from .models import Resume
 
-config = dotenv_values(".env")
+config = dotenv_values("/Users/noahmautner/Documents/code/OpenCV/root/backend/.env")
 
 class Connection:
 
@@ -43,6 +43,17 @@ class Connection:
 
         result = list(resumes)
         return result
+
+
+    def fetch_unlabeled_resume(self):
+        resume = self.unlabeled_resume_collection.find_one()
+        try:
+            map(Resume.parse_obj, resume)
+        except ValidationError as e:
+            print(e)
+
+        return resume
+
 
     def fetch_all_labeled_resumes(self):
         resumes = self.labeled_resume_collection.find({})
