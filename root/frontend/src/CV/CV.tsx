@@ -3,24 +3,34 @@ export class LabelledString {
     label: number = 0;
 }
 
-export class Item {
+class LabelledStrings {
+    value: LabelledString[] = []
+    label: number = 0;
+}
+
+class Item {
     title: string = '';
     fromDate: Date = new Date();
     toDate: Date = new Date();
     description: string = '';
 }
 
-export class LabelledAccomplishment {
+export class LabelledItem {
     value: Item = new Item();
     label: number = 0;
 }
 
-export class LabelledExtracurricular {
-    value: Item = new Item();
+class LabelledAccomplishments {
+    value: LabelledItem[] = [];
     label: number = 0;
 }
 
-export class Project {
+class LabelledExtracurriculars {
+    value: LabelledItem[] = [];
+    label: number = 0;
+}
+
+class Project {
     title: string = '';
     fromDate: Date = new Date();
     toDate: Date = new Date();
@@ -32,7 +42,12 @@ export class LabelledProject {
     label: number = 0;
 }
 
-export class Skill {
+class LabelledProjects {
+    value: LabelledProject[] = []
+    label: number = 0;
+}
+
+class Skill {
     name: string = '';
     proficiency: number = 0;
 }
@@ -42,7 +57,12 @@ export class LabelledSkill {
     label: number = 0;
 }
 
-export class Experience {
+class LabelledSkills {
+    value: LabelledSkill[] = [];
+    label: number = 0;
+}
+
+class Experience {
     company: string = '';
     title: string = '';
     location: string = '';
@@ -56,7 +76,12 @@ export class LabelledExperience {
     label: number = 0;
 }
 
-export class Certification {
+class LabelledExperiences {
+    value: LabelledExperience[] = [];
+    label: number = 0;
+}
+
+class Certification {
     title: string = '';
     level: string = '';
     description: string = '';
@@ -68,7 +93,12 @@ export class LabelledCertification {
     label: number = 0;
 }
 
-export class Education {
+class LabelledCertifications {
+    value: LabelledCertification[] = [];
+    label: number = 0;
+}
+
+class Education {
     institution: string = '';
     title: string = '';
     location: string = '';
@@ -82,7 +112,12 @@ export class LabelledEducation {
     label: number = 0;
 }
 
-export class ContactInfo {
+class LabelledEducations {
+    value: LabelledEducation[] = [];
+    label: number = 0;
+}
+
+class ContactInfo {
     address: LabelledString = new LabelledString();
     website: LabelledString = new LabelledString();
     linkedin: LabelledString = new LabelledString();
@@ -95,18 +130,18 @@ export class ContactInfo {
 }
 
 export class CV {
-    title: LabelledString = new LabelledString();
+    title: string = '';
     summary: LabelledString = new LabelledString();
-    interests: LabelledString[] = [];
+    interests: LabelledStrings = new LabelledStrings();
     contactInfo: ContactInfo = new ContactInfo();
-    accomplishments: LabelledAccomplishment[] = [];
-    projects: LabelledProject[] = [];
-    softSkills: LabelledSkill[] = [];
-    hardSkills: LabelledSkill[] = [];
-    languages: LabelledSkill[] = [];
-    experience: LabelledExperience[] = [];
-    certifications: LabelledCertification[] = [];
-    education: LabelledEducation[] = [];
-    patents: LabelledString[] = [];
-    extracurriculars: LabelledExtracurricular[] = [];
+    accomplishments: LabelledAccomplishments = new LabelledAccomplishments();
+    projects: LabelledProjects = new LabelledProjects();
+    softSkills: LabelledSkills = new LabelledSkills();
+    hardSkills: LabelledSkills = new LabelledSkills();
+    languages: LabelledSkills = new LabelledSkills();
+    experience: LabelledExperiences = new LabelledExperiences();
+    certifications: LabelledCertifications = new LabelledCertifications();
+    education: LabelledEducations = new LabelledEducations();
+    patents: LabelledStrings = new LabelledStrings();
+    extracurriculars: LabelledExtracurriculars = new LabelledExtracurriculars();
 }

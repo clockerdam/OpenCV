@@ -11,12 +11,12 @@ function Labeller() {
         getUnlabeled().then((unlabeledCV: CV) => {
             setCV(unlabeledCV)
         })
-    })
+    }, [])
 
     return <div>
-        <h1>{cv.title.value}</h1>
-        <div>
-            <p>Summary</p>
+        <h1>{cv.title}</h1>
+        <div className="section">
+            <h2>Summary</h2>
             <div className = "rating">
                 <p className="item">{cv.summary.value}</p>
                 <input
@@ -27,9 +27,9 @@ function Labeller() {
                     />
             </div>
         </div>
-        <div>
-            <p>Experience</p>
-            {cv.experience.map((experience, index) => {
+        <div className="section">
+            <h2>Experience</h2>
+            {cv.experience.value.map((experience, index) => {
                 return (<div className="rating" key={index}>
                         <div className={index % 2 === 0 ? "item light" : "item dark"}>
                             <p><b>Company:</b> {experience.value.company}</p>

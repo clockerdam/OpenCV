@@ -52,8 +52,8 @@ function Form() {
                 <input 
                     name="title"
                     placeholder="Title"
-                    value={cv.title.value}
-                    onChange={(e) => setCV(prevState => ({ ...prevState, title: {value: e.target.value, label: 0}}))}
+                    value={cv.title}
+                    onChange={(e) => setCV(prevState => ({ ...prevState, title: e.target.value}))}
                 />
             </label>
             <label>
@@ -67,7 +67,7 @@ function Form() {
             </label>
             <label>
                 <p>Interests</p>
-                {cv.interests.map((interest, index) => {
+                {cv.interests.value.map((interest, index) => {
                 return (<div key={index}>
                         <input
                             name="interest"
@@ -148,7 +148,7 @@ function Form() {
             </div>
             <label>
                 <p>Accomplishments</p>
-                {cv.accomplishments.map((accomplishment, index) => {
+                {cv.accomplishments.value.map((accomplishment, index) => {
                 return (<div key={index}>
                         <input
                             name="title"
@@ -183,7 +183,7 @@ function Form() {
             </label>
             <label>
                 <p>Projects</p>
-                {cv.projects.map((project, index) => {
+                {cv.projects.value.map((project, index) => {
                 return (<div key={index}>
                         <input
                             name="title"
@@ -218,7 +218,7 @@ function Form() {
             </label>
             <label>
                 <p>Soft Skills</p>
-                {cv.softSkills.map((softSkill, index) => {
+                {cv.softSkills.value.map((softSkill, index) => {
                 return (<div key={index}>
                         <input
                             name="name"
@@ -239,7 +239,7 @@ function Form() {
             </label>
             <label>
                 <p>Hard Skills</p>
-                {cv.hardSkills.map((hardSkill, index) => {
+                {cv.hardSkills.value.map((hardSkill, index) => {
                 return (<div key={index}>
                         <input
                             name="name"
@@ -260,7 +260,7 @@ function Form() {
             </label>
             <label>
                 <p>Languages</p>
-                {cv.languages.map((language, index) => {
+                {cv.languages.value.map((language, index) => {
                 return (<div key={index}>
                         <input
                             name="name"
@@ -281,7 +281,7 @@ function Form() {
             </label>
             <label>
                 <p>Experience</p>
-                {cv.experience.map((experience, index) => {
+                {cv.experience.value.map((experience, index) => {
                 return (<div key={index}>
                         <input
                             name="company"
@@ -328,7 +328,7 @@ function Form() {
             </label>
             <label>
                 <p>Certifications</p>
-                {cv.certifications.map((certification, index) => {
+                {cv.certifications.value.map((certification, index) => {
                 return (<div key={index}>
                         <input
                             name="Title"
@@ -362,7 +362,7 @@ function Form() {
             </label>
             <label>
                 <p>Education</p>
-                {cv.education.map((education, index) => {
+                {cv.education.value.map((education, index) => {
                 return (<div key={index}>
                         <input
                             name="institution"
@@ -409,7 +409,7 @@ function Form() {
             </label>
             <label>
                 <p>Patents</p>
-                {cv.patents.map((patent, index) => {
+                {cv.patents.value.map((patent, index) => {
                 return (<div key={index}>
                         <input
                             name="patent"
@@ -424,7 +424,7 @@ function Form() {
             </label>
             <label>
                 <p>Extracurriculars</p>
-                {cv.extracurriculars.map((extracurricular, index) => {
+                {cv.extracurriculars.value.map((extracurricular, index) => {
                 return (<div key={index}>
                         <input
                             name="title"
@@ -466,7 +466,7 @@ function Form() {
         switch (field) {
             case Field.Interests:
             case Field.Patents:
-                data = cv[field]
+                data = cv[field].value
                 data[index].value = event.target.value
                 break
             case Field.ContactInfo:
@@ -491,7 +491,7 @@ function Form() {
             case Field.Extracurriculars:
             case Field.Accomplishments:
             case Field.Projects:
-                data = cv[field]
+                data = cv[field].value
                 switch (subField) {
                     case SubField.Title:  
                     case SubField.Description:  
@@ -509,7 +509,7 @@ function Form() {
             case Field.SoftSkills: 
             case Field.HardSkills:
             case Field.Languages:
-                data = cv[field]
+                data = cv[field].value
                 switch (subField) {
                     case SubField.Name:  
                         data[index].value[subField] = event.target.value
@@ -523,7 +523,7 @@ function Form() {
                 }
                 break
             case Field.Experience:
-                data = cv[field]
+                data = cv[field].value
                 switch (subField) {
                     case SubField.Company:
                     case SubField.Title:
@@ -541,7 +541,7 @@ function Form() {
                 }
             break
             case Field.Certifications:
-                data = cv[field]
+                data = cv[field].value
                 switch (subField) {
                     case SubField.Title:  
                     case SubField.Level: 
@@ -557,7 +557,7 @@ function Form() {
                 }
                 break
             case Field.Education:
-                data = cv[field]
+                data = cv[field].value
                 switch (subField) {
                     case SubField.Institution:
                     case SubField.Title:
@@ -635,7 +635,7 @@ function Form() {
                 console.log("Unknown field: " + field)
                 return
         }
-        let data = cv[field]
+        let data = cv[field].value
         data.push(newItem)
         setCV(prevState => ({...prevState, [field]: data}))
     }
