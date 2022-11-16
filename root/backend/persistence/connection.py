@@ -8,7 +8,7 @@ from pymongo.server_api import ServerApi
 
 from .models import Resume, IdentifiableResume
 
-config = dotenv_values("/Users/noahmautner/Documents/code/OpenCV/root/backend/.env")
+config = dotenv_values(".env")
 
 class Connection:
 
