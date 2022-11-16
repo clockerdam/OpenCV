@@ -3,8 +3,8 @@ export class LabelledString {
     label: number = 0;
 }
 
-class LabelledStrings {
-    value: LabelledString[] = []
+export class LabelledStrings {
+    value: LabelledString[] = [];
     label: number = 0;
 }
 
@@ -43,7 +43,7 @@ export class LabelledProject {
 }
 
 class LabelledProjects {
-    value: LabelledProject[] = []
+    value: LabelledProject[] = [];
     label: number = 0;
 }
 

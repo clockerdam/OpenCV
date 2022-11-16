@@ -19,12 +19,7 @@ function Labeller() {
             <h2>Summary</h2>
             <div className = "rating">
                 <p className="item">{cv.summary.value}</p>
-                <input
-                        type="number" min="1" max="10"
-                        name="rating"
-                        //value={cv.summary}
-                        //onChange={(e) => setCV(prevState => ({ ...prevState, summary: e.target.value }))}
-                    />
+                {label("summary", cv.summary.value)}
             </div>
         </div>
         <div className="section">
@@ -48,7 +43,18 @@ function Labeller() {
                     </div>
             )})}
         </div>
-        </div>
+    </div>
+
+    function label(field: string, prevValue: any) {
+        return <input
+                    type="number" min="1" max="10"
+                    name="rating"
+                    onChange={(e) => {
+                        let label = Number(e.target.value)
+                        setCV(prevState => ({ ...prevState, [field]: {value: prevValue, label: label}}))
+                    }}
+                />
+    }
 }
 
 export { Labeller }

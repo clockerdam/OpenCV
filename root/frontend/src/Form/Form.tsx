@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../CV/CV";
 import './form.css'
 
@@ -482,7 +482,8 @@ function Form() {
                     case SubField.Family:
                         data = cv[field]
                         data[subField].value = event.target.value
-                        break
+                        setCV(prevState => ({...prevState, [field]: data}))
+                        return 
                     default:
                         console.log("Unknown field: " + field)
                         return
@@ -578,7 +579,7 @@ function Form() {
                 console.log("Unknown field: " + field)
                 return
         }
-        setCV(prevState => ({...prevState, [field]: data}))
+        setCV(prevState => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function remove(field: Field, index: number) {
@@ -602,7 +603,7 @@ function Form() {
                 console.log("Unknown field: " + field)
                 return
         }
-        setCV(prevState => ({...prevState, [field]: data}))
+        setCV(prevState => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function add(field: string) { 
@@ -637,7 +638,7 @@ function Form() {
         }
         let data = cv[field].value
         data.push(newItem)
-        setCV(prevState => ({...prevState, [field]: data}))
+        setCV(prevState => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function handleSubmit(e: FormEvent) {
