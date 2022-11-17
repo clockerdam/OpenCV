@@ -1,10 +1,12 @@
 from model.resume_scorer import ResumeScorer
 from model.Job import Job
 from persistence.cloud_storage.cloud_storage import read_job_keywords
-from util.json_to_df import create_df,  get_resume_dict_from_dataframe
+from util.json_to_df import create_df, get_resume_dict_from_dataframe
 
 
-def improve_cv(job_title: str, resume: dict) -> dict:
+def improve_cv(payload: dict) -> dict:
+    job_title = payload["title"]
+    resume = payload
     job_keywords_csv = read_job_keywords(job_title)
     job = Job(job_title)
     job.load_from_csv_data(job_keywords_csv)
