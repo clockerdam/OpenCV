@@ -1,4 +1,4 @@
-from pydantic import BaseModel, Field as PydanticField
+from pydantic import BaseModel, Field as PydanticField, create_model
 from bson import ObjectId
 from typing import List
 
@@ -29,6 +29,7 @@ class ContactInfo(BaseModel):
             }
         }
 
+
 class Experience(BaseModel):
     company: str
     title: str
@@ -49,6 +50,7 @@ class Experience(BaseModel):
                 "description": "Analysing financial data.",
             }
         }
+
 
 class Education(BaseModel):
     institution: str
@@ -89,18 +91,21 @@ class Extracurricular(BaseModel):
             }
         }
 
+
 class Skill(BaseModel):
     name: str
-    proficiency: str
+    proficiency: int
 
     class Config:
         allow_population_by_field_name = True
         schema_extra = {
             "example": {
                 "name": "Korean",
-                "proficiency": "Fluent",
+                "proficiency": 5,
             }
         }
+
+
 class Certification(BaseModel):
     title: str
     level: str
@@ -118,19 +123,36 @@ class Certification(BaseModel):
             }
         }
 
+
 class PyObjectId(ObjectId):
     @classmethod
     def __get_validators__(cls):
         yield cls.validate
+
     @classmethod
     def validate(cls, v):
         if not ObjectId.is_valid(v):
             raise ValueError("Invalid objectid")
         return ObjectId(v)
+
     @classmethod
     def __modify_schema__(cls, field_schema):
         field_schema.update(type="string")
-        
+
+
+LabeledExperience = create_model('Experience', value=(Experience, ...), label=(int, ...))
+LabeledEducation = create_model('Education', value=(Education, ...), label=(int, ...))
+LabeledSoftSkill = create_model('SoftSkill', value=(Skill, ...), label=(int, ...))
+LabeledHardSkill = create_model('HardSkill', value=(Skill, ...), label=(int, ...))
+LabeledLanguage = create_model('Language', value=(Skill, ...), label=(int, ...))
+LabeledCertification = create_model('Certification', value=(Certification, ...), label=(int, ...))
+LabeledExtracurricular = create_model('Extracurricular', value=(Extracurricular, ...), label=(int, ...))
+LabeledProject = create_model('Project', value=(Extracurricular, ...), label=(int, ...))
+LabeledAccomplishment = create_model('Accomplishment', value=(Extracurricular, ...), label=(int, ...))
+LabeledInterest = create_model('Interest', value=(str, ...), label=(int, ...))
+LabeledPatent = create_model('Patent', value=(str, ...), label=(int, ...))
+
+
 class Resume(BaseModel):
     id: PyObjectId = PydanticField(default_factory=PyObjectId, alias="_id")
     title: str = PydanticField(...)
@@ -147,16 +169,43 @@ class Resume(BaseModel):
     extracurriculars: List[Extracurricular]
     patents: List[str]
     interests: List[str]
+    contactInfo: ContactInfo
+    summary: create_model('Summary', value=(str, ...), label=(int, ...))
+    experience: create_model('Experience', value=(list[LabeledExperience], ...),
+                             label=(int, ...))
+    education: create_model('Education',
+                            value=(list[LabeledEducation], ...),
+                            label=(int, ...))
+    softSkills: create_model('SoftSkills',
+                             value=(list[LabeledSoftSkill], ...),
+                             label=(int, ...))
+    hardSkills: create_model('HardSkills',
+                             value=(list[LabeledHardSkill], ...),
+                             label=(int, ...))
+    languages: create_model('Languages',
+                            value=(list[LabeledLanguage], ...),
+                            label=(int, ...))
+    certifications: create_model('Certifications', value=(
+    list[LabeledCertification], ...),
+                                 label=(int, ...))
+    accomplishments: create_model('Accomplishments', value=(
+    list[LabeledAccomplishment], ...),
+                                  label=(int, ...))
+    projects: create_model('Projects', value=(
+    list[LabeledProject], ...),
+                           label=(int, ...))
+    extracurriculars: create_model('Extracurriculars', value=(
+    list[LabeledExtracurricular], ...),
+                                   label=(int, ...))
+    patents: create_model('Patents', value=(list[LabeledPatent], ...),
+                          label=(int, ...))
+    interests: create_model('Interests',
+                            value=(list[LabeledInterest], ...),
+                            label=(int, ...))
 
     class Config:
         allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
-        schema_extra = {
-            "example": {
-                "_id": "066de609-b04a-4b30-b46c-32537c7f1f6e",
-                "title": "Don Quixote",
-                "author": "Miguel de Cervantes",
-                "synopsis": "..."
-            }
-        }
+
+
