@@ -1,102 +1,94 @@
-from model.keyword_utils import extract_keywords_from_text, title_description_field_to_list_of_text_label_pair
+from model.keyword_utils import extract_keywords_from_text
 from model.Job import Job
-from copy import deepcopy
+from gensim.test.utils import datapath
+from gensim.models.fasttext import load_facebook_model
 import numpy as np
+import pandas as pd
 
 
 class ResumeScorer():
-    def __init__(self):
-        pass
-    
+    def __init__(self, job: Job):
+        self.cap_path = datapath("crime-and-punishment.bin")
+        self.fb_model = load_facebook_model(self.cap_path)
+        self.job = job
+        
+        self.job_kw_embeddings = np.asarray([self.fb_model.wv[kw] for kw in self.job.keywords])
+
+    def closest_keyword_index(self, sample: str) -> str: 
+        """Takes the keyword list as embeddings form a job, and a sample. Finds the closest keyword
+        
+        Implements a KNN algorithm for finding the closest one"""
+        sample_embedding = self.fb_model.wv[sample]
+        dist_2 = np.sum((self.job_kw_embeddings - sample_embedding) ** 2)
+        return np.argmin(dist_2)
      
-    def score_text(self, text: str, job: Job) -> float: 
+    def score_text(self, text: str) -> float: 
         """Scores a piece of text based on the relevance to the job"""
         keywords = extract_keywords_from_text([text])
         
+        if len(keywords) == 0:
+            return 0.0
+        
         scores = []
         for kw in keywords:
-            if kw[0] in job.keywords: 
-                scores.append(kw[1] * job.keywords[kw[0]])
+            if kw[0] in self.job.keywords: 
+                scores.append(kw[1] * self.job.keywords[kw[0]])
             else: 
-                scores.append(0.0) #TODO: update this
-                # use embedding similarity measure for computing score
-                pass
-                
+                closest = self.closest_keyword_index(kw[0])
+                relevance = list(self.job.keywords.values())[closest] * kw[1]
+                scores.append(relevance)
         
-        # scores =  sum(list([job.keywords.get(k[0], 0) * k[1] for k in keywords]))
+        # take the mean of the scores to make sure all keywords can contribute
+        # and that we don't favor longer texts (which would have more keywords)
         return np.mean(scores)
-            
-    
-    
-    
-    def score_title_description_field(self, field_name: str, output: dict, job: Job): 
-        """Takes a field name and output dict and updates the score of the filed
-        Works only for fields where we use title + description"""
-        texts = title_description_field_to_list_of_text_label_pair(output[field_name]['value'])
-        for i, t in enumerate(texts):
-            score = self.score_text(t[0], job)
-            output[field_name]['value'][i]['label'] = score
-            
-    def score_name_proficiency_field(self, field_name: str, output: dict, job: Job): 
-        """Takes a field name and output dict and updates the score of the filed
-        Works only for a name + proficiency field"""
-        for field in output[field_name]['value']:
-            relevance = self.score_text(field['value']['name'], job ) * field['value']['proficiency'] / 5
-            field['label'] = relevance
-            
-    def score_pure_text_field(self, field_name: str, output: dict, job: Job):
-        for field in output[field_name]['value']:
-            score = self.score_text(field['value'], job)
-            field['label'] = score
+
+    def get_evaluation_text_for_df_row(self, df: pd.DataFrame) -> pd.DataFrame: 
+        """Generates the text we will use for evaluation for each row type"""
+        df.loc[ df['type'].isin([
+            'experience', 
+            'education', 
+            'certifications',
+            'accomplishments',
+            'projects',
+            'extracurriculars',
+            'patents',
+            ]), ['scoring_text']] =  df['title']  + " " + df['description']
+
+        value_proficiency_fields = [
+            'softSkills',
+            'hardSkills',
+            'languages',
+            ]
+        df.loc[ df['type'].isin( value_proficiency_fields ), ['scoring_text']] = df['name']
+        df.loc[ df['type'].isin ( [
+            'summary',
+            'patents',
+            'interests'
+            ] ), ['scoring_text']] =  df['value']
         
-    def score_resume(self, resume: dict, job: Job) -> dict:
+        df.loc[df['type'].isin([
+            'contactInfo'
+        ]), ['scoring_text']] = ''
+        
+        df['multiplier'] = (df['proficiency'] / 5.0).fillna(1.0)
+        return df
+        
+    def score_resume_as_dataframe(self, resume: pd.DataFrame) -> pd.DataFrame:
         """Takes a resume with labels (can be set to zero) and returns the same resume
         with labels updated according to our model"""
+        
+        # Generate the text based on each column type
+        resume = self.get_evaluation_text_for_df_row(resume)
+        
+        # Each row gets a score based on its generated text
+        resume['score'] = resume.apply(lambda x: self.score_text(x['scoring_text']) * x['multiplier'], axis=1)
+        resume.loc[resume['type'] == 'contactInfo', ['score']] = 1
+        
+        resume['label'] = resume['score']
+        resume.drop('score', axis=1, inplace=True)
 
-
-        # Create a deep copy for the output to make sure
-        # we dont modify the input data in any way 
-        output = deepcopy(resume)
-        
-        # summary 
-        summary_score = self.score_text(resume['summary']['value'], job)
-        output['summary']['label'] = summary_score
-        
-        
-        #experience
-        self.score_title_description_field('experience', output, job)
-
-        # Education
-        self.score_title_description_field('education', output, job)
-
-        # Skills
-        ## hard
-        self.score_name_proficiency_field('hardSkills', output, job)
-        
-        ## soft
-        self.score_name_proficiency_field('softSkills', output, job)
-        
-        # languages
-        self.score_name_proficiency_field('languages', output, job)
-            
-        # certifications
-        self.score_title_description_field('certifications', output, job)
-            
-        # accomplishements
-        self.score_title_description_field('accomplishments', output, job)
-            
-        # projects
-        self.score_title_description_field('projects', output, job)
-            
-        # extracurriculars
-        self.score_title_description_field('extracurriculars', output, job)
-        
-        # patents
-        self.score_pure_text_field('patents', output, job)
-        
-        
-        # interests 
-        self.score_pure_text_field('interests', output, job)
-        
-        return output
+        return resume
+    
+    def shorten_resume(self, resume: pd.DataFrame) -> pd.DataFrame: 
+        return resume.sort_values('label')[:-10]
         
