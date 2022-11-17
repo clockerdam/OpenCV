@@ -1,11 +1,12 @@
 import json
 
+from bson import ObjectId
 from dotenv import dotenv_values
 from pydantic import ValidationError
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
-from .models import Resume
+from .models import Resume, IdentifiableResume
 
 config = dotenv_values(".env")
 
@@ -44,6 +45,17 @@ class Connection:
         result = list(resumes)
         return result
 
+
+    def fetch_unlabeled_resume(self):
+        resume = self.unlabeled_resume_collection.find_one()
+        try:
+            map(Resume.parse_obj, resume)
+        except ValidationError as e:
+            print(e)
+
+        return resume
+
+
     def fetch_all_labeled_resumes(self):
         resumes = self.labeled_resume_collection.find({})
         try:
@@ -66,6 +78,10 @@ class Connection:
 
     def insert_labeled_resume(self, resume: dict):
         written = False
+
+        print(resume['_id'])
+        print(type(resume['_id']['$oid']))
+        resume['_id'] = ObjectId(resume['_id']['$oid'])
         if Resume.parse_obj(resume):
             self.labeled_resume_collection.insert_one(resume)
         written = True
@@ -78,8 +94,21 @@ class Connection:
             written = True
         return written
 
-db = Connection()
-resumes = db.fetch_all_labeled_resumes()
+
+    def delete_unlabeled_resume(self, resume_id: str):
+        query = {"_id": ObjectId(resume_id)}
+
+        found = self.unlabeled_resume_collection.find_one(query)
+        if found is None:
+            raise KeyError("No unlabeled resume with this id found")
+
+        deleted = self.unlabeled_resume_collection.delete_one(query)
+        return deleted
+
+
+
+# db = Connection()
+# resumes = db.fetch_all_labeled_resumes()
 # db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS1.json")
 # db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS2.json")
 # db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS3.json")
