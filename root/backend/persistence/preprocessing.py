@@ -1,15 +1,23 @@
 import json
 
 for i in range(1,11):
-    filename = "DS"+str(i)+".json"
+    filename = "SE"+str(i)+".json"
     file = open("data/" + filename)
     my_dict = json.load(file)
 
-    for key in my_dict["contactInfo"]:
-        my_dict["contactInfo"][key] = {
-            'value': my_dict["contactInfo"][key],
-            'label': 0
-        }
+    anonymized_contactInfo = {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    }
+
+    my_dict["contactInfo"] = anonymized_contactInfo
 
     for i,_ in enumerate(my_dict["experience"]):
         my_dict["experience"][i] = {
@@ -105,14 +113,6 @@ for i in range(1,11):
             'label': 0
         }
 
-    my_dict["title"] = {
-        'value': my_dict["title"],
-        'label': 0
-    }
-    my_dict["contactInfo"] = {
-        'value': my_dict["contactInfo"],
-        'label': 0
-    }
     my_dict["experience"] = {
         'value': my_dict["experience"],
         'label': 0
@@ -163,7 +163,6 @@ for i in range(1,11):
     }
 
     json_obj = json.dumps(my_dict, indent=4)
-
     with open("data/l_"+filename, "w") as outfile:
         outfile.write(json_obj)
 
