@@ -488,7 +488,6 @@ function Form() {
                         console.log("Unknown field: " + field)
                         return
                 }
-                break
             case Field.Extracurriculars:
             case Field.Accomplishments:
             case Field.Projects:
@@ -596,7 +595,7 @@ function Form() {
             case Field.Education:
             case Field.Patents:
             case Field.Extracurriculars:
-                data = cv[field]
+                data = cv[field].value
                 data.splice(index, 1)
                 break
             default:
