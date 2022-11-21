@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState } from "react"
-import { getUnlabeled } from "../api/api"
+import { getUnlabeled, labelCV } from "../api/api"
 import { CV } from "../CV/CV"
 import './labeller.css'
 
@@ -52,31 +52,8 @@ function Labeller() {
                     || field === "_id" ) {
                     return
                 }
-                if (field === "contactInfo") {
-                    return //mapField(field)
-                }
                 return mapNestedField(field)
             })}
-        </div>
-    }
-
-    function mapField(field: string) {
-        // Verify field
-        switch (field) {
-            case Field.ContactInfo:
-                break
-            default:
-                console.log("Unrecognized field: " + field)
-                return <p>ERROR: UNRECOGNIZED FIELD - {field}</p>
-        }
-
-        return <div className="section">
-            <h2 className="item">{field}</h2>
-            <div className="item">
-                {Object.keys(cv[field]).map((key, index) => {
-                    return <p><b>{key}: </b> {Object.values(cv[field])[index]}</p>
-                })}
-            </div>
         </div>
     }
 
@@ -187,8 +164,7 @@ function Labeller() {
     function handleSubmit(e: FormEvent) {
         e.preventDefault()
         let json = JSON.stringify(cv)
-        console.log(json)
-        //uploadLabeled(json).then(e => console.log(e))
+        labelCV(json).then((e: any) => console.log(e))
     }
 }
 
