@@ -50,18 +50,18 @@ function Labeller() {
                 if (field === "title" 
                     || field === "summary"
                     || field === "_id" ) {
-                    return
+                    return null
                 }
                 if (field === "contactInfo") {
                     // We do not want to label contactInfo, so we omit it
                     // return mapField(field)
-                    return
+                    return null
                 }
                 return mapNestedField(field)
             })}
         </div>
     }
-
+    /*
     function mapField(field: string) {
         // Verify field
         switch (field) {
@@ -80,7 +80,7 @@ function Labeller() {
                 })}
             </div>
         </div>
-    }
+    }*/
 
     function mapNestedField(field: string) {
         // Verify field
