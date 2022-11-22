@@ -25,9 +25,19 @@ async function getUnlabeled() {
 }
 
 
-async function getAnalysis() {
-    const response = await fetch(endpoint + "/analysis")  
-    return await response.json()
+// async function getAnalysis() {
+//     const response = await fetch(endpoint + "/analysis")  
+//     return await response.json()
+// }
+
+async function getAnalysis(resume: string) {
+    const response = await fetch(endpoint + "/analysis", {
+        method: "POST",
+        body: resume,
+        headers: { 'Content-Type': 'application/json' }
+    })
+    console.log(response)
+    return response.json()
 }
 
 export { uploadUnlabeled,labelCV, getUnlabeled, getAnalysis}

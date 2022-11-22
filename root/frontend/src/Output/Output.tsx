@@ -24,20 +24,21 @@ function Output() {
     }
 
     // Fetch the unlabeled CV upon initial load of page
-    useEffect(() => {
+    useEffect(() => {   
         getUnlabeled().then((unlabeledCV: CV) => {
             console.log(unlabeledCV)
             setUnlebeledCV(unlabeledCV)
+            getAnalysis(JSON.stringify(unlabeledCV)).then((analyzedCV: CV) => {
+                console.log(analyzedCV)
+                setAnalyzedCV(analyzedCV)
+            })
         })
     }, [])
 
-    // Fetch the analyzed CV upon initial load of page
-    useEffect(() => {
-        getAnalysis().then((analyzedCV: CV) => {
-            console.log(analyzedCV)
-            setAnalyzedCV(analyzedCV)
-        })
-    }, [])
+    // // Fetch the analyzed CV upon initial load of page
+    // useEffect(() => {
+        
+    // }, [])
 
 
     return <form onSubmit={handleSubmit}>
