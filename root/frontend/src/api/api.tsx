@@ -15,7 +15,12 @@ async function getUnlabeled() {
     return await response.json()
 }
 
-export { uploadUnlabeled, getUnlabeled }
+async function getAnalysis() {
+    const response = await fetch(endpoint + "/labeled")  
+    return await response.json()
+}
+
+export { uploadUnlabeled, getUnlabeled, getAnalysis}
 
 
 
