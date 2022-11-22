@@ -1,5 +1,6 @@
 import json
 
+from bson import ObjectId
 from dotenv import dotenv_values
 from pydantic import ValidationError
 from pymongo import MongoClient
@@ -44,6 +45,7 @@ class Connection:
         result = list(resumes)
         return result
 
+
     def fetch_unlabeled_resume(self):
         resume = self.unlabeled_resume_collection.find_one()
         try:
@@ -52,6 +54,7 @@ class Connection:
             print(e)
 
         return resume
+
 
     def fetch_all_labeled_resumes(self):
         resumes = self.labeled_resume_collection.find({})
@@ -75,9 +78,12 @@ class Connection:
 
     def insert_labeled_resume(self, resume: dict):
         written = False
-        # if Resume.parse_obj(resume):
-        print(type(resume))
-        self.labeled_resume_collection.insert_one(resume)
+
+        print(resume['_id'])
+        print(type(resume['_id']['$oid']))
+        resume['_id'] = ObjectId(resume['_id']['$oid'])
+        if Resume.parse_obj(resume):
+            self.labeled_resume_collection.insert_one(resume)
         written = True
         return written
 
@@ -88,28 +94,52 @@ class Connection:
             written = True
         return written
 
-db = Connection()
-resumes = db.fetch_all_labeled_resumes()
-'''db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS2.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS1.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS3.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS4.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS5.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS6.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS7.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS8.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS9.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/DS10.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE1.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE2.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE3.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE4.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE5.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE6.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE7.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE8.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE9.json")
-db.insert_unlabeled_resume_from_file("root/backend/persistence/data/SE10.json")'''
-db.shutdown_connection()
+
+    def delete_unlabeled_resume(self, resume_id: str):
+        query = {"_id": ObjectId(resume_id)}
+
+        found = self.unlabeled_resume_collection.find_one(query)
+        if found is None:
+            raise KeyError("No unlabeled resume with this id found")
+
+        deleted = self.unlabeled_resume_collection.delete_one(query)
+        return deleted
+
+
+
+# db = Connection()
+# resumes = db.fetch_all_labeled_resumes()
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS1.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS2.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS3.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS4.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS5.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS6.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS7.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS8.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS9.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS10.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE1.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE2.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE3.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE4.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE5.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE6.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE7.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE8.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE9.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE10.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA1.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA2.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA3.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA4.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA5.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA6.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA7.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA8.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA9.json")
+# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA10.json")
+######### LABELED
+#db.insert_labeled_resume_from_file("root/backend/persistence/data/labeled_DS9.json")
 
 

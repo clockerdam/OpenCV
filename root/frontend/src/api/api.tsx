@@ -10,17 +10,27 @@ async function uploadUnlabeled(resume: string) {
     return response
 }
 
+async function labelCV(resume: string) {
+    const response = await fetch(endpoint + "/label", {
+        method: "POST",
+        body: resume,
+        headers: { 'Content-Type': 'application/json' }
+    })
+    return response
+}
+
 async function getUnlabeled() {
     const response = await fetch(endpoint + "/unlabeled")  
     return await response.json()
 }
 
+
 async function getAnalysis() {
-    const response = await fetch(endpoint + "/labeled")  
+    const response = await fetch(endpoint + "/analysis")  
     return await response.json()
 }
 
-export { uploadUnlabeled, getUnlabeled, getAnalysis}
+export { uploadUnlabeled,labelCV, getUnlabeled, getAnalysis}
 
 
 

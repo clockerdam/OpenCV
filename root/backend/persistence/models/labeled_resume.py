@@ -115,8 +115,8 @@ class LabeledExtracurricular(BaseModel):
     label: int
 
 class LabeledSkillFields(BaseModel):
-    name: LabeledStr
-    proficiency: LabeledStr
+    name: str
+    proficiency: int
 
     class Config:
         allow_population_by_field_name = True
@@ -124,7 +124,7 @@ class LabeledSkillFields(BaseModel):
         schema_extra = {
             "example": {
                 "name": "Korean",
-                "proficiency": "Fluent",
+                "proficiency": 5,
             }
         }
 

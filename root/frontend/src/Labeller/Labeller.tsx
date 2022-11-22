@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState } from "react"
-import { getUnlabeled } from "../api/api"
+import { getUnlabeled, labelCV } from "../api/api"
 import { CV } from "../CV/CV"
 import './labeller.css'
 
@@ -41,7 +41,7 @@ function Labeller() {
             </div>
             {mapFields()}
         </div>
-        <button onSubmit={(e) => handleSubmit(e)}>Submit</button>
+        <button onSubmit={(e) => handleSubmit(e)}>Label CV</button>
     </form>
 
     function mapFields() {
@@ -50,16 +50,18 @@ function Labeller() {
                 if (field === "title" 
                     || field === "summary"
                     || field === "_id" ) {
-                    return
+                    return null
                 }
                 if (field === "contactInfo") {
-                    return //mapField(field)
+                    // We do not want to label contactInfo, so we omit it
+                    // return mapField(field)
+                    return null
                 }
                 return mapNestedField(field)
             })}
         </div>
     }
-
+    /*
     function mapField(field: string) {
         // Verify field
         switch (field) {
@@ -78,7 +80,7 @@ function Labeller() {
                 })}
             </div>
         </div>
-    }
+    }*/
 
     function mapNestedField(field: string) {
         // Verify field
@@ -187,8 +189,7 @@ function Labeller() {
     function handleSubmit(e: FormEvent) {
         e.preventDefault()
         let json = JSON.stringify(cv)
-        console.log(json)
-        //uploadLabeled(json).then(e => console.log(e))
+        labelCV(json).then((e: any) => console.log(e))
     }
 }
 
