@@ -1,0 +1,87 @@
+label {
+    margin-bottom: 1%;
+    margin-left: 3%;
+    display: block
+}
+
+input {
+    margin-left: 1%;
+    display: inline-block;
+}
+
+.section {
+    background-color: whitesmoke;
+    border-top: 1px solid gray;
+}
+
+.item {
+    margin-left: 2%;
+    width: 50%;
+    display: inline-block;
+    padding: 10px;
+}
+
+.rating {
+    display:flex;
+    align-items:center;
+}
+  
+/* Split the screen in half */
+.split {
+    margin-top: 2%;
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.bar {
+    height: 100%;
+    width: 1%;
+    background-color: rgb(63, 69, 69);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    }
+
+/* Control the left side */
+.left {
+left: 0;
+background-color: rgb(127, 140, 141);
+padding-top: 43px;
+}
+
+/* Control the right side */
+.right {
+right: 0;
+background-color:rgb(229, 232, 232);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+width: 150px;
+border-radius: 50%;
+}
+
+
+.light {
+    background-color: gainsboro;
+}
+
+.dark {
+    background-color: lightgray;
+}
