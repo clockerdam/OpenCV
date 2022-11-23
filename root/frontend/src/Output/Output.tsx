@@ -35,12 +35,6 @@ function Output() {
         })
     }, [])
 
-    // // Fetch the analyzed CV upon initial load of page
-    // useEffect(() => {
-        
-    // }, [])
-
-
     return <form onSubmit={handleSubmit}>
         <div className="split left">
             <label><h1>Previous CV:</h1></label>
@@ -60,7 +54,6 @@ function Output() {
             <label><h2>{cvAnalyzed.title}</h2></label>
                 <div className="section">
                     <h2 className="item">Summary</h2>
-                    {/* {label("summary")} */}
                     <div className = "rating">
                         <p className="item">{cvAnalyzed.summary.value}</p>
                     </div>
@@ -157,7 +150,6 @@ function Output() {
                                 return <p><b>{key}: </b> {Object.values(listItem.value)[index]}</p>
                             })}
                         </div>
-                        {/* {label(field, index)} */}
                     </div>
             )})}
     </div>

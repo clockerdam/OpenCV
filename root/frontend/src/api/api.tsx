@@ -24,12 +24,6 @@ async function getUnlabeled() {
     return await response.json()
 }
 
-
-// async function getAnalysis() {
-//     const response = await fetch(endpoint + "/analysis")  
-//     return await response.json()
-// }
-
 async function getAnalysis(resume: string) {
     const response = await fetch(endpoint + "/analysis", {
         method: "POST",
