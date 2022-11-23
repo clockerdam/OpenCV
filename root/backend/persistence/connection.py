@@ -1,5 +1,6 @@
 import json
 
+from bson import ObjectId
 from dotenv import dotenv_values
 from pydantic import ValidationError
 from pymongo import MongoClient
@@ -46,6 +47,17 @@ class Connection:
         result = list(resumes)
         return result
 
+
+    def fetch_unlabeled_resume(self):
+        resume = self.unlabeled_resume_collection.find_one()
+        try:
+            map(Resume.parse_obj, resume)
+        except ValidationError as e:
+            print(e)
+
+        return resume
+
+
     def fetch_all_labeled_resumes(self):
         resumes = self.labeled_resume_collection.find({})
         try:
@@ -68,6 +80,10 @@ class Connection:
 
     def insert_labeled_resume(self, resume: dict):
         written = False
+
+        print(resume['_id'])
+        print(type(resume['_id']['$oid']))
+        resume['_id'] = ObjectId(resume['_id']['$oid'])
         if Resume.parse_obj(resume):
             self.labeled_resume_collection.insert_one(resume)
         written = True
@@ -79,4 +95,16 @@ class Connection:
             self.unlabeled_resume_collection.insert_one(resume)
             written = True
         return written
+
+
+    def delete_unlabeled_resume(self, resume_id: str):
+        query = {"_id": ObjectId(resume_id)}
+
+        found = self.unlabeled_resume_collection.find_one(query)
+        if found is None:
+            raise KeyError("No unlabeled resume with this id found")
+
+        deleted = self.unlabeled_resume_collection.delete_one(query)
+        return deleted
+
 
