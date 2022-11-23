@@ -1,15 +1,16 @@
-version: '2'
+version: "2"
 services:
-  backend: 
-    build: root/backend/
+  backend:
+    build:
+      context: root/backend/
+      dockerfile: Dockerfile-build
     ports:
       - "8080:8080"
     restart: always
-    environment: 
+    environment:
       MONGO_USERNAME: root
       MONGO_PASSWORD: example
       MONGO_HOST: mongodb://root:example@mongo:27017/
-
 
   mongo:
     image: mongo:latest
