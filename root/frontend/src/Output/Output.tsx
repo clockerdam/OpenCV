@@ -3,10 +3,62 @@ import { getUnlabeled, getAnalysis } from "../api/api"
 import { CV } from "../CV/CV"
 import './output.css'
 
+import { Document, Page, Text, View, StyleSheet } from "@react-pdf/renderer"
+
+type downloadParams = {
+    data: string,
+    fileName: string,
+    fileType: string
+}
+
 function Output() {
     const [cv, setUnlebeledCV] = useState(new CV()) // Initialize with an empty CV until an unlabeled one is fetched from DB
 
     const [cvAnalyzed, setAnalyzedCV] = useState(new CV()) // Initialize with an empty CV until an analyzed one is fetched from DB
+
+    const downloadFile = ({ data, fileName, fileType}: downloadParams) => {
+        // Create a blob with the data we want to download as a file
+        const blob = new Blob([data], { type: fileType })
+        // Create an anchor element and dispatch a click event on it
+        // to trigger a download
+        const a = document.createElement('a')
+        a.download = fileName
+        a.href = window.URL.createObjectURL(blob)
+        const clickEvt = new MouseEvent('click', {
+          view: window,
+          bubbles: true,
+          cancelable: true,
+        })
+        a.dispatchEvent(clickEvt)
+        a.remove()
+      }
+
+    // Create styles
+    const styles = StyleSheet.create({
+        page: {
+        flexDirection: 'row',
+        backgroundColor: '#E4E4E4'
+        },
+        section: {
+        margin: 10,
+        padding: 10,
+        flexGrow: 1
+        }
+    });
+  
+  // Create Document Component
+  const MyDocument = () => (
+    <Document>
+      <Page size="A4" style={styles.page}>
+        <View style={styles.section}>
+          <Text>Section #1</Text>
+        </View>
+        <View style={styles.section}>
+          <Text>Section #2</Text>
+        </View>
+      </Page>
+    </Document>
+  );
 
     enum Field {
         Interests = "interests",
@@ -258,11 +310,17 @@ function Output() {
     }
 
     function handleSubmit(e: FormEvent) {
-        e.preventDefault()
-        let json = JSON.stringify(cv)
-        console.log(json)
-        //uploadLabeled(json).then(e => console.log(e))
+        // e.preventDefault()
+        // let json = JSON.stringify(cvAnalyzed)
+        // console.log(json)
+        // //uploadLabeled(json).then(e => console.log(e))
+        downloadFile({
+            data: JSON.stringify(cvAnalyzed),
+            fileName: 'ImprovedCV.json',
+            fileType: 'text/json',
+          })
     }
 }
+
 
 export { Output }
