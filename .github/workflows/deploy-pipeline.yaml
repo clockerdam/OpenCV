@@ -11,6 +11,7 @@ jobs:
       DB: "${{ secrets.DB }}"
       UNLABELED_RESUME_COLLECTION: "${{ secrets.UNLABELED_RESUME_COLLECTION }}"
       LABELED_RESUME_COLLECTION: "${{ secrets.LABELED_RESUME_COLLECTION }}"
+      GOOGLE_APPLICATION_CREDENTIALS: "${{ secrets.GCP_SA_KEY }}"
     steps:
       - uses: actions/checkout@v3
       - run: "make create-env"
