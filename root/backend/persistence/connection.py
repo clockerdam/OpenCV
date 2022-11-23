@@ -6,7 +6,9 @@ from pydantic import ValidationError
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
-from .models import Resume
+from persistence.models.resume import Resume
+from persistence.models.labeled_resume import Resume as LabeledResume
+from bson import json_util
 
 config = dotenv_values(".env")
 
@@ -59,7 +61,7 @@ class Connection:
     def fetch_all_labeled_resumes(self):
         resumes = self.labeled_resume_collection.find({})
         try:
-            map(Resume.parse_obj, resumes)
+            map(LabeledResume.parse_obj, resumes)
         except ValidationError as e:
             print(e)
 
@@ -104,42 +106,5 @@ class Connection:
 
         deleted = self.unlabeled_resume_collection.delete_one(query)
         return deleted
-
-
-
-# db = Connection()
-# resumes = db.fetch_all_labeled_resumes()
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS1.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS2.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS3.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS4.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS5.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS6.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS7.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS8.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS9.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_DS10.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE1.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE2.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE3.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE4.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE5.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE6.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE7.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE8.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE9.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_SE10.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA1.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA2.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA3.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA4.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA5.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA6.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA7.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA8.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA9.json")
-# db.insert_unlabeled_resume_from_file("root/backend/persistence/data/l_BA10.json")
-######### LABELED
-#db.insert_labeled_resume_from_file("root/backend/persistence/data/labeled_DS9.json")
 
 

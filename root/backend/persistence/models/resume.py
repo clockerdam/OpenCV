@@ -1,5 +1,6 @@
 from pydantic import BaseModel, Field as PydanticField, create_model
 from bson import ObjectId
+from typing import List
 
 
 class ContactInfo(BaseModel):
@@ -155,6 +156,19 @@ LabeledPatent = create_model('Patent', value=(str, ...), label=(int, ...))
 class Resume(BaseModel):
     id: PyObjectId = PydanticField(default_factory=PyObjectId, alias="_id")
     title: str = PydanticField(...)
+    contactInfo: ContactInfo = PydanticField(...)
+    summary: str = PydanticField()
+    experience: List[Experience]
+    education: List[Education]
+    softSkills: List[Skill]
+    hardSkills: List[Skill]
+    languages: List[Skill]
+    certifications: List[Certification]
+    accomplishments: List[Extracurricular]
+    projects: List[Extracurricular]
+    extracurriculars: List[Extracurricular]
+    patents: List[str]
+    interests: List[str]
     contactInfo: ContactInfo
     summary: create_model('Summary', value=(str, ...), label=(int, ...))
     experience: create_model('Experience', value=(list[LabeledExperience], ...),
