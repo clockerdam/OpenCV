@@ -1,24 +1,25 @@
 from model.keyword_utils import extract_keywords_from_text
 from model.Job import Job
 from gensim.test.utils import datapath
-from gensim.models.fasttext import load_facebook_model
+from gensim.models.fasttext import  FastTextKeyedVectors, load_facebook_vectors
 import numpy as np
 import pandas as pd
+
+cap_path = datapath("crime-and-punishment.bin")
+fb_model = load_facebook_vectors(cap_path)
 
 
 class ResumeScorer():
     def __init__(self, job: Job):
-        self.cap_path = datapath("crime-and-punishment.bin")
-        self.fb_model = load_facebook_model(self.cap_path)
         self.job = job
         
-        self.job_kw_embeddings = np.asarray([self.fb_model.wv[kw] for kw in self.job.keywords])
+        self.job_kw_embeddings = np.asarray([fb_model[kw] for kw in self.job.keywords])
 
-    def closest_keyword_index(self, sample: str) -> str: 
+    def closest_keyword_index(self, sample: str) -> int: 
         """Takes the keyword list as embeddings form a job, and a sample. Finds the closest keyword
         
         Implements a KNN algorithm for finding the closest one"""
-        sample_embedding = self.fb_model.wv[sample]
+        sample_embedding = fb_model[sample]
         dist_2 = np.sum((self.job_kw_embeddings - sample_embedding) ** 2)
         return np.argmin(dist_2)
      
@@ -40,7 +41,7 @@ class ResumeScorer():
         
         # take the mean of the scores to make sure all keywords can contribute
         # and that we don't favor longer texts (which would have more keywords)
-        return np.mean(scores)
+        return float(np.mean(scores))
 
     def get_evaluation_text_for_df_row(self, df: pd.DataFrame) -> pd.DataFrame: 
         """Generates the text we will use for evaluation for each row type"""

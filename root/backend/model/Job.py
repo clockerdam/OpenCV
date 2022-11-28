@@ -19,13 +19,4 @@ class Job(object):
         for line in csv_data.split("\n"):
             word, score = line.split(",")
             self.keywords[word] = float(score)
-        
-        
-    def weights_to_csv(self) -> str: 
-        """Output the trained weights as csv format"""
-    
-    def save_to_gs_bucket(self): 
-        """Save model to gs bucket for reuse"""
-        pass
-    
     

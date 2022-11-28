@@ -15,3 +15,10 @@ create-env:
 	@echo "Creating .env file"
 	touch root/backend/.env
 	printenv > root/backend/.env
+
+build-and-deploy-image:
+	@echo "building and deploying docker image"
+	docker build -t asia.gcr.io/p4ds-team-2/p4ds-backend root/backend
+	docker push
+
+
