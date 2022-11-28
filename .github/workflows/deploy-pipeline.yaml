@@ -1,7 +1,7 @@
 name: CI/CD pipeline
 on:
   push:
-    branches: ["main", "fix/correct-deploy"]
+    branches: ["main"]
 
 jobs:
   backend:
