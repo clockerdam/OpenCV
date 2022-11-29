@@ -8,6 +8,31 @@ This is a serverless service that automatically scales our backend code.
 The model inference is done with our custom model that will be fetched from Google Cloud Storage.
 
 ### Running locally
+
+#### Setting up google-cloud-sdk for access to services
+In order to run the backend locally you would need to set up the google-cloud-sdk so that you can access the services there.
+Make sure you have accepted the google cloud invite before beginning.
+
+Follow [this](https://cloud.google.com/sdk/docs/install-sdk#installing_the_latest_version) guide for installing the CLI for GCP.  
+
+Follow the instructions. Make sure to enter project ID `p4ds-team-2` as project, leaving other values as default.
+
+
+Now, restart your terminal. Then you can continue
+
+Then you also need to configure docker to be able to authenticate
+
+```bash
+gcloud auth configure-docker
+```
+
+Finally, you need to add the service file to allow your docker container to 
+run google cloud apis. To do this you need to download a service-account file from the slack and put it in 
+`root/backend/secret.json`
+You can now move on to running the backend with docker shown below.
+
+
+#### Running 
 You can run the backend locally with docker using either 
 ```
 make start-backend
