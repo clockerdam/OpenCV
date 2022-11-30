@@ -11,3 +11,6 @@ gensim==4.2.0
 keybert==0.7.0
 pandas==1.3.5
 google-cloud-storage
+PyLaTeX
+PyYAML
+invoke

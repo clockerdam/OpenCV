@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "resume-builder"
+version = "0.1.0"
+description = "A resume builder that stores resume data in jsonresume conforming yaml and dynamically builds a beautifully typset PDF in LaTeX"
+authors = ["Joe Black <me@joeblack.nyc>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+PyLaTeX = "^1.3"
+PyYAML = "^5.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
