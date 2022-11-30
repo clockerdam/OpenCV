@@ -1,7 +1,8 @@
-import { FormEvent, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { getUnlabeled, getAnalysis } from "../api/api";
 import { CV } from "../CV/CV";
 import "./output.css";
+import _ from "lodash"
 
 import { MoonLoader } from "react-spinners";
 
@@ -137,6 +138,43 @@ function Output() {
       return;
     }
 
+    function color(cv: CV, field: string, index: number): string {
+      if (cvAnalyzed.title === "" || cvUnlabeled.title === "") {
+        return index % 2 === 0 ? "item light" : "item dark"
+      }
+
+      // Verify field
+      switch (field) {
+        case Field.Interests:
+        case Field.Patents:
+        case Field.Extracurriculars:
+        case Field.Accomplishments:
+        case Field.Projects:
+        case Field.SoftSkills:
+        case Field.HardSkills:
+        case Field.Languages:
+        case Field.Experience:
+        case Field.Certifications:
+        case Field.Education:
+          break;
+        default:
+          return index % 2 === 0 ? "item light" : "item dark"
+      }
+
+      let itemToCheck = cv[field].value[index].value
+
+      let items = cvAnalyzed[field].value.map((item) => {
+        // lodash compares items without thinking about ordering of the keys
+        return _.isEqual(item.value, itemToCheck );
+      })
+
+      let exists = items.includes(true)
+      if (exists) {
+        return index % 2 === 0 ? "item light" : "item dark"
+      }
+      return index % 2 === 0 ? "item lightRed" : "item darkRed"
+    }
+
     // Map field values
     return (
       <div className="section">
@@ -144,7 +182,7 @@ function Output() {
         {cv[field].value.map((listItem, index) => {
           return (
             <div className="rating" key={index}>
-              <div className={index % 2 === 0 ? "item light" : "item dark"}>
+              <div className={color(cv, field, index)}>
                 {Object.keys(listItem.value).map((key, index) => {
                   return (
                     <p>

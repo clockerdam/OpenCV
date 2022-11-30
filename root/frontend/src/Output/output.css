@@ -85,3 +85,11 @@ border-radius: 50%;
 .dark {
     background-color: lightgray;
 }
+
+.lightRed {
+    background-color: lightcoral;
+}
+
+.darkRed {
+    background-color: red;
+}
