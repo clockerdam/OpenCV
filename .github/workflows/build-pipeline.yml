@@ -10,6 +10,16 @@ on:
     branches: ["main"]
 
 jobs:
+  test-backend: 
+    defaults: 
+      run: 
+        working-directory: ./root/backend
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+      - run: pip install -r requirements.txt
+      - run: python -m unittest discover -s test
   build:
     defaults:
       run:
