@@ -1,5 +1,4 @@
-let port = 8080
-let endpoint = "http://localhost:" + port
+let endpoint = process.env.REACT_APP_API_ENDPOINT
 
 async function uploadUnlabeled(resume: string) {
     const response = await fetch(endpoint + "/unlabeled", {
