@@ -91,5 +91,37 @@ border-radius: 50%;
 }
 
 .darkRed {
-    background-color: red;
+    background-color: orangered;
+}
+
+.firstBracket {
+    color: green;
+}
+
+.secondBracket {
+    color: orange;
+}
+
+.thirdBracket {
+    color: red;
+}
+
+.label {
+    margin: auto;
+    width: 12%;
+    text-align: center;
+}
+
+.ratingNumber {
+    margin: 3px
+}
+
+.maxRating {
+    color: rgb(127, 140, 141);
+}
+
+hr {
+    height: 1px;
+    background-color: rgb(127, 140, 141);
+    margin: 0
 }

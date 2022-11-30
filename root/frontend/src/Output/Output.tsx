@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getUnlabeled, getAnalysis } from "../api/api";
-import { CV } from "../CV/CV";
+import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledItem, LabelledSkill, LabelledString } from "../CV/CV";
 import "./output.css";
 import _ from "lodash"
 
@@ -48,7 +48,7 @@ function Output() {
     <div>
       <div className="split left">
         <label>
-          <h1>Previous CV:</h1>
+          <h1>Input CV:</h1>
         </label>
         <label>
           <h2>{cvUnlabeled.title}</h2>
@@ -59,7 +59,7 @@ function Output() {
             <p className="item">{cvUnlabeled.summary.value}</p>
           </div>
         </div>
-        {mapFields(cvUnlabeled)}
+        {mapFields(cvUnlabeled, false)}
       </div>
       <div className="bar"></div>
       <div className="split right">
@@ -79,7 +79,7 @@ function Output() {
           <>
             <button onClick={() => download()}>Download</button>
             <label>
-              <h1>Your winning CV:</h1>
+              <h1>Refined CV:</h1>
             </label>
             <label>
               <h2>{cvAnalyzed.title}</h2>
@@ -88,16 +88,17 @@ function Output() {
               <h2 className="item">Summary</h2>
               <div className="rating">
                 <p className="item">{cvAnalyzed.summary.value}</p>
+                {showLabel(cvAnalyzed.summary, true)}
               </div>
             </div>
-            {mapFields(cvAnalyzed)}
+            {mapFields(cvAnalyzed, true)}
           </>
         )}
       </div>
     </div>
   );
 
-  function mapFields(cv: CV) {
+  function mapFields(cv: CV, output: boolean) {
     return (
       <div>
         {Object.keys(cv).map((field) => {
@@ -107,13 +108,13 @@ function Output() {
           if (field === "contactInfo") {
             return; //mapField(field)
           }
-          return mapNestedField(cv, field);
+          return mapNestedField(cv, field, output);
         })}
       </div>
     );
   }
 
-  function mapNestedField(cv: CV, field: string) {
+  function mapNestedField(cv: CV, field: string, output: boolean) {
     // Verify field
     switch (field) {
       case Field.Interests:
@@ -138,43 +139,6 @@ function Output() {
       return;
     }
 
-    function color(cv: CV, field: string, index: number): string {
-      if (cvAnalyzed.title === "" || cvUnlabeled.title === "") {
-        return index % 2 === 0 ? "item light" : "item dark"
-      }
-
-      // Verify field
-      switch (field) {
-        case Field.Interests:
-        case Field.Patents:
-        case Field.Extracurriculars:
-        case Field.Accomplishments:
-        case Field.Projects:
-        case Field.SoftSkills:
-        case Field.HardSkills:
-        case Field.Languages:
-        case Field.Experience:
-        case Field.Certifications:
-        case Field.Education:
-          break;
-        default:
-          return index % 2 === 0 ? "item light" : "item dark"
-      }
-
-      let itemToCheck = cv[field].value[index].value
-
-      let items = cvAnalyzed[field].value.map((item) => {
-        // lodash compares items without thinking about ordering of the keys
-        return _.isEqual(item.value, itemToCheck );
-      })
-
-      let exists = items.includes(true)
-      if (exists) {
-        return index % 2 === 0 ? "item light" : "item dark"
-      }
-      return index % 2 === 0 ? "item lightRed" : "item darkRed"
-    }
-
     // Map field values
     return (
       <div className="section">
@@ -191,11 +155,75 @@ function Output() {
                   );
                 })}
               </div>
+              {showLabel(listItem, output)}
             </div>
           );
         })}
       </div>
     );
+  }
+
+  function showLabel(item: LabelledString | LabelledItem | LabelledSkill | LabelledExperience | LabelledCertification | LabelledEducation, output: boolean) {
+    if (!output) {
+      return null
+    }
+
+    let label = item.label
+
+    let maxRating = 100
+    let rating = maxRating - label * maxRating
+
+    let bracket
+    if (rating > maxRating / 4 * 3) {
+      bracket = "ratingNumber firstBracket"
+    } else if (rating > maxRating / 4 * 2) {
+      bracket = "ratingNumber secondBracket"
+    } else {
+      bracket = "ratingNumber thirdBracket"
+    }
+
+    return <div className="label">
+            <h2 className={bracket}>{Math.round(rating)}</h2>
+            <hr></hr>
+            <h3 className="ratingNumber maxRating">{maxRating}</h3>
+          </div>
+  }
+
+  function color(cv: CV, field: string, index: number): string {
+    if (cvAnalyzed.title === "" || cvUnlabeled.title === "") {
+      return index % 2 === 0 ? "item light" : "item dark"
+    }
+
+    // Verify field
+    switch (field) {
+      case Field.Interests:
+      case Field.Patents:
+      case Field.Extracurriculars:
+      case Field.Accomplishments:
+      case Field.Projects:
+      case Field.SoftSkills:
+      case Field.HardSkills:
+      case Field.Languages:
+      case Field.Experience:
+      case Field.Certifications:
+      case Field.Education:
+        break;
+      default:
+        return index % 2 === 0 ? "item light" : "item dark"
+    }
+
+    let itemToCheck = cv[field].value[index].value
+
+    let items = cvAnalyzed[field].value.map((item) => {
+      // lodash compares items without thinking about ordering of the keys
+      return _.isEqual(item.value, itemToCheck );
+    })
+
+    let exists = items.includes(true)
+    if (exists) {
+      return index % 2 === 0 ? "item light" : "item dark"
+    }
+    return index % 2 === 0 ? "item lightRed" : "item darkRed"
   }
 
   function download() {
