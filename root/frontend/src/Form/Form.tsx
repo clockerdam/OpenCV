@@ -1,10 +1,16 @@
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../CV/CV";
 import './form.css'
 
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
 function Form() {
     const [cv, setCV] = useState(new CV())
+    const navigate = useNavigate()
+    const {state} = useLocation()
+    useEffect(() => {
+        setCV(state)
+    }, [state])
 
     enum Field {
         Interests = "interests",
@@ -645,6 +651,7 @@ function Form() {
         let json = JSON.stringify(cv)
         console.log(json)
         //uploadUnlabeled(json).then(e => console.log(e))
+        navigate('/output', {state: cv})
     }
 }
 
