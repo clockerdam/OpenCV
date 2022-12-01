@@ -3,6 +3,7 @@ from model.Job import Job
 from gensim.test.utils import datapath
 from gensim.models.fasttext import load_facebook_model
 import numpy as np
+import math
 import pandas as pd
 
 
@@ -89,6 +90,50 @@ class ResumeScorer():
 
         return resume
     
-    def shorten_resume(self, resume: pd.DataFrame) -> pd.DataFrame: 
-        return resume.sort_values('label')[:-10]
+def shorten_resume(resume: pd.DataFrame) -> pd.DataFrame: 
+    """Takes a fully scored resume and returnes a one-pager 
+    based on those scores and other heuristics"""
+
+    max_len = 1500
+    current_content_len = 0
+    # COpy the input as to not ruin it 
+    src: pd.DataFrame = resume.copy()
+    output: pd.DataFrame = src.copy().iloc[:0]
+
+    # Do any heuristics on the scores
+    src["heuristic_addition"] = 0
+    src.loc[src["type"].isin(['education', 'contactInfo']), "heuristic_addition"] = math.inf
+    
+    # Iteratively build up our resume
+    content_added = True
+    while content_added:
+        content_added = False
+        # Sort the src on the current scores
         
+        if len(src) == 0:
+            break
+        src['score'] = src['heuristic_addition'] + src['label']
+        src = src.sort_values('score', ascending=False)
+        
+        # Find the currently best rated 
+        best_item = src.iloc[[0]]
+        item_len = len(best_item.iloc[0]['scoring_text'])
+
+        # Check if we have room for the highest scored item
+        if  item_len + current_content_len <= max_len: 
+            # We have space
+            output = pd.concat([output, best_item])
+            src = src.iloc[1:]
+            current_content_len += item_len
+            
+            content_added = True
+            
+            # Update scores based on heuristics
+            # limit number of education points
+            len_edu = len(output[output['type'] == 'education'])
+            if len_edu >= 3: 
+                src.loc[src['type'] == 'education', 'heuristic_addition'] = -10
+
+    output = output.sort_values(['score', 'type', 'time_since'], ascending=[False, True, True])
+    return output
+    

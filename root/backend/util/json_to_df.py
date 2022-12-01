@@ -295,7 +295,6 @@ def time_of_education(education: pd.DataFrame) -> int:
         datetime_object_from = datetime.strptime(fromDate, '%Y')    
 
         diff = datetime_object_to - datetime_object_from
-        print(diff)
         seconds_per_month = 86400*30
         months = int(np.floor(diff.total_seconds()/seconds_per_month))
         if months == 0: #one month
