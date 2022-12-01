@@ -2,6 +2,7 @@ import { FormEvent, useState } from "react";
 import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../CV/CV";
 import './form.css'
 
+
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
 function Form() {
     const [cv, setCV] = useState(new CV())
@@ -47,6 +48,7 @@ function Form() {
 
     return <form onSubmit={handleSubmit}>
         <div>
+            <button onSubmit={(e) => handleSubmit(e)}>Submit</button>
             <label>
                 <p>Title</p>
                 <input 
@@ -458,7 +460,7 @@ function Form() {
                 <button onClick={() => add(Field.Extracurriculars)}>Add extracurricular</button>
             </label>
         </div>
-        <button onSubmit={(e) => handleSubmit(e)}>Submit</button>
+        {/* <button onSubmit={(e) => handleSubmit(e)}>Submit</button> */}
     </form>
 
     function change(field: Field, event: any, index: number = 0, subField?: SubField) {

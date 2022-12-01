@@ -1,0 +1,90 @@
+.FirstTab p,
+.SecondTab p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.Template {
+    /* width: 80%; */
+    height: auto;
+    min-height: 400px;
+    background: #F1C40F ;
+    /* margin: 3.5rem auto 1.5rem; */
+    padding: 2rem 1rem;
+    /* color: #E8F0F2; */
+    border-radius: 2rem;
+    @media (max-width: 769px) {
+        padding: 2rem 0;
+    }
+} 
+
+
+label {
+    margin-bottom: 1%;
+    margin-left: 3%;
+    margin-top: 3%;
+    display: block
+}
+  
+input {
+margin-left: 2%;
+margin-top: 2%;
+display: inline-block;
+height: 250px;
+width: 95%;
+text-align: top;
+}
+
+input::placeholder {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    font-weight: bold;
+    opacity: .5;
+    color: black;
+}
+
+/* 
+textInput{
+    height: 40;
+    width: 200;
+    justifyContent: 'center';
+    alignItems: 'center';
+    alignSelf: 'center';
+    borderColor: 'gray';
+    borderWidth: 1;
+ } */
+
+.section {
+background-color: whitesmoke;
+border-top: 1px solid gray;
+}
+
+.item {
+margin-left: 2%;
+width: 50%;
+display: inline-block;
+padding: 10px;
+}
+
+.rating {
+display:flex;
+align-items:center;
+}
+
+.light {
+background-color: gainsboro;
+}
+
+.dark {
+background-color: lightgray;
+}
+
+.lightRed {
+background-color: lightcoral;
+}
+
+.darkRed {
+background-color: red;
+}
+  
