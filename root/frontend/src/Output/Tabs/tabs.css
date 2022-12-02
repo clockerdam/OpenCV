@@ -1,9 +1,3 @@
-.FirstTab p,
-.SecondTab p {
-  font-size: 2rem;
-  text-align: center;
-}
-
 .Template {
     /* width: 80%; */
     height: auto;
@@ -72,19 +66,67 @@ display:flex;
 align-items:center;
 }
 
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    
+/* Style the image inside the centered container, if needed */
+.centered img {
+width: 150px;
+border-radius: 50%;
+}
+
+
 .light {
-background-color: gainsboro;
+    background-color: gainsboro;
 }
 
 .dark {
-background-color: lightgray;
+    background-color: lightgray;
 }
 
 .lightRed {
-background-color: lightcoral;
+    background-color: lightcoral;
 }
 
 .darkRed {
-background-color: red;
+    background-color: orangered;
 }
-  
+
+.firstBracket {
+    color: green;
+}
+
+.secondBracket {
+    color: orange;
+}
+
+.thirdBracket {
+    color: red;
+}
+
+.label {
+    margin: auto;
+    width: 12%;
+    text-align: center;
+}
+
+.ratingNumber {
+    margin: 3px
+}
+
+.maxRating {
+    color: rgb(127, 140, 141);
+}
+
+hr {
+    height: 1px;
+    background-color: rgb(127, 140, 141);
+    margin: 0
+}
