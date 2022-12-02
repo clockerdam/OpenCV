@@ -37,3 +37,5 @@ class Job(object):
     def save_to_gs_bucket(self):
         """Save model to gs bucket for reuse"""
         pass
+            self.keywords[word] = float(score)
+    

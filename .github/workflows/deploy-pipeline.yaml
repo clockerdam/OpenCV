@@ -14,11 +14,21 @@ jobs:
       GOOGLE_APPLICATION_CREDENTIALS: "${{ secrets.GCP_SA_KEY }}"
     steps:
       - uses: actions/checkout@v3
+
       - run: "make create-env"
+
       - id: "auth"
         uses: "google-github-actions/auth@v0"
         with:
           credentials_json: "${{ secrets.GCP_SA_KEY }}"
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v1'
+
+      - run: gcloud auth configure-docker
+
+      - id: "docker_build"
+        run: make build-and-deploy-image
 
       - id: "deploy"
         uses: "google-github-actions/deploy-appengine@v0"

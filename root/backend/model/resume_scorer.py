@@ -8,6 +8,9 @@ import re
 
 from model.embedding import embedding_for_keyword_list, closest_keyword_index
 
+cap_path = datapath("crime-and-punishment.bin")
+fb_model = load_facebook_vectors(cap_path)
+
 
 class ResumeScorer():
     def __init__(self, job: Job):
@@ -34,7 +37,7 @@ class ResumeScorer():
 
         # take the mean of the scores to make sure all keywords can contribute
         # and that we don't favor longer texts (which would have more keywords)
-        return np.mean(scores)
+        return float(np.mean(scores))
 
     def get_evaluation_text_for_df_row(self, df: pd.DataFrame) -> pd.DataFrame:
         """Generates the text we will use for evaluation for each row type"""
