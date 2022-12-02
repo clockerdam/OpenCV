@@ -1,4 +1,4 @@
-from typing import Dict, Tuple, List
+from typing import Dict, List
 
 
 class Job(object):
@@ -29,13 +29,4 @@ class Job(object):
             # The numeical values are heuristic
             prev_score = self.keywords.get(kw, 0.3)
             self.keywords[kw] = prev_score + 0.6
-
-    def weights_to_csv(self) -> str:
-        """Output the trained weights as csv format"""
-        pass
-
-    def save_to_gs_bucket(self):
-        """Save model to gs bucket for reuse"""
-        pass
-            self.keywords[word] = float(score)
     
