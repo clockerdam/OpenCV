@@ -1,0 +1,30 @@
+Data Scientist Walgreens
+
+Job Summary:
+
+Applies advanced data analysis tools and techniques to provide insights and actionable recommendations for the business. Utilizes complex statistical modeling to make predictions about future outcomes and in multiple scenarios. May explain findings to business audience.
+
+Job Responsibilities:
+	•	Responsible for applying advanced data analysis tools and techniques to provide insights and actionable recommendations for the business. Utilizes complex statistical modeling to make predictions about future outcomes and in multiple scenarios.
+	•	Interprets and applies data in complex analyses, and explains findings to business audiences to improve products and processes.
+	•	May support or lead the development of data-related commercial offerings and/or other intellectual property (IP)
+	•	Executes statistical and mathematical analyses to support business decision making.
+	•	Develops and/or uses algorithms and statistical predictive models and determines analytical approaches and modeling techniques to evaluate scenarios and potential future outcomes.
+	•	Applies analytical rigor and statistical methods to analyze large amounts of data, using advanced statistical techniques such as predictive statistical models, customer profiling, segmentation analysis, survey design and analysis, and data mining.
+	•	Documents projects including business goals, data gathering and processing, leading approaches, final algorithm, detailed set of results and analytical metrics.
+	•	Develops materials to explain project findings.
+	•	Effectively resolves problems and roadblocks as they occur.
+	•	Interacts with internal and external peers and/or managers to exchange semi-complex information related to assigned activities.
+	•	Prepares and presents interpretation of findings to internal clients.
+    
+Basic Qualifications:
+	•	Bachelor's degree and at least 2 years of experience in quantitative or computational functions; or graduate degree in a quantitative, computational or technical discipline
+	•	Knowledge of SQL
+	•	Experience in data science, advanced analytics, or statistics. Ability to interrogate data, perform analyses, interpret data, and present to business audiences.
+	•	Knowledge of open source data science and statistics packages such as Python, R, Spark, etc.
+	•	Experience establishing and maintaining key relationships with internal (peers, business partners and leadership) and external (business community, clients and vendors) within a matrix organization to ensure quality standards for service.
+	•	Experience analyzing and reporting data in order to identify issues, trends, or exceptions to drive improvement of results and find solutions.
+	•	Willing to travel up to 10% of the time for business purposes (within state and out of state).
+    
+Preferred Qualifications:
+	•	Graduate degree in a quantitative, computational or technical discipline

@@ -1,3 +1,4 @@
+from typing import List, Tuple
 from model.keyword_utils import extract_keywords_from_text
 from model.Job import Job
 from gensim.test.utils import datapath
@@ -5,6 +6,7 @@ from gensim.models.fasttext import load_facebook_model
 import numpy as np
 import math
 import pandas as pd
+import re
 
 
 class ResumeScorer():
@@ -23,9 +25,8 @@ class ResumeScorer():
         dist_2 = np.sum((self.job_kw_embeddings - sample_embedding) ** 2)
         return np.argmin(dist_2)
      
-    def score_text(self, text: str) -> float: 
+    def score_text_based_on_keywords(self, keywords: List[Tuple[str, float]]) -> float: 
         """Scores a piece of text based on the relevance to the job"""
-        keywords = extract_keywords_from_text([text])
         
         if len(keywords) == 0:
             return 0.0
@@ -81,8 +82,10 @@ class ResumeScorer():
         # Generate the text based on each column type
         resume = self.get_evaluation_text_for_df_row(resume)
         
+        
         # Each row gets a score based on its generated text
-        resume['score'] = resume.apply(lambda x: self.score_text(x['scoring_text']) * x['multiplier'], axis=1)
+        resume['keywords'] = resume.apply(lambda x: extract_keywords_from_text([x['scoring_text']]), axis=1)
+        resume['score'] = resume.apply(lambda x: self.score_text_based_on_keywords(x['keywords']) * x['multiplier'], axis=1)
         resume.loc[resume['type'] == 'contactInfo', ['score']] = 1
         
         resume['label'] = resume['score']
@@ -90,50 +93,137 @@ class ResumeScorer():
 
         return resume
     
-def shorten_resume(resume: pd.DataFrame) -> pd.DataFrame: 
-    """Takes a fully scored resume and returnes a one-pager 
-    based on those scores and other heuristics"""
+def _quota_key_for_type(type: str) -> str: 
+    if type in ["education", "experience", "extracurricular"]: 
+        return "body"
+    elif type in ["summary"]:
+        return "summary"
+    elif type in ["hardSkills", "softSkills", "languages"]:
+        return "skill"
+    else:
+        return "body"
 
-    max_len = 1500
-    current_content_len = 0
-    # COpy the input as to not ruin it 
+def add_covered_keywords_for_requirements_to_resume_df(row: pd.DataFrame, requiremnets: List[str]):
+    kw = set(row['raw_keywords'])
+    cov = kw.intersection(requiremnets)
+    return list(cov)
+    
+
+def shorten_resume(resume: pd.DataFrame, job_description_keywords: List[str]) -> Tuple[pd.DataFrame, dict]: 
+    """Takes a fully scored resume and returnes a one-pager 
+    based on those scores and other heuristics
+    
+    Returns a tuple consisting of (one-pager, statistics)
+    the resume is a dtaframe, the stats is a dictionary 
+    """
+
+    # Representing the content limits on each type of section
+    quotas = {
+        "body": 258 * 7,
+        "skill": 3 * 70,
+        "summary": 120,
+    }
+    
+    # Storing how much we have used for each type
+    used = dict.fromkeys(quotas, 0)
+
+    # Copy the input as to not ruin it 
     src: pd.DataFrame = resume.copy()
     output: pd.DataFrame = src.copy().iloc[:0]
 
+    requirements = set(job_description_keywords)
+    covered = set()
+    
+    # Extracting some keyword information
+    src['raw_keywords'] = src['keywords'].map(lambda x: [v[0] for v in x])
+    all_keywords_in_resume = set(src['raw_keywords'].sum())
+
     # Do any heuristics on the scores
-    src["heuristic_addition"] = 0
-    src.loc[src["type"].isin(['education', 'contactInfo']), "heuristic_addition"] = math.inf
+    # We set these to inf to make sure that we will always include them in the output
+    src[['education_heuristic', 'experience_heuristic']] = 0
+    src.loc[src["type"].isin(['education', 'contactInfo']), "education_heuristic"] = math.inf
+    src.loc[src["type"].isin(['experience', 'contactInfo']), "experience_heuristic"] = math.inf
+    
+    
+
+    # Give large penalty to interests
+    src['interest_heuristic'] = src.apply(lambda x: -0.5 if x['type'] == 'interests' else 0, axis=1)
+    
+    #Make sure to remove any row that does not have content
+    src = src.loc[src['scoring_text'] != ""]
+    
     
     # Iteratively build up our resume
-    content_added = True
-    while content_added:
-        content_added = False
+    can_add_more = len(src) != 0
+    while can_add_more:
+        # Update heuristics of included keywords
+        src['covered_keywords'] = src.apply(
+            lambda x: add_covered_keywords_for_requirements_to_resume_df(
+                x, requirements.difference(covered)),
+            axis=1
+        )
+        src['keyword_cover_heuristic'] = src['covered_keywords'].map(
+            lambda x: len(x) * 0.5)
+
+        # Update scores based on our heuristics
+        src['score'] = (
+            # Adding up all heuristic scores
+            src.loc[:, [
+                True if re.search('heuristic', column) else False for column in src.columns
+            ]].sum(axis=1) +
+
+            # also using the score from our model
+            src['label']
+        )
+
         # Sort the src on the current scores
-        
-        if len(src) == 0:
-            break
-        src['score'] = src['heuristic_addition'] + src['label']
         src = src.sort_values('score', ascending=False)
         
         # Find the currently best rated 
         best_item = src.iloc[[0]]
         item_len = len(best_item.iloc[0]['scoring_text'])
+        
+        quota_key = _quota_key_for_type(best_item.iloc[0]['type'])
+        space_for_item = quotas[quota_key] - used[quota_key]
 
         # Check if we have room for the highest scored item
-        if  item_len + current_content_len <= max_len: 
+        if space_for_item >= item_len:
             # We have space
             output = pd.concat([output, best_item])
-            src = src.iloc[1:]
-            current_content_len += item_len
-            
-            content_added = True
+            used[quota_key] += item_len
             
             # Update scores based on heuristics
             # limit number of education points
             len_edu = len(output[output['type'] == 'education'])
             if len_edu >= 3: 
-                src.loc[src['type'] == 'education', 'heuristic_addition'] = -10
+                src.loc[src['type'] == 'education', 'education_heuristic'] = 0
+
+            # limit number of experience points
+            len_exp = len(output[output['type'] == 'experience'])
+            if len_exp >= 3: 
+                src.loc[src['type'] == 'experience', 'experience_heuristic'] = 0
+                
+            # Update covered topics
+            kw = set(best_item['raw_keywords'].iloc[0])
+            relevant = kw.intersection(requirements)
+            covered.update(relevant)
+        
+        # Remove the point no matter if it was included or not
+        # this enables us to fill up the cv even though we can't 
+        # fit one good point
+        src = src.iloc[1:]
+        can_add_more = len(src) != 0
 
     output = output.sort_values(['score', 'type', 'time_since'], ascending=[False, True, True])
-    return output
+    
+    print(f"Space used: {used}")
+    print(f"Total space: {quotas}")
+    
+    stats = {
+        "included_keywords": covered,
+        "removed_keywords": all_keywords_in_resume.difference(covered),
+        "missing_keywords": requirements.difference(all_keywords_in_resume),
+    }
+    
+    return output, stats
     

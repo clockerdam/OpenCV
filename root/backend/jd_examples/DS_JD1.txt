@@ -1,0 +1,33 @@
+Data Scientist Apple
+
+Summary:
+
+At Apple, you’ll accomplish truly phenomenal things. If you have a passion for developing insights from real world data, have great attention to detail, and are dedicated to improving customer experience, please join us!
+
+The SWE DA Data Science team analyzes and produces insights from diagnostic and usage data from hundreds of millions of devices every day from all over the world. The insights are used to improve Apple's products and services, to inform strategic directions, and to improve user experience. We are a fast-pace and high-functioning team of Data Scientists that use the latest Big Data technologies to tackle complex, large-scale problems using immense quantities of collected data. We work collaboratively to make impact that changes people’s lives, and we have fun while doing it!
+
+
+Key Qualifications:
+
+    • Advanced statistics and modeling knowledge.
+    • Strong data visualization skills (e.g., Tableau).
+    • Programming skills in Python.
+    • Detail-oriented, can identify and fix own bugs, and write code that runs efficiently.
+    • Good experience with applying Big Data technologies (e.g., MapReduce, Hadoop, Spark) to large quantities of data.
+    • Good experience using relational databases and SQL.   
+
+Description:
+
+You will work cross-functionally with partners in software engineering, hardware, and marketing. You will use your deep knowledge of data extraction, exploration, and analysis to produce reports and visualizations of critical hardware and software phenomena. With the knowledge accumulated, you will build models and validate hypotheses on the uses of our software and devices.
+
+
+Education & Experience:
+
+    • Advanced degree in Statistics, Data Mining, Machine Learning, Analytics, Applied Math, Computer Science, Electrical Engineering, Physics, or related fields.
+
+
+Additional Requirements:
+
+    • Strong interpersonal skills; the ability to understand business requirements and naturally explain complex technical topics to everyone — from data scientists to engineers to product marketing partners to executives.
+    • Excellent understanding of Machine Learning algorithms, including regression, clustering, classification, and other advanced analytic techniques.
+    • Self-starter and ability to multitask.
