@@ -17,7 +17,7 @@ class Job(object):
             return
         for line in csv_data.split("\n"):
             word, score = line.split(",")
-            self.keywords[word] = float(score)
+            self.keywords[word.lower()] = float(score)
 
     def update_keywords_from_description(self, description_keywords: List[str]):
         """Uppdates the keyword dict with values from a job description"""

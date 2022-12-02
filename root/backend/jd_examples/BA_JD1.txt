@@ -1,9 +1,11 @@
 Business Analyst AIG
 
 Who we are:
+
 American International Group, Inc. (AIG) is a leading global insurance organization. Building on 100 years of experience, today AIG member companies provide a wide range of property casualty insurance, life insurance, retirement solutions, and other financial services to customers in more than 80 countries and jurisdictions. These diverse offerings include products and services that help businesses and individuals protect their assets, manage risks and provide for retirement security.
 
 About the role:
+
 The key responsibilities of this position include, but are not limited to:
 	•	Reporting - Production of key monthly dashboards as well as reports that are an input to the monthly business reviews. Ad-hoc reporting requested.
 	•	Strategic Initiatives - Analytical and project management support for Assistance Sales and Client Services initiative. Analytical support for key strategic initiatives on an as needed basis.
@@ -16,8 +18,9 @@ The key responsibilities of this position include, but are not limited to:
 	•	Manage the invoicing process including payments and reconciliation of invoices with issuing offices, Multinational and Captive teams as necessary.
 	•	Support Regional and Global Audits for Key Accounts in conjunction with Account Managers & Global Account Manager where needed.
 	•	Support the Global Account Manager in preparation of presentations as required (e.g. Quarterly Business Reviews with the client).
-    
+
 What qualifications we’re looking for:
+
 	•	Proficient knowledge of SQL a must to be successful in this role
 	•	Proficient knowledge of Excel a must to be successful in this role
 	•	Highly proficient in Microsoft Office suite (Word/Excel/Access/PowerPoint)
@@ -34,3 +37,6 @@ What qualifications we’re looking for:
 	•	Understanding of insurance concepts is preferred
 	•	Familiarity with Call Center, Claims Processing and reporting systems preferred
 	•	Ability to travel up to 10% of the time
+
+
+
