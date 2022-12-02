@@ -26,16 +26,16 @@ label {
     display: block
 }
   
-input {
+.textArea {
 margin-left: 2%;
 margin-top: 2%;
 display: inline-block;
-height: 250px;
+height: 225px;
 width: 95%;
 text-align: top;
 }
 
-input::placeholder {
+.textArea::placeholder {
     position: absolute;
     left: 5px;
     top: 5px;
