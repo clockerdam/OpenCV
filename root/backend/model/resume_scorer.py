@@ -28,9 +28,6 @@ class ResumeScorer():
             else:
                 closest, cos_sim = closest_keyword_index(
                     kw[0], self.job_kw_embeddings)
-                if kw[0] == "english":
-                    print("Closest keyword to '{}' is '{}' with cosine similarity {}\n".format(
-                        kw[0], list(self.job.keywords.keys())[closest], cos_sim))
                 relevance = list(self.job.keywords.values())[
                     closest] * kw[1] * cos_sim
                 scores.append(relevance)
@@ -66,6 +63,7 @@ class ResumeScorer():
         df.loc[df['type'].isin([
             'contactInfo'
         ]), ['scoring_text']]= ''
+        df.loc[df['type'] == 'contactInfo', ['scoring_text']]= df['name']
 
         df['multiplier']= (df['proficiency'] / 5.0).fillna(1.0)
         df.loc[df['type'] == 'languages', ['multiplier']] *= 0.4
@@ -90,6 +88,20 @@ class ResumeScorer():
 
         return resume
 
+def point_duration_heuristic_bost(duration: float) -> float:
+    """Takes a duration for experience, education etc (in months)
+    and returns a heuristic addition to the score"""
+    if duration == 0: 
+        return 1
+    if duration <= 12:
+        return 1.4
+    elif duration <= 24:
+        return 1.9
+    elif duration <= 60:
+        return 3.0
+    else: 
+        return 3.5
+
 def _quota_key_for_type(type: str) -> str:
     if type in ["education", "experience", "extracurricular"]:
         return "body"
@@ -104,6 +116,29 @@ def add_covered_keywords_for_requirements_to_resume_df(row: pd.DataFrame, requir
     kw=set(row['raw_keywords'])
     cov=kw.intersection(requiremnets)
     return list(cov)
+
+def _add_heuristics_to_src_dataframe(src: pd.DataFrame) -> pd.DataFrame: 
+    # Do any heuristics on the scores
+    # We set these to inf to make sure that we will always include them in the output
+    src[['education_heuristic', 'experience_heuristic', 'contact_heuristic']] = 0
+    src.loc[src["type"].isin(['education']),
+                             "education_heuristic"] = src.apply(lambda x: point_duration_heuristic_bost(x['duration']), axis=1)
+    src.loc[src["type"].isin(['experience'] ),
+                             "experience_heuristic"] = src.apply(lambda x: point_duration_heuristic_bost(x['duration']), axis=1)
+
+
+    # Make sure that we always add the contact information
+    src.loc[src['type'] == 'contactInfo', ['contact_heuristic']] = math.inf
+
+    # Give large penalty to interests
+    src['interest_heuristic'] = src.apply(
+        lambda x: -0.5 if x['type'] == 'interests' else 0, axis=1)
+
+    # Make sure to remove any row that does not have content
+    src = src.loc[src['scoring_text'] != ""]
+    
+    return src
+    
 
 
 def shorten_resume(resume: pd.DataFrame, job_description_keywords: List[str]) -> Tuple[pd.DataFrame, dict]:
@@ -135,23 +170,8 @@ def shorten_resume(resume: pd.DataFrame, job_description_keywords: List[str]) ->
     src['raw_keywords'] = src['keywords'].map(lambda x: [v[0] for v in x])
     all_keywords_in_resume = set(src['raw_keywords'].sum())
 
-    # Do any heuristics on the scores
-    # We set these to inf to make sure that we will always include them in the output
-    src[['education_heuristic', 'experience_heuristic']] = 0
-    src.loc[src["type"].isin(['education', 'contactInfo']),
-                             "education_heuristic"] = math.inf
-    src.loc[src["type"].isin(['experience', 'contactInfo']),
-                             "experience_heuristic"] = math.inf
 
-
-
-    # Give large penalty to interests
-    src['interest_heuristic'] = src.apply(
-        lambda x: -0.5 if x['type'] == 'interests' else 0, axis=1)
-
-    # Make sure to remove any row that does not have content
-    src = src.loc[src['scoring_text'] != ""]
-
+    src = _add_heuristics_to_src_dataframe(src)
 
     # Iteratively build up our resume
     can_add_more = len(src) != 0
