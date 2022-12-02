@@ -1,1 +1,8 @@
-runtime: python39
+runtime: custom
+env: flex
+resources:
+  cpu: 4
+  memory_gb: 16
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 1

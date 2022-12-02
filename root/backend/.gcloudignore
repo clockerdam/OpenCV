@@ -13,6 +13,8 @@
 .git
 .gitignore
 *.ipynb
+.env
+env/
 
 # Python pycache:
 __pycache__/
