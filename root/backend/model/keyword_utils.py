@@ -6,11 +6,21 @@ from typing import List, Tuple
 from keybert import KeyBERT
 
 import random
+import os
 
 
 import re
 import spacy
-nlp = spacy.load("en_core_sci_sm")
+# nlp = spacy.load("en_core_sci_sm")
+nlp = spacy.load("en_core_web_sm")
+# cache_dir="/model"
+# model_path="en_core_web_sm"
+# try:
+#     nlp = spacy.load(os.path.join(cache_dir,model_path))
+# except OSError:
+#     spacy.cli.download(model_path)
+#     nlp = spacy.load(model_path)
+#     nlp.to_disk(os.path.join(cache_dir,model_path))
 
 
 def title_description_field_to_list_of_text_label_pair(field: List[dict]) -> List[Tuple[str, float]]:

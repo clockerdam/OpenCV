@@ -4,6 +4,11 @@ services:
     build:
       context: root/backend/
       dockerfile: Dockerfile-build
+    cpus: 6.5
+    mem_limit: 10000000000
+    memswap_limit: 20000000000
+    mem_reservation: 1024m
+    privileged: true
     ports:
       - "8080:8080"
     restart: always

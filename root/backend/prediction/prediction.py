@@ -9,11 +9,13 @@ def improve_cv(payload: dict) -> dict:
     # Get the job title and description
     job_title = payload.get("title", "")
     job_description = payload.get("description", "")
+    print(f"Starting prediciton for {job_title}")
 
     # Extract keywords / requirements from the description
     description_keywords = extract_requirements_JD(job_description)
 
     # retrieve our pretrained / heuristic keyword dictionary for the job title
+    print("Extracting keywords")
     job_keywords_csv = read_job_keywords(job_title)
     job = Job(job_title)
     job.load_from_csv_data(job_keywords_csv)
@@ -26,13 +28,17 @@ def improve_cv(payload: dict) -> dict:
     resume = payload
     resume_df, md = create_df(resume)
 
+    print("Scoring resume")
     scored = scorer.score_resume_as_dataframe(resume_df)
 
-    cut, stats = shorten_resume(scored)
+    print("Cutting resume")
+    cut, stats = shorten_resume(scored, description_keywords)
 
     finished_resume = get_resume_dict_from_dataframe(cut, md)
 
     return {
-        **finished_resume,
-        **stats
-    }
+            **finished_resume,
+            "stats": {
+                **stats
+                }
+            }

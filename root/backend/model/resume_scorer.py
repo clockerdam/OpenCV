@@ -8,10 +8,6 @@ import re
 
 from model.embedding import embedding_for_keyword_list, closest_keyword_index
 
-cap_path = datapath("crime-and-punishment.bin")
-fb_model = load_facebook_vectors(cap_path)
-
-
 class ResumeScorer():
     def __init__(self, job: Job):
         self.job = job
