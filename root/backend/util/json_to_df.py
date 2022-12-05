@@ -62,7 +62,7 @@ def get_resume_dict_from_dataframe(resume: pd.DataFrame, metadata: dict = {}) ->
 
 def convert_list_field_to_json(list_field_name: str, df: pd.DataFrame) -> dict:
     field = df[df['type'] == list_field_name]
-    field = field.drop(['type'], axis=1)
+    field = field.drop(['type', 'duration', 'time_since'], axis=1)
     field = field[field.columns[~field.isnull().all()]]
 
     field_rows = field.to_dict('records')

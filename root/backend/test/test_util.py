@@ -11,16 +11,15 @@ class TestUtil(unittest.TestCase):
         with open("test/example_resume.json") as f:
             try:
                 resume = json.loads(f.read())
-            except: 
+            except:
                 self.fail("Could not load the example file")
 
         df, md = create_df(resume)
 
         back = get_resume_dict_from_dataframe(df, md)
 
-        self.assertEqual( diff(resume, back), {})
+        self.assertEqual(diff(resume, back), {})
 
-if __name__ == "__main__": 
+
+if __name__ == "__main__":
     unittest.main()
-
-
