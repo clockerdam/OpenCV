@@ -1,5 +1,6 @@
-{"_id":"hejhej123",
-    "title": "Data Scientist @ Apple",
+{
+    "_id": "hejhej123",
+    "title": "Data Scientist",
     "contactInfo": {
         "address": "Chicago, IL",
         "website": "my-website.com",
@@ -116,7 +117,6 @@
                 },
                 "label": 0
             }
-            
         ],
         "label": 0
     },
