@@ -1,0 +1,53 @@
+Software Engineer Moter
+
+Who are we?
+
+Aioi Insurance Services USA is part of the MS&AD Insurance Group which is the 5th largest insurance company by market capitalization and is a Toyota affiliated company providing Toyota Insurance worldwide in 28 different countries. The Advanced Technology Group within Aioi Insurance USA specializes in Research and Development of new technologies that can be used by both the automotive and insurance industry. We build products and knowledge to help business leaders make better, data-driven decisions.
+
+Job Overview:
+
+The Software Developer / DevOps Engineer is a hybrid role for a software developer with Amazon Web Services operational expertise. The work is expected to be roughly 60% software developer and 40% AWS DevOps. You will be developing software for our data ingestion & processing pipeline, data visualization portal, and database system. You will also be responsible for the DevOps aspect of our AWS system in optimizing operation, security systems, release management, and CI/CD.
+
+You will be working primarily on our MOTER (Mobility On The Edge in Real-time) product which is the next generation of vehicle insurance data collection system that incorporate video and AI (Image Recognition) on the device. You will be working closely with our device development team and the data science team.
+
+We are preparing to have MOTER applied in fleets of vehicles for pilot projects and need to have the product developed to a commercial-ready state—device software, connectivity, back-end, OTA functionality, etc.
+
+
+
+Primary Job Responsibilities:
+
+	•	New software product development in an agile environment
+	•	Responsibilities for our AWS system operation
+	•	Continue to enhance the system based on new findings and requirements
+	•	Perform Error and Bug-Fix verification
+
+Experience:
+
+	•	5-10 years of IT development and/or IT operations experience
+	•	Experience implementing solutions in a AWS cloud environment
+	•	Experience with data bases and data base designs, preferably for big data
+	•	Experience working in Agile Scrum environment
+	•	Experience with server side (backend) software development
+	•	Experience with device software development is a plus
+	•	Experience with or working knowledge of automotive telematics or connected car is a big plus!
+
+
+
+
+Qualifications:
+
+	•	Four‐year college degree preferably in mathematics, statistics, economics, engineering, or IT field
+	•	Familiarity with contemporary software development approaches (e.g. agile), tools (e.g. Jira), and DevOps
+	•	3-5+ years of hands on experience working in Software Engineering in a corporate environment or start-up environment
+	•	Programming language/system knowledge: JAVA, Linux, AWS, SQL, Python, and Javascript
+	•	Knowledge of AWS IoT Core/GreenGrass is a plus
+	•	Knowledge of Backend “cloud” infrastructure
+	•	Knowledge of mobile networks and communication protocols is a plus
+	•	Knowledge of Telematics systems and concept validation a plus
+	•	Cellular and Wi-Fi system knowledge is a plus
+	•	Must be proficient with Microsoft Office Suite of products
+	•	Awareness of software security and consumer privacy best practices
+	•	Effective at building strong relationships, internally and externally
+	•	Strong technical background to influence technical design and investment decisions
+
+

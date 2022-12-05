@@ -33,6 +33,7 @@ def main():
 @swag_from(analyze_resume_spec)
 def analyze_resume():
     """Analyze resume and receive an improved version of it"""
+    print("Analysing resume!")
 
     # Input: unlabeled resume
     # User input is saved in DB

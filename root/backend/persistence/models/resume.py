@@ -140,15 +140,24 @@ class PyObjectId(ObjectId):
         field_schema.update(type="string")
 
 
-LabeledExperience = create_model('Experience', value=(Experience, ...), label=(int, ...))
-LabeledEducation = create_model('Education', value=(Education, ...), label=(int, ...))
-LabeledSoftSkill = create_model('SoftSkill', value=(Skill, ...), label=(int, ...))
-LabeledHardSkill = create_model('HardSkill', value=(Skill, ...), label=(int, ...))
-LabeledLanguage = create_model('Language', value=(Skill, ...), label=(int, ...))
-LabeledCertification = create_model('Certification', value=(Certification, ...), label=(int, ...))
-LabeledExtracurricular = create_model('Extracurricular', value=(Extracurricular, ...), label=(int, ...))
-LabeledProject = create_model('Project', value=(Extracurricular, ...), label=(int, ...))
-LabeledAccomplishment = create_model('Accomplishment', value=(Extracurricular, ...), label=(int, ...))
+LabeledExperience = create_model(
+    'Experience', value=(Experience, ...), label=(int, ...))
+LabeledEducation = create_model(
+    'Education', value=(Education, ...), label=(int, ...))
+LabeledSoftSkill = create_model(
+    'SoftSkill', value=(Skill, ...), label=(int, ...))
+LabeledHardSkill = create_model(
+    'HardSkill', value=(Skill, ...), label=(int, ...))
+LabeledLanguage = create_model(
+    'Language', value=(Skill, ...), label=(int, ...))
+LabeledCertification = create_model(
+    'Certification', value=(Certification, ...), label=(int, ...))
+LabeledExtracurricular = create_model(
+    'Extracurricular', value=(Extracurricular, ...), label=(int, ...))
+LabeledProject = create_model('Project', value=(
+    Extracurricular, ...), label=(int, ...))
+LabeledAccomplishment = create_model(
+    'Accomplishment', value=(Extracurricular, ...), label=(int, ...))
 LabeledInterest = create_model('Interest', value=(str, ...), label=(int, ...))
 LabeledPatent = create_model('Patent', value=(str, ...), label=(int, ...))
 
@@ -171,41 +180,39 @@ class Resume(BaseModel):
     interests: List[str]
     contactInfo: ContactInfo
     summary: create_model('Summary', value=(str, ...), label=(int, ...))
-    experience: create_model('Experience', value=(list[LabeledExperience], ...),
+    experience: create_model('Experience', value=(List[LabeledExperience], ...),
                              label=(int, ...))
     education: create_model('Education',
-                            value=(list[LabeledEducation], ...),
+                            value=(List[LabeledEducation], ...),
                             label=(int, ...))
     softSkills: create_model('SoftSkills',
-                             value=(list[LabeledSoftSkill], ...),
+                             value=(List[LabeledSoftSkill], ...),
                              label=(int, ...))
     hardSkills: create_model('HardSkills',
-                             value=(list[LabeledHardSkill], ...),
+                             value=(List[LabeledHardSkill], ...),
                              label=(int, ...))
     languages: create_model('Languages',
-                            value=(list[LabeledLanguage], ...),
+                            value=(List[LabeledLanguage], ...),
                             label=(int, ...))
     certifications: create_model('Certifications', value=(
-    list[LabeledCertification], ...),
-                                 label=(int, ...))
+        List[LabeledCertification], ...),
+        label=(int, ...))
     accomplishments: create_model('Accomplishments', value=(
-    list[LabeledAccomplishment], ...),
-                                  label=(int, ...))
+        List[LabeledAccomplishment], ...),
+        label=(int, ...))
     projects: create_model('Projects', value=(
-    list[LabeledProject], ...),
-                           label=(int, ...))
+        List[LabeledProject], ...),
+        label=(int, ...))
     extracurriculars: create_model('Extracurriculars', value=(
-    list[LabeledExtracurricular], ...),
-                                   label=(int, ...))
-    patents: create_model('Patents', value=(list[LabeledPatent], ...),
+        List[LabeledExtracurricular], ...),
+        label=(int, ...))
+    patents: create_model('Patents', value=(List[LabeledPatent], ...),
                           label=(int, ...))
     interests: create_model('Interests',
-                            value=(list[LabeledInterest], ...),
+                            value=(List[LabeledInterest], ...),
                             label=(int, ...))
 
     class Config:
         allow_population_by_field_name = True
         arbitrary_types_allowed = True
         json_encoders = {ObjectId: str}
-
-
