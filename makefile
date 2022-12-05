@@ -18,7 +18,7 @@ create-env:
 
 build-and-deploy-image:
 	@echo "building and deploying docker image"
-	docker build -t asia.gcr.io/p4ds-team-2/p4ds-backend root/backend
+	docker build -t asia.gcr.io/p4ds-team-2/p4ds-backend root/backend -f root/backend/Dockerfile-build
 	docker push asia.gcr.io/p4ds-team-2/p4ds-backend
 
 
