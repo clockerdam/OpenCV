@@ -10,5 +10,6 @@ pymongo[srv]
 gensim==4.2.0
 pandas==1.3.5
 google-cloud-storage
+jsondiff==2.0.0
 scispacy==0.5.1
 spacy==3.4.2
