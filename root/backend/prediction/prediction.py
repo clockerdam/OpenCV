@@ -28,11 +28,16 @@ def improve_cv(payload: dict) -> dict:
     resume = payload
     resume_df, md = create_df(resume)
 
+
     print("Scoring resume")
     scored = scorer.score_resume_as_dataframe(resume_df)
 
     print("Cutting resume")
     cut, stats = shorten_resume(scored, description_keywords)
+
+    # Filter out unwanted fields
+
+    cut = cut[resume_df.columns]
 
     finished_resume = get_resume_dict_from_dataframe(cut, md)
 

@@ -72,20 +72,21 @@ class ResumeScorer():
         """Takes a resume with labels (can be set to zero) and returns the same resume
         with labels updated according to our model"""
 
+        res = resume.copy()
         # Generate the text based on each column type
-        resume= self.get_evaluation_text_for_df_row(resume)
+        res= self.get_evaluation_text_for_df_row(resume)
 
 
         # Each row gets a score based on its generated text
-        resume['keywords']= resume.apply(lambda x: extract_keywords_from_text([x['scoring_text']]), axis=1)
-        resume['score']=resume.apply(lambda x: self.score_text_based_on_keywords(
+        res['keywords']= res.apply(lambda x: extract_keywords_from_text([x['scoring_text']]), axis=1)
+        res['score']=res.apply(lambda x: self.score_text_based_on_keywords(
             x['keywords']) * x['multiplier'], axis=1)
-        resume.loc[resume['type'] == 'contactInfo', ['score']]=1
+        res.loc[res['type'] == 'contactInfo', ['score']]=1
 
-        resume['label']=resume['score']
-        resume.drop('score', axis=1, inplace=True)
+        res['label']=res['score']
+        res.drop('score', axis=1, inplace=True)
 
-        return resume
+        return res
 
 def point_duration_heuristic_bost(duration: float) -> float:
     """Takes a duration for experience, education etc (in months)
