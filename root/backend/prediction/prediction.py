@@ -20,6 +20,10 @@ def improve_cv(payload: dict) -> dict:
     job = Job(job_title)
     job.load_from_csv_data(job_keywords_csv)
 
+    orig_keywords = set(job.keywords.keys())
+    jd_keyword_set = set(description_keywords)
+    kw = list(orig_keywords.intersection(jd_keyword_set))
+
     # Update the keywords for the job based on the description
     job.update_keywords_from_description(description_keywords)
 
@@ -32,7 +36,7 @@ def improve_cv(payload: dict) -> dict:
     scored = scorer.score_resume_as_dataframe(resume_df)
 
     print("Cutting resume")
-    cut, stats = shorten_resume(scored, description_keywords)
+    cut, stats = shorten_resume(scored, kw)
 
     # Filter out unwanted fields
 
