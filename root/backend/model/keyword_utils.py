@@ -3,7 +3,6 @@ Util functions for dealing with keywords
 """
 
 from typing import List, Tuple
-from keybert import KeyBERT
 
 import random
 import os
@@ -95,31 +94,16 @@ def get_section_texts_with_score_from_resume(resume: dict) -> Tuple[str, float]:
 def extract_keywords_from_text(texts: List[str]) -> List[Tuple[str, float]]:
     """Takes in text and outputs the most relevant keywords with an attached score
 
-    Based on the keybert model
     """
-    kw_model = KeyBERT()
-    keywords = kw_model.extract_keywords(
-        texts,  # passing all texts to process in paralell
-        # using up to 2-grams
-        keyphrase_ngram_range=(1, 2),
-        top_n=40,  # how many keywords we max want to find from each text
-        stop_words='english',
-        # high value to make the keywords as distinct as possible
-        use_mmr=True, diversity=0.8,
-    )
-
-    return keywords
-
-
-def find_frequency_of_term_in_texts(term: str, texts: List[str]) -> float:
-    kw_model = KeyBERT()
-    keywords = kw_model.extract_keywords(texts, candidates=[term])
-
-    return keywords
+    res = []
+    for t in texts:
+        kws = extract_entities_from_text(t)
+        for kw in kws:
+            res.append((kw, 1.0))
+    return res
 
 
 #################### extract requirements from JD (suited for JD_SE2) ###########
-
 
 
 def extract_requirements_JD(jd: str) -> list:
@@ -128,6 +112,8 @@ def extract_requirements_JD(jd: str) -> list:
     splitted_jd = split_jd(jd)
     pot_req_found = find_req(splitted_jd)
     req = extract_entities(pot_req_found)
+    req = list(filter(lambda x: x != "", [v.strip() for sublist in [x.split(",") for x in req]
+                                          for v in sublist]))
     return req
 
 
@@ -138,6 +124,7 @@ def split_jd(jd: str) -> list:
     for match in matches:
         jd_list.append(match.group())
     return jd_list
+
 
 def find_req(jd_list: list) -> list:
     regex_find_req = "((\s.*[Ee]xperience.*:)|(\s.*[Qq]ualification.*:)|(\s.*[Rr]equire.*:))"
@@ -152,20 +139,27 @@ def find_req(jd_list: list) -> list:
             req = req+pot_req
     return req
 
+
 def extract_entities(req: list) -> list:
+    return extract_entities_from_text("\n".join(req))
+
+
+def extract_entities_from_text(text: str) -> List[str]:
+    """Extracts all entities from the text"""
+
     entity_list = []
     entities_to_remove_list = []
-    for r in req:
-        doc = nlp(r)
-        for chunk in doc.noun_chunks:
-            entities_to_remove_list.append(chunk.text.lower())
-        for token in doc:
-            if token.pos_ == "VERB":
-                entities_to_remove_list.append(token.lemma_.lower())
-        for entity in doc.ents:
-            entity_list.append(entity.text.lower())
-        
-    entity_list = list(dict.fromkeys(entity_list)) #remove duplicates
+
+    doc = nlp(text)
+    for chunk in doc.noun_chunks:
+        entities_to_remove_list.append(chunk.text.lower())
+    for token in doc:
+        if token.pos_ == "VERB":
+            entities_to_remove_list.append(token.lemma_.lower())
+    for entity in doc.ents:
+        entity_list.append(entity.text.lower())
+
+    entity_list = list(dict.fromkeys(entity_list))  # remove duplicates
     entity_list_copy = entity_list.copy()
     for ent in entity_list:
         regex = '.* {ent}.*'.format(ent=ent)
@@ -176,4 +170,3 @@ def extract_entities(req: list) -> list:
                 break
     entity_list = entity_list_copy
     return entity_list
-

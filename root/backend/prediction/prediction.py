@@ -28,7 +28,6 @@ def improve_cv(payload: dict) -> dict:
     resume = payload
     resume_df, md = create_df(resume)
 
-
     print("Scoring resume")
     scored = scorer.score_resume_as_dataframe(resume_df)
 
@@ -43,8 +42,8 @@ def improve_cv(payload: dict) -> dict:
     finished_resume = get_resume_dict_from_dataframe(cut, md)
 
     return {
-            **finished_resume,
-            "stats": {
-                **stats
-                }
-            }
+        **finished_resume,
+        "stats": {
+            **stats
+        }
+    }

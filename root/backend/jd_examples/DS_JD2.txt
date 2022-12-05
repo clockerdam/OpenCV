@@ -1,36 +1,51 @@
-Data Scientist Walgreens
+Data Scientist (Computer Vision) engineer
 
-Job Summary:
+Full-time
+Company Description
+We are an Artificial Intelligence (AI) focused product engineering company, providing our customers in healthcare, retail & e-commerce, manufacturing and hospitality sectors with cutting edge products & solutions, harnessing Big Data Analytics, Vision Analytics, and IoT.
+Ever since our inception in March 2010, Tech Vedika has been a partner of choice for several clients in US, Canada, Middle East and APAC. We were listed as one of the Top 10 Healthcare Analytics Solution Provider for year 2019' by Healthcare Tech Outlook Magazine.
+We strive for simple, elegant tech solutions to perform complex tasks. As a scalable technology partner, we enable organizations to improve operational efficiency and unleash new business potential
+The Data Scientist (Computer Vision) engineer will be required to build and implement algorithms based on our existing product portfolio and develop cutting-edge solutions for the emerging requirements of our key markets. 
 
-Applies advanced data analysis tools and techniques to provide insights and actionable recommendations for the business. Utilizes complex statistical modeling to make predictions about future outcomes and in multiple scenarios. May explain findings to business audience.
+Job Description
+The Data Scientist (Computer Vision) engineer will have the opportunity to interact and collaborate with our team of Tech Vedika (WARETRAC) experts in developing cutting-edge solutions to meet the dynamic nature of requirements for our customers. 
 
-Job Responsibilities:
-
-	•	Responsible for applying advanced data analysis tools and techniques to provide insights and actionable recommendations for the business. Utilizes complex statistical modeling to make predictions about future outcomes and in multiple scenarios.
-	•	Interprets and applies data in complex analyses, and explains findings to business audiences to improve products and processes.
-	•	May support or lead the development of data-related commercial offerings and/or other intellectual property (IP)
-	•	Executes statistical and mathematical analyses to support business decision making.
-	•	Develops and/or uses algorithms and statistical predictive models and determines analytical approaches and modeling techniques to evaluate scenarios and potential future outcomes.
-	•	Applies analytical rigor and statistical methods to analyze large amounts of data, using advanced statistical techniques such as predictive statistical models, customer profiling, segmentation analysis, survey design and analysis, and data mining.
-	•	Documents projects including business goals, data gathering and processing, leading approaches, final algorithm, detailed set of results and analytical metrics.
-	•	Develops materials to explain project findings.
-	•	Effectively resolves problems and roadblocks as they occur.
-	•	Interacts with internal and external peers and/or managers to exchange semi-complex information related to assigned activities.
-	•	Prepares and presents interpretation of findings to internal clients.
-
-Basic Qualifications:
-
-	•	Bachelor's degree and at least 2 years of experience in quantitative or computational functions; or graduate degree in a quantitative, computational or technical discipline
-	•	Knowledge of SQL
-	•	Experience in data science, advanced analytics, or statistics. Ability to interrogate data, perform analyses, interpret data, and present to business audiences.
-	•	Knowledge of open source data science and statistics packages such as Python, R, Spark, etc.
-	•	Experience establishing and maintaining key relationships with internal (peers, business partners and leadership) and external (business community, clients and vendors) within a matrix organization to ensure quality standards for service.
-	•	Experience analyzing and reporting data in order to identify issues, trends, or exceptions to drive improvement of results and find solutions.
-	•	Willing to travel up to 10% of the time for business purposes (within state and out of state).
-
-Preferred Qualifications:
-
-	•	Graduate degree in a quantitative, computational or technical discipline
+Key Responsibilities: 
+    • Designing and implementing efficient computer vision algorithms for recognizing, tracking subjects within a controlled environment 
+    • Architecting algorithms to work onboard our hardware systems as well as in the cloud where appropriate. 
+    • Work together with our software development team to develop a scalable software solution 
+    • Qualifications
 
 
-    
+Required Experience:
+
+    • B.E/B.Tech/M.E/M.Tech/MS in Computer Science, Applied Mathematics, or a related field. 
+    • Minimum of 3-6 years of Relevant experience 
+    • Experience and exposure on Advanced Computer Vision, Image processing and Machine Learning 
+    • Practical experience in frameworks such as TensorFlow, TensorFlow Lite, OpenVINO, Keras, Yolo, Caffe. 
+    • Hands-on experience on Image segmentation, feature extraction, High Dimension Classifiers and object tracking algorithms 
+    • Solid Experience with Python, preferably in a Linux environment 
+    • Good problem-solving and diagnostic skills, in a fast-paced environment. 
+    • Work experience on data structures, algorithms, and ability to rapidly prototype and evaluate algorithms 
+    • Experience in optimization for computer vision  
+    • Ability to write efficient and maintainable code 
+    • Good analytical, problem solving, and communication skills are essential as well as the ability to work collaboratively in a team environment. 
+
+Desired Experience:
+
+    • Prior experience in working with depth sensors and 3D Reconstruction using computer vision, image processing techniques 
+    • Advanced Techniques in Computer vision and Deep Learning. 
+    • Knowledge on any Cloud Technologies (AWS, Azure, GCP.)  
+    • Knowledge on any Reporting Tools  
+    • Understanding of REST API, JSON, Python Flask 
+    • Additional Information
+
+At Tech Vedika, we are looking for talented individuals who want to work with driven people. Attain success while working on interesting projects with a culturally diverse group of individuals.
+
+Benefits:
+
+    • Multiple Health coverage
+    • Competitive salary for a growing organization 
+    • Gain experience rapidly
+    • Work directly with executive team
+    • Fast-paced work environment
