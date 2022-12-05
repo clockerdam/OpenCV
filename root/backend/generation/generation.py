@@ -6,7 +6,8 @@ def convert_json_to_yaml():
     with open('data/apple.json', 'r') as file:
         configuration = json.load(file)
 
-    configuration.pop('title')
+    if 'title' in configuration:
+        configuration.pop('title')
 
 
     configuration['contactInfo']['profiles'] = [
@@ -63,13 +64,14 @@ def convert_json_to_yaml():
     configuration.pop('hardSkills')
     configuration.pop('languages')
 
-    configuration['skills'] = []
-    if len(soft_skills.get('keywords')) != 0:
-        configuration['skills'].append(soft_skills)
-    if len(hard_skills.get('keywords')) != 0:
-        configuration['skills'].append(hard_skills)
-    if len(languages.get('keywords')) != 0:
-        configuration['skills'].append(languages)
+    if not(len(language_list) == 0 and len(hard_skill_list) == 0 and len(soft_skill_list) == 0):
+        configuration['skills'] = []
+        if len(soft_skills.get('keywords')) != 0:
+            configuration['skills'].append(soft_skills)
+        if len(hard_skills.get('keywords')) != 0:
+            configuration['skills'].append(hard_skills)
+        if len(languages.get('keywords')) != 0:
+            configuration['skills'].append(languages)
 
     if configuration.get('summary') and len(configuration['summary']) < 120:
         configuration['contactInfo']['label'] = configuration['summary']
