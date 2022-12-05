@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from pandas import json_normalize
 from typing import Tuple, Dict
+from datetime import datetime
 
 
 def get_resume_dict_from_dataframe(resume: pd.DataFrame, metadata: dict = {}) -> dict:
@@ -138,6 +139,8 @@ def get_experience_df(resume: Dict) -> pd.DataFrame:
         df = json_normalize(exp['value'])
         df['label'] = exp['label']
         df['type'] = 'experience'
+        df['duration'] = time_of_experience(df)
+        df['time_since'] = time_since_experience(df)
         experience_df = pd.concat([experience_df, df], ignore_index=True)
     return experience_df
 
@@ -149,6 +152,8 @@ def get_education_df(resume: Dict) -> pd.DataFrame:
         df = json_normalize(edu['value'])
         df['label'] = edu['label']
         df['type'] = 'education'
+        df['duration'] = time_of_education(df)
+        df['time_since'] = time_since_education(df)
         education_df = pd.concat([education_df, df], ignore_index=True)
     return education_df
 
@@ -252,3 +257,86 @@ def get_extracurricular_df(resume: Dict) -> pd.DataFrame:
         extracurricular_df = pd.concat(
             [extracurricular_df, df], ignore_index=True)
     return extracurricular_df
+
+
+
+def time_of_experience(experience: pd.DataFrame) -> int:
+    try:
+        fromDate = experience.iloc[0]['fromDate']
+        toDate = experience.iloc[0]['toDate']
+        present_list = ['today', 'present']
+        if toDate.lower() in present_list:
+            datetime_object_to = datetime.today()
+        else:
+            datetime_object_to = datetime.strptime(toDate, '%B %Y')
+
+        datetime_object_from = datetime.strptime(fromDate, '%B %Y')    
+
+        diff = datetime_object_to - datetime_object_from
+        seconds_per_month = 86400*30
+        months = int(np.floor(diff.total_seconds()/seconds_per_month))
+        if months == 0: #one month
+            months = 1
+        return months
+    except: #set it to a year if something is wrong
+        months = 12
+        return months
+    
+def time_of_education(education: pd.DataFrame) -> int:
+    try:
+        fromDate = education.iloc[0]['fromDate']
+        toDate = education.iloc[0]['toDate']
+        present_list = ['today', 'present']
+        if toDate.lower() in present_list:
+            datetime_object_to = datetime.today()
+        else:
+            datetime_object_to = datetime.strptime(toDate, '%Y')
+
+        datetime_object_from = datetime.strptime(fromDate, '%Y')    
+
+        diff = datetime_object_to - datetime_object_from
+        seconds_per_month = 86400*30
+        months = int(np.floor(diff.total_seconds()/seconds_per_month))
+        if months == 0: #one month
+            months = 1
+        return int(months)
+    except: #set it to a year if something is wrong
+        months = 12
+        return int(months)
+    
+
+    
+def time_since_experience(experience: pd.DataFrame) -> int:
+    try:
+        toDate = experience.iloc[0]['toDate']
+        present_list = ['today', 'present']
+        if toDate.lower() in present_list:
+            datetime_object_to = datetime.today()
+        else:
+            datetime_object_to = datetime.strptime(toDate, '%B %Y')
+        diff = datetime.today() - datetime_object_to
+        seconds_per_month = 86400*30
+        months = int(np.floor(diff.total_seconds()/seconds_per_month))
+        return int(months)
+    except:
+        months = 12
+        return int(months)
+
+def time_since_education(experience: pd.DataFrame) -> int:
+    try:
+        toDate = experience.iloc[0]['toDate']
+        present_list = ['today', 'present']
+        if toDate.lower() in present_list:
+            datetime_object_to = datetime.today()
+        else:
+            datetime_object_to = datetime.strptime(toDate, '%Y')
+        diff = datetime.today() - datetime_object_to
+        seconds_per_month = 86400*30
+        months = int(np.floor(diff.total_seconds()/seconds_per_month))
+        return int(months)
+    except:
+        months = 12
+        return int(months)
+    
+    
+    

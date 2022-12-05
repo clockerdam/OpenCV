@@ -1,0 +1,36 @@
+Business Analyst Blizzard
+
+Job Description:
+
+Blizzard Quality Assurance Operations is looking for a collaborative and dedicated problem solver to provide support to our evolving organization. We are a multi-functional team that broadly supports QA with budget management, business reporting and important metrics, and department-wide initiatives. In this role, you will develop deep expertise on the Operations processes and work with team members, Finance, and HR partners to help drive excellence through delivery and analysis of our operational data and success criteria. You will collaborate with senior management through the process and drive department-wide projects and initiatives.
+
+Responsibilities:
+
+	•	Data Management & Reporting - Access, pull, revise and analyze data from a variety of groups and other data sources; gather new data, link disparate forms of data, and creatively use existing data to propose solutions and present them in compelling way.
+	•	Financial Tracking & Analysis – Form a deep understanding of our financial processes and support the organization in budgeting, analysis, and auditing against our annual operating plan.
+	•	Visualization and Requirements Gathering – Build new and improved ways of visualizing data sets that will make decision making easier for the business and deliver insights through dashboards and presentations; gather requirements from senior management and innovate to meet their needs.
+	•	Project Management – Maintain project plans, identify resource needs, and lead project schedules; Gather, communicate, and complete requirements that will ensure the desired outcomes; collaborate effectively across teams to define strategy and goals.
+	•	Communication – Proactively communicate to partners and the Director of Operations on progress, issues, and risks by applying reporting mechanisms for regular status updates pertaining to all areas within the scope of assigned projects.
+	•	Operational Excellence – Assist in driving process improvement, data optimization, and standardization with Finance, HR, and Quality Assurance leadership to support the evolving business and enhance tracking of our metrics, while balancing the need for flexibility.
+	•	Domain Expertise – Develop deep knowledge of QA’s Finance and HR data. Identify and collaborate on standard methodologies for optimizing the organization and the use of our data.
+
+Requirements:
+
+	•	Bachelor's degree in Management Information Systems, Business Administration, Statistics or related subject area
+	•	2+ years of data analytics experience
+	•	2+ years of finance experience
+	•	Advanced Excel skills, VBA proficiency
+	•	Experience with SQL and using disparate databases and data sets to solve business problems
+	•	Experience with business intelligence tools (Tableau, PowerBI, etc.)
+	•	Demonstrable ability to own and handle multiple projects simultaneously and produce tangible results
+
+Qualification pluses:
+
+	•	Passion for financial analysis and management.
+	•	Self-motivated with an ability to work under tight goals.
+	•	Service minded and aware of what your partners’ challenges are to create the least amount of friction.
+	•	Experience running multi-functional projects with contending objectives and multiple partners.
+	•	An inquisitive technical and business mind to understand, test, or challenge the status quo while working collaboratively with the business and technology owners.
+	•	Experience using JIRA for day-to-day tasking.
+	•	Detail oriented with the ability to think strategically.
+	•	Passion for gaming and knowledge of Blizzard products.

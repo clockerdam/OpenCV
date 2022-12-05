@@ -1,0 +1,6 @@
+*.ipynb
+env/
+venv/
+jd_examples/
+Dockerfile
+Dockerfile-build
