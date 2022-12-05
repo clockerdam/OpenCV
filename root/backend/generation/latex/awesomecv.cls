@@ -203,7 +203,7 @@
 % For fundamental structures
 
 \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{text} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{awesome} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{11pt}{1.2em}\bodyfont\color{awesome} #1}}
 % \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{8pt}{1em}\headerfont\color{text} #1}}
@@ -614,7 +614,6 @@
       {\entrytitlestyle{#1} & \entrylocationstyle{#4} \\}
       {\entrypositionstyle{#1} & \entrydatestyle{#3} \\
       \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
-
     \if\relax\detokenize{#5}\relax
     \else
       \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\
@@ -624,15 +623,17 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
-  \begin{justify}
-  \begin{itemize}[leftmargin=1.2em, rightmargin=13em, nosep, noitemsep]
-    \setlength{\parskip}{0pt}
-    \renewcommand{\labelitemi}{\bullet}
+  \vspace{-7.5mm}
+  \begin{flushleft}
+%  \begin{justify}
+    \begin{adjustwidth}{0em}{16em}
 }{%
-  \end{itemize}
-  \end{justify}
-  \vspace{-4.0mm}
+    \end{adjustwidth}
+    \par
+    \vspace{-2mm}
+%  \end{justify}
+  \end{flushleft}
+  \vspace{-1.5mm}
 }
 
 % Define an environment for cvsubentry
@@ -666,40 +667,63 @@
   \end{adjustwidth}
   \vspace{-2mm}
 }
+%
+%      {\entrypositionstyle{#1} & \entrydatestyle{#3} \\
+%      \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
 
 % Define an cv project
 % Usage: \cvproject{<name>}{<url>}{<short summary>}{<tech stack>}
 \newcommand*{\cvproject}[4]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 5in - 2em} R{5in}}
-      \entrypositionstyle{#1} & \entrylinkstyle{\href{#2}{#2}} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}} \\
+  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+      \entrypositionstyle{#1} & \entrydatestyle{#2} \\
+      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}}\\
       \multicolumn{2}{L{\textwidth - 2em}}{\descriptionkeywordsstyle{#4}} \\
-  \end{tabular*}\vspace{2mm}
+  \end{tabular*}\vspace{-1mm}
 }
 
-% Define an environment for cvhonor
+%% Define an environment for cvhonor
+%\newenvironment{cvhonors}{%
+%%   \vspace{\acvSectionContentTopSkip}
+%%   \vspace{-2mm}
+%  \begin{adjustwidth}{1em}{1em}
+%    \setlength\tabcolsep{0pt}
+%    \setlength{\extrarowheight}{0pt}
+%    \begin{tabular*}{\textwidth + 5em}{@{\extracolsep{\fill}} L{1.2in} L{\textwidth - 1.9in - 4em} R{1in}}
+%}{%
+%    \end{tabular*}%
+%  \end{adjustwidth}
+%  \vspace{-2mm}
+%}
+%% Define a line of cv information(honor, award or something else)
+%% Usage: \cvhonor{<position>}{<title>}{<date>}{<location>}
+%\newcommand*{\cvhonor}[4]{%
+%    % \setlength\tabcolsep{0pt}
+%    % \setlength{\extrarowheight}{0pt}
+%    % \begin{tabular*}{\textwidth - 2em}{@{\extracolsep{\fill}} L{\textwidth - 2in - 2em} R{2in}}
+%    \honorpositionstyle{#2} & \honortitlestyle{#3} \hspace{.1em} \honordatestyle{(#1)} \\
+%    % \end{tabular*}%
+%}
+
+% Define an environment for cvproject
 \newenvironment{cvhonors}{%
-%   \vspace{\acvSectionContentTopSkip}
-%   \vspace{-2mm}
   \begin{adjustwidth}{1em}{1em}
-    \setlength\tabcolsep{0pt}
-    \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth - 2em}{@{\extracolsep{\fill}} L{.9in} L{\textwidth - 1.9in - 2em} R{1in}}
 }{%
-    \end{tabular*}%
   \end{adjustwidth}
   \vspace{-2mm}
 }
-% Define a line of cv information(honor, award or something else)
-% Usage: \cvhonor{<position>}{<title>}{<date>}{<location>}
+
+% Define a cv honor
+% Usage: \cvproject{<name>}{<date>}{<short summary>}{<tech stack>}
 \newcommand*{\cvhonor}[4]{%
-    % \setlength\tabcolsep{0pt}
-    % \setlength{\extrarowheight}{0pt}
-    % \begin{tabular*}{\textwidth - 2em}{@{\extracolsep{\fill}} L{\textwidth - 2in - 2em} R{2in}}
-    \honorpositionstyle{#2} & \honortitlestyle{#3} \hspace{.1em} \honordatestyle{(#1)} & \honorlocationstyle{#4} \\
-    % \end{tabular*}%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+      \entrypositionstyle{#1} & \entrydatestyle{#2} \\
+      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}} \\
+      \multicolumn{2}{L{\textwidth - 2em}} \\
+  \end{tabular*}\vspace{-1mm}
 }
 
 % Define an environment for cvskill

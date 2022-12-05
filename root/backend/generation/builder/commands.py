@@ -83,18 +83,18 @@ class Item(BaseObject):
 
 class Accomplishment(BaseObject):
     _latex_name = "cvhonor"
-    _props = "date title description location"
+    _props = "title date description"
 
-    def __init__(self, date="", title="", description="", location=""):
+    def __init__(self, title="",date="", description=""):
         lcls = locals()
         lcls.pop("self")
         BaseObject.__init__(self, **lcls)
 
     @classmethod
     def from_jsonresume(cls, dict_):
-        data = jsonresume.parse_common("title location", dict_)
-        data["date"] = jsonresume.format_date(dict_.get("date", ""), fmt="%Y")
-        data["description"] = dict_.get("summary", "")
+        data = jsonresume.parse_common("title", dict_)
+        data["date"] = jsonresume.format_date(dict_.get("date", ""), fmt="%m/%Y")
+        data["description"] = dict_.get("description", "")
         return cls(**data)
 
 
@@ -125,44 +125,44 @@ class Entry(BaseObject):
 
 
 class Experience(Entry):
-    _props = "position organization dates location"
+    _props = "title organization dates location"
 
-    def __init__(self, position="", organization="", dates="", location=""):
+    def __init__(self, title="", organization="", dates="", location=""):
         lcls = locals()
         lcls.pop("self")
         Entry.__init__(self, **lcls)
 
     @classmethod
     def from_jsonresume(cls, dict_):
-        data = jsonresume.parse_common("position location", dict_)
+        data = jsonresume.parse_common("title location", dict_)
         data["organization"] = dict_.get("company", "")
         data["dates"] = jsonresume.format_date_range(
-            start=dict_.get("startDate"),
-            end=dict_.get("endDate", "Present"),
+            start=dict_.get("fromDate"),
+            end=dict_.get("toDate", "Present"),
             fmt=cls._date_range_format,
         )
         return cls(**data)
 
 
 class Activity(Experience):
-    _props = "position organization dates location"
+    _props = "title organization dates location"
     _date_range_format = "%Y"
 
     @classmethod
     def from_jsonresume(cls, dict_):
-        data = jsonresume.parse_common("position organization location", dict_)
+        data = jsonresume.parse_common("title organization location", dict_)
         data["dates"] = jsonresume.format_date_range(
-            start=dict_.get("startDate"),
-            end=dict_.get("endDate"),
+            start=dict_.get("fromDate"),
+            end=dict_.get("toDate"),
             fmt=cls._date_range_format,
         )
         return cls(**data)
 
 
 class Education(Entry):
-    _props = "area institution dates location summary"
+    _props = "title institution dates location description"
 
-    def __init__(self, area="", institution="", location="", dates="", summary=""):
+    def __init__(self, title="", institution="", location="", dates="", description=""):
         lcls = locals()
         lcls.pop("self")
         BaseObject.__init__(self, **lcls)
@@ -170,10 +170,10 @@ class Education(Entry):
 
     @classmethod
     def from_jsonresume(cls, dict_):
-        data = jsonresume.parse_common("area institution location summary", dict_)
+        data = jsonresume.parse_common("title institution location description", dict_)
         data["dates"] = jsonresume.format_date_range(
-            start=dict_.get("startDate"),
-            end=dict_.get("endDate"),
+            start=dict_.get("fromDate"),
+            end=dict_.get("toDate"),
             fmt=cls._date_range_format,
         )
         return cls(**data)
@@ -181,17 +181,23 @@ class Education(Entry):
 
 class Project(BaseObject):
     _latex_name = "cvproject"
-    _props = "name url summary keywords"
+    _props = "title dates description keywords"
 
-    def __init__(self, name="", url="", summary="", keywords=""):
+    def __init__(self, title="", dates="", description="", keywords=""):
         lcls = locals()
         lcls.pop("self")
         BaseObject.__init__(self, **lcls)
 
 
 class OSProject(Project):
+    _date_range_format = "%m/%Y"
     @classmethod
     def from_jsonresume(cls, dict_):
-        data = jsonresume.parse_common("name url summary", dict_)
+        data = jsonresume.parse_common("title description", dict_)
+        data["dates"] = jsonresume.format_date_range(
+            start=dict_.get("fromDate"),
+            end=dict_.get("toDate", "Present"),
+            fmt=cls._date_range_format,
+        )
         # data["keywords"] = jsonresume.stringify_sequence(dict_.get("keywords"))
         return cls(**data)

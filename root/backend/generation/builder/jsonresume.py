@@ -1,4 +1,5 @@
 import datetime
+from dateutil.parser import parse
 
 
 def parse_common(names, data):
@@ -10,7 +11,8 @@ def format_date(date, fmt="%m/%Y"):
         date = datetime.datetime.fromisoformat(date).date()
         fmt = "{:" + fmt + "}"
         date = fmt.format(date)
-    except ValueError:
+    except ValueError as e:
+        print(e)
         date = date.capitalize()
     return date
 
