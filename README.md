@@ -29,6 +29,11 @@ gcloud auth configure-docker
 Finally, you need to add the service file to allow your docker container to 
 run google cloud apis. To do this you need to download a service-account file from the slack and put it in 
 `root/backend/secret.json`
+
+Then, make sure to add the following line to your `.env` file in the backend folder 
+```bash
+GOOGLE_APPLICATION_CREDENTIALS="secret.json"
+```
 You can now move on to running the backend with docker shown below.
 
 
