@@ -38,6 +38,7 @@ def improve_cv(payload: dict) -> dict:
     # Filter out unwanted fields
 
     cut = cut[resume_df.columns]
+    cut = cut.drop("keywords", axis=1)
 
     finished_resume = get_resume_dict_from_dataframe(cut, md)
 
