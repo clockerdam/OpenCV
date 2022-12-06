@@ -57,10 +57,10 @@ function Output() {
       {list.map((keyword, index) => {
         // Last item in list
         if (index === list.length - 1) {
-          return <span>{keyword}.</span>
+          return <span>{keyword}</span>
         }
         // Regular list item
-        return <span>{keyword}, </span>
+        return <span>{keyword} <b>|</b> </span>
       })}
     </div>
   }
