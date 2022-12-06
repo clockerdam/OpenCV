@@ -1,6 +1,6 @@
 import { FormEvent, useContext} from "react";
-import { LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../CV/CV";
-import cvContext from "../cvContext";
+import { LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../../CV/CV";
+import cvContext from "../../cvContext";
 import './form.css'
 
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
