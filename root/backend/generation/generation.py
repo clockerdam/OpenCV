@@ -173,7 +173,7 @@ def build_package(ctx):
 
 
 def _build_pdf(ctx):
-    ctx.run("scripts/xelatex {}".format(TEX_FILE))
+    p = subprocess.run([ "/usr/bin/xelatex", "temp" ])
     # "pdftoppm -png {} preview".format(os.path.join(filedir, filename))
 
 
@@ -183,7 +183,7 @@ def build_pdf():
     # run("scripts/xelatex temp")
     print(TEX_FILE)
     # os.system(['xelatex', 'temp'])
-    subprocess.call(['xelatex', 'temp'])
+    subprocess.run([ "/usr/bin/xelatex", "temp" ])
 
 
 def _move_and_rename(ctx, file_name):

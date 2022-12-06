@@ -1,6 +1,7 @@
 import os
 
 from invoke import task
+import subprocess
 
 VERSION = "2.1.0"
 
@@ -30,7 +31,7 @@ def build_package(ctx):
 
 
 def _build_pdf(ctx):
-    ctx.run("scripts/xelatex temp")
+    p = subprocess.run([ "/usr/bin/xelatex", "temp" ])
 
 
 def _move_and_rename(ctx, file_name):
