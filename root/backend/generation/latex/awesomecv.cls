@@ -616,7 +616,7 @@
       {\entrypositionstyle{#1} & \entrydatestyle{#3} \\
       \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
       \multicolumn{2}{L{\textwidth - 10em}}{\ifthenelse{\isempty{#5}}{}{\descriptionstyle{#5}}} \
-  \end{tabular*}
+  \end{tabular*}\vspace{1mm}
 }
 
 % Define an environment for cvitems(for cventry)
