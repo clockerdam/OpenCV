@@ -678,8 +678,7 @@
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
       \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}}\\
-      \multicolumn{2}{L{\textwidth - 2em}}{\descriptionkeywordsstyle{#4}} \\
+      \multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}}\\
   \end{tabular*}\vspace{-1mm}
 }
 
