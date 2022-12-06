@@ -1,5 +1,5 @@
 import { FormEvent, useContext} from "react";
-import { LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../../CV/CV";
+import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../../CV/CV";
 import cvContext from "../../cvContext";
 import './form.css'
 
@@ -54,7 +54,7 @@ function Form() {
                     name="title"
                     placeholder="Title"
                     value={cv.title}
-                    onChange={(e) => setCV((prevState: any) => ({ ...prevState, title: e.target.value}))}
+                    onChange={(e) => setCV((prevState: CV) => ({ ...prevState, title: e.target.value}))}
                 />
             </label>
             <label>
@@ -63,7 +63,7 @@ function Form() {
                     name="summary"
                     placeholder="Summary"
                     value={cv.summary.value}
-                    onChange={(e) => setCV((prevState: any) => ({ ...prevState, summary: {value: e.target.value, label: 0}}))}
+                    onChange={(e) => setCV((prevState: CV) => ({ ...prevState, summary: {value: e.target.value, label: 0}}))}
                 />
             </label>
             <label>
@@ -483,7 +483,7 @@ function Form() {
                     case SubField.Family:
                         data = cv[field]
                         data[subField] = event.target.value
-                        setCV((prevState: any) => ({...prevState, [field]: data}))
+                        setCV((prevState: CV) => ({...prevState, [field]: data}))
                         return 
                     default:
                         console.log("Unknown field: " + field)
@@ -579,7 +579,7 @@ function Form() {
                 console.log("Unknown field: " + field)
                 return
         }
-        setCV((prevState: any) => ({...prevState, [field]: {label: 0, value: data}}))
+        setCV((prevState: CV) => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function remove(field: Field, index: number) {
@@ -603,7 +603,7 @@ function Form() {
                 console.log("Unknown field: " + field)
                 return
         }
-        setCV((prevState: any) => ({...prevState, [field]: {label: 0, value: data}}))
+        setCV((prevState: CV) => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function add(field: string) { 
@@ -638,7 +638,7 @@ function Form() {
         }
         let data = cv[field].value
         data.push(newItem)
-        setCV((prevState: any) => ({...prevState, [field]: {label: 0, value: data}}))
+        setCV((prevState: CV) => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function handleSubmit(e: FormEvent) {
