@@ -162,11 +162,15 @@ def extract_entities_from_text(text: str) -> List[str]:
     entity_list = list(dict.fromkeys(entity_list))  # remove duplicates
     entity_list_copy = entity_list.copy()
     for ent in entity_list:
-        regex = '.* {ent}.*'.format(ent=ent)
-        for ne in entities_to_remove_list:
-            match = re.match(regex, ne)
-            if match != None:
-                entity_list_copy.remove(ent)
-                break
+        try:
+            regex = '.* {ent}.*'.format(ent=re.escape(ent))
+            for ne in entities_to_remove_list:
+                match = re.match(regex, ne)
+                if match != None:
+                    entity_list_copy.remove(ent)
+                    break
+        except Exception as e:
+            print(f"Error in removing {ent} from entity list")
+            print(f"Error: {e}")
     entity_list = entity_list_copy
     return entity_list
