@@ -1,14 +1,24 @@
 import json, yaml
+import subprocess
+
+import os
 from dateutil.parser import parse
+from invoke import task, run
+from generation.builder import ResumeDocument
 
-
+FILEPATH = os.path.join(os.getcwd(), 'tmp')
+JSON_FILE = os.path.join(FILEPATH, 'temp.json')
+YAML_FILE = os.path.join(FILEPATH, 'temp.yaml')
+TEX_FILE = os.path.join(FILEPATH, 'temp')
+PDF_FILE = os.path.join(FILEPATH, 'output.pdf')
 def convert_json_to_yaml():
-    with open('data/apple.json', 'r') as file:
+    os.makedirs(FILEPATH, exist_ok=True)
+
+    with open(JSON_FILE, 'r') as file:
         configuration = json.load(file)
 
     if 'title' in configuration:
         configuration.pop('title')
-
 
     configuration['contactInfo']['profiles'] = [
         {
@@ -64,7 +74,7 @@ def convert_json_to_yaml():
     configuration.pop('hardSkills')
     configuration.pop('languages')
 
-    if not(len(language_list) == 0 and len(hard_skill_list) == 0 and len(soft_skill_list) == 0):
+    if not (len(language_list) == 0 and len(hard_skill_list) == 0 and len(soft_skill_list) == 0):
         configuration['skills'] = []
         if len(soft_skills.get('keywords')) != 0:
             configuration['skills'].append(soft_skills)
@@ -73,6 +83,7 @@ def convert_json_to_yaml():
         if len(languages.get('keywords')) != 0:
             configuration['skills'].append(languages)
 
+    # if summary is short display it as one-liner above the contactInfo
     if configuration.get('summary') and len(configuration['summary']) < 120:
         configuration['contactInfo']['label'] = configuration['summary']
         configuration.pop('summary')
@@ -112,8 +123,10 @@ def convert_json_to_yaml():
         if section in configuration:
             configuration.pop(section)
 
-    with open('data/apple.yaml', 'w') as yaml_file:
+    with open(YAML_FILE, 'w') as yaml_file:
         yaml.dump(configuration, yaml_file)
+
+    return configuration
 
 
 def format_date(date):
@@ -128,4 +141,112 @@ def format_date(date):
     return date
 
 
-convert_json_to_yaml()
+import os
+
+from invoke import task
+
+VERSION = "2.1.0"
+
+
+@task
+def build_docker(ctx):
+    ctx.run("docker build -t joeblackwaslike/texlive:2016 docker-texlive")
+
+
+@task
+def generate_thumbnails(ctx):
+    filedir = "export"
+    filename = (
+        f"Joe_Black_resume_backend-software-engineer_python_v{VERSION}.pdf"
+    )
+    ctx.run("pdftoppm -png {} preview".format(os.path.join(filedir, filename)))
+
+
+@task
+def dump_json(ctx):
+    ctx.run("yq . data/bse-python.yaml")
+
+
+@task
+def build_package(ctx):
+    ctx.run("pip3 install -r requirements.txt")
+
+
+def _build_pdf(ctx):
+    ctx.run("scripts/xelatex {}".format(TEX_FILE))
+    # "pdftoppm -png {} preview".format(os.path.join(filedir, filename))
+
+
+
+def build_pdf():
+    print("Hier angekommen")
+    # run("scripts/xelatex temp")
+    print(TEX_FILE)
+    # os.system(['xelatex', 'temp'])
+    subprocess.call(['xelatex', 'temp'])
+
+
+def _move_and_rename(ctx, file_name):
+    ctx.run(f"mv latex/temp.pdf export/{file_name}")
+
+
+def _clean_up(ctx):
+    ctx.run("rm -f latex/temp*")
+
+
+def _extract_txt(ctx, file_name):
+    ctx.run(f"pdftotext -layout export/{file_name}")
+
+
+def _preview(ctx, file_name):
+    ctx.run(f"open export/{file_name}")
+
+
+@task
+def _render(ctx, data="bse-python", pty=True):
+
+    data_path = f"data/{data}.yaml"
+
+    # Generate latex
+    doc = ResumeDocument.from_jsonresume(YAML_FILE)
+    print(doc)
+    doc.export(TEX_FILE)
+    file_name = PDF_FILE
+    _build_pdf(ctx)
+    _move_and_rename(ctx, file_name)
+    _clean_up(ctx)
+    # _extract_txt(ctx, file_name)
+    _preview(ctx, file_name)
+
+    print(f"Finished generating: {file_name}")
+
+
+def save_to_json(resume):
+    # with open('data/temp.json', 'r') as file:
+    #     file = json.dump(resume,file)
+    json_obj = json.dumps(resume, indent=4)
+    with open(JSON_FILE, "w") as outfile:
+        outfile.write(json_obj)
+
+
+
+def render_from_json(input):
+    # from invoke import run
+    # run("inv render --data=temp")
+
+    save_to_json(input)
+    convert_json_to_yaml()
+
+    data = 'temp'
+    data_path = f"data/{data}.yaml"
+
+    # Generate latex
+    doc = ResumeDocument.from_jsonresume('temp')
+    doc.export(TEX_FILE)
+    file_name = PDF_FILE
+    # file_name = f"{doc.file_name}.pdf"
+
+    build_pdf()
+    # doc2 = ResumeDocument(doc)
+    # build_pdf()
+    # subprocess.call("inv render --data=temp")

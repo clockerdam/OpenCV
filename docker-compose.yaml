@@ -9,10 +9,17 @@ services:
       MONGO_USERNAME: root
       MONGO_PASSWORD: example
       MONGO_HOST: mongodb://root:example@mongo:27017/
-
+    volumes:
+      - '.:/app/tmp'
+      #    volumes:
+      #      - tmp:/usr/share/opencv/temp:rw
 
   mongo:
     image: mongo:latest
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
+
+#volumes:
+#  tmp:
+#    external: true

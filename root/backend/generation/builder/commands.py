@@ -91,7 +91,7 @@ class Accomplishment(BaseObject):
         BaseObject.__init__(self, **lcls)
 
     @classmethod
-    def from_jsonresume(cls, dict_):
+    def from_json_file_resume(cls, dict_):
         data = jsonresume.parse_common("title", dict_)
         data["date"] = jsonresume.format_date(dict_.get("date", ""), fmt="%m/%Y")
         data["description"] = dict_.get("description", "")
