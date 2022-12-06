@@ -52,9 +52,40 @@ function Output() {
     });
   }
 
+  function displayKeywordList(list: string[]) {
+    return <div>
+      {list.map((keyword, index) => {
+        // Last item in list
+        if (index === list.length - 1) {
+          return <span>{keyword}.</span>
+        }
+        // Regular list item
+        return <span>{keyword}, </span>
+      })}
+    </div>
+  }
+
+  function displayKeywords() {
+    return <div className="keywords">
+      <div>
+        <h3>Included keywords:</h3>
+        {displayKeywordList(cvAnalyzed.stats.included_keywords)}
+      </div>
+      <div>
+        <h3>Missing keywords:</h3>
+        {displayKeywordList(cvAnalyzed.stats.missing_keywords)}
+      </div>
+      <div>
+        <h3>Removed keywords:</h3>
+        {displayKeywordList(cvAnalyzed.stats.removed_keywords)}
+      </div>
+    </div>
+  }
+
   return (
     <div>
       <div className="split left">
+        {displayKeywords()}
         <button onClick={() => fetchRandomAndAnalyze()}>Analyze random CV</button>
         <button onClick={() => analyzeCV()}>Analyze CV</button>
         <label>
@@ -112,7 +143,7 @@ function Output() {
     return (
       <div>
         {Object.keys(cv).map((field) => {
-          if (field === "title" || field === "summary" || field === "_id") {
+          if (field === "title" || field === "summary" || field === "_id" || field === "stats") {
             return null;
           }
           if (field === "contactInfo") {

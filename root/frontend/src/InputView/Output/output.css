@@ -125,3 +125,9 @@ hr {
     background-color: rgb(127, 140, 141);
     margin: 0
 }
+
+.keywords {
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
