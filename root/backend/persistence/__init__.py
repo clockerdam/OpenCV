@@ -1,3 +1,2 @@
-from .connection import *
-from .models import *
-
+from persistence.connection import *
+from persistence.models import *

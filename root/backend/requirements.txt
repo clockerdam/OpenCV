@@ -14,3 +14,5 @@ jsondiff==2.0.0
 PyLaTeX
 PyYAML
 invoke
+scispacy==0.5.1
+spacy==3.4.2

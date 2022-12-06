@@ -13,3 +13,4 @@ ENV PYTHONPATH /app
 
 EXPOSE 8080
 CMD ["python3", "main.py"]
+FROM asia.gcr.io/p4ds-team-2/p4ds-backend:latest
