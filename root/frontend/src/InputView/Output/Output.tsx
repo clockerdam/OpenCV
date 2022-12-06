@@ -44,10 +44,19 @@ function Output() {
     });
   }
 
+  function analyzeCV() {
+    getAnalysis(JSON.stringify(cv)).then((analyzedCV: CV) => {
+      console.log(analyzedCV);
+      setOutputLoadingState("done");
+      setAnalyzedCV(analyzedCV);
+    });
+  }
+
   return (
     <div>
       <div className="split left">
         <button onClick={() => fetchRandomAndAnalyze()}>Analyze random CV</button>
+        <button onClick={() => analyzeCV()}>Analyze CV</button>
         <label>
           <h1>Input CV:</h1>
         </label>
