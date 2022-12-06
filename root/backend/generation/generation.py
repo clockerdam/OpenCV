@@ -14,7 +14,7 @@ PDF_FILE = os.path.join(FILEPATH, 'output.pdf')
 def convert_json_to_yaml():
     os.makedirs(FILEPATH, exist_ok=True)
 
-    with open('data/l_BA11.json', 'r') as file:
+    with open('data/apple.json', 'r') as file:
         configuration = json.load(file)
 
     if 'title' in configuration:
@@ -100,7 +100,7 @@ def convert_json_to_yaml():
         experience['fromDate'] = format_date(experience['fromDate'])
         experience['toDate'] = format_date(experience['toDate'])
         if len(experience['description']) == 0:
-            experience['description'] = "Can't handle empty descriptions yet"
+            experience['description'] = ""
 
     for extracurricular in configuration['extracurriculars']:
         extracurricular['fromDate'] = format_date(extracurricular['fromDate'])
@@ -110,20 +110,20 @@ def convert_json_to_yaml():
         education['fromDate'] = format_date(education['fromDate'])
         education['toDate'] = format_date(education['toDate'])
         if len(education['description']) == 0:
-            education['description'] = "Can't handle empty descriptions yet"
+            education['description'] = ""
 
     for project in configuration['projects']:
         project['fromDate'] = format_date(project['fromDate'])
         project['toDate'] = format_date(project['toDate'])
         if len(project['description']) == 0:
-            project['description'] = "Can't handle empty descriptions yet"
+            project['description'] = ""
 
     # drop all empty sections so they are excluded from rendering
     for section in empty_sections:
         if section in configuration:
             configuration.pop(section)
 
-    with open('data/l_BA11.yaml', 'w') as yaml_file:
+    with open('data/apple.yaml', 'w') as yaml_file:
         yaml.dump(configuration, yaml_file)
 
     return configuration

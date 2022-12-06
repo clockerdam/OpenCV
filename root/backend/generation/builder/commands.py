@@ -145,12 +145,12 @@ class Experience(Entry):
 
 
 class Activity(Experience):
-    _props = "title organization dates location"
+    _props = "title organization dates location description"
     _date_range_format = "%Y"
 
     @classmethod
     def from_jsonresume(cls, dict_):
-        data = jsonresume.parse_common("title organization location", dict_)
+        data = jsonresume.parse_common("title organization location description", dict_)
         data["dates"] = jsonresume.format_date_range(
             start=dict_.get("fromDate"),
             end=dict_.get("toDate"),

@@ -137,10 +137,6 @@ class ResumeDocument(Document):
             with doc.create(Entries()) as entries:
                 for item in resume["extracurriculars"]:
                     entry = Activity.from_jsonresume(item)
-                    with entry.create(Items()) as items:
-                        description = item.get("description")
-                        if description and len(description) != 0:
-                            items.append(Item(description))
                     entries.append(entry)
 
         if should_be_rendered("accomplishments"):
