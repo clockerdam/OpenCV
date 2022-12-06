@@ -1,15 +1,16 @@
-import { useEffect, useState } from "react";
-import { getUnlabeled, getAnalysis } from "../api/api";
-import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledItem, LabelledSkill, LabelledString } from "../CV/CV";
+import { useContext, useState } from "react";
 import "./output.css";
 import _ from "lodash"
 
 import { MoonLoader } from "react-spinners";
+import { getAnalysis, getUnlabeled } from "../../api/api";
+import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledItem, LabelledSkill, LabelledString } from "../../CV/CV";
+import cvContext from "../../cvContext";
 
 type OutputLoadingState = "loading" | "done";
 
 function Output() {
-  const [cvUnlabeled, setUnlabeledCV] = useState(new CV()); // Initialize with an empty CV until an unlabeled one is fetched from DB
+  const {cv, setCV} = useContext(cvContext); // Initialize with an empty CV until an unlabeled one is fetched from DB
 
   const [cvAnalyzed, setAnalyzedCV] = useState(new CV()); // Initialize with an empty CV until an analyzed one is fetched from DB
 
@@ -31,35 +32,35 @@ function Output() {
     Extracurriculars = "extracurriculars",
   }
 
-  // Fetch the unlabeled CV upon initial load of page
-  useEffect(() => {
+  function fetchRandomAndAnalyze() {
     getUnlabeled().then((unlabeledCV: CV) => {
       console.log(unlabeledCV);
-      setUnlabeledCV(unlabeledCV);
+      setCV(unlabeledCV);
       getAnalysis(JSON.stringify(unlabeledCV)).then((analyzedCV: CV) => {
         console.log(analyzedCV);
         setOutputLoadingState("done");
         setAnalyzedCV(analyzedCV);
       });
     });
-  }, []);
+  }
 
   return (
     <div>
       <div className="split left">
+        <button onClick={() => fetchRandomAndAnalyze()}>Analyze random CV</button>
         <label>
           <h1>Input CV:</h1>
         </label>
         <label>
-          <h2>{cvUnlabeled.title}</h2>
+          <h2>{cv.title}</h2>
         </label>
         <div className="section">
           <h2 className="item">Summary</h2>
           <div className="rating">
-            <p className="item">{cvUnlabeled.summary.value}</p>
+            <p className="item">{cv.summary.value}</p>
           </div>
         </div>
-        {mapFields(cvUnlabeled, false)}
+        {mapFields(cv, false)}
       </div>
       <div className="bar"></div>
       <div className="split right">
@@ -103,10 +104,10 @@ function Output() {
       <div>
         {Object.keys(cv).map((field) => {
           if (field === "title" || field === "summary" || field === "_id") {
-            return;
+            return null;
           }
           if (field === "contactInfo") {
-            return; //mapField(field)
+            return null; //mapField(field)
           }
           return mapNestedField(cv, field, output);
         })}
@@ -190,7 +191,7 @@ function Output() {
   }
 
   function color(cv: CV, field: string, index: number): string {
-    if (cvAnalyzed.title === "" || cvUnlabeled.title === "") {
+    if (cvAnalyzed.title === "" || cv.title === "") {
       return index % 2 === 0 ? "item light" : "item dark"
     }
 
