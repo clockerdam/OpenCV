@@ -674,13 +674,17 @@
 % Define an cv project
 % Usage: \cvproject{<name>}{<url>}{<short summary>}{<tech stack>}
 \newcommand*{\cvproject}[4]{%
-  \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
-      \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}}\\
-      \multicolumn{2}{L{\textwidth - 2em}}{\descriptionkeywordsstyle{#4}} \\
-  \end{tabular*}\vspace{-1mm}
+\setlength\tabcolsep{0pt}
+\setlength{\extrarowheight}{0pt}
+\begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+\entrypositionstyle{#1} & \entrydatestyle{#2} \
+\multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}} \
+\multicolumn{2}{L{\textwidth - 2em}}
+\end{tabular*}\vspace{-1mm}
+{\ifthenelse{\isempty{#3}}{\vspace{-10mm}}{}{}}
+% add this line to check if the #3 argument is empty
+% if it is, don't display the project description
+% \ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}
 }
 
 %% Define an environment for cvhonor
@@ -721,7 +725,7 @@
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
       \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}} \\
+      \multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}} \\
       \multicolumn{2}{L{\textwidth - 2em}}
   \end{tabular*}\vspace{-1mm}
   {\ifthenelse{\isempty{#3}}{\vspace{-10mm}}{}{}}
