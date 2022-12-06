@@ -1,23 +1,35 @@
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useContext, useState } from "react";
 import { CV } from "../CV/CV"
+import cvContext from "../cvContext";
+import { Form } from "../Form/Form";
 
 function Output() {
     // Fetch input CV
     // Fetch output CV
     // Display side by side
-    const [cvUnlabeled, setUnlabeledCV] = useState(new CV())
-    const navigate = useNavigate()
-    const {state} = useLocation()
-    useEffect(() => {
-        setUnlabeledCV(state)
-    }, [state])
+    const {cv} = useContext(cvContext)
 
-    return <div>
-        <button onClick={() => navigate('/input', {state: cvUnlabeled})}>Edit CV</button>
-        {representCV(new CV())}
-        {representCV(new CV())}
-    </div>
+    enum Page {
+        Output,
+        Form
+    }
+
+    const [currentPage, setCurrentPage] = useState(Page.Output)
+
+    if (currentPage === Page.Output) {
+        return <div>
+            <button onClick={() => setCurrentPage(Page.Form)}>Go to input</button>
+            {representCV(cv)}
+            {representCV(new CV())}
+        </div>
+    }
+    if (currentPage === Page.Form) {
+        return <div>
+                <button onClick={() => setCurrentPage(Page.Output)}>Go to output</button>
+                <Form></Form>
+            </div>
+    }
+    return <p>Invalid page.</p>
 }
 
 function representCV(cv: CV) {

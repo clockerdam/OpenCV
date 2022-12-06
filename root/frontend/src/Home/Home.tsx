@@ -5,9 +5,8 @@ function Home() {
 
     return <div>
         <h1>OpenCV</h1>
-        <button onClick={() => navigate('/input')}>Improve CV</button>
-        <button onClick={() => navigate('/label')}>Label CV</button>
-        <button onClick={() => navigate('/output')}>Output page</button>
+        <button onClick={() => navigate('/label')}>Label a CV</button>
+        <button onClick={() => navigate('/improve')}>Improve your CV</button>
     </div>
 }
 

@@ -1,12 +1,14 @@
 import './App.css';
-import { Form } from './Form/Form';
 import { Labeller } from './Labeller/Labeller';
-import { Output } from './Output/Output';
 import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
 import { Home } from './Home/Home';
+import { CV } from './CV/CV';
+import { useState } from 'react';
+import cvContext from './cvContext';
+import { Output } from './Output/Output';
 
 const router = createBrowserRouter([
   {
@@ -15,21 +17,21 @@ const router = createBrowserRouter([
     errorElement: <p>Page not found.</p>
   },
   {
-    path: "/input",
-    element: <Form></Form>,
-  },
-  {
     path: "/label",
     element: <Labeller></Labeller>,
   },
   {
-    path: "/output",
+    path: "/improve",
     element: <Output></Output>,
   },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />
+  const [cv, setCV] = useState(new CV())
+
+  return <cvContext.Provider value={{ cv, setCV }}>
+    <RouterProvider router={router} />
+  </cvContext.Provider>
 }
 
 export default App;

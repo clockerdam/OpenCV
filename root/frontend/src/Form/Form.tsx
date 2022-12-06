@@ -1,16 +1,11 @@
-import { FormEvent, useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../CV/CV";
+import { FormEvent, useContext} from "react";
+import { LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../CV/CV";
+import cvContext from "../cvContext";
 import './form.css'
 
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
 function Form() {
-    const [cv, setCV] = useState(new CV())
-    const navigate = useNavigate()
-    const {state} = useLocation()
-    useEffect(() => {
-        setCV(state)
-    }, [state])
+    const {cv, setCV} = useContext(cvContext)
 
     enum Field {
         Interests = "interests",
@@ -59,7 +54,7 @@ function Form() {
                     name="title"
                     placeholder="Title"
                     value={cv.title}
-                    onChange={(e) => setCV(prevState => ({ ...prevState, title: e.target.value}))}
+                    onChange={(e) => setCV((prevState: any) => ({ ...prevState, title: e.target.value}))}
                 />
             </label>
             <label>
@@ -68,7 +63,7 @@ function Form() {
                     name="summary"
                     placeholder="Summary"
                     value={cv.summary.value}
-                    onChange={(e) => setCV(prevState => ({ ...prevState, summary: {value: e.target.value, label: 0}}))}
+                    onChange={(e) => setCV((prevState: any) => ({ ...prevState, summary: {value: e.target.value, label: 0}}))}
                 />
             </label>
             <label>
@@ -488,7 +483,7 @@ function Form() {
                     case SubField.Family:
                         data = cv[field]
                         data[subField] = event.target.value
-                        setCV(prevState => ({...prevState, [field]: data}))
+                        setCV((prevState: any) => ({...prevState, [field]: data}))
                         return 
                     default:
                         console.log("Unknown field: " + field)
@@ -584,7 +579,7 @@ function Form() {
                 console.log("Unknown field: " + field)
                 return
         }
-        setCV(prevState => ({...prevState, [field]: {label: 0, value: data}}))
+        setCV((prevState: any) => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function remove(field: Field, index: number) {
@@ -608,7 +603,7 @@ function Form() {
                 console.log("Unknown field: " + field)
                 return
         }
-        setCV(prevState => ({...prevState, [field]: {label: 0, value: data}}))
+        setCV((prevState: any) => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function add(field: string) { 
@@ -643,7 +638,7 @@ function Form() {
         }
         let data = cv[field].value
         data.push(newItem)
-        setCV(prevState => ({...prevState, [field]: {label: 0, value: data}}))
+        setCV((prevState: any) => ({...prevState, [field]: {label: 0, value: data}}))
     }
 
     function handleSubmit(e: FormEvent) {
@@ -651,7 +646,6 @@ function Form() {
         let json = JSON.stringify(cv)
         console.log(json)
         //uploadUnlabeled(json).then(e => console.log(e))
-        navigate('/output', {state: cv})
     }
 }
 
