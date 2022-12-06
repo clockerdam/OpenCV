@@ -4,7 +4,7 @@ import subprocess
 import os
 from dateutil.parser import parse
 from invoke import task, run
-from generation.builder import ResumeDocument
+from builder import ResumeDocument
 
 FILEPATH = os.path.join(os.getcwd(), 'tmp')
 JSON_FILE = os.path.join(FILEPATH, 'temp.json')
@@ -14,7 +14,7 @@ PDF_FILE = os.path.join(FILEPATH, 'output.pdf')
 def convert_json_to_yaml():
     os.makedirs(FILEPATH, exist_ok=True)
 
-    with open(JSON_FILE, 'r') as file:
+    with open('data/l_BA11.json', 'r') as file:
         configuration = json.load(file)
 
     if 'title' in configuration:
@@ -123,7 +123,7 @@ def convert_json_to_yaml():
         if section in configuration:
             configuration.pop(section)
 
-    with open(YAML_FILE, 'w') as yaml_file:
+    with open('data/l_BA11.yaml', 'w') as yaml_file:
         yaml.dump(configuration, yaml_file)
 
     return configuration
@@ -250,3 +250,6 @@ def render_from_json(input):
     # doc2 = ResumeDocument(doc)
     # build_pdf()
     # subprocess.call("inv render --data=temp")
+
+
+convert_json_to_yaml()

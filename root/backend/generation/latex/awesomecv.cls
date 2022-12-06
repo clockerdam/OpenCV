@@ -214,11 +214,12 @@
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1.1em}\bodyfontlight\upshape\color{text}}
 
 % For elements of entry
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{awesome} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{awesome} #1}}
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{darkgray} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{graytext} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+%\newcommand*{\descriptionstyle}[1]{{\fontsize{8pt}{1.1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\descriptionstyle}{\fontsize{9pt}{1.1em}\bodyfontlight\upshape\color{text}}
 \newcommand*{\descriptionkeywordsstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 \newcommand*{\projectdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\upshape\color{graytext} #1}}
@@ -614,11 +615,8 @@
       {\entrytitlestyle{#1} & \entrylocationstyle{#4} \\}
       {\entrypositionstyle{#1} & \entrydatestyle{#3} \\
       \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
-    \if\relax\detokenize{#5}\relax
-    \else
-      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\
-    \fi
-  \end{tabular*}\vspace{2mm}
+      \multicolumn{2}{L{\textwidth - 10em}}{\ifthenelse{\isempty{#5}}{}{\descriptionstyle{#5}}} \
+  \end{tabular*}
 }
 
 % Define an environment for cvitems(for cventry)

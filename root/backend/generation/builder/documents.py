@@ -1,5 +1,4 @@
-from os.path import relpath, join
-
+import os
 import yaml
 from pylatex import Document, Command, NoEscape
 
@@ -16,10 +15,15 @@ from .commands import (
 )
 from .environments import Paragraph, Accomplishments, Skills, Entries, Projects, Items
 
+FILEPATH = os.path.join(os.getcwd(), 'tmp')
+JSON_FILE = os.path.join(FILEPATH, 'temp.json')
+YAML_FILE = os.path.join(FILEPATH, 'temp.yaml')
+TEX_FILE = os.path.join(FILEPATH, 'temp')
+PDF_FILE = os.path.join(FILEPATH, 'output.pdf')
 
 class ResumeDocument(Document):
     def __init__(self, *args, **kwargs):
-        kwargs.setdefault("default_filepath", relpath(join(".", "export")))
+        kwargs.setdefault("default_filepath", os.path.relpath(os.path.join(".", "export")))
         kwargs.setdefault("document_options", ["11pt", "letterpaper"])
         kwargs.setdefault("documentclass", "awesomecv")
         kwargs.setdefault("accent_color", "awesome-emerald")
@@ -93,6 +97,7 @@ class ResumeDocument(Document):
             resume = yaml.load(fd, yaml.Loader)
 
         sections_to_be_rendered = list(resume.keys())
+
         def should_be_rendered(section):
             return section in sections_to_be_rendered
 
@@ -118,12 +123,6 @@ class ResumeDocument(Document):
             with doc.create(Entries()) as entries:
                 for item in resume["experience"]:
                     entry = Experience.from_jsonresume(item)
-                    with entry.create(Items()) as items:
-                        description = item.get("description")
-                        if description and len(description) != 0:
-                            items.append(Item(description))
-                        for bullet in item.get("highlights", []):
-                            items.append(Item(bullet))
                     entries.append(entry)
 
         if should_be_rendered("education"):
@@ -156,5 +155,6 @@ class ResumeDocument(Document):
                 for item in resume["projects"]:
                     entry = OSProject.from_jsonresume(item)
                     entries.append(entry)
-
+        print("At the end of from_resume_object")
+        print(doc)
         return doc
