@@ -1,15 +1,21 @@
-version: '2'
+version: "2"
 services:
-  backend: 
-    build: root/backend/
+  backend:
+    build:
+      context: root/backend/
+      dockerfile: Dockerfile-build
+    cpus: 6.5
+    mem_limit: 10000000000
+    memswap_limit: 20000000000
+    mem_reservation: 1024m
+    privileged: true
     ports:
       - "8080:8080"
     restart: always
-    environment: 
+    environment:
       MONGO_USERNAME: root
       MONGO_PASSWORD: example
       MONGO_HOST: mongodb://root:example@mongo:27017/
-
 
   mongo:
     image: mongo:latest

@@ -1,0 +1,44 @@
+Software Engineer Apple
+
+Summary
+
+People at Apple don’t just build products they craft the kind of experience that have revolutionized entire industries. The diverse collection of our people and their ideas inspire innovation in everything we do. Imagine what you could do here! Join Apple, and help us leave the world better than we found it.
+
+The Apple Cloud Security team builds and provides secure systems and infrastructure that fuel Apple’s services (such as iCloud, iTunes, Siri, and Maps). As part of the Apple Cloud Security team, you will help manage the security needs of Apple’s services around the world. Build the identity and authorization infrastructure.
+
+Your effort will help build solutions to a variety of outstanding security challenges. Join us, and you’ll play a meaningful role in ensuring the highest standard of security for one of the most-watched companies in the world.
+
+Key Qualifications:
+
+    • 5+ years of work experience in infrastructure or security engineering
+    • Knowledge of development and integration (e.g. CI/CD)
+    • Keeps up with industry trends in security technology
+    • Languages: Rust, Golang
+    • Experience working on high volume services
+    • A critical eye for correct code
+    • Proficiency in testing your software
+    • Experience with gRPC
+    • Experience with Linux
+    • Understanding of OIDC/OAuth2, JWT (optional)
+    • Experience with OPA and Rego (optional)
+    • Experience with WebAssembly/WASM and sandboxing in Rust (optional)
+
+
+Description:
+
+You will…
+Work with the infrastructure and application teams to provide identity and authorization services to our internal customers
+Work closely with your teammates to deliver software in a timely fashion
+Work with security professionals to evaluate your teams code and design accordingly to their recommendations
+Be accountable for service level objectives and work with SRE efforts to hit our targets
+Estimate, code, test, and deploy features
+Participate in code reviews
+Research secure designs and present those to your team, management and customers
+
+
+Education & Experience:
+
+    • Bachelors degree in Computer Science / Engineering with emphasis in security related fields (or equivalent experience)
+    • Certs like OSCP, OSCE, OSEE, etc. are helpful but not vital. Bonus points for community contributions like public CVEs, bug bounty recognition, open source tools, blogs, etc.
+
+ 
