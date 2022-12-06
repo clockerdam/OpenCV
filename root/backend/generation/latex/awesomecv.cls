@@ -679,7 +679,7 @@
   \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
       \entrypositionstyle{#1} & \entrydatestyle{#2} \\
       \multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}}\\
-  \end{tabular*}\vspace{-1mm}
+  \end{tabular*}\vspace{2mm}
 }
 
 %% Define an environment for cvhonor
