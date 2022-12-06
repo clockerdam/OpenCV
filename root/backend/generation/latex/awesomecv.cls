@@ -218,7 +218,7 @@
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{darkgray} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{graytext} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\descriptionstyle}{\fontsize{8pt}{1.1em}\bodyfontlight\upshape\color{text}}
 \newcommand*{\descriptionkeywordsstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 \newcommand*{\projectdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\upshape\color{graytext} #1}}
@@ -616,7 +616,7 @@
       \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
     \if\relax\detokenize{#5}\relax
     \else
-      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\
+      \multicolumn{2}{L{\textwidth - 10em}}{\descriptionstyle{#5}} \\
     \fi
   \end{tabular*}\vspace{2mm}
 }
