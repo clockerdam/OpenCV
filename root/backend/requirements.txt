@@ -1,5 +1,5 @@
 black==22.10.0
-numpy==1.23.4
+numpy==1.21.6
 Flask==2.2.2
 pymongo==3.12.0
 Python-dotenv==0.21.0
@@ -8,6 +8,8 @@ Flasgger==0.9.5
 Pydantic==1.9.0
 pymongo[srv]
 gensim==4.2.0
-keybert==0.7.0
 pandas==1.3.5
 google-cloud-storage
+jsondiff==2.0.0
+scispacy==0.5.1
+spacy==3.4.2
