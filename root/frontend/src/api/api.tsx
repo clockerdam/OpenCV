@@ -46,7 +46,7 @@ async function getPdfData(resume: CV): Promise<string> {
 
   let blob = await res.blob()
   var reader = new FileReader();
-  let content = reader.readAsDataURL(blob);
+  reader.readAsDataURL(blob);
 
   return new Promise((resolve, reject) => {
 
