@@ -3,7 +3,9 @@ import { CV } from "./CV/CV";
 
 const cvContext = createContext({
   cv: new CV(),
-  setCV: (cv: any) => {}
+  setCV: (cv: any) => {},
+  analyzedCV: new CV(),
+  setAnalyzedCV: (cv: any) => {},
 });
 
 export default cvContext;

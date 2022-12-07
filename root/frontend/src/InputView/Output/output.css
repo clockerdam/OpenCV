@@ -1,65 +1,142 @@
+/* Remove browser defaults */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+.Tabs {
+    /* width: 80%; */
+    height: auto;
+    min-height: 400px;
+    background: #F1C40F ;
+    /* margin: 3.5rem auto 1.5rem; */
+    padding: 2rem 1rem;
+    /* color: #E8F0F2; */
+    border-radius: 2rem;
+    @media (max-width: 769px) {
+        padding: 2rem 0;
+    }
+}  
+
+ul.nav {
+  width: 60%;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #424949 ;
+  border-radius: 2rem;
+  padding-left: 0px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
+}
+ul.nav li {
+  width: 50%;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.7s;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+ul.nav li:nth-child(2) {
+  border-radius: 0;
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+}
+ul.nav li:hover {
+  background: whitesmoke;
+}
+ul.nav li.active {
+  background: whitesmoke;
+}
+
 label {
-    margin-bottom: 1%;
-    margin-left: 3%;
-    display: block
+  margin-bottom: 1%;
+  margin-left: 3%;
+  display: block
 }
 
 input {
-    margin-left: 1%;
-    display: inline-block;
+  margin-left: 2%;
+  margin-top: 2%;
+  display: inline-block;
 }
 
 .section {
-    background-color: whitesmoke;
-    border-top: 1px solid gray;
+  background-color: whitesmoke;
+  border-top: 1px solid gray;
 }
 
 .item {
-    margin-left: 2%;
-    width: 50%;
-    display: inline-block;
-    padding: 10px;
+  margin-left: 2%;
+  width: 50%;
+  display: inline-block;
+  padding: 10px;
 }
 
 .rating {
-    display:flex;
-    align-items:center;
+  display:flex;
+  align-items:center;
 }
-  
+
 /* Split the screen in half */
 .split {
-    margin-top: 2%;
-    height: 100%;
-    width: 50%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.split_v {
+  height: 50%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.top {
+  margin-top: 2%;
+  top: 0;
+  background-color: rgb(229, 232, 232);
+}
+
+.bottom {
+bottom: 0;
+background-color:rgb(229, 232, 232);
 }
 
 .bar {
-    height: 100%;
-    width: 1%;
-    background-color: rgb(63, 69, 69);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    }
+  height: 100%;
+  width: 1%;
+  background-color: rgb(63, 69, 69);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  }
 
 /* Control the left side */
 .left {
-left: 0;
-background-color: rgb(127, 140, 141);
-padding-top: 43px;
+  margin-top: 2%;
+  left: 0;
+  background-color: rgb(127, 140, 141);
+  padding-top: 43px;
 }
 
 /* Control the right side */
 .right {
 right: 0;
-background-color:rgb(229, 232, 232);
+/* background-color:rgb(229, 232, 232); */
 }
 
 /* If you want the content centered horizontally and vertically */
@@ -79,20 +156,21 @@ border-radius: 50%;
 
 
 .light {
-    background-color: gainsboro;
+  background-color: gainsboro;
 }
 
 .dark {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .lightRed {
-    background-color: lightcoral;
+  background-color: lightcoral;
 }
 
 .darkRed {
-    background-color: orangered;
+  background-color: red;
 }
+<<<<<<< HEAD:root/frontend/src/InputView/Output/output.css
 
 .firstBracket {
     color: green;
@@ -125,6 +203,16 @@ hr {
     background-color: rgb(127, 140, 141);
     margin: 0
 }
+
+.keywords {
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+}
+=======
+>>>>>>> 5cc7de6f933b1fff8af3316d27a0cbd60aeb40b2:root/frontend/src/Output/output.css
+
+
 
 .keywords {
     margin: 10px;
