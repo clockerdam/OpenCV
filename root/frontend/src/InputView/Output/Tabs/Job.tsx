@@ -25,7 +25,7 @@ function Job() {
             value={cv.title}
             onChange={(e) => setCV((prevState: CV) => ({ ...prevState, title: e.target.value}))}
         />
-        <input className="textArea"
+        <textarea className="textArea"
             name="description"
             placeholder="Input the job description"
             value={cv.description}
