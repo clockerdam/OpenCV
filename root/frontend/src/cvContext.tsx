@@ -6,6 +6,8 @@ const cvContext = createContext({
   setCV: (cv: any) => {},
   analyzedCV: new CV(),
   setAnalyzedCV: (cv: any) => {},
+  loading: 'loading',
+  setLoading: (loading: string) => {},
 });
 
 export default cvContext;

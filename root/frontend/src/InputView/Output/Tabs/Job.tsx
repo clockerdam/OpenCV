@@ -5,13 +5,13 @@ import cvContext from "../../../cvContext";
 import './tabs.css'
 
 function Job() {
-    const {cv, setCV} = useContext(cvContext)
-    const {analyzedCV, setAnalyzedCV} = useContext(cvContext)
+    const {cv, setCV, setAnalyzedCV, setLoading} = useContext(cvContext)
     
     function analyzeCV() {
         console.log(cv)
         getAnalysis(JSON.stringify(cv)).then((analyzedCV: CV) => {
           console.log(analyzedCV);
+          setLoading("done")
           setAnalyzedCV(analyzedCV);
         });
       }

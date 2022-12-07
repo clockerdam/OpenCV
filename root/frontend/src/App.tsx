@@ -29,8 +29,9 @@ const router = createBrowserRouter([
 function App() {
   const [cv, setCV] = useState(new CV())
   const [analyzedCV, setAnalyzedCV] = useState(new CV())
+  const [loading, setLoading] = useState("loading")
 
-  return <cvContext.Provider value={{ cv, setCV, analyzedCV, setAnalyzedCV }}>
+  return <cvContext.Provider value={{ cv, setCV, analyzedCV, setAnalyzedCV, loading, setLoading }}>
     <RouterProvider router={router} />
   </cvContext.Provider>
 }
