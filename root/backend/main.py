@@ -1,7 +1,8 @@
 import json
+import os
 
 from bson import json_util
-from flask import Flask, request, Response, jsonify
+from flask import Flask, request, Response, jsonify, send_from_directory
 from flasgger import Swagger
 from flasgger.utils import swag_from
 
@@ -27,6 +28,13 @@ db = Database()
 def main():
     print("hello response")
     return "Hello World"
+
+
+@app.route("/pdf")
+def tos():
+    workingdir = os.path.abspath(os.getcwd())
+    filepath = workingdir + '/static/files/'
+    return send_from_directory(filepath, 'sample_cv.pdf')
 
 
 @app.post('/analysis')

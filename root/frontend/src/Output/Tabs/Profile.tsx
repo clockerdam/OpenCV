@@ -47,7 +47,7 @@ function Profile() {
   return (
     <div className="Template">
       <label>
-        <h1>Previous CV:</h1>
+        <h1>Your input:</h1>
       </label>
       <label>
         <h2>{cvUnlabeled.title}</h2>
