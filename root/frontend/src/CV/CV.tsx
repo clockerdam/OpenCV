@@ -129,6 +129,13 @@ class ContactInfo {
     family: string = '';
 }
 
+class Stats {
+    all_original_keywords: string[] = [];
+    included_keywords: string[] = [];
+    missing_keywords: string[] = [];
+    removed_keywords: string[] = [];
+}
+
 export class CV {
     title: string = '';
     summary: LabelledString = new LabelledString();
@@ -144,4 +151,6 @@ export class CV {
     education: LabelledEducations = new LabelledEducations();
     patents: LabelledStrings = new LabelledStrings();
     extracurriculars: LabelledExtracurriculars = new LabelledExtracurriculars();
+    stats: Stats = new Stats();
+    description: string = '';
 }
