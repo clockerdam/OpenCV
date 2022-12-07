@@ -70,7 +70,7 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
                   );
                 })}
               </div>
-              {showLabel(listItem, output)}
+              {showLabel(cv[field].value.map((item) => {return item.label}), listItem, field, output)}
             </div>
           );
         })}
@@ -78,29 +78,21 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
     );
   }
 
-  function showLabel(item: LabelledString | LabelledItem | LabelledSkill | LabelledExperience | LabelledCertification | LabelledEducation, output: boolean) {
+  function showLabel(labels: number[], item: LabelledString | LabelledItem | LabelledSkill | LabelledExperience | LabelledCertification | LabelledEducation, field: string, output: boolean) {
     if (!output) {
       return null
     }
 
     let label = item.label
-
-    let maxRating = 100
-    let rating = maxRating - label * maxRating
-
-    let bracket
-    if (rating > maxRating / 4 * 3) {
-      bracket = "ratingNumber firstBracket"
-    } else if (rating > maxRating / 4 * 2) {
-      bracket = "ratingNumber secondBracket"
-    } else {
-      bracket = "ratingNumber thirdBracket"
+    let sortedLabels = labels.sort()
+    let rank = sortedLabels.indexOf(label) + 1
+    
+    if (field.endsWith("s")) {
+      field = field.substring(0, field.length-1)
     }
 
     return <div className="label">
-            <h2 className={bracket}>{Math.round(rating)}</h2>
-            <hr></hr>
-            <h3 className="ratingNumber maxRating">{maxRating}</h3>
+            <h5>{field} #{rank} of {labels.length}</h5>
           </div>
   }
 
@@ -141,4 +133,16 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
     return index % 2 === 0 ? "item lightRed" : "item darkRed"
   }
 
-  export { mapFields, showLabel }
+  function displaySummary(cv: CV) {
+    if (cv.summary === undefined) {
+      return null
+    }
+    return <div className="section">
+      <h2 className="item">Summary</h2>
+      <div className="rating">
+        <p className="item">{cv.summary.value}</p>
+      </div>
+    </div>
+  }
+
+  export { mapFields, showLabel, displaySummary }

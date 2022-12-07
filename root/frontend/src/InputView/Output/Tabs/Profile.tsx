@@ -2,8 +2,7 @@ import { useContext, useState } from "react";
 import './tabs.css'
 import cvContext from "../../../cvContext";
 import { exampleCV } from "../example";
-import { mapFields } from "../Displayer/displayer";
-import { CV } from "../../../CV/CV";
+import { displaySummary, mapFields } from "../Displayer/displayer";
 import { Form } from "../../Form/Form";
 
 function Profile() {
@@ -46,18 +45,6 @@ function Profile() {
       <div>
         <h3>Removed keywords:</h3>
         {displayKeywordList(analyzedCV.stats.removed_keywords)}
-      </div>
-    </div>
-  }
-
-  function displaySummary(cv: CV) {
-    if (cv.summary === undefined) {
-      return null
-    }
-    return <div className="section">
-      <h2 className="item">Summary</h2>
-      <div className="rating">
-        <p className="item">{cv.summary.value}</p>
       </div>
     </div>
   }
