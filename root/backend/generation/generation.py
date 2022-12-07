@@ -94,7 +94,7 @@ def convert_json_to_yaml(json_file: str, yaml_file: str):
         experience['fromDate'] = format_date(experience['fromDate'])
         experience['toDate'] = format_date(experience['toDate'])
         if len(experience['description']) == 0:
-            experience['description'] = "Can't handle empty descriptions yet"
+            experience['description'] = ""
 
     for extracurricular in configuration['extracurriculars']:
         extracurricular['fromDate'] = format_date(extracurricular['fromDate'])
@@ -104,13 +104,13 @@ def convert_json_to_yaml(json_file: str, yaml_file: str):
         education['fromDate'] = format_date(education['fromDate'])
         education['toDate'] = format_date(education['toDate'])
         if len(education['description']) == 0:
-            education['description'] = "Can't handle empty descriptions yet"
+            education['description'] = ""
 
     for project in configuration['projects']:
         project['fromDate'] = format_date(project['fromDate'])
         project['toDate'] = format_date(project['toDate'])
         if len(project['description']) == 0:
-            project['description'] = "Can't handle empty descriptions yet"
+            project['description'] = ""
 
     # drop all empty sections so they are excluded from rendering
     for section in empty_sections:
