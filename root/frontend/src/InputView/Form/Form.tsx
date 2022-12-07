@@ -3,6 +3,7 @@ import { CV, LabelledCertification, LabelledEducation, LabelledExperience, Label
 import cvContext from "../../cvContext";
 import './form.css'
 
+
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
 function Form() {
     const {cv, setCV} = useContext(cvContext)
@@ -48,15 +49,7 @@ function Form() {
 
     return <form onSubmit={handleSubmit}>
         <div>
-            <label>
-                <p>Title</p>
-                <input 
-                    name="title"
-                    placeholder="Title"
-                    value={cv.title}
-                    onChange={(e) => setCV((prevState: CV) => ({ ...prevState, title: e.target.value}))}
-                />
-            </label>
+            <button onSubmit={(e) => handleSubmit(e)}>Submit</button>
             <label>
                 <p>Summary</p>
                 <input 
@@ -459,7 +452,7 @@ function Form() {
                 <button onClick={() => add(Field.Extracurriculars)}>Add extracurricular</button>
             </label>
         </div>
-        <button onSubmit={(e) => handleSubmit(e)}>Submit</button>
+        {/* <button onSubmit={(e) => handleSubmit(e)}>Submit</button> */}
     </form>
 
     function change(field: Field, event: any, index: number = 0, subField?: SubField) {

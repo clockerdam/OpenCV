@@ -68,6 +68,13 @@ def generate_pdf():
 
 
 
+@app.route("/pdf")
+def tos():
+    workingdir = os.path.abspath(os.getcwd())
+    filepath = workingdir + '/static/files/'
+    return send_from_directory(filepath, 'sample_cv.pdf')
+
+
 @app.post('/analysis')
 @swag_from(analyze_resume_spec)
 def analyze_resume():
