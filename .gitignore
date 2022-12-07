@@ -163,3 +163,4 @@ cython_debug/
 **/**/secret.json
 
 **/**/temp
+**/**/.DS_Store

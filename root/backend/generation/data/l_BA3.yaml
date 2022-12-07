@@ -1,0 +1,135 @@
+accomplishments: []
+certifications: []
+contactInfo:
+  address: Abraham Lincoln Street 1, Chicago, IL
+  birthday: 24 December 1985
+  email: monica@music.co.kr
+  family: 5 kids, divorced
+  github: monicamusic123
+  label: 'We need a label here'
+  linkedin: linkedin.com/in/me123
+  name: Monica Music
+  phoneNumber: '01012345'
+  profiles:
+  - network: LinkedIn
+    url: linkedin.com/in/me123
+    username: linkedin.com/in/me123
+  - network: Github
+    url: monicamusic123
+    username: monicamusic123
+  website: my-website.com
+education:
+- description: ' '
+  fromDate: 12/2017
+  institution: Harvard University
+  location: Harvard
+  title: Social Studies
+  toDate: 12/2021
+- description: ' '
+  fromDate: 12/2012
+  institution: Middlesex School
+  location: Middlesex
+  title: ''
+  toDate: 12/2016
+experience:
+- company: McKinsey & Company
+  description: ''
+  fromDate: 09/2021
+  location: London, England, United Kingdom
+  title: Business Analyst
+  toDate: Present
+- company: Harvard University
+  description: A.B. Candidate in Social Studies Weatherhead Center for International
+    Affairs Undergraduate Associate. Committee on Ethnicity, Migration, and Rights
+    2020 Grant Recipient
+  fromDate: 08/2017
+  location: Cambridge, MA
+  title: Student
+  toDate: 05/2021
+- company: McKinsey & Company
+  description: We need a description otherwise the paragraph is incomplete
+  fromDate: 06/2020
+  location: London, United Kingdom
+  title: Summer Business Analyst
+  toDate: 07/2020
+- company: Harvard Undergraduate Women In Business (HUWIB)
+  description: Executive board member in charge of planning the largest undergraduate
+    business conference in the world.
+  fromDate: 11/2018
+  location: Cambridge, MA
+  title: Intercollegiate Business Convention - Co-Chair
+  toDate: 11/2019
+- company: Harvard Undergraduate Women In Business (HUWIB)
+  description: String empty
+  fromDate: 12/2017
+  location: Cambridge, MA, USA
+  title: Intercollegiate Business Convention - Marketing Director
+  toDate: 11/2018
+- company: Luxottica
+  description: ''
+  fromDate: 05/2019
+  location: New York City, NY
+  title: Intern - CRM Targeting
+  toDate: 08/2019
+- company: Romulus Capital
+  description: Romulus Capital is a lead investor in early-stage Seed & Series A startups
+    in B2B enterprise and commercialization of science across different verticals.
+    We focus on company-building, rather than betting on companies. Rather than investing
+    in dozens of startups, we go all-in on a few companies a year on capital, team
+    recruitment, customer introductions, and GTM strategy. Our firm is unique combination
+    of young and entrepreneurial, yet established with 3 funds with ~$200M AUM. We
+    pride ourselves as a small, hungry team that brings the same level of grit and
+    hustle as our founders.
+  fromDate: 09/2018
+  location: ''
+  title: Harvard Campus Associate
+  toDate: 12/2018
+- company: Ruuby
+  description: ''
+  fromDate: 05/2018
+  location: London, United Kingdom
+  title: Operations Intern
+  toDate: 07/2018
+- company: Stafford Capital Partners
+  description: I had sole responsibility for designing, building, and maintaining
+    a database which identified potential deals. Using large downloads of market-wide
+    data, I developed a ranking system, weighting relevant data points about each
+    asset, fund, or fund manager. I also created a company-wide Geographic Information
+    System which mapped the location of all of the firm's assets. These tasks required
+    a high level of accuracy, judgement, and attention to detail. In addition, I met
+    with software vendors, participated in investor meetings, and presented to senior
+    management.
+  fromDate: 09/2016
+  location: London, United Kingdom
+  title: Intern
+  toDate: 07/2018
+- company: Brunswick Group
+  description: Conducted research and analysis of companies and sectors; specifically,
+    analyzing and presenting on clients' competitive and strategic position within
+    existing markets.
+  fromDate: 07/2015
+  location: London, United Kingdom
+  title: Intern
+  toDate: 07/2015
+extracurriculars:
+- description: ''
+  fromDate: 01/2019
+  title: Led the Center for International Affairs Undergraduate Associate
+  toDate: 10/2019
+interests:
+- Cultures
+- Traveling
+patents: []
+projects: []
+skills:
+- keywords:
+  - Microsoft Power BI (5)
+  - Data Analysis (5)
+  name: Hard Skills
+- keywords:
+  - Communication (5)
+  name: Soft Skills
+- keywords:
+  - German (5)
+  name: Languages
+title: Business Analyst at McKinsey & Company
