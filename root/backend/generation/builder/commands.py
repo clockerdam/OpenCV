@@ -91,7 +91,7 @@ class Accomplishment(BaseObject):
         BaseObject.__init__(self, **lcls)
 
     @classmethod
-    def from_json_file_resume(cls, dict_):
+    def from_jsonresume(cls, dict_):
         data = jsonresume.parse_common("title", dict_)
         data["date"] = jsonresume.format_date(dict_.get("date", ""), fmt="%m/%Y")
         data["description"] = dict_.get("description", "")
@@ -125,16 +125,16 @@ class Entry(BaseObject):
 
 
 class Experience(Entry):
-    _props = "title organization dates location"
+    _props = "title organization dates location description"
 
-    def __init__(self, title="", organization="", dates="", location=""):
+    def __init__(self, title="", location="",organization="", dates="", description=""):
         lcls = locals()
         lcls.pop("self")
         Entry.__init__(self, **lcls)
 
     @classmethod
     def from_jsonresume(cls, dict_):
-        data = jsonresume.parse_common("title location", dict_)
+        data = jsonresume.parse_common("title location description", dict_)
         data["organization"] = dict_.get("company", "")
         data["dates"] = jsonresume.format_date_range(
             start=dict_.get("fromDate"),

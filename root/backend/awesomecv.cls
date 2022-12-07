@@ -214,11 +214,12 @@
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1.1em}\bodyfontlight\upshape\color{text}}
 
 % For elements of entry
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\color{awesome} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{awesome} #1}}
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{darkgray} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{graytext} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{graytext} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+%\newcommand*{\descriptionstyle}[1]{{\fontsize{8pt}{1.1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\descriptionstyle}{\fontsize{9pt}{1.1em}\bodyfontlight\upshape\color{text}}
 \newcommand*{\descriptionkeywordsstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 \newcommand*{\projectdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\upshape\color{graytext} #1}}
@@ -614,11 +615,8 @@
       {\entrytitlestyle{#1} & \entrylocationstyle{#4} \\}
       {\entrypositionstyle{#1} & \entrydatestyle{#3} \\
       \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
-    \if\relax\detokenize{#5}\relax
-    \else
-      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\
-    \fi
-  \end{tabular*}\vspace{2mm}
+      \multicolumn{2}{L{\textwidth - 10em}}{\ifthenelse{\isempty{#5}}{}{\descriptionstyle{#5}}} \
+  \end{tabular*}
 }
 
 % Define an environment for cvitems(for cventry)
@@ -674,13 +672,17 @@
 % Define an cv project
 % Usage: \cvproject{<name>}{<url>}{<short summary>}{<tech stack>}
 \newcommand*{\cvproject}[4]{%
-  \setlength\tabcolsep{0pt}
-  \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
-      \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}}\\
-      \multicolumn{2}{L{\textwidth - 2em}}{\descriptionkeywordsstyle{#4}} \\
-  \end{tabular*}\vspace{-1mm}
+\setlength\tabcolsep{0pt}
+\setlength{\extrarowheight}{0pt}
+\begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+\entrypositionstyle{#1} & \entrydatestyle{#2} \
+\multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}} \
+\multicolumn{2}{L{\textwidth - 2em}}
+\end{tabular*}\vspace{-1mm}
+{\ifthenelse{\isempty{#3}}{\vspace{-10mm}}{}{}}
+% add this line to check if the #3 argument is empty
+% if it is, don't display the project description
+% \ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}
 }
 
 %% Define an environment for cvhonor
@@ -721,7 +723,7 @@
   \setlength{\extrarowheight}{0pt}
   \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
       \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}} \\
+      \multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}} \\
       \multicolumn{2}{L{\textwidth - 2em}}
   \end{tabular*}\vspace{-1mm}
   {\ifthenelse{\isempty{#3}}{\vspace{-10mm}}{}{}}
