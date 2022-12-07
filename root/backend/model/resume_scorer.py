@@ -92,7 +92,7 @@ class ResumeScorer():
 
 
 def point_duration_heuristic_bost(duration: float) -> float:
-    """Takes a duration for experience, education etc (in months)
+    """Takes a duration for experience
     and returns a heuristic addition to the score"""
     if duration == 0:
         return 0.01
@@ -105,7 +105,24 @@ def point_duration_heuristic_bost(duration: float) -> float:
     else:
         return 0.035
 
+def time_since_heuristic_boost(time_since: float) -> float:
+    """Takes a time_since for education and 
+    returns a heurstic addition to the score"""
+    if time_since == 0:
+        return 1
+    return 1/(time_since**2)
 
+def education_level(title: str) -> float:
+    """Gives a boost to higher level education"""
+    if 'Ph.D' in title:
+        return 0.5
+    if 'MBA' in title:
+        return 0.1
+    return 0
+
+    
+    
+    
 def _quota_key_for_type(type: str) -> str:
     if type in ["education", "experience", "extracurricular"]:
         return "body"
@@ -128,9 +145,10 @@ def _add_heuristics_to_src_dataframe(src: pd.DataFrame) -> pd.DataFrame:
     # We set these to inf to make sure that we will always include them in the output
     src[['education_heuristic', 'experience_heuristic', 'contact_heuristic']] = 0
     src.loc[src["type"].isin(['education']),
-            "education_heuristic"] = src.apply(lambda x: point_duration_heuristic_bost(x['duration']), axis=1)
+            #"education_heuristic"] = src.apply(lambda x: point_duration_heuristic_bost(x['duration']), axis=1)
+            "education_heuristic"] = src.apply(lambda x: time_since_heuristic_boost(x['time_since']) + education_level(x["title"]) if x["type"] == "education" else 0, axis=1)
     src.loc[src["type"].isin(['experience']),
-            "experience_heuristic"] = src.apply(lambda x: point_duration_heuristic_bost(x['duration']), axis=1)
+            "experience_heuristic"] = src.apply(lambda x: point_duration_heuristic_bost(x['duration'] if x["type"] == "experience" else 0), axis=1)
 
     # Make sure that we always add the contact information
     src.loc[src['type'] == 'contactInfo', ['contact_heuristic']] = math.inf
