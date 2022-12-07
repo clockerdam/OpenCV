@@ -2,8 +2,7 @@ import { useContext } from "react";
 import './tabs.css'
 import { MoonLoader } from "react-spinners";
 import cvContext from "../../../cvContext";
-import { mapFields, showLabel } from "../Displayer/displayer";
-import { CV } from "../../../CV/CV";
+import { displaySummary, mapFields } from "../Displayer/displayer";
 
 function Diff() {
   const {analyzedCV, loading} = useContext(cvContext);
@@ -37,19 +36,6 @@ function Diff() {
         )}
     </div>
   );
-
-  function displaySummary(cv: CV) {
-    if (cv.summary === undefined) {
-      return null
-    }
-    return <div className="section">
-      <h2 className="item">Summary</h2>
-      <div className="rating">
-        <p className="item">{cv.summary.value}</p>
-        {showLabel(analyzedCV.summary, true)}
-      </div>
-    </div>
-  }
 }
 
 export { Diff };
