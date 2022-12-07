@@ -16,12 +16,6 @@ from .commands import (
 )
 from .environments import Paragraph, Accomplishments, Skills, Entries, Projects, Certifications,Items
 
-FILEPATH = os.path.join(os.getcwd(), 'tmp')
-JSON_FILE = os.path.join(FILEPATH, 'temp.json')
-YAML_FILE = os.path.join(FILEPATH, 'temp.yaml')
-TEX_FILE = os.path.join(FILEPATH, 'temp')
-PDF_FILE = os.path.join(FILEPATH, 'output.pdf')
-
 class ResumeDocument(Document):
     def __init__(self, *args, **kwargs):
         kwargs.setdefault("default_filepath", os.path.relpath(os.path.join(".", "export")))
