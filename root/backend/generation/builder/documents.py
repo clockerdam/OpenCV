@@ -11,6 +11,7 @@ from .commands import (
     Activity,
     Education,
     OSProject,
+    Certification,
     MakeCVHeader,
 )
 from .environments import Paragraph, Accomplishments, Skills, Entries, Projects, Items
@@ -150,6 +151,13 @@ class ResumeDocument(Document):
             with doc.create(Projects()) as entries:
                 for item in resume["projects"]:
                     entry = OSProject.from_jsonresume(item)
+                    entries.append(entry)
+
+        if should_be_rendered("certifications"):
+            doc.add_section("Certifications")
+            with doc.create(Projects()) as entries:
+                for item in resume["certifications"]:
+                    entry = Certification.from_jsonresume(item)
                     entries.append(entry)
         print("At the end of from_resume_object")
         print(doc)

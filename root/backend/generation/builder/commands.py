@@ -201,3 +201,16 @@ class OSProject(Project):
         )
         # data["keywords"] = jsonresume.stringify_sequence(dict_.get("keywords"))
         return cls(**data)
+
+class Certification(Project):
+    _date_range_format = "%m/%Y"
+    @classmethod
+    def from_jsonresume(cls, dict_):
+        data = jsonresume.parse_common("title description", dict_)
+        data["dates"] = jsonresume.format_date_range(
+            start=dict_.get("fromDate"),
+            end=dict_.get("toDate", "Present"),
+            fmt=cls._date_range_format,
+        )
+        # data["keywords"] = jsonresume.stringify_sequence(dict_.get("keywords"))
+        return cls(**data)

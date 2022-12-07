@@ -14,7 +14,7 @@ PDF_FILE = os.path.join(FILEPATH, 'output.pdf')
 def convert_json_to_yaml():
     os.makedirs(FILEPATH, exist_ok=True)
 
-    with open('data/apple.json', 'r') as file:
+    with open('data/demo1.json', 'r') as file:
         configuration = json.load(file)
 
     if 'title' in configuration:
@@ -92,9 +92,9 @@ def convert_json_to_yaml():
         date = accomplishment['fromDate']
         accomplishment['date'] = format_date(date)
 
-    for certification in configuration['certifications']:
-        date = certification['date']
-        certification['date'] = format_date(date)
+    for certificate in configuration['certifications']:
+        date = certificate['date']
+        certificate['date'] = format_date(date)
 
     for experience in configuration['experience']:
         experience['fromDate'] = format_date(experience['fromDate'])
@@ -123,7 +123,7 @@ def convert_json_to_yaml():
         if section in configuration:
             configuration.pop(section)
 
-    with open('data/apple.yaml', 'w') as yaml_file:
+    with open('data/demo1.yaml', 'w') as yaml_file:
         yaml.dump(configuration, yaml_file)
 
     return configuration

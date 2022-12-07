@@ -682,6 +682,28 @@
   \end{tabular*}\vspace{2mm}
 }
 
+% Define an environment for cvcerts
+\newenvironment{cvcerts}{%
+  \begin{adjustwidth}{1em}{1em}
+}{%
+  \end{adjustwidth}
+  \vspace{-2mm}
+}
+%
+%      {\entrypositionstyle{#1} & \entrydatestyle{#3} \\
+%      \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
+
+% Define an cv certifications
+% Usage: \cvcerts{<name>}{<url>}{<short summary>}{<tech stack>}
+\newcommand*{\cvcert}[4]{%
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+      \entrypositionstyle{#1} & \entrydatestyle{#2} \\
+      \multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}}\\
+  \end{tabular*}\vspace{2mm}
+}
+
 %% Define an environment for cvhonor
 %\newenvironment{cvhonors}{%
 %%   \vspace{\acvSectionContentTopSkip}

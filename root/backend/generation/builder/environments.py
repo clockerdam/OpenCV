@@ -25,6 +25,9 @@ class Entries(EnvironmentBase):
 class Projects(EnvironmentBase):
     _latex_name = "cvprojects"
 
+class Certifications(EnvironmentBase):
+    _latex_name = "cvcerts"
+
 class Extracurriculars(EnvironmentBase):
     _latex_name = "cvextracurriculars"
 
