@@ -30,8 +30,9 @@ function App() {
   const [cv, setCV] = useState(new CV())
   const [analyzedCV, setAnalyzedCV] = useState(new CV())
   const [loading, setLoading] = useState("loading")
+  const [pdfData, setPdfData] = useState("")
 
-  return <cvContext.Provider value={{ cv, setCV, analyzedCV, setAnalyzedCV, loading, setLoading }}>
+  return <cvContext.Provider value={{ cv, setCV, analyzedCV, setAnalyzedCV, loading, setLoading, pdfData, setPdfData }}>
     <RouterProvider router={router} />
   </cvContext.Provider>
 }
