@@ -142,6 +142,9 @@ def build_pdf(file_name: str):
 
 
     if(result.stderr == b''): 
+        print("Latex output: ")
+        print(result.stdout)
+        print()
         print("OK")
     else: 
         print(f"Returncode {result.returncode}")

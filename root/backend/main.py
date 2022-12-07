@@ -44,7 +44,8 @@ def generate_pdf():
                 # Iterate over the list of filepaths & remove each file.
                 for filePath in fileList:
                     try:
-                        os.remove(filePath)
+                        # os.remove(filePath)
+                        pass
                     except:
                         print("Error while deleting file : ", filePath)
             except Exception as error:
@@ -54,9 +55,12 @@ def generate_pdf():
             return response
 
 
+        print("sending file now")
         return send_file(f"{file_prefix}.pdf")
 
-    except: 
+    except Exception as e: 
+        print("Got an error in the request")
+        print(e)
         return {
                 "error": "Could not generate the pdf"
             }

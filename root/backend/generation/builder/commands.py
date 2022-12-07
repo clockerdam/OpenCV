@@ -93,8 +93,8 @@ class Accomplishment(BaseObject):
     @classmethod
     def from_jsonresume(cls, dict_):
         data = jsonresume.parse_common("title", dict_)
-        data["date"] = jsonresume.format_date(dict_.get("date", ""), fmt="%m/%Y")
-        data["description"] = dict_.get("description", "")
+        data["date"] = jsonresume.format_date(dict_.get("toDate", ""), fmt="%m/%Y")
+        # data["description"] = dict_.get("description", "")
         return cls(**data)
 
 

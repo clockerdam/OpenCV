@@ -714,15 +714,20 @@
 
 % Define a cv honor
 % Usage: \cvproject{<name>}{<date>}{<short summary>}{<tech stack>}
-\newcommand*{\cvhonor}[4]{%
+\newcommand*{\cvhonor}[2]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
-      \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}} \\
-      \multicolumn{2}{L{\textwidth - 2em}}
-  \end{tabular*}\vspace{-1mm}
-  {\ifthenelse{\isempty{#3}}{\vspace{-10mm}}{}{}}
+      \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+        \entrypositionstyle{#1} & \entrydatestyle{#2} \\
+     \end{tabular*}%
+  % \setlength\tabcolsep{0pt}
+  % \setlength{\extrarowheight}{0pt}
+  % \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+  %     \entrypositionstyle{#1} & \entrydatestyle{#2} \\
+  %     \multicolumn{2}{L{\textwidth - 2em}}{\projectdescriptionstyle{#3}} \\
+  %     \multicolumn{2}{L{\textwidth - 2em}}
+  % \end{tabular*}\vspace{-1mm}
+  % {\ifthenelse{\isempty{#3}}{\vspace{-10mm}}{}{}}
 
 }
 
