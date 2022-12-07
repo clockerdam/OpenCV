@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import {Diff} from "./Tabs/Diff";
 import {Pdf} from "./Tabs/Pdf";
 import {Profile} from "./Tabs/Profile";

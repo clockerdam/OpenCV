@@ -17,8 +17,6 @@ function Profile() {
 
   const [currentPage, setCurrentPage] = useState(Page.Form)
 
-
-
   function fetchExampleCV() {
     setCV(exampleCV)
   }

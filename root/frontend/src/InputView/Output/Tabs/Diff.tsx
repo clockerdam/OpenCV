@@ -6,8 +6,6 @@ import cvContext from "../../../cvContext";
 import { mapFields, showLabel } from "../Displayer/displayer";
 import { CV } from "../../../CV/CV";
 
-type OutputLoadingState = "loading" | "done";
-
 function Diff() {
   const {analyzedCV, loading} = useContext(cvContext);
 
