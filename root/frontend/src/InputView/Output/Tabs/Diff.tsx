@@ -1,5 +1,4 @@
-import { useContext, useState } from "react";
-import _ from "lodash"
+import { useContext } from "react";
 import './tabs.css'
 import { MoonLoader } from "react-spinners";
 import cvContext from "../../../cvContext";

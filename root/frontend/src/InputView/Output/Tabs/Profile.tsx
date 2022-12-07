@@ -1,5 +1,4 @@
 import { useContext, useState } from "react";
-import _ from "lodash"
 import './tabs.css'
 import cvContext from "../../../cvContext";
 import { exampleCV } from "../example";
