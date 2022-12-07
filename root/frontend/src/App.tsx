@@ -8,7 +8,7 @@ import { Home } from './Home/Home';
 import { CV } from './CV/CV';
 import { useState } from 'react';
 import cvContext from './cvContext';
-import { InputView } from './InputView/InputView';
+import { Output } from './InputView/Output/Output';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/improve",
-    element: <InputView></InputView>,
+    element: <Output></Output>,
   },
 ]);
 

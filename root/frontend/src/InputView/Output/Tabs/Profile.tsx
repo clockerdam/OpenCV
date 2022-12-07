@@ -1,13 +1,23 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import _ from "lodash"
 import './tabs.css'
 import cvContext from "../../../cvContext";
 import { exampleCV } from "../example";
 import { mapFields } from "../Displayer/displayer";
 import { CV } from "../../../CV/CV";
+import { Form } from "../../Form/Form";
 
 function Profile() {
   const {cv, setCV, analyzedCV} = useContext(cvContext); 
+
+  enum Page {
+    Profile,
+    Form
+  }
+
+  const [currentPage, setCurrentPage] = useState(Page.Form)
+
+
 
   function fetchExampleCV() {
     setCV(exampleCV)
@@ -43,20 +53,6 @@ function Profile() {
     </div>
   }
 
-  let excludedFields = ["title", "summary", "stats", "contactInfo", "_id", "description"]
-  return <div className="Template">
-      <button onClick={() => fetchExampleCV()}>Fetch example CV</button>
-      {displayKeywords()}
-      <label>
-        <h1>Your input:</h1>
-      </label>
-      <label>
-        <h2>{cv.title}</h2>
-      </label>
-      {displaySummary(cv)}
-      {mapFields(excludedFields, analyzedCV, cv, false)}
-    </div>
-
   function displaySummary(cv: CV) {
     if (cv.summary === undefined) {
       return null
@@ -68,6 +64,28 @@ function Profile() {
       </div>
     </div>
   }
+
+  let excludedFields = ["title", "summary", "stats", "contactInfo", "_id", "description"]
+  if (currentPage === Page.Form) {
+    return <div>
+        <button onClick={() => setCurrentPage(Page.Profile)}>Go to profile</button>
+        <Form></Form>
+      </div>
+  }
+
+  return <div className="Template">
+      <button onClick={() => setCurrentPage(Page.Form)}>Edit profile</button>
+      <button onClick={() => fetchExampleCV()}>Fetch example CV</button>
+      {displayKeywords()}
+      <label>
+        <h1>Your input:</h1>
+      </label>
+      <label>
+        <h2>{cv.title}</h2>
+      </label>
+      {displaySummary(cv)}
+      {mapFields(excludedFields, analyzedCV, cv, false)}
+    </div>
 }
 
 export { Profile };
