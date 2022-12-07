@@ -1,0 +1,123 @@
+{
+    "title": "Senior Business Analyst at Boston Consulting Group (BCG)",
+    "contactInfo": [
+        {
+            "address": "Greater Boston",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/priyanka-m- patel",
+            "name": "Priyanka Patel",
+            "phoneNumber": "",
+            "email": "",
+            "github": "",
+            "birthday": "",
+            "family": ""
+        }
+        ],
+    "summary": "I am currently a Senior Business Analyst at Boston Consulting Group (BCG) on the NAMR People Analytics Team based out of the Boston area. I graduated from the F.W. Olin Graduate School of Business, Babson College with a STEM-based Master's of Science in Business Analytics.",
+    "experience": [
+        {
+            "company": "Boston Consulting Group (BCG)",
+            "title": "Senior Business Analyst",
+            "location": "Boston, Massachusetts, United States",
+            "fromDate": "May 2022",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "PwC",
+            "title": "Associate - Cyber, Risk & Regulatory Consulting",
+            "location": "Boston, Massachusetts, United States",
+            "fromDate": "September 2020",
+            "toDate": "September 2021",
+            "description": ""
+        },
+        {
+            "company": "Virtustream",
+            "title": "Undergraduate IT Intern 2",
+            "location": "Hopkinton, MA",
+            "fromDate": "May 2019",
+            "toDate": "August 2019",
+            "description": "● Used Dell Boomi, a cloud-native platform for data integration in order to aid in an onboarding project ● Used HTML, CSS and Base64 to create automatic email responses to incoming employees ● Used Jira platform, a software used to plan, assign and track work and data, to integrate the data through Boomi ● Learned about Virtustream's IT Operations model"
+        },
+        {
+            "company": "Virtustream",
+            "title": "Undergraduate IT Intern 1",
+            "location": "Hopkinton, MA",
+            "fromDate": "May 2018",
+            "toDate": "August 2018 ",
+            "description": "● Worked on improving IT CSAT scores through analysis of data and recommended improvements ● Performed trouble ticket quality reviews ● Researched and defined KPIs for IT Operations ● Conducted industry research ● Performed data analysis, evaluations and reviews"
+        }
+        ],
+    "education": [
+        {
+            "institution": "Babson F.W. Olin Graduate School of Business",
+            "location": "Babson",
+            "title": "Master of Science - MS, Business Analytics",
+            "fromDate": "2021",
+            "toDate": "2022",
+            "description": ""
+        },
+        {
+            "institution": "Framingham State University",
+            "location": "Framingham",
+            "title": "Bachelor of Science - BS, Business and Information Technology",
+            "fromDate": "2017",
+            "toDate": "2019",
+            "description": ""
+        },
+        {
+            "institution": "Syracuse University",
+            "location": "Syracuse",
+            "title": "",
+            "fromDate": "2015",
+            "toDate": "2017",
+            "description": ""
+        }
+        
+        ],
+    "interests": [],
+    "accomplishments": [],
+    "languages": [
+        {
+                "name": "Gujarati",
+                "proficiency": 5
+        },
+        {
+                "name": "English",
+                "proficiency": 5
+        },
+        {
+                "name": "Spanish",
+                "proficiency": 5
+        }
+    ],
+    "projects": [
+        ],
+    "softSkills": [
+        {
+                "name": "Cutomer Service",
+                "proficiency": 5
+        },
+        {
+                "name": "Teamwork",
+                "proficiency": 5
+        },
+        {
+                "name": "Time Management",
+                "proficiency": 5
+        }
+        ],
+    "hardSkills": [],
+    "certifications": [
+        {
+            "title": "Digital Acumen",
+            "level": "",
+            "description": "",
+            "date": ""
+        }
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

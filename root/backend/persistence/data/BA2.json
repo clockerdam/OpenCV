@@ -1,0 +1,111 @@
+{
+    "title": "Business Analyst at Tesla",
+    "contactInfo": [
+        {
+            "address": "Beijing 123",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/yu- xia-614504128",
+            "name": "Yu Xia",
+            "phoneNumber": "",
+            "email": "yuyu@gmail.com",
+            "github": "",
+            "birthday": "",
+            "family": ""
+        }
+        ],
+    "summary": "",
+    "experience": [
+        {
+            "company": "Tesla",
+            "title": "Business Analyst",
+            "location": "Chaoyang Qu, Beijing, China",
+            "fromDate": "March 2021",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Li Auto",
+            "title": "Sales & Production Planning Analyst",
+            "location": "Beijing City, China",
+            "fromDate": "April 2020",
+            "toDate": "March 2021",
+            "description": "• Demand plan • Customer order analysis & forecasting • Vehicle stock analysis & supervision • Operation dashboard modeling"
+        },
+        {
+            "company": "BAIC Group(Beijing Automotive Group CO.,Ltd)",
+            "title": "Business Operations Analyst",
+            "location": "Beijing City, China",
+            "fromDate": "July 2018",
+            "toDate": "April 2020",
+            "description": "• Operation Data Analysis • Market Research • Project Management"
+        },
+        {
+            "company": "Mercedes-Benz China",
+            "title": "Product Management (I)",
+            "location": "Chaoyang District, Beijing, China",
+            "fromDate": "February 2018",
+            "toDate": "July 2018",
+            "description": "• Production info update of new generation car • Competitor info digging & analysis • Projects coordination"
+        },
+        {
+            "company": "American Chamber of Commerce in China (AmCham China)",
+            "title": "Project Management (I)",
+            "location": "Chaoyang District, Beijing, China",
+            "fromDate": "June 2017",
+            "toDate": "November 2017",
+            "description": "• Chinese agriculture & food policies research & translation • Projects coordination for International Conference & roundtable"
+        }
+        ],
+    "education": [
+        {
+            "institution": "Technical University of Munich",
+            "location": "Munich",
+            "title": "Master of Science, Economics and Policy",
+            "fromDate": "2015",
+            "toDate": "2018",
+            "description": ""
+        }   
+        ],
+    "interests": [
+        ],
+    "accomplishments": [
+        ],
+    "languages": [
+        {
+                "name": "German",
+                "proficiency": 1
+        },
+        {
+                "name": "Chinese",
+                "proficiency": 5
+        },
+        {
+                "name": "English",
+                "proficiency": 5
+        }
+        ],
+    "projects": [
+        ],
+    "softSkills": [
+        ],
+    "hardSkills": [
+        {
+                "name": "Project Management",
+                "proficiency": 5
+        },
+        {
+                "name": "Data Analysis",
+                "proficiency": 5
+        },
+               {
+                "name": "SQL",
+                "proficiency": 4
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

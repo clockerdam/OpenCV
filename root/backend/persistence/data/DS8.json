@@ -1,0 +1,106 @@
+{
+    "title": "Data Scientist at SAP",
+    "contactInfo":
+        {
+            "address": "Gegenüber Strasse 2",
+            "website": "good_website.com",
+            "linkedin": "www.linkedin.com/in/sohyeong- kim-bb472775",
+            "name": "SoHyeong Kim",
+            "phoneNumber": "0000000000",
+            "email": "kim@gmail.com",
+            "github": "github.com/good_website",
+            "birthday": "",
+            "family": ""
+        }
+        ,
+    "summary": "",
+    "experience": [
+        {
+            "company": "SAP",
+            "title": "Data Scientist",
+            "location": "Berlin, Berlin, Germany",
+            "fromDate": "October 2017",
+            "toDate": "Present",
+            "description": "Deep Learning Center of Exellence"
+        },{
+            "company": "Amazon",
+            "title": "Software Engineer",
+            "location": "Berlin, Berlin, Germany",
+            "fromDate": "March 2017",
+            "toDate": "August 2017",
+            "description": "Machine Translation Engineering team"
+        }
+        ,{
+            "company": "Samsung Electronics",
+            "title": "Software Engineer",
+            "location": "Suwon, South Korea",
+            "fromDate": "January 2013",
+            "toDate": "anuary 2015",
+            "description": "Computer Vision Lab, DMC Research Center - Computer Vision Algorithm design, implementation, and optimization for embedded hardwares. (C, C++, Matlab)"
+        },{
+            "company": "Penta Security Systems, Inc.",
+            "title": "SDE Intern",
+            "location": "Seoul, South Korea",
+            "fromDate": "February 2012",
+            "toDate": "July 2012",
+            "description": "Database Security Team, Developed Java module for Database Encryption solution. Dealt with encryption products for diffrerent target relational databases such as Oracle, DB2, MSQ and different target operating systems such as Windows, Linux, Solaris, AIX."
+        }
+        ],
+    "education": [
+        {
+            "institution": "Korea Advanced Institute of Science and Technology",
+            "location": "Korea",
+            "title": "Master of Engineering (M.Eng.), Computer science & Machine Learning",
+            "fromDate": "2015",
+            "toDate": "2017",
+            "description": ""
+        },
+        {
+            "institution": "POSTECH",
+            "location": "Korea",
+            "title": "Bachelor's degree, Physics & Computer Science",
+            "fromDate": "2008",
+            "toDate": "2013",
+            "description": ""
+        }  
+        ],
+    "interests": [
+            "Data Analysis"
+        ],
+    "accomplishments": [
+        ],
+    "languages": [
+        {
+                "name": "English",
+                "proficiency": 4
+        },
+        {
+                "name": "Korean",
+                "proficiency": 5
+        }
+    ],
+    "projects": [
+        ],
+    "softSkills": [
+],
+    "hardSkills": [
+        {
+                "name": "Machine Learning",
+                "proficiency": 5
+        },
+        {
+                "name": "Python",
+                "proficiency": 5
+        },
+        {
+                "name": "Deep Learning",
+                "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

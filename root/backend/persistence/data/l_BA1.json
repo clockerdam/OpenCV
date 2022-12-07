@@ -1,0 +1,201 @@
+{
+    "title": "Business Analyst at IKEA of Sweden",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Inter IKEA Group",
+                    "title": "Business Analyst",
+                    "location": "\u00c4lmhult, Sweden",
+                    "fromDate": "January 2020",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Vanguard",
+                    "title": "Investment Analyst",
+                    "location": "Malvern, Pennsylvania",
+                    "fromDate": "May 2017",
+                    "toDate": "July 2018",
+                    "description": "-Evaluated performance of investment decisions makers of Vanguard Mutual Funds through return calculation, macro & micro attribution, quality of benchmark, and risk identification. -Identified investment skill and recommended action regarding Vanguard's Manager Selection Policies to the firm's Board of Directors and Senior Staff. -Performed and communicated ad-hoc projects and analysis to deliver insights regarding Vanguard's products and overall market trends. "
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Vanguard",
+                    "title": "Financial Analyst",
+                    "location": "Malvern, Pennsylvania",
+                    "fromDate": "September 2015",
+                    "toDate": "May 2017",
+                    "description": "-Trusted advisor to Vanguard's Investment Management Groups to provide oversight and steward material mutual fund cash flows driven by Vanguard's Institutional & Retail clients. -Supported high pressure investment decisions utilizing cash and risk management techniques. -Developed and communicated rigorous data analysis to implement process improvements. -Established needs, performed tests, & shared feedback for new IT system being built by developers."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Vanguard",
+                    "title": "Brokerage Associate",
+                    "location": "Malvern, Pennsylvania",
+                    "fromDate": "July 2013",
+                    "toDate": "September 2015",
+                    "description": "-Applied and acted on investment knowledge regarding Mutual Funds, ETFs, Stocks, Bonds and Derivative Contracts to individual investors. -Analyzed investment suitability and asset allocation to manage decision risk of novice investors. -Promoted a high performing culture, mentored colleagues, and advocated for impactful updates."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Snow Capital Management L.P.",
+                    "title": "Business Intern",
+                    "location": "Pittsburgh, Pennsylvania",
+                    "fromDate": "May 2012",
+                    "toDate": "July 2012",
+                    "description": "-Provided support across firm in areas such as Equity Research, Excel Modeling, Trading, Marketing and Data Analysis."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Lund University",
+                    "location": "Lund",
+                    "title": "Master's degree, Finance, General",
+                    "fromDate": "2018",
+                    "toDate": "2019",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Lehigh University",
+                    "location": "Lehigh",
+                    "title": "Bachelor's degree, Finance, General",
+                    "fromDate": "2009",
+                    "toDate": "2013",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Customer Service",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Investments",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Finance",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "Series 7",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Chartered Financial Analyst (CFA)",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Series 63",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Bloomberg Certified",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

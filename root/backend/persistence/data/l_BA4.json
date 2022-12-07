@@ -1,0 +1,379 @@
+{
+    "title": "Business Analyst at Boston Consulting Group (BCG)",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "I am a lawyer, avidly interested in providing solutions to social issues faced in the world. To this end, I have developed certain community development projects, one of which is Raise a Kid, a project aimed at providing free basic and quality education for underprivileged children in Iwaya, Lagos. I have also volunteered for projects aimed at the realisation of the United Nations' Sustainable Development Goals, within and outside Nigeria. I started the Students Spotlights Series podcast, alongside my friend Erioluwa Adeyinka, which is an interview series that seeks to inspire others, particularly the student population, through the stories of other students or very recent graduates, who can be said to have done exceptionally well in certain spheres of life, whilst being students. The interviews take listeners through the journeys of certain pacesetters, to understand what they do/did that worked, certain challenges they faced and how they were able to navigate through. On many days when I am not volunteering to solve social problems or actively seeking opportunities for my development, I spend time writing on topics that interest me.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Boston Consulting Group (BCG)",
+                    "title": "Business Analyst",
+                    "location": "",
+                    "fromDate": "January 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Babban Gona",
+                    "title": "Financial Analyst",
+                    "location": "",
+                    "fromDate": "September 2021",
+                    "toDate": "December 2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Millennium Campus Network (MCN)",
+                    "title": "Member, Global Admissions Committee, Millennium Fellowship",
+                    "location": "",
+                    "fromDate": "May 2020",
+                    "toDate": "July 2020",
+                    "description": "\u2022 A leadership development program by the United Nations Academic Impact and Millennium Campus Network, that convenes, challenges and celebrates student leaders advancing the UN SDGs on their various campuses. \u2022 I reviewed the applications of incoming fellows for the 2020 cohort from Universities across the world, selecting prospective fellows for the fellowship."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "World Youth Forum",
+                    "title": "Delegate",
+                    "location": "Egypt",
+                    "fromDate": "December 2019",
+                    "toDate": "December 2019",
+                    "description": "\u2022 A forum under the auspices of the Egyptian President, President Abdelfattah. Was selected to represent Nigeria at the Forum, being one of the 7000 invited attendees from 164 countries. \u2022 Partcipated in sessions and workshops which broadened my view on certain world issues and aided cross cultural understanding.\u2022 Interacted with world leaders present, on issues affecting youths and problems being faced by persons all over the world.\u2022 Connected with other young persons from various countries, who have actively contributed to the development of their communities, with a view to further provide solutions to world issues faced."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Millennium Campus Network (MCN)",
+                    "title": "Millennium Fellow",
+                    "location": "Nigeria",
+                    "fromDate": "August 2019",
+                    "toDate": "December 2019",
+                    "description": "\u2022 Leadership development program presented by the United Nations Academic Impact and MCN, that seeks to Convene, Challenge and Celebrate students leadership advancing the United Nations Sustainable Development Goals, on their various campuses. Only 6% of campuses in 16 nations selected based on caliber of applications. \u2022 Over the semester, led Raise a Kid project, helping children in a marginalized community in Lagos, previously denied access to quality education, gain access to free and quality basic education. \u2022 Engaged in webinars with Katie Strock of Gates Foundation, Aya Chebbi of The African Union Youth Envoy, Eric Knee, Stanford Social Innovation Review. \u2022 Engaged in sessions to cultivate core values of empathy, humility, inclusion in leadership and social impact."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "AIESEC",
+                    "title": "Conversion Manager, Incoming Global Volunteers",
+                    "location": "Nigeria",
+                    "fromDate": "February 2019",
+                    "toDate": "July 2019",
+                    "description": "\u2022 Worked with the national office of AIESEC in Nigeria, to ensure proper conversion of website visitors to customers. \u2022 Improved the existing conversion rate, ensuring conversion rate optimization. \u2022 Communicated with opportunity applicants, guiding them through the customer flow processes, to ensure they completed the customer flow cycle. \u2022 Communicated regularly with opportunity managers in AIESEC Nigeria's local chapters, in a bid to ensure time was placed as a priority in responding to applicants and that applicants experienced a smooth customer flow process."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "AIESEC",
+                    "title": "Product Manager as Cultural Envoy on Exchange Development to Togo",
+                    "location": "Lom\u00e9, Togo",
+                    "fromDate": "December 2018",
+                    "toDate": "July 2019",
+                    "description": "\u2022 Created a cultural integration program for foreign students studying French in the University of Lom\u00e9, Togo. \u2022 Trained members of the major operational division of AIESEC in Lom\u00e9, Togo. \u2022 Created projects aimed at the realization of the Sustainable Development Goals, for AIESEC in Togo. \u2022 Communicated and created partnerships with Non-Governmental Organizations."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "AIESEC",
+                    "title": "Vice President, Incoming Global Volunteers",
+                    "location": "Nigeria",
+                    "fromDate": "February 2018",
+                    "toDate": "January 2019",
+                    "description": "\u2022 Managed a team responsible for facilitating cross cultural exchange programs for youths into Nigeria, to develop leadership in them, whilst working on community development projects. \u2022 Created and managed Sustainable Development Goals aligned Projects for the organization. \u2022 Got certified as a customer centric committee by AIESEC International and Mindvalley, one that delivers great customer experience strategies, for the first time. \u2022 Initiated Raise a Kid project, a project aimed at providing free quality and basic education for underprivileged children in Sogunro Ago Ogu community, a slum in Lagos. \u2022 Realised a 43% growth in exchange numbers from the previous year. \u2022 Had a 95% membership retention rate in my last six months. \u2022 Developed the team based on team standards. \u2022 Ensured proper transitioning to ensure continuity and further growth of the division. \u2022 Developed the Volunteers based on AIESEC Leadership qualities, being Self Aware, Solution Oriented, Empowering Others and World Citizen, who later went on to become active leaders and contributors to the development of their countries and communities. \u2022 Created engagement spaces to facilitate the inner and outer journey of interns amd team members. \u2022 Was responsible for the welfare of exchange participants, throughout their stay in Nigeria. \u2022 Facilitated learning environments for team members and exchange participants. \u2022 Created strategies to promote cross cultural exchange \u2022 Delivered a great customer experience to exchange participants. \u2022 Managed activities and bill payments of the Local Committee intern house \u2022 Prepared periodic reports for the President and the National team. \u2022 Conducted quarterly review of performance of team members. \u2022 Facilitated planning sessions for each quarter and peak periods."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "AIESEC",
+                    "title": "Campaign Co-Coordinator, Youth for Global Goals",
+                    "location": "Lagos, Nigeria",
+                    "fromDate": "April 2017",
+                    "toDate": "January 2018",
+                    "description": "Youth for Global Goals campaign, is a campaign by AIESEC to raise awareness of the Sustainable Development Goals (SDGs) among youths, pursuant to AIESEC's partnership with the United Nations, to ensure active participation of youths in the realisation of the SDGs. My team members and I carried out the campaign for 2017 in Lagos through visits to secondary schools to teach the students about the SDGs, reaching about 500 students. We also a organised a competition for students of the University of Lagos, to profer solutions that could lead to the realisation of the SDGs in Nigeria by 2030. Finally, there was a one-day event organised to educate members of the University community about the SDGs. I engaged in fundraising activities, to cater for the financial needs of the campaign"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Caladium Consulting\u00ae",
+                    "title": "Intern - Operations Consulting",
+                    "location": "Lagos, Nigeria",
+                    "fromDate": "November 2018",
+                    "toDate": "December 2018",
+                    "description": "*Documented the as-is process of a client company, using process maps *Interviewed employees of the organisation, to understand their existing process and identify gaps and improvement opportunities *Identified gaps in the processes of the company *Offered recommendations for the gaps identified, based on the industry's best practices *Improved on the existing processes of the company *Documented the to-be processes of the company using flow charts and word document. *Reviewed the standard operating procedures of the company *Gained insight into the various processes in a company"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "The Platform Young Professionals",
+                    "title": "Fellow",
+                    "location": "",
+                    "fromDate": "September 2018",
+                    "toDate": "September 2018",
+                    "description": "The Platform Young Professionals Bootcamp ( YPB), an offshoot of The Platform Nigeria, is a resident training program targeted at high potential Nigerians between the ages of 20-25 who have showcased high professional credibility in their respective fields. The bootcamp is designed to equip participants with knowledge and capacity to ensure they are inspired to aspire for greatness and success in their chosen areas of concentration, providing practical and world class training in leadership, governance and enterprise to participants, over a 4-day period. I was selected from a pool of over a thousand applicants across Nigeria, to be a participant in the Corporate career stream, and upon completion, a fellow for change and growth in Nigeria."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Shell",
+                    "title": "Intern",
+                    "location": "Lagos, Nigeria",
+                    "fromDate": "November 2017",
+                    "toDate": "January 2018",
+                    "description": "Intern in the Legal department and External Relations department of Shell Nigeria Legal department \u2022 Carried out research on required topics and areas. \u2022 Gained practical knowledge on legal proceedings and legal practice. \u2022 Learnt about law and its place in the oil and gas industry. \u2022 Got acquainted with the dynamics of being an in-house legal counsel. \u2022 Assisted the team in the drafting of necessary legal documents and the review of other legal documents. \u2022 Representation of the team at legal proceedings. \u2022 Provided legal opinion on matters handled by the team. External Relations department \u2022 Gained knowledge on the importance of an external relations department, as it relates to the public image of a company. \u2022 Gained knowledge on the duties of an external relations team as it relates to litigation public relations. \u2022 Gained practical insight on corporate social responsibility and its operation in companies. \u2022 Cooperated with the team in delivering the company's corporate social responsibility."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Alternative Dispute Resolution Society, University of Lagos",
+                    "title": "Assistant Secretary General",
+                    "location": "Lagos, Nigeria",
+                    "fromDate": "September 2016",
+                    "toDate": "October 2017",
+                    "description": "\u2022 Managed the activities of the secretariat of the society. \u2022 Learnt to take and carry out orders efficiently. \u2022 Represented the society at events, meetings and conferences."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "World's Largest Lesson",
+                    "title": "Certified Participant",
+                    "location": "Lagos",
+                    "fromDate": "September 2017",
+                    "toDate": "September 2017",
+                    "description": "\u2022 Learnt and participated in activities which aided the understanding of the Sustainable Development Goals by the United Nations."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Lagos Model United Nations",
+                    "title": "Delegate",
+                    "location": "",
+                    "fromDate": "July 2017",
+                    "toDate": "July 2017",
+                    "description": "\u2022 Represented Algeria in the Economic, Social and Cultural Council (ECOSSOC) of the African Union. \u2022 Cooperated with other delegates in drafting resolutions to tackle discussed issues affecting Africa."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Chris Uche (SAN) & Co Law Firm",
+                    "title": "Intern",
+                    "location": "Abuja, Nigeria",
+                    "fromDate": "May 2016",
+                    "toDate": "June 2016",
+                    "description": "\u2022 Got acquainted with the basics of the legal profession. \u2022 Engaged in legal research and gained knowledge in that aspect. \u2022 Gained practical insight into legal proceedings"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Nigerian Law School",
+                    "location": "Nigeria",
+                    "title": "B.L, Law",
+                    "fromDate": "2020",
+                    "toDate": "2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "University of Lagos",
+                    "location": "Lagos",
+                    "title": "Bachelor of Laws - LLB, Law",
+                    "fromDate": "2014",
+                    "toDate": "2019",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Jextoban Secondary School",
+                    "location": "Jextoban",
+                    "title": "West African Senior School Certificate Examination (WASSCE), Arts",
+                    "fromDate": "2008",
+                    "toDate": "2014",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [
+            {
+                "value": "Making the world a better place",
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "NNPC/Chevron Nigeria Limited Joint Venture National University Scholarship Award",
+                    "fromDate": "2020-06-12",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Shell Petroleum Development Company Joint Venture University Scholarship Award",
+                    "fromDate": "2021-10-10",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Igbo",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "French",
+                    "proficiency": 2
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Management",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Research",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Sales",
+                    "proficiency": 2
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "Introduction to Domestic Arbitration",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Business Plan Development",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Open Source Leader",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [
+            {
+                "value": {
+                    "title": "Volunteering to solve social problems",
+                    "fromDate": "2021-10-01",
+                    "toDate": "Today",
+                    "description": "I want to help achieve world peace and fight hunger."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    }
+}

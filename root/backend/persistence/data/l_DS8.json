@@ -1,0 +1,172 @@
+{
+    "title": "Data Scientist at SAP",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "SAP",
+                    "title": "Data Scientist",
+                    "location": "Berlin, Berlin, Germany",
+                    "fromDate": "October 2017",
+                    "toDate": "Present",
+                    "description": "Deep Learning Center of Exellence"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Amazon",
+                    "title": "Software Engineer",
+                    "location": "Berlin, Berlin, Germany",
+                    "fromDate": "March 2017",
+                    "toDate": "August 2017",
+                    "description": "Machine Translation Engineering team"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Samsung Electronics",
+                    "title": "Software Engineer",
+                    "location": "Suwon, South Korea",
+                    "fromDate": "January 2013",
+                    "toDate": "anuary 2015",
+                    "description": "Computer Vision Lab, DMC Research Center - Computer Vision Algorithm design, implementation, and optimization for embedded hardwares. (C, C++, Matlab)"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Penta Security Systems, Inc.",
+                    "title": "SDE Intern",
+                    "location": "Seoul, South Korea",
+                    "fromDate": "February 2012",
+                    "toDate": "July 2012",
+                    "description": "Database Security Team, Developed Java module for Database Encryption solution. Dealt with encryption products for diffrerent target relational databases such as Oracle, DB2, MSQ and different target operating systems such as Windows, Linux, Solaris, AIX."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Korea Advanced Institute of Science and Technology",
+                    "location": "Korea",
+                    "title": "Master of Engineering (M.Eng.), Computer science & Machine Learning",
+                    "fromDate": "2015",
+                    "toDate": "2017",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "POSTECH",
+                    "location": "Korea",
+                    "title": "Bachelor's degree, Physics & Computer Science",
+                    "fromDate": "2008",
+                    "toDate": "2013",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [
+            {
+                "value": "Data Analysis",
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Korean",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Machine Learning",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Python",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Deep Learning",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

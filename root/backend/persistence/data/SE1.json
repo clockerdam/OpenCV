@@ -1,0 +1,283 @@
+{
+    "title": "Engineer @ Spotify",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/keiwan- mosaddegh",
+            "name": "Keiwan Mosaddegh",
+            "phoneNumber": "012345678",
+            "email": "keiwan@hotmail.com",
+            "github": "",
+            "birthday": "",
+            "family": ""
+        }
+        ,
+    "summary": "",
+    "experience": [
+        {
+            "company": "Spotify",
+            "title": "iOS Software Engineer",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "September 2021",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Spotify",
+            "title": "Software Engineer Intern",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "June 2021",
+            "toDate": "September 2021",
+            "description": ""
+        },
+        {
+            "company": "Apelöga",
+            "title": "Model",
+            "location": "Malmö, Skåne County, Sweden",
+            "fromDate": "June 2015",
+            "toDate": "Present",
+            "description": "Model for the Photo Agency Apelöga. • Done several photoshoots for different organizations, including IKEA & Tetra Pak."
+        },
+        {
+            "company": "Netlight",
+            "title": "IT Consultant",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "February 2021",
+            "toDate": "June 2021",
+            "description": "IT & Management Consulting projects. • Delivered one Full-Stack Engineering project. • Developed an internal Resource Management Application in Flutter. • Participated in an iOS-Engineering boot camp. • Participated in internal leadership workshops."
+        },
+        {
+            "company": "Stabelo",
+            "title": "Full Stack Engineer",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "March 2021",
+            "toDate": "May 2021",
+            "description": "Consulting assignment as Full Stack Web Engineer at Stabelo. • Developed front-end and back-end systems in Typescript, Javascript, Postgres, Event Sourcing, AWS, & Docker."
+        },
+        {
+            "company": "Verisure",
+            "title": "Master's Thesis Project",
+            "location": "Malmö, Skane County, Sweden",
+            "fromDate": "September 2020",
+            "toDate": "January 2021",
+            "description": "Wrote my Master's Thesis Project about Establishing Feedback in Continuous Delivery at Verisure. • Wrote it with my legendary partner Emanuel Eriksson (in/emanuel- eriksson-0a5b99212) • Supervised by the one and only Lars Bendix (in/lars-bendix-332ba910)"
+        },
+        {
+            "company": "Verisure",
+            "title": "Junior Software Developer",
+            "location": "Malmö, Skåne County, Sweden",
+            "fromDate": "May 2019",
+            "toDate": "September 2020",
+            "description": "My first proper Corporate Workplace as a Junior Software Developer. • Mobile Development in React Native 1st summer. • Web Development in React 2nd summer. Replaced hard-coded data with dynamic API calls, and reactified obsolete climate graphs. • Dabbed on GraphQL, Cypress, Cucumber, Docker, & Node-related things."
+        },
+        {
+            "company": "Lunar Way",
+            "title": "Student Ambassador",
+            "location": "Sweden",
+            "fromDate": "August 2019",
+            "toDate": "January 2021",
+            "description": "Student Ambassador during the early days of Lunar (then Lunar Way). • Pretty disorganized management back then, no proper responsibilities... • ... However, involved in one Social Media Campaign. • Wore company swag for a livingTM (honestly crazy comfy!!)."
+        },
+        {
+            "company": "Webshark",
+            "title": "Co-Founder & CTO",
+            "location": "Lund, Skåne County, Sweden",
+            "fromDate": "August 2018",
+            "toDate": "December 2019",
+            "description": "Founded a Web Development & Digital Marketing Agency. • Helped +100 Clients over the course of 1,5 years. • Did everything digital. Mainly built the SEO branch of the business. • Created a Complete plug-n-play SEO System, and offshored the non- automated work."
+        },
+        {
+            "company": "Teknikfokus | Career Fair for students",
+            "title": "Corporate Relationship Manager",
+            "location": "Lund, Skåne County, Sweden",
+            "fromDate": "September 2018",
+            "toDate": "May 2019",
+            "description": "Head of Corporate Relationships at Teknikfokus - the Biggest Career Fair for CS students in Sweden. • x2 the amount of attendees from the previous year, recruiting +60 Companies. • Secured my future Summer Internship & Master's Thesis Company (Verisure) as a result of well-built Corporate Relationship."
+        },
+        {
+            "company": "Lunicore Studentkonsult",
+            "title": "IT Consultant",
+            "location": "Lund, Skåne County, Sweden",
+            "fromDate": "January 2018",
+            "toDate": "January 2019",
+            "description": "IT & Management Consulting projects. • Promoted to Project Lead at my 2nd assignment. • Delivered two projects in iOS Development within Health & MedTech. • Did Mobile App UX Design work for a MedTech Startup. • Toastmaster at the Company Christmas Party 2018."
+        },
+        {
+            "company": "Kvack Kommunikation",
+            "title": "Co-Founder",
+            "location": "Malmö, Skåne County, Sweden",
+            "fromDate": "June 2017",
+            "toDate": "January 2019",
+            "description": "Founder of Kvack Kommunikation, a Creative Agency specialized in Gen-Z marketing. • Built Marketing Campaigns for Clients in parallel with University studies. • Improved our Clients' Social Media Presence through Content Creation & Marketing."
+        },
+        {
+            "company": "SkillTwins AB",
+            "title": "Partnerships Marketing Manager",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "June 2017",
+            "toDate": "April 2018",
+            "description": "Partnerships Marketing Manager for SkillTwins - the Swedish football freestyle superstars with millions of loyal fans and followers around the world. • Built relationships and initiated partnerships with companies such as Adidas, Booking, Runtastic, Vitamin Well, and others."
+        },
+        {
+            "company": "Ambassador Watches",
+            "title": "User Experience Researcher",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "June 2017",
+            "toDate": "September 2017",
+            "description": "User Experience Researcher at Ambassador Watches. • Helped Improve the Website UX through User Research & Testing."
+        },
+        {
+            "company": "Öppettider.nu",
+            "title": "Branding Consultant",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "May 2017",
+            "toDate": "August 2017",
+            "description": "Branding consultant at Öppettider.nu. • Involved in a couple of collaborations with the founder. • Increased the Organic Search Volume through SEO work for the newly launched City/County categories."
+        },
+        {
+            "company": "Servera Med Mera",
+            "title": "Founder",
+            "location": "Skåne County, Sweden",
+            "fromDate": "June 2015",
+            "toDate": "August 2017",
+            "description": "Founded my own Catering & Serving Personnel Staffing Agency. • Awarded The Young Entrepreneur of Vellinge Municipality in 2015. • Acquired & Managed +10 Clients, including Jennie Walldén (winner of Sveriges mästerkock). • Hired & Trained my Serving Staff of ~10 through previous experience & Youtube. • Entered Collaborations with other Catering Agencies."
+        },
+        {
+            "company": "Allakando",
+            "title": "Private Tutor",
+            "location": "Lund, Skåne County, Sweden",
+            "fromDate": "August 2015",
+            "toDate": "July 2016",
+            "description": "Private tutoring for help with homework & studying techniques. • Helped multiple Students reach their Academic Goals & Aspired Grades. • Tutoring in Math & Science."
+        },
+        {
+            "company": "TakeOff",
+            "title": "Co-Founder & Head of IT & Design",
+            "location": "Malmö, Skåne County, Sweden",
+            "fromDate": "August 2015",
+            "toDate": "June 2016",
+            "description": "A Social Project Crowdfunding platform I built together with a couple of friends, as a part of UF (Young Enterprise) 2015/2016. • Responsible for all Digital Creation, including Graphic Design, SMM, & Website/Service Development. • The Platform was Awarded Best Website of 2015/2015 in the Regional Finals (Skåne County)."
+        },
+        {
+            "company": "V.E.S.P.A Italian Restaurant",
+            "title": "Food Server",
+            "location": "Höllviksnäs, Skåne County, Sweden",
+            "fromDate": "May 2015",
+            "toDate": "September 2015",
+            "description": "My first real employment, serving pizza, pasta and other yummy Italian food at a charming yet lively restaurant in my hometown, Höllviken."
+        }
+        ],
+    "education": [
+        {
+            "institution": "Lunds tekniska högskola",
+            "location": "Lund, Sweden",
+            "title": "Master of Science - MS, Computer Science",
+            "fromDate": "2016",
+            "toDate": "2021",
+            "description": ""
+        },
+        {
+            "institution": "Tecnológico de Monterrey",
+            "location": "Monterrey, Mexico",
+            "title": "Master of Engineering - MEng, Computer Engineering",
+            "fromDate": "2020",
+            "toDate": "2020",
+            "description": ""
+        },
+        {
+            "institution": "ProCivitas",
+            "location": "Mexico",
+            "title": "Natural Sciences",
+            "fromDate": "2013",
+            "toDate": "2016",
+            "description": ""
+        }   
+        ],
+    "interests": [
+        ],
+    "accomplishments": [
+        {
+            "title": "Lund Innovation Challenge 2017",
+            "fromDate": "2018-02-27",
+            "toDate": "",
+            "description": ""
+        },
+        {
+            "title": "Elevkåren af ProCivitas Honor Award",
+            "fromDate": "",
+            "toDate": "",
+            "description": ""
+        },{
+            "title": "Best Website of 2015/2016 in Skåne",
+            "fromDate": "",
+            "toDate": "",
+            "description": ""
+        },{
+            "title": "Awarded Young Entrepreneur of the Summer 2015 in Vellinge Municipality.",
+            "fromDate": "",
+            "toDate": "",
+            "description": ""
+        }
+        ],
+    "languages": [
+        {
+            "name": "Persian",
+            "proficiency": 5
+        },
+        {
+            "name": "Spanish",
+            "proficiency": 5
+        },
+        {
+            "name": "English",
+            "proficiency": 5
+        },
+        {
+            "name": "Swedish",
+            "proficiency": 5
+        }
+        ],
+    "projects": [
+        ],
+    "softSkills": [
+        {
+            "name": "Entrepreneurship",
+            "proficiency": 5
+        },
+        {
+            "name": "Project Management",
+            "proficiency": 5
+        }
+        ],
+    "hardSkills": [
+        {
+            "name": "Graphic Design",
+            "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        {
+            "title": "Elements of AI - Grunderna i artificiell intelligens",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Member",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Rotary Youth Leadership Academy",
+            "level": "",
+            "description": "",
+            "date": ""
+        }
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

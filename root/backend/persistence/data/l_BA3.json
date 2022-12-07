@@ -1,0 +1,238 @@
+{
+    "title": "Business Analyst at McKinsey & Company",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "McKinsey & Company",
+                    "title": "Business Analyst",
+                    "location": "London, England, United Kingdom",
+                    "fromDate": "September 2021",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Harvard University",
+                    "title": "Student",
+                    "location": "Cambridge, MA",
+                    "fromDate": "August 2017",
+                    "toDate": "May 2021",
+                    "description": "A.B. Candidate in Social Studies Weatherhead Center for International Affairs Undergraduate Associate. Committee on Ethnicity, Migration, and Rights 2020 Grant Recipient"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "McKinsey & Company",
+                    "title": "Summer Business Analyst",
+                    "location": "London, United Kingdom",
+                    "fromDate": "June 2020",
+                    "toDate": "July 2020",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Harvard Undergraduate Women In Business (HUWIB)",
+                    "title": "Intercollegiate Business Convention - Co-Chair",
+                    "location": "Cambridge, MA",
+                    "fromDate": "November 2018",
+                    "toDate": "November 2019",
+                    "description": "Executive board member in charge of planning the largest undergraduate business conference in the world."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Harvard Undergraduate Women In Business (HUWIB)",
+                    "title": "Intercollegiate Business Convention - Marketing Director",
+                    "location": "Cambridge, MA, USA",
+                    "fromDate": "December 2017",
+                    "toDate": "November 2018",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Luxottica",
+                    "title": "Intern - CRM Targeting",
+                    "location": "New York City, NY",
+                    "fromDate": "May 2019",
+                    "toDate": "August 2019",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Romulus Capital",
+                    "title": "Harvard Campus Associate",
+                    "location": "",
+                    "fromDate": "September 2018",
+                    "toDate": "December 2018",
+                    "description": "Romulus Capital is a lead investor in early-stage Seed & Series A startups in B2B enterprise and commercialization of science across different verticals. We focus on company-building, rather than betting on companies. Rather than investing in dozens of startups, we go all-in on a few companies a year on capital, team recruitment, customer introductions, and GTM strategy. Our firm is unique combination of young and entrepreneurial, yet established with 3 funds with ~$200M AUM. We pride ourselves as a small, hungry team that brings the same level of grit and hustle as our founders."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Ruuby",
+                    "title": "Operations Intern",
+                    "location": "London, United Kingdom",
+                    "fromDate": "May 2018",
+                    "toDate": "July 2018",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Stafford Capital Partners",
+                    "title": "Intern",
+                    "location": "London, United Kingdom",
+                    "fromDate": "September 2016",
+                    "toDate": "July 2018",
+                    "description": "I had sole responsibility for designing, building, and maintaining a database which identified potential deals. Using large downloads of market-wide data, I developed a ranking system, weighting relevant data points about each asset, fund, or fund manager. I also created a company-wide Geographic Information System which mapped the location of all of the firm's assets. These tasks required a high level of accuracy, judgement, and attention to detail. In addition, I met with software vendors, participated in investor meetings, and presented to senior management."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Brunswick Group",
+                    "title": "Intern",
+                    "location": "London, United Kingdom",
+                    "fromDate": "July 2015",
+                    "toDate": "July 2015",
+                    "description": "Conducted research and analysis of companies and sectors; specifically, analyzing and presenting on clients' competitive and strategic position within existing markets."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Harvard University",
+                    "location": "Harvard",
+                    "title": "Social Studies",
+                    "fromDate": "2017",
+                    "toDate": "2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Middlesex School",
+                    "location": "Middlesex",
+                    "title": "",
+                    "fromDate": "2012",
+                    "toDate": "2016",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [
+            {
+                "value": "Cultures",
+                "label": 0
+            },
+            {
+                "value": "Traveling",
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Communication",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Microsoft Power BI",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Data Analysis",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [
+            {
+                "value": {
+                    "title": "Led the Center for International Affairs Undergraduate Associate",
+                    "fromDate": "2019-01-10",
+                    "toDate": "2019-10-01",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    }
+}

@@ -1,0 +1,277 @@
+{
+    "title": "Data Scientist at Kakao Entertainment",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "I focus on applying machine learning and causal inference to offer data-driven insights and solutions - recommendation systems - behavioral research - experimentation",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Kakao Entertainment",
+                    "title": "Data Scientist (ML Researcher)",
+                    "location": "",
+                    "fromDate": "2022",
+                    "toDate": "Present",
+                    "description": "- Developed recommendation systems for Melon (music), Kakao Webtoon (comics), and Kakao Page (novel)"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Bucketplace",
+                    "title": "Data Scientist",
+                    "location": "",
+                    "fromDate": "2020",
+                    "toDate": "2021",
+                    "description": "Machine learning - Developed content and product recommendation algorithms - Designed model evaluation cycles and experimentation processes Causal inference - Developed experiment methods for the in-house experimentation platform"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Washington University in St. Louis",
+                    "title": "Graduate Research Assistant",
+                    "location": "",
+                    "fromDate": "2017",
+                    "toDate": "2020",
+                    "description": "- Conducted social science research with an emphasis on causal inference and applied machine learning"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "University of California, Los Angeles",
+                    "title": "Researcher/Research Data Analyst",
+                    "location": "",
+                    "fromDate": "2016",
+                    "toDate": "2017",
+                    "description": "- Examined the effect of campaign advertising on polls and elections"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Harvard John A. Paulson School of Engineering and Applied Sciences",
+                    "title": "Research Intern/Assistant",
+                    "location": "",
+                    "fromDate": "2015",
+                    "toDate": "2016",
+                    "description": "- Developed differentially private statistical algorithms to conduct hypothesis tests in social science research"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Republic of Korea Army",
+                    "title": "Sergeant",
+                    "location": "South Korea",
+                    "fromDate": "2012",
+                    "toDate": "2013",
+                    "description": "- Honorably discharged as KATUSA (Korean Augmentation To the US Army)"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Washington University in St. Louis",
+                    "location": "St. Louis",
+                    "title": "Master's degree, Political Science (Concentration in Quantitative Methods and Behavior Analysis)",
+                    "fromDate": "2017",
+                    "toDate": "2020",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "University of California, Los Angeles",
+                    "location": "Los Angeles, USA",
+                    "title": "Bachelor of Arts - BA, Political Science",
+                    "fromDate": "2011",
+                    "toDate": "2015",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Orange Coast College",
+                    "location": "Orange Coast",
+                    "title": "",
+                    "fromDate": "2009",
+                    "toDate": "2011",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Daeil Foreign Language High School",
+                    "location": "Daeil",
+                    "title": "",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": "German Studies"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "Departmental Highest Honors",
+                    "fromDate": "2019-08-15",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Magna Cum Laude",
+                    "fromDate": "2015-08-07",
+                    "toDate": "",
+                    "description": "Award for my master's degree"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "College Honors",
+                    "fromDate": "2012-08-05",
+                    "toDate": "",
+                    "description": "Award for my bachelor's degree"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Dean's Honors List",
+                    "fromDate": "2011-07-01",
+                    "toDate": "",
+                    "description": "Award in my first year in college"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Army Commendation Medal",
+                    "fromDate": "2011-07-15",
+                    "toDate": "",
+                    "description": "Award in my first year in college"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Korean",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [
+            {
+                "value": {
+                    "title": "Differentially Private Chi-squared Hypothesis Testing: Goodness of Fit and Independence Testing",
+                    "fromDate": "2020-11-01",
+                    "toDate": "",
+                    "description": "Research Paper"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Research",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Data Analytics",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "R",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [
+            {
+                "value": {
+                    "title": "Cat cafe worker",
+                    "fromDate": "2010-01-23",
+                    "toDate": "2011-01-30",
+                    "description": "Worked extra at a cat caf\u00e9."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    }
+}

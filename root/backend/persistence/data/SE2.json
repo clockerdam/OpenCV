@@ -1,0 +1,154 @@
+{
+    "title": "Software Engineer at Volkswagen AG",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/akorovin00",
+            "name": "Alexander Korovin",
+            "phoneNumber": "",
+            "email": "",
+            "github": "github.com/alexalex",
+            "birthday": "",
+            "family": ""
+        }
+        ,
+    "summary": "I'm a software developer with almost 3 years of experience. I was working at Fraunhofer FIT as a Fullstack Software Engineer using using Node.JS and Java for creating web applications for patients and libraries to handle sensor data. Moreover, I was studying Computer Science (MSc) in the University of Bonn and doing thesis about an integration of heterogeneous databases for polypharmacy optimization using different modeling SQL and NoSQL approaches (MySQL, Cassandra and MongoDB). During my studies I was taking subjects from Information and Communication Management and Intelligent Systems tracks.",
+    "experience": [
+        {
+            "company": "Volkswagen AG",
+            "title": "Software Engineer",
+            "location": "Berlin Area, Germany",
+            "fromDate": "October 2017",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Fraunhofer FIT",
+            "title": "Software Developer",
+            "location": "Bonn Area, Germany",
+            "fromDate": "June 2016",
+            "toDate": "August 2017",
+            "description": "http://www.polycare-project.com/About Javascript (ES6), Node.js, Ionic 2, Angular 2, Java, Spring Boot, Hibernate, JDBC, JPA, IoT, Web of Things, Bluetooth (BLE), Apache Cassandra, MySQL, Apache Cordova"
+        },
+        {
+            "company": "Bonn University",
+            "title": "Software Developer",
+            "location": "",
+            "fromDate": "January 2016",
+            "toDate": "June 2016",
+            "description": "Development of the online collaboration editor for academic called FidusWriter https://www.fiduswriter.org/ Technologies: ES6 Javascript,Babel, Django (Python, Websockets, Tornado), JQuery, Underscore, MathJax, Katex"
+        },
+        {
+            "company": "Rubius",
+            "title": "Software Developer",
+            "location": "Tomsk",
+            "fromDate": "June 2015",
+            "toDate": "Septemeber 2015",
+            "description": "EAM system is the application software for company's fund management. It is designed to automate the recording of business processes, fund maintenance and repair. EAM-system will allow Tomskgazprom Company to maintain databases and keep track of the technical condition of the equipment in the fields. The company can automatically plan and calculate the cost of all repairs, take into account the actual cost of repairs, keep track of the shift of materials and spare parts from one warehouse to another, as well as, analyze the results of equipment operation. Technologies: (.NET stack, WPF, MVVM light, EF, Telerik, Telerik Open Acess, MSSQL)"
+        },
+        {
+            "company": "Tomskij Politehniceskij Universitet",
+            "title": "Technician, Software Engineer",
+            "location": "Tomsk",
+            "fromDate": "September 2013",
+            "toDate": "June 2015",
+            "description": "Project 1: Document workflow system for - JSC Information Satellite Systems - Reshetnev Company (OAO «Информационные спутниковые системы» имени академика M. Ф. Решетнёва (N-layer architecture, .NET stack, WPF, MVVM light, WCF, EF) Project 2: Mnemoschema Editor for - JSC Information Satellite Systems - Reshetnev Company (OAO «Информационные спутниковые системы» имени академика M. Ф. Решетнёва (Qt/C++/Oracle SQL)"
+        },
+        {
+            "company": "Karlsruhe Institute of Technology (KIT)",
+            "title": "Software Developer",
+            "location": "Tomsk",
+            "fromDate": "February 2014",
+            "toDate": "September 2014",
+            "description": "Project 1: Created data web-monitoring system for various complex physical experiments (KATRIN and KITCUBE) using web technologies. Django framework + Backbone.JS were used to implement REST architectural design. (Django, Django REST Framework, Python, Javascript, Require.JS, Backbone.JS, Highcharts.JS) Project 2: Created module for authentication and authorization for system called ADEI (Advanced Data Extraction Infrastracture). ADEI is AJAX based dynamic web interface facilitating browsing and extraction time-series from various data sources. (PHP, XSLT)"
+        }
+        ],
+    "education": [
+        {
+            "institution": "Rheinische Friedrich-Wilhelms-Universität Bonn",
+            "location": "Bonn, Germany",
+            "title": "Master of Science (M.Sc.), Computer Science",
+            "fromDate": "2015",
+            "toDate": "2017",
+            "description": ""
+        },
+        {
+            "institution": "Томский Политехнический Университет",
+            "location": "Russia",
+            "title": "Bachelor of Science (B.Sc.), Information Technologies",
+            "fromDate": "2011",
+            "toDate": "2015",
+            "description": ""
+        },
+        {
+            "institution": "Томский Государственный Университет Систем Управления и Радиоэлектроники / Tomsk State University of Control Systems and Radioelectronics",
+            "location": "Russia",
+            "title": "computer operator",
+            "fromDate": "2006",
+            "toDate": "2010",
+            "description": ""
+        }   
+        ],
+    "interests": [
+            "Exploring new cultures"
+        ],
+    "accomplishments": [
+            {
+                "title": "PLUS Scholarship for Academic Mobility Programs",
+                "fromDate": "2021-07-11",
+                "toDate": "2021-12-05",
+                "description": ""
+            },
+            {
+                "title": "Scholarship of the Scientific Council TPU (Стипендия ученого совета ТПУ)",
+                "fromDate": "2021-05-20",
+                "toDate": "2022-01-01",
+                "description": ""
+            }
+        ],
+    "languages": [
+        {
+                "name": "Russian",
+                "proficiency": 5
+        },
+        {
+                "name": "English",
+                "proficiency": 5
+        },
+        {
+                "name": "German",
+                "proficiency": 3
+        }
+        ],
+    "projects": [
+        ],
+    "softSkills": [
+],
+    "hardSkills": [
+        {
+                "name": "JavaScript",
+                "proficiency": 4
+        },
+        {
+                "name": "Java",
+                "proficiency": 4
+        },
+        {
+                "name": "Node.js",
+                "proficiency": 2
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        {
+                "title": "Leader of math club",
+                "fromDate": "2021-07-11",
+                "toDate": "2021-12-05",
+                "description": "Organized meetings for specially gifted children where they could discuss math."
+        }
+        ]
+}

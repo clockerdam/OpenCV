@@ -1,0 +1,262 @@
+{
+    "title": "Software Engineer @ Tink, a Visa solution",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Currently, I am working on my Ph.D. at Malardalen University. The focus of my research is using ML/AI technologies for requirements engineering. For almost two years, I worked as Software Engineer at SynergySuite. My main focus was improving and developing applications using Java Enterprise and Java Spring framework. I was born in Podgorica, the capital of Montenegro, where I have finished primary and high school, both with honors. For three years, I have studied at the Faculty of Information Technology at University Mediterranean. I finished my undergraduate studies with an average GPA of 9.26/10. During my undergraduate studies, I was a member and a president of the Student Union. I was an awardee in various competitions and by the University because I was among the top 5% of students in the generation. In 2018, I got the Erasmus ICM scholarship and the opportunity to finish my Master's studies at M\u00e4lardalen University in V\u00e4ster\u00e5s, Sweden. My thesis project was done in collaboration with Bombardier Transportation. The focus of the thesis was on developing test script design supporting reusability, maintainability, and review process.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Tink",
+                    "title": "Software Engineer",
+                    "location": "Stockholm, Stockholm County, Sweden",
+                    "fromDate": "September 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "M\u00e4lardalen University",
+                    "title": "PHD Student",
+                    "location": "Eskilstuna, Sodermanland County, Sweden",
+                    "fromDate": "2021",
+                    "toDate": "2022",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "SynergySuite",
+                    "title": "Software Engineer",
+                    "location": "Podgorica",
+                    "fromDate": "July 2019",
+                    "toDate": "March 2021",
+                    "description": "Improving and developing applications using Java Enterprise and Java Spring framework."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "BOMBARDIER",
+                    "title": "Master Thesis Student",
+                    "location": "Vasteras, Sweden",
+                    "fromDate": "January 2019",
+                    "toDate": "June 2019",
+                    "description": "Working on Master thesis project with focus on test script design approaches supporting reusability, maintainability and review process."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Silba - Initiative for Dialogue and Democracy",
+                    "title": "English Translator",
+                    "location": "Montenegro",
+                    "fromDate": "2018",
+                    "toDate": "2018",
+                    "description": "Translator for observation team during an election observation mission for the 2018 Presidential Election in Montenegro."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Home Depot Tool Rental",
+                    "title": "Sale Associate",
+                    "location": "Anchorage, Alaska Area",
+                    "fromDate": "June 2017",
+                    "toDate": "September 2017",
+                    "description": "I spent summer of 2017 in the United States of America on culture exchange program Work and Travel."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "M\u00e4lardalen University",
+                    "location": "Sweden",
+                    "title": "Doctor of Philosophy - PhD, Computer Science",
+                    "fromDate": "March 2021",
+                    "toDate": "2026",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "M\u00e4lardalen University",
+                    "location": "Sweden",
+                    "title": "Master of Science - MS, Computer Software Engineering",
+                    "fromDate": "2018",
+                    "toDate": "2019",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "University Mediterranean, Faculty of Information Techology",
+                    "location": "Montenegro",
+                    "title": "Bachelor\u2019s Degree, Information Technology",
+                    "fromDate": "2015",
+                    "toDate": "2018",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "High School Slobodan Skerovic",
+                    "location": "Montenegro",
+                    "title": "High School",
+                    "fromDate": "2011",
+                    "toDate": "2015",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "Erasmus ICM scholarship for Master studies",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Second place Case Study Show Montenegro",
+                    "fromDate": "2011-07-15",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Scholarship University Mediterranean",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Winner at Social Impact Award Montenegro",
+                    "fromDate": "2011-07-15",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Italian",
+                    "proficiency": 2
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Serbian",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Java",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "JavaScript",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Python",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Go",
+                    "proficiency": 3
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

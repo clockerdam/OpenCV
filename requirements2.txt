@@ -1,0 +1,21 @@
+attrs==22.1.0
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_0ek9yztvu3/croot/certifi_1665076692562/work/certifi
+click @ file:///opt/concourse/worker/volumes/live/2d66025a-4d79-47c4-43be-6220928b6c82/volume/click_1646056610594/work
+dnspython==1.16.0
+flasgger==0.9.5
+Flask @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_8am4k38yjk/croots/recipe/flask_1658870771936/work
+Flask-Cors @ file:///tmp/build/80754af9/flask-cors_1609957731919/work
+flask-swagger-ui==4.11.1
+itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+Jinja2 @ file:///opt/conda/conda-bld/jinja2_1647436528585/work
+jsonschema==4.16.0
+MarkupSafe @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d4a9444f-bd4c-4043-b47d-cede33979b0fve7bm42r/croots/recipe/markupsafe_1654597878200/work
+mistune==2.0.4
+pydantic @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_8c98be6a-d0b5-43d1-b487-874a2b344c9f1gqf2z78/croots/recipe/pydantic_1651218729478/work
+pymongo==3.12.0
+pyrsistent==0.18.1
+python-dotenv==0.21.0
+PyYAML==6.0
+six @ file:///tmp/build/80754af9/six_1644875935023/work
+typing_extensions @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_ff5_5nqr6l/croots/recipe/typing_extensions_1659638832447/work
+Werkzeug @ file:///opt/conda/conda-bld/werkzeug_1645628268370/work

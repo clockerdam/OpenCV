@@ -3,18 +3,12 @@ import subprocess
 
 import os
 from dateutil.parser import parse
-from invoke import task, run
-from builder import ResumeDocument
+from .builder import ResumeDocument
+from uuid import uuid4
 
-FILEPATH = os.path.join(os.getcwd(), 'tmp')
-JSON_FILE = os.path.join(FILEPATH, 'temp.json')
-YAML_FILE = os.path.join(FILEPATH, 'temp.yaml')
-TEX_FILE = os.path.join(FILEPATH, 'temp')
-PDF_FILE = os.path.join(FILEPATH, 'output.pdf')
-def convert_json_to_yaml():
-    os.makedirs(FILEPATH, exist_ok=True)
+def convert_json_to_yaml(json_file: str, yaml_file: str):
 
-    with open('data/demo1.json', 'r') as file:
+    with open(json_file, 'r') as file:
         configuration = json.load(file)
 
     if 'title' in configuration:
@@ -92,15 +86,15 @@ def convert_json_to_yaml():
         date = accomplishment['fromDate']
         accomplishment['date'] = format_date(date)
 
-    for certificate in configuration['certifications']:
-        date = certificate['date']
-        certificate['date'] = format_date(date)
+    for certification in configuration['certifications']:
+        date = certification['date']
+        certification['date'] = format_date(date)
 
     for experience in configuration['experience']:
         experience['fromDate'] = format_date(experience['fromDate'])
         experience['toDate'] = format_date(experience['toDate'])
         if len(experience['description']) == 0:
-            experience['description'] = ""
+            experience['description'] = "Can't handle empty descriptions yet"
 
     for extracurricular in configuration['extracurriculars']:
         extracurricular['fromDate'] = format_date(extracurricular['fromDate'])
@@ -110,21 +104,21 @@ def convert_json_to_yaml():
         education['fromDate'] = format_date(education['fromDate'])
         education['toDate'] = format_date(education['toDate'])
         if len(education['description']) == 0:
-            education['description'] = ""
+            education['description'] = "Can't handle empty descriptions yet"
 
     for project in configuration['projects']:
         project['fromDate'] = format_date(project['fromDate'])
         project['toDate'] = format_date(project['toDate'])
         if len(project['description']) == 0:
-            project['description'] = ""
+            project['description'] = "Can't handle empty descriptions yet"
 
     # drop all empty sections so they are excluded from rendering
     for section in empty_sections:
         if section in configuration:
             configuration.pop(section)
 
-    with open('data/demo1.yaml', 'w') as yaml_file:
-        yaml.dump(configuration, yaml_file)
+    with open(yaml_file, 'w') as y:
+        yaml.dump(configuration, y)
 
     return configuration
 
@@ -141,115 +135,43 @@ def format_date(date):
     return date
 
 
-import os
-
-from invoke import task
-
-VERSION = "2.1.0"
 
 
-@task
-def build_docker(ctx):
-    ctx.run("docker build -t joeblackwaslike/texlive:2016 docker-texlive")
+def build_pdf(file_name: str):
+    result = subprocess.run(["xelatex", "-interaction=nonstopmode", f"{file_name}" ], capture_output=True)
 
 
-@task
-def generate_thumbnails(ctx):
-    filedir = "export"
-    filename = (
-        f"Joe_Black_resume_backend-software-engineer_python_v{VERSION}.pdf"
-    )
-    ctx.run("pdftoppm -png {} preview".format(os.path.join(filedir, filename)))
-
-
-@task
-def dump_json(ctx):
-    ctx.run("yq . data/bse-python.yaml")
-
-
-@task
-def build_package(ctx):
-    ctx.run("pip3 install -r requirements.txt")
-
-
-def _build_pdf(ctx):
-    p = subprocess.run([ "/usr/bin/xelatex", "temp" ])
-    # "pdftoppm -png {} preview".format(os.path.join(filedir, filename))
+    if(result.stderr == b''): 
+        print("OK")
+    else: 
+        print(f"Returncode {result.returncode}")
+        print(f"stderr {result.stderr}")
+        raise Exception("Failed running subprocess")
 
 
 
-def build_pdf():
-    print("Hier angekommen")
-    # run("scripts/xelatex temp")
-    print(TEX_FILE)
-    # os.system(['xelatex', 'temp'])
-    subprocess.run([ "/usr/bin/xelatex", "temp" ])
-
-
-def _move_and_rename(ctx, file_name):
-    ctx.run(f"mv latex/temp.pdf export/{file_name}")
-
-
-def _clean_up(ctx):
-    ctx.run("rm -f latex/temp*")
-
-
-def _extract_txt(ctx, file_name):
-    ctx.run(f"pdftotext -layout export/{file_name}")
-
-
-def _preview(ctx, file_name):
-    ctx.run(f"open export/{file_name}")
-
-
-@task
-def _render(ctx, data="bse-python", pty=True):
-
-    data_path = f"data/{data}.yaml"
-
-    # Generate latex
-    doc = ResumeDocument.from_jsonresume(YAML_FILE)
-    print(doc)
-    doc.export(TEX_FILE)
-    file_name = PDF_FILE
-    _build_pdf(ctx)
-    _move_and_rename(ctx, file_name)
-    _clean_up(ctx)
-    # _extract_txt(ctx, file_name)
-    _preview(ctx, file_name)
-
-    print(f"Finished generating: {file_name}")
-
-
-def save_to_json(resume):
+def save_to_json(resume, json_file: str):
     # with open('data/temp.json', 'r') as file:
     #     file = json.dump(resume,file)
     json_obj = json.dumps(resume, indent=4)
-    with open(JSON_FILE, "w") as outfile:
+    with open(json_file, "w") as outfile:
         outfile.write(json_obj)
 
 
 
-def render_from_json(input):
-    # from invoke import run
-    # run("inv render --data=temp")
+def render_from_json(input) -> str:
 
-    save_to_json(input)
-    convert_json_to_yaml()
+    file_prefix = f"temp_{str(uuid4())}"
+    print("Starting to generate: {file_prefix}")
 
-    data = 'temp'
-    data_path = f"data/{data}.yaml"
+
+    save_to_json(input, f"{file_prefix}.json")
+    convert_json_to_yaml(f"{file_prefix}.json", f"{file_prefix}.yaml")
 
     # Generate latex
-    doc = ResumeDocument.from_jsonresume('temp')
-    doc.export(TEX_FILE)
-    file_name = PDF_FILE
-    # file_name = f"{doc.file_name}.pdf"
+    doc = ResumeDocument.from_jsonresume(f'{file_prefix}.yaml')
+    doc.export(f"{file_prefix}")
 
-    build_pdf()
-    # doc2 = ResumeDocument(doc)
-    # build_pdf()
-    # subprocess.call("inv render --data=temp")
+    build_pdf(f"{file_prefix}")
 
-
-convert_json_to_yaml()
+    return file_prefix

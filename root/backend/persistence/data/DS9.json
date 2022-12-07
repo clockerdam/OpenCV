@@ -1,0 +1,144 @@
+{
+    "title": "Data Scientist at SAP",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/tomascsantos",
+            "name": "Tomas S.",
+            "phoneNumber": "1111111111",
+            "email": "tomas_without_lastname@gmail.com",
+            "github": "github.com/secret_last_name",
+            "birthday": "",
+            "family": "Single"
+        }
+        ,
+    "summary": "Tomas is dedicated, persistent and organized. He excels in communication and loves problem-solving in team environments.",
+    "experience": [
+        {
+            "company": "Tesla",
+            "title": "Data Scientist",
+            "location": "San Francisco Bay Area",
+            "fromDate": "July 2021",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Tesla",
+            "title": "Robotics Deep ML Researcher",
+            "location": "Remote",
+            "fromDate": "July 2020",
+            "toDate": "December 2020",
+            "description": "Trained MaskRCNN to identify building features from orthomosaic images of Texas Terafactory gathered from drone flyovers. Packaged model, deploying to microservice that accepts orthomosaic images and returns coordinates of targeted building features. Worked with Boston Dynamics Spot robot to autonomously gather high res point cloud information from the Fremont Factory."
+        },
+        {
+            "company": "Tesla",
+            "title": "Software Engineer",
+            "location": "Fremont, California, United States",
+            "fromDate": "May 2020",
+            "toDate": "July 2020",
+            "description": "- Increased car sales by improving UX for internal marketing teams through providing in depth fleet analysis and marketing tools. - Migrated used vehicle listing from inefficient manual system to streamlined automated UI and implemented cross border listings. - Increased testing capabilities and automated regression performance of inventory backend with improved logging and simulation."
+        },
+        {
+            "company": "Magnitude.io",
+            "title": "Full-stack Developer",
+            "location": "San Francisco Bay Area",
+            "fromDate": "October 2018",
+            "toDate": "March 2019",
+            "description": "- Assemble custom, interactive arduino hardware used to engage students in STEM. Debug, assess, and recalibrate malfunctioning units before shipping. - Improve website experience and streamline UI by reorganizing layout and implementing user-persistent changes to facilitate expedited setup."
+        },
+        {
+            "company": "UC Berkeley Interfraternity Council (IFC)",
+            "title": "VP of Sustainabilty",
+            "location": "Berkeley, California",
+            "fromDate": "May 2018",
+            "toDate": "December 2018",
+            "description": "Manage, organize and execute community wide waste reform measures by providing education, incentives and support to all 35+ fraternities. Cooperate with PHC VP of sustainability to unify efforts within the entire Cal Greeks community and streamline mutually beneficial efforts."
+        },
+        {
+            "company": "Bryan Michelsen Construction",
+            "title": "Construction Laborer",
+            "location": "San Francisco Bay Area",
+            "fromDate": "May 2018",
+            "toDate": "September 2018",
+            "description": "Worked closely with a professional contractor to absorb the skills of the trade. Spent long hours demolishing houses, redoing floors, and placing studs. Refined my work ethic, tested my persistence, and stoked my ambition by being exposed to grueling manual labor for unending hours."
+        },
+        {
+            "company": "Associated Students of the University of California",
+            "title": "Sustainability Manager to Office of Senator Alexander Wilfert",
+            "location": "Berkeley, California",
+            "fromDate": "October 2017",
+            "toDate": "June 2018",
+            "description": "- Work with companies to supply 30,000 cups per month in shipments of 300,000 units that need to be stored and distributed cost-effectively. - Study environmental impacts of solo cups compared to compostable cups at an international level to uphold rigorous sustainability standards"
+        },
+        {
+            "company": "Berkeley Lab",
+            "title": "Research Assistant at Liwei Lin labs",
+            "location": "Berkeley, California",
+            "fromDate": "January 2018",
+            "toDate": "April 2018",
+            "description": "Worked on testing and designing skin adhesive electronics."
+        }
+        ],
+    "education": [
+        {
+            "institution": "UC Berkeley College of Engineering",
+            "location": "USA",
+            "title": "Electrical Engineering and Computer Science, Machine Vision",
+            "fromDate": "2017",
+            "toDate": "2021",
+            "description": ""
+        },
+        {
+            "institution": "HMB high",
+            "location": "USA",
+            "title": "",
+            "fromDate": "2013",
+            "toDate": "2017",
+            "description": ""
+        }     
+        ],
+    "interests": [
+            "Cycling",
+            "Running",
+            "Nature"
+        ],
+    "accomplishments": [
+        ],
+    "languages": [
+],
+    "projects": [
+        ],
+    "softSkills": [
+        {
+                "name": "Mental Strength",
+                "proficiency": 5
+        }
+    ],
+    "hardSkills": [
+        {
+                "name": "Python",
+                "proficiency": 5
+        },
+        {
+                "name": "Java",
+                "proficiency": 5
+        },
+        {
+                "name": "C",
+                "proficiency": 3
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        {
+                "title": "Leader of cyclinc club",
+                "fromDate": "2018-12-15",
+                "toDate": "2021-03-05",
+                "description": "Organizer of weekly cycling meeting with colleagues."
+        }
+        ]
+}

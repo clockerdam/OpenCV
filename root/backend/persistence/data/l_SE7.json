@@ -1,0 +1,306 @@
+{
+    "title": "Software Engineer & Scrum Master at Volvo Group Trucks Technology - Vehicle Automation.",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Biomedical Engineer with proven software engineer experience in the automotive sector. My areas of expertise are back-end solutions and mobile applications. Currently working as software developer for Volvo Autonomous Solutions (Java, Springboot, Docker, Azure DevOps, Kubernetes, Android, C++, ROS, Matlab). Interested in everything concerns technology, from electronics to informatics, from robotic to biomedical engineering.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Volvo Group Trucks Technology",
+                    "title": "Software Engineer",
+                    "location": "Gothenburg, Sweden",
+                    "fromDate": "April 2018",
+                    "toDate": "Present",
+                    "description": "Software developer and Scrum Master for the group Transport Mission and Route Management in Volvo Vehicle Automation. Development of microservices for managing, coordinating and dispatching autonomous vehicles and fleets to transport goods in an optimal and efficient way. Languages and tools utilized: Java 11, Spring Boot, Azure DevOps, Docker, Jenkins, Python3, Maven, REST, JPA, ActiveMQ, Javascript."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Alten Sweden",
+                    "title": "Embedded Systems Consultant",
+                    "location": "Gothenburg, Sweden",
+                    "fromDate": "October 2015",
+                    "toDate": "Mars 2018",
+                    "description": "C++, ROS, Matlab/Simulink and Android developer for Volvo GTT/ATR."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Volvo Trucks",
+                    "title": "Software Developer",
+                    "location": "Gothenburg, Sweden",
+                    "fromDate": "June 2015",
+                    "toDate": "August 2015",
+                    "description": "Software for CAN BUS data analysis, Android and Matlab."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Volvo Trucks",
+                    "title": "Master Student",
+                    "location": "",
+                    "fromDate": "January 2015",
+                    "toDate": "February 2015",
+                    "description": "Improving seatbelt reminders for trucks"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Chalmers tekniska h\u00f6gskola",
+                    "location": "Sweden",
+                    "title": "Laurea Magistrale, Bioingegneria e ingegneria biomedica",
+                    "fromDate": "2014",
+                    "toDate": "2015",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Universit\u00e0 degli Studi di Padova",
+                    "location": "Italy",
+                    "title": "Laurea Magistrale, Bioingegneria e ingegneria biomedica, Bioingegneria e ingegneria biomedica",
+                    "fromDate": "2013",
+                    "toDate": "2015",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Universit\u00e0 degli Studi di Padova",
+                    "location": "Italy",
+                    "title": "Laurea triennale, Ingegneria dell'Informazione, Ingegneria dell'Informazione",
+                    "fromDate": "2010",
+                    "toDate": "2013",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "I.T.I.S. G. Galilei",
+                    "location": "Italy",
+                    "title": "Diploma, Elettronica e Telecomunicazioni, Elettronica e Telecomunicazioni",
+                    "fromDate": "2005",
+                    "toDate": "2010",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [
+            {
+                "value": "Cars",
+                "label": 0
+            },
+            {
+                "value": "Technology",
+                "label": 0
+            },
+            {
+                "value": "Robotics",
+                "label": 0
+            },
+            {
+                "value": "Biomedical",
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "IAS 13",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "CSNII School of Neurotechniques",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Borsa di Studio",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Partecipazione alle Gare Nazionali di Elettronica e Telecomunicaizioni",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Swedish",
+                    "proficiency": 2
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Swedish",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [
+            {
+                "value": {
+                    "title": "Comparison of outlier heartbeat identification and spectral transformation strategies for deriving heart rate variability indices for drivers at different stages of sleepiness.",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Driver Distraction and Inattention",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Sviluppo di App per sistema operativo Android: aspetti generali",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "The Art of Heart Rate Variability: Driver Fatigue Application",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Deriving heart rate variability indices from cardiac monitoring\u2014An indicator of driver sleepiness",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Java",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Spring Framework",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Docker",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "PET",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

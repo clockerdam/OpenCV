@@ -1,0 +1,266 @@
+{
+    "title": "Business Intelligence Analyst at Boston Consulting Group (BCG)",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Enthusiastic individual with superior skills in working in both team- based and independent capacities. Bringing a strong work ethic and excellent organizational skills to any setting. Excited to begin a new challenge with a successful team. Fluent in English, Portuguese, and Spanish, offering solid comprehension of cultural diversity.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Boston Consulting Group (BCG)",
+                    "title": "Business Intelligence Analyst",
+                    "location": "Boston, Massachusetts, United States",
+                    "fromDate": "September 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Boston Consulting Group (BCG)",
+                    "title": "Sourcing Analyst",
+                    "location": "Boston, Massachusetts, United States",
+                    "fromDate": "July 2021",
+                    "toDate": "September 2022",
+                    "description": "\u2022 Worked closely with the telecom sourcing manager to perform detailed cost analysis and data models for mobility RFPs, for countries such as Austria, France, Germany, UK, and US, to forecast the contractual cost, and savings for each vendor including factors such as FTE growth and turnovers \u2022 Built and managed data dashboards within PowerBI to provide relevant insights from Procurement areas ranging from supplier onboarding requests to spend related to value-added resellers across regions; in the building process, working closely with stakeholders to ensure the visualized data conveys the needed numbers and understand the cadence of the dashboard refresh \u2022 Collaborated with hardware sourcing managers on the global VAR strategy, with entails an annual spend of $60m, to secure BCG the most competitive prices for hardware and software products globally \u2013 leading to potential cost reductions, and to facilitate the purchasing process by implementing a product catalog for IT buyers \u2022 Owned and managed the IT Sourcing Intake Process by connecting with IT Leadership Partners and gathering requirements for the requested project(s) to then present to the category managers during weekly staff meetings; uses Jira as a PM tool \u2022 Supported sourcing team members on ad hoc requests ranging from creating slides to creating tailored spend reports"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Boston Consulting Group (BCG)",
+                    "title": "Operations Associate",
+                    "location": "Boston, Massachusetts, United States",
+                    "fromDate": "July 2020",
+                    "toDate": "July 2021",
+                    "description": "\u2022 Managed the supplier onboarding and maintenance process on Coupa, handling over 10,000+ global suppliers, and acting as the procurement PoC for the same by ensuring a strong governance mechanism is in place including additional operational activities such as supplier risk assessment, contract validation, and due diligence checks \u2022 Worked closely with IT and process engineers to align Procure-to-pay (P2P) process improvement opportunities and design the roadmap to assess and implement opportunities into the process to guarantee customer satisfaction \u2022 Acted as a liaison with partners globally across the business such as Accounts Payable, BCG buyers, and category managers, to ensure compliance of SLAs and deliver against value driven aspects of the process \u2022 Maintained the Master Supplier Data to a high level of data integrity by using a combination of SAP BusinessObjects, Alteryx & PowerBI to perform regular reviews on suppliers onboarded data and identify any data inconsistency issues"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Brazil Conference at Harvard & MIT",
+                    "title": "Logistics and Content Team",
+                    "location": "Greater Boston Area",
+                    "fromDate": "September 2018",
+                    "toDate": "May 2020 ",
+                    "description": "\u2022 Developed three-day agenda for conference expecting 900+ attendees and creating an operational plan to ensure fluid on-site logistics and safety of acclaimed guest speakers \u2022 Sourced and negotiated attendees kits, event venue, guest speakers\u2019 transportation, video recording, and photographic services, and online streaming reproduction services"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Northeastern University",
+                    "title": "Teaching Assistant for Facilities Planning and Material Handling",
+                    "location": "Boston, Massachusetts",
+                    "fromDate": "September 2019",
+                    "toDate": "April 2020",
+                    "description": "\u2022 Supported the professor in designing, implementing, and assessing the course material \u2022 Assisted professor with course-related tasks, including but not limited to conducting labs, organizing and proofreading assignments, bringing in guest speakers, and addressing student concerns"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Boston Consulting Group (BCG)",
+                    "title": "Global Procurement Co-op",
+                    "location": "Greater Boston Area",
+                    "fromDate": "January 2019",
+                    "toDate": "July 2019",
+                    "description": "\u2022 Collaborated with senior management on a digital transformation company- wide project of transitioning to a new workspace collaboration software tool\u2013 Slack \u2013 by developing informational facilitators and providing professional training in collaboration with HR to ensure the adequate use and educate employees of the software\u2019s benefits \u2022 Administered the process of cleansing the supplier diversity master database on a weekly basis by verifying if listed new vendors were certified as minority suppliers, and created reports based on client requests \u2022 Analyzed big sets of non-IT related vendor spending data from 90+ offices in over 50 countries, using a combination of Tableau and Excel to develop strategies when developing and reviewing RFPs to reduce costs and gain efficiencies \u2022 Revamped the onboarding process for several departments using Trello boards to reduce miscommunications between the manager and the new employee"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Promee",
+                    "title": "Marketing Director",
+                    "location": "Boston, Massachusetts",
+                    "fromDate": "March 2018",
+                    "toDate": "March 2019",
+                    "description": "Awarded $10,000 in startup competition hosted by Northeastern University, Promee is an app that connects local businesses and their target customer by providing them with a platform to post their latest announcements and special offers; allowing customers to follow and interact with their brands of interest and never miss a promotion again. \u2022 Planned and implemented strategic marketing programs, contributing to 4,000 downloads in a time frame of 3 months, by having bi-weekly meetings with the entire team to increase notable brand awareness and identity \u2022 Collaborated with graphic designers to develop engaging and end-marketing materials for weekly posts on social media platforms \u2022 Developed weekly KPI reports on new users, total users, and QR codes used to better understand the application and social media performance in order to increase user database"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Wayfair",
+                    "title": "Category Buyer Co-op",
+                    "location": "Greater Boston Area",
+                    "fromDate": "January 2018",
+                    "toDate": "July 2018",
+                    "description": "\u2022 Collaborated in cultivating and managing relationships with suppliers, identifying opportunities and negotiating discounts for shopping holidays \u2022 Analyzed sales data on specific SKUs to strategize revenue growth opportunities for outdoor and textile categories \u2022 Performed a 6-month long website analysis, focusing on the customer\u2019s on-site experience, to identify tactics to increase the categories\u2019 click and conversion rates"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Ita\u00fa",
+                    "title": "Summer Analyst",
+                    "location": "S\u00e3o Paulo Area, Brazil",
+                    "fromDate": "May 2017",
+                    "toDate": "August 2017",
+                    "description": "\u2022 Created a checklist to ensure high level of customer service for incoming calls \u2022 Collaborated on the restructuring of the Franchising department by drawing flowcharts, creating Pareto graphs, and compiling information about the companies that signed new contracts in the previous 3 months \u2022 Designed a calculator for the telemarketing sector to compute the amount a client would save if he/she signed a contract with Ita\u00fa \u2022 Created Excel reports of the telemarketing campaigns to send out to the entire company \u2022 Participated in a 2-week Kaizen about the refunding and pricing issues of the company by discussing possible solutions and transferred flowcharts into Excel"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "BRASA - Brazilian Student Association",
+                    "title": "Columnist",
+                    "location": "Greater Boston Area",
+                    "fromDate": "April 2016",
+                    "toDate": "April 2017",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "",
+                    "title": "Portuguese Tutor",
+                    "location": "Greater Boston Area",
+                    "fromDate": "January 2016",
+                    "toDate": "May 2016",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Northeastern University",
+                    "location": "Boston",
+                    "title": "Bachelor of Science - BS, Industrial Engineering",
+                    "fromDate": "2015",
+                    "toDate": "2020",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Pan American School of Bahia",
+                    "location": "Bahia",
+                    "title": "Brazilian, American and International Baccalaureate Diploma",
+                    "fromDate": "2000",
+                    "toDate": "2015",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Georgetown University",
+                    "location": "Georgetown",
+                    "title": "Summer Program",
+                    "fromDate": "2014",
+                    "toDate": "2014",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "Portuguese",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Spanish",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "French",
+                    "proficiency": 2
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "International Baccalaureate Diploma",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Lean Six Sigma Green Belt Certification",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

@@ -1,0 +1,169 @@
+{
+    "title": "Business Analyst at Bain & Company",
+    "contactInfo": [
+        {
+            "address": "Greater Boston",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/mariazmb",
+            "name": "Maria Zambrano",
+            "phoneNumber": "",
+            "email": "",
+            "github": "",
+            "birthday": "",
+            "family": ""
+        }
+        ],
+    "summary": "Currently working as a Business Analyst at Bain & Company. Recently graduated Cum Laude from Northeastern University with a major degree in Behavioral Neuroscience and a minor degree in Business Administration.",
+
+    "experience": [
+        {
+            "company": "Bain & Company",
+            "title": "Business Analyst",
+            "location": "Mexico City, Mexico",
+            "fromDate": "July 2022",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Ennea",
+            "title": "Investment Intern",
+            "location": "Monterrey, Nuevo León, Mexico",
+            "fromDate": "November 2021",
+            "toDate": "March 2022",
+            "description": ""
+        },
+        {
+            "company": "Bain & Company",
+            "title": "Project Management Co-op",
+            "location": "Boston, Massachusetts, United States",
+            "fromDate": "January 2021",
+            "toDate": "July 2021",
+            "description": ""
+        },
+        {
+            "company": "Northeastern University",
+            "title": "Research Assistant - Interdisciplinary Affective Science Lab",
+            "location": "Boston, Massachusetts, United States",
+            "fromDate": "September 2020",
+            "toDate": "December 2020",
+            "description": ""
+        },
+        {
+            "company": "Massachusetts General Hospital",
+            "title": "Harvard Aging Brain Study Clinical Research Co-op",
+            "location": "Boston, Massachusetts, United States",
+            "fromDate": "January 2020",
+            "toDate": "June 2020",
+            "description": ""
+        },
+        {
+            "company": "TecSalud del Tecnológico de Monterrey",
+            "title": "Research Intern (Cardiology Department)",
+            "location": "Boston, Massachusetts, United States",
+            "fromDate": "July 2019",
+            "toDate": "September 2019",
+            "description": ""
+        },
+        {
+            "company": "Massachusetts General Hospital",
+            "title": "Harvard Aging Brain Study Clinical Research Co-op",
+            "location": "Monterrey, Nuevo León, Mexico",
+            "fromDate": "January 2020",
+            "toDate": "June 2020",
+            "description": ""
+        },
+        {
+            "company": "Grupo Proeza",
+            "title": "Communications Intern",
+            "location": "Monterrey, Nuevo León, Mexico",
+            "fromDate": "May 2017",
+            "toDate": "June 2017",
+            "description": ""
+        }
+        ],
+    "education": [
+        {
+            "institution": "Northeastern University",
+            "location": "Boston",
+            "title": "Bachelor of Science — Behavioral Neuroscience, Minor in Business Administration, Behavioral Sciences",
+            "fromDate": "2018",
+            "toDate": "2022",
+            "description": ""
+        },
+        {
+            "institution": "Anatolia College",
+            "location": "Anatolia",
+            "title": "Behavioral Neuroscience",
+            "fromDate": "2018",
+            "toDate": "2018",
+            "description": ""
+        },
+        {
+            "institution": "American School Foundation of Monterrey",
+            "location": "Monterrey, Mexico",
+            "title": "",
+            "fromDate": "2014",
+            "toDate": "2018",
+            "description": ""
+        }
+        
+        ],
+    "interests": [],
+    "accomplishments": [
+        {
+                "title": "Northeastern University's Dean's List, Distinguished Community Service Award, Cum Laude",
+                "fromDate": "2021-02-15",
+                "toDate": "",
+                "description": ""
+        }
+    ],
+    "languages": [
+        {
+                "name": "Portuguese",
+                "proficiency": 5
+        },
+        {
+                "name": "English",
+                "proficiency": 5
+        },
+        {
+                "name": "Spanish",
+                "proficiency": 4
+        },
+        {
+                "name": "French",
+                "proficiency": 2
+        }
+        ],
+    "projects": [
+        ],
+    "softSkills": [
+        ],
+    "hardSkills": [
+        {
+                "name": "Flow Cytometry",
+                "proficiency": 5
+        },
+        {
+                "name": "EndNote",
+                "proficiency": 5
+        },
+        {
+                "name": "Rodents",
+                "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        {
+            "title": "Certified ScrumMaster® (CSM®)",
+            "level": "",
+            "description": "",
+            "date": ""
+        }
+        ],
+    "patents": [
+        "Light bulb with changing color"
+        ],
+    "extracurriculars": [
+        ]
+}
