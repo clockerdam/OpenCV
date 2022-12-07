@@ -2,6 +2,7 @@ import { FormEvent, useContext} from "react";
 import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledProject, LabelledSkill, LabelledString } from "../../CV/CV";
 import cvContext from "../../cvContext";
 import './form.css'
+import React , { useRef } from "react";
 
 
 // https://www.freecodecamp.org/news/build-dynamic-forms-in-react/
@@ -46,10 +47,27 @@ function Form() {
         Date = "date",
         Empty = ""
     }
-
+    const ref = useRef();
+   
     return <form onSubmit={handleSubmit}>
+<<<<<<< HEAD:root/frontend/src/InputView/Form/Form.tsx
         <div>
             <button onSubmit={(e) => handleSubmit(e)}>Submit</button>
+=======
+       
+        <div className="toptext"> Fill in the fields below. Nothings is mandatory but the more information you provide
+         us the better your resume will be.</div>
+        <div className="container">
+            <label>
+                <p>Title</p>
+                <input 
+                    name="title"
+                    placeholder="Title"
+                    value={cv.title}
+                    onChange={(e) => setCV(prevState => ({ ...prevState, title: e.target.value}))}
+                />
+            </label>
+>>>>>>> 7cd7cde (styling frontend):root/frontend/src/Form/Form.tsx
             <label>
                 <p>Summary</p>
                 <input 
@@ -69,13 +87,15 @@ function Form() {
                             value={interest.value}
                             onChange={e => change(Field.Interests, e, index)}
                         />
-                        <button onClick={() => remove(Field.Interests, index)}>-</button>
+                        <button className="buttonForm" onClick={() => remove(Field.Interests, index)}>-</button>
                     </div>)
                 })}
-                <button onClick={() => add(Field.Interests)}>Add interest</button>
+                <button className="buttonForm" onClick={() => add(Field.Interests)}>Add interest</button>
             </label>
+            <label>
             <p>Contact Information</p> 
             <div className="inner">
+                <br></br>
                 <p>Address</p>         
                 <input 
                     name="address"
@@ -83,6 +103,7 @@ function Form() {
                     value={cv.contactInfo.address}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Address)}
                 />
+                <br></br>
                 <p>Website</p>
                 <input 
                     name="website"
@@ -90,6 +111,7 @@ function Form() {
                     value={cv.contactInfo.website}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Website)}
                 />
+                <br></br>
                 <p>LinkedIn</p>
                 <input 
                     name="linkedIn"
@@ -97,6 +119,7 @@ function Form() {
                     value={cv.contactInfo.linkedin}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.LinkedIn)}
                 />
+                <br></br>
                 <p>Name</p>
                 <input 
                     name="name"
@@ -104,6 +127,7 @@ function Form() {
                     value={cv.contactInfo.name}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Name)}
                 />
+                <br></br>
                 <p>Phone Number</p>
                 <input 
                     name="phoneNumber"
@@ -111,6 +135,7 @@ function Form() {
                     value={cv.contactInfo.phoneNumber}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.PhoneNumber)}
                 />
+                <br></br>
                 <p>Email</p>
                 <input 
                     name="email"
@@ -125,6 +150,7 @@ function Form() {
                     value={cv.contactInfo.github}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.GitHub)}
                 />
+                <br></br>
                 <p>Birthday</p>
                 <input 
                     name="birthday"
@@ -132,6 +158,7 @@ function Form() {
                     value={cv.contactInfo.birthday}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Birthday)}
                 />
+                <br></br>
                 <p>Family</p>
                 <input 
                     name="family"
@@ -139,7 +166,9 @@ function Form() {
                     value={cv.contactInfo.family}
                     onChange={(e) => change(Field.ContactInfo, e, undefined, SubField.Family)}
                 />
+            
             </div>
+            </label>
             <label>
                 <p>Accomplishments</p>
                 {cv.accomplishments.value.map((accomplishment, index) => {
@@ -156,6 +185,7 @@ function Form() {
                             placeholder="To"
                             //value={experience.to}
                             onChange={e => change(Field.Accomplishments, e, index, SubField.ToDate)}
+                            
                         />
                         <input
                             type="date"
@@ -164,16 +194,14 @@ function Form() {
                             //value={experience.from}
                             onChange={e => change(Field.Accomplishments, e, index, SubField.FromDate)}
                         />
-                        <input
-                            name="description"
-                            placeholder="Description"
+                        <textarea name="description" rows={4} cols={50} placeholder="Description" 
                             value={accomplishment.value.description}
-                            onChange={e => change(Field.Accomplishments, e, index, SubField.Description)}
-                        />
-                        <button onClick={() => remove(Field.Accomplishments, index)}>-</button>
+                            onChange={e => change(Field.Accomplishments, e, index, SubField.Description)}>
+                        </textarea>
+                        <button className="buttonForm" onClick={() => remove(Field.Accomplishments, index)}>-</button>
                     </div>)
                 })}
-                <button onClick={() => add(Field.Accomplishments)}>Add accomplishment</button>
+                <button className="buttonForm"  onClick={() => add(Field.Accomplishments)}>Add accomplishment</button>
             </label>
             <label>
                 <p>Projects</p>
@@ -199,16 +227,16 @@ function Form() {
                             //value={experience.from}
                             onChange={e => change(Field.Projects, e, index, SubField.FromDate)}
                         />
-                        <input
-                            name="description"
-                            placeholder="Description"
+                        <textarea name="Description" rows={4} cols={50} placeholder="Description" 
                             value={project.value.description}
-                            onChange={e => change(Field.Projects, e, index, SubField.Description)}
-                        />
-                        <button onClick={() => remove(Field.Projects, index)}>-</button>
+                            onChange={e => change(Field.Projects, e, index, SubField.Description)}>
+                        
+                        </textarea>
+                        
+                        <button className="buttonForm"  onClick={() => remove(Field.Projects, index)}>-</button>
                     </div>)
                 })}
-                <button onClick={() => add(Field.Projects)}>Add project</button>
+                <button className="buttonForm"  onClick={() => add(Field.Projects)}>Add project</button>
             </label>
             <label>
                 <p>Soft Skills</p>
@@ -221,15 +249,19 @@ function Form() {
                             onChange={e => change(Field.SoftSkills, e, index, SubField.Name)}
                         />
                         <input
+                            size={1}
+                            maxLength={2}
                             name="proficiency"
                             placeholder="Proficiency"
                             value={softSkill.value.proficiency}
                             onChange={e => change(Field.SoftSkills, e, index, SubField.Proficiency)}
                         />
-                        <button onClick={() => remove(Field.SoftSkills, index)}>-</button>
+                        <button className="buttonForm"  onClick={() => remove(Field.SoftSkills, index)}>-</button> 
+                        
+                         
                     </div>)
                 })}
-                <button onClick={() => add(Field.SoftSkills)}>Add soft skill</button>
+                <button className="buttonForm"  onClick={() => add(Field.SoftSkills)}>Add soft skill</button>
             </label>
             <label>
                 <p>Hard Skills</p>
@@ -242,15 +274,18 @@ function Form() {
                             onChange={e => change(Field.HardSkills, e, index, SubField.Name)}
                         />
                         <input
+                            size={1}
+                            maxLength={2}
                             name="proficiency"
                             placeholder="Proficiency"
                             value={hardSkill.value.proficiency}
                             onChange={e => change(Field.HardSkills, e, index, SubField.Proficiency)}
                         />
-                        <button onClick={() => remove(Field.HardSkills, index)}>-</button>
+                        <button className="buttonForm" onClick={() => remove(Field.HardSkills, index)}>-</button>
+                        
                     </div>)
                 })}
-                <button onClick={() => add(Field.HardSkills)}>Add hard skill</button>
+                <button className="buttonForm" onClick={() => add(Field.HardSkills)}>Add hard skill</button>
             </label>
             <label>
                 <p>Languages</p>
@@ -262,16 +297,19 @@ function Form() {
                             value={language.value.name}
                             onChange={e => change(Field.Languages, e, index, SubField.Name)}
                         />
-                        <input
+                        <input 
+                            size={1}
+                            maxLength={2}
                             name="proficiency"
                             placeholder="Proficiency"
                             value={language.value.proficiency}
                             onChange={e => change(Field.Languages, e, index, SubField.Proficiency)}
                         />
-                        <button onClick={() => remove(Field.Languages, index)}>-</button>
+                        <button className="buttonForm"  onClick={() => remove(Field.Languages, index)}>-</button>
+                        
                     </div>)
                 })}
-                <button onClick={() => add(Field.Languages)}>Add language</button>
+                <button className="buttonForm" onClick={() => add(Field.Languages)}>Add language</button>
             </label>
             <label>
                 <p>Experience</p>
@@ -309,16 +347,17 @@ function Form() {
                             //value={experience.to}
                             onChange={e => change(Field.Experience, e, index, SubField.ToDate)}
                         />
-                        <input
-                            name="description"
-                            placeholder="Description"
+                        <textarea name="description" rows={4} cols={50} placeholder="Description" 
                             value={experience.value.description}
-                            onChange={e => change(Field.Experience, e, index, SubField.Description)}
-                        />
-                        <button onClick={() => remove(Field.Experience, index)}>-</button>
+                            onChange={e => change(Field.Experience, e, index, SubField.Description)}>
+                        
+                        </textarea>
+                            
+                        
+                        <button className="buttonForm" onClick={() => remove(Field.Experience, index)}>-</button>
                     </div>)
                 })}
-                <button onClick={() => add(Field.Experience)}>Add experience</button>
+                <button className="buttonForm" onClick={() => add(Field.Experience)}>Add experience</button>
             </label>
             <label>
                 <p>Certifications</p>
@@ -336,12 +375,12 @@ function Form() {
                             value={certification.value.level}
                             onChange={e => change(Field.Certifications, e, index, SubField.Level)}
                         />
-                        <input
-                            name="description"
-                            placeholder="Description"
+                       <textarea name="description" rows={4} cols={50} placeholder="Description" 
                             value={certification.value.description}
-                            onChange={e => change(Field.Certifications, e, index, SubField.Description)}
-                        />
+                            onChange={e => change(Field.Certifications, e, index, SubField.Description)}>
+                        
+                        </textarea>
+                        
                         <input
                             type="date"
                             name="date"
@@ -349,10 +388,10 @@ function Form() {
                             //value={experience.to}
                             onChange={e => change(Field.Experience, e, index, SubField.Date)}
                         />
-                        <button onClick={() => remove(Field.Certifications, index)}>-</button>
+                        <button className="buttonForm" onClick={() => remove(Field.Certifications, index)}>-</button>
                     </div>)
                 })}
-                <button onClick={() => add(Field.Certifications)}>Add certification</button>
+                <button className="buttonForm" onClick={() => add(Field.Certifications)}>Add certification</button>
             </label>
             <label>
                 <p>Education</p>
@@ -390,16 +429,15 @@ function Form() {
                             //value={education.to}
                             onChange={e => change(Field.Education, e, index, SubField.ToDate)}
                         />
-                        <input
-                            name="description"
-                            placeholder="Description"
+                       <textarea name="description" rows={4} cols={50} placeholder="Description" 
                             value={education.value.description}
-                            onChange={e => change(Field.Education, e, index, SubField.Description)}
-                        />
-                        <button onClick={() => remove(Field.Education, index)}>-</button>
+                            onChange={e => change(Field.Education, e, index, SubField.Description)}>
+                        
+                        </textarea>
+                        <button className="buttonForm" onClick={() => remove(Field.Education, index)}>-</button>
                     </div>)
                 })}
-                <button onClick={() => add(Field.Education)}>Add education</button>
+                <button className="buttonForm" onClick={() => add(Field.Education)}>Add education</button>
             </label>
             <label>
                 <p>Patents</p>
@@ -411,10 +449,10 @@ function Form() {
                             value={patent.value}
                             onChange={e => change(Field.Patents, e, index)}
                         />
-                        <button onClick={() => remove(Field.Patents, index)}>-</button>
+                        <button className="buttonForm"  onClick={() => remove(Field.Patents, index)}>-</button>
                     </div>)
                 })}
-                <button onClick={() => add(Field.Patents)}>Add patent</button>
+                <button className="buttonForm" onClick={() => add(Field.Patents)}>Add patent</button>
             </label>
             <label>
                 <p>Extracurriculars</p>
@@ -440,20 +478,24 @@ function Form() {
                             //value={experience.from}
                             onChange={e => change(Field.Extracurriculars, e, index, SubField.FromDate)}
                         />
-                        <input
-                            name="description"
-                            placeholder="Description"
+                       <textarea name="description" rows={4} cols={50} placeholder="Description" 
                             value={extracurricular.value.description}
-                            onChange={e => change(Field.Extracurriculars, e, index, SubField.Description)}
-                        />
-                        <button onClick={() => remove(Field.Extracurriculars, index)}>-</button>
+                            onChange={e => change(Field.Extracurriculars, e, index, SubField.Description)}>
+                        
+                        </textarea>
+                        <button className="buttonForm"  onClick={() => remove(Field.Extracurriculars, index)}>-</button>
                     </div>)
                 })}
-                <button onClick={() => add(Field.Extracurriculars)}>Add extracurricular</button>
+                <button className="buttonForm" onClick={() => add(Field.Extracurriculars)}>Add extracurricular</button>
             </label>
         </div>
+<<<<<<< HEAD:root/frontend/src/InputView/Form/Form.tsx
         {/* <button onSubmit={(e) => handleSubmit(e)}>Submit</button> */}
+=======
+        <button  className="buttonForm" onSubmit={(e) => handleSubmit(e)}>Submit</button>
+>>>>>>> 7cd7cde (styling frontend):root/frontend/src/Form/Form.tsx
     </form>
+            
 
     function change(field: Field, event: any, index: number = 0, subField?: SubField) {
         let data: any
