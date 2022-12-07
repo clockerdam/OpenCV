@@ -618,7 +618,7 @@
       \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
     \if\relax\detokenize{#5}\relax
     \else
-      \multicolumn{2}{L{\textwidth - 10em}}{\descriptionstyle{#5}} \\
+      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\
     \fi
   \end{tabular*}\vspace{1mm}
 }
