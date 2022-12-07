@@ -51,7 +51,7 @@ function Output() {
             <div className="outlet">
 
               {
-                loading == "loading" ?
+                loading === "loading" ?
                   <div
                     style={{
                       width: "100%",
