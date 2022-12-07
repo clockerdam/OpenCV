@@ -28,7 +28,7 @@ function Job() {
   return <div className="Template">
     <button onClick={() => analyzeCV()}>Analyze CV</button>
     <p>Your job description that will tailor your resume:</p>
-    <input
+    <textarea
       name="title"
       placeholder="Input the job title"
       value={cv.title}
