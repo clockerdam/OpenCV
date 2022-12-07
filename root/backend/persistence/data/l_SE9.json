@@ -1,0 +1,167 @@
+{
+    "title": "Software Engineer at Naver",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Software Engineer with some experience of working in the software industry. And I have a huge passion about Artificial Intelligence and Big Data. Technologies: C++, Java, Python, Node.js, React.js,, MySQL/SQL Server, AWS, etc.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "NAVER VIETNAM",
+                    "title": "Software Engineer",
+                    "location": "",
+                    "fromDate": "September 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "MEGAZONECLOUD",
+                    "title": "Software Engineer",
+                    "location": "Vietnam",
+                    "fromDate": "January 2021",
+                    "toDate": "September 2022",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Korean IT School (KITS) - Multicampus/Samsung SDS",
+                    "title": "Trainee",
+                    "location": "Hanoi, Hanoi, Vietnam",
+                    "fromDate": "July 2020",
+                    "toDate": "October 2020",
+                    "description": "\u2022 Intensely got trained in Java Web Services using Spring framework including Spring Boot, Spring Hibernate and REST API. \u2022 Also got trained in Big Data using Spark with Hadoop environment to execute several tasks. \u2022 Practically got trained in Machine Learning and Deep Learning using R and Python with modern algorithms including K \u2013Nearest Neighbors (KNN), K-means clustering, Support Vector Machine (SVM linear and SVM rbf), Convolutional Neutral Network (CNN)."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Advanced Digital Opportunities for Rapid Success (ADORS)",
+                    "title": "Web Development Intern",
+                    "location": "Toledo, Ohio, United States",
+                    "fromDate": "May 2019",
+                    "toDate": "August 2019",
+                    "description": "\u2022 Created web design analysis reports and developed a counseling website for students in Vietnam to assist them in applying to educational programs in the United States. \u2022 Worked within Node.js and SQL server to develop simple and clean solutions."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Agile Software Factory (ASF)",
+                    "title": "Software Engineer - Scrum Master",
+                    "location": "Bowling Green, Ohio, United States",
+                    "fromDate": "October 2018",
+                    "toDate": "May 2019",
+                    "description": "\u2022 Worked within the Computer Science Department at Bowling Green State University to create the 50th anniversary website for the department. \u2022 Assumed the position of scrum master and managed five separate teams of developers. \u2022 Measured success of teams using Agile methodologies in terms of project growth, adaptability and outcomes."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Bowling Green State University",
+                    "location": "USA",
+                    "title": "Bachelor of Science (B.S.), Computer Science (Specialization in Software Engineering)",
+                    "fromDate": "2015",
+                    "toDate": "2019",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Greek",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Apache Kafka",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Java",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Python",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

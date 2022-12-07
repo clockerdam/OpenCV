@@ -1,0 +1,133 @@
+{
+    "title": "Audio Research Software Engineer at Meta Reality Labs",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "alex8b.com",
+            "linkedin": "www.linkedin.com/in/alex8b",
+            "name": "Alexi Bezugly",
+            "phoneNumber": "222222222",
+            "email": "alexi@gmail.com",
+            "github": "github.com/alex8b",
+            "birthday": "",
+            "family": ""
+        }
+        ,
+    "summary": "- Software development - C#, .NET, Unity, VR, Unreal Engine (Basic skills), Rust (Basic skills), C++, git, SCRUM, React (Basic skills), Node.js (Basic skills) - Generating product ideas. Fast prototyping new concepts and demos. Generating leads for software partnership. - Reverse engineering - Unity modding, HarmonyLib, dnSpy, IDA Pro, Cheat Engine, ReClass.",
+    "experience": [
+        {
+            "company": "Meta",
+            "title": "Audio Research Software Engineer",
+            "location": "Stockholm, Sweden",
+            "fromDate": "July 2022",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Arena Personal AB",
+            "title": "CW Software Engineer onsite at Meta",
+            "location": "Stockholm, Sweden",
+            "fromDate": "August 2021",
+            "toDate": "June 2022",
+            "description": "Software development at Meta Reality Labs Audio Research"
+        },
+        {
+            "company": "Tobii",
+            "title": "Software Developer",
+            "location": "Stockholm, Sweden",
+            "fromDate": "September 2013",
+            "toDate": "July 2021",
+            "description": "- Developing Tobii Ocumen. https://vr.tobii.com/sdk/solutions/tobii-ocumen/ - Foveated video streaming. - Exploring eye tracking features in VR. https://vr.tobii.com/sdk/ - Integrating eye tracking features into computer games. https:// tobiigaming.com/games/ - Idea, development and software architecture for Tobii Ghost (eye tracking bubble overlay) and Twitch Extension. https://gaming.tobii.com/software/ghost/ - Developing Tobii Game Hub and Unity mods. - Developing Tobii Unity SDK. https://developer.tobii.com/pc-gaming/unity-sdk/ - Generating product ideas. - Fast prototyping new concepts and demos. - Generating leads for software partnership/game integrations. - Supervising student projects. - Developer support on Tobii Developer Zone. - Helping out with Tobii Eye Tracker media reviews."
+        },
+        {
+            "company": "Scania",
+            "title": "Summer Worker",
+            "location": "Södertälje, Sweden",
+            "fromDate": "June 2013",
+            "toDate": "August 2013",
+            "description": "Development of pedestrian tracking and collision warning algorithms."
+        },
+        {
+            "company": "Scania Group",
+            "title": "Master Thesis Student",
+            "location": "Södertälje, Sweden",
+            "fromDate": "September 2012",
+            "toDate": "March 2013",
+            "description": "Development of a pedestrian tracking algorithm, which utilizes data from a ToF camera: - Multiple objects tracking using an array of Kalman filters - Tracking in absolute coordinates using truck's odometry data received through CANbus - Merging data from multiple ToF cameras and a laser scanner"
+        },
+        {
+            "company": "KTH",
+            "title": "Research Engineer",
+            "location": "",
+            "fromDate": "February 2012",
+            "toDate": "July 2012",
+            "description": "Working on an international robotics research project CogX Dora by testing, debugging and implementing new features in navigation and AI."
+        }
+        ],
+    "education": [
+        {
+            "institution": "Kungliga tekniska högskolan",
+            "location": "Sweden",
+            "title": "Master of Science (MSc) (unfinished), Systems, Control and Robotics",
+            "fromDate": "2010",
+            "toDate": "2013",
+            "description": ""
+        },
+        {
+            "institution": "ITMO University",
+            "location": "Sweden",
+            "title": "Master of Science (MSc), Automation and control",
+            "fromDate": "2009",
+            "toDate": "2011",
+            "description": ""
+        },
+        {
+            "institution": "ITMO University",
+            "location": "Sweden",
+            "title": "Bachelor of Science (BSc), Automation and control",
+            "fromDate": "2005",
+            "toDate": "2009",
+            "description": ""
+        }   
+        ],
+    "interests": [
+        ],
+    "accomplishments": [
+        ],
+    "languages": [
+        {
+                "name": "English",
+                "proficiency": 5
+        },
+        {
+                "name": "Swedish",
+                "proficiency": 3
+        }
+        ],
+    "projects": [
+        ],
+    "softSkills": [
+        ],
+    "hardSkills": [
+        {
+                "name": "C#",
+                "proficiency": 5
+        },
+        {
+                "name": "Unity",
+                "proficiency": 5
+        },
+        {
+                "name": "Scrum",
+                "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+
+        ],
+    "extracurriculars": [
+
+        ]
+}

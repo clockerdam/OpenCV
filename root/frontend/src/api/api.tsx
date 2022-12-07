@@ -23,7 +23,17 @@ async function getUnlabeled() {
     return await response.json()
 }
 
-export { uploadUnlabeled, labelCV, getUnlabeled }
+async function getAnalysis(resume: string) {
+    const response = await fetch(endpoint + "/analysis", {
+        method: "POST",
+        body: resume,
+        headers: { 'Content-Type': 'application/json' }
+    })
+    console.log(response)
+    return response.json()
+}
+
+export { uploadUnlabeled,labelCV, getUnlabeled, getAnalysis}
 
 
 

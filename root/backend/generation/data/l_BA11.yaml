@@ -1,0 +1,175 @@
+_id: 6374781d09ad88efd5044cb8
+certifications:
+- date: ''
+  description: ''
+  keywords:
+  - - series
+    - 0.8093
+  level: ''
+  title: Series 7
+- date: ''
+  description: ''
+  keywords: []
+  level: ''
+  title: Chartered Financial Analyst (CFA)
+- date: ''
+  description: ''
+  keywords: []
+  level: ''
+  title: Series 63
+- date: ''
+  description: ''
+  keywords: []
+  level: ''
+  title: Bloomberg Certified
+contactInfo:
+  address: Abraham Lincoln Street 1, Chicago, IL
+  birthday: 24 December 1985
+  email: monica@music.co.kr
+  family: 5 kids, divorced
+  github: monicamusic123
+  keywords:
+  - - monica music
+    - 1.0
+  - - monica
+    - 0.7482
+  - - music
+    - 0.523
+  linkedin: linkedin.com/in/me123
+  name: Monica Music
+  phoneNumber: '01012345'
+  profiles:
+  - network: LinkedIn
+    url: linkedin.com/in/me123
+    username: linkedin.com/in/me123
+  - network: Github
+    url: monicamusic123
+    username: monicamusic123
+  website: my-website.com
+education:
+- description: ""
+  duration: 48.0
+  fromDate: 12/2009
+  institution: Lehigh University
+  keywords:
+  - - degree finance
+    - 0.7583
+  - - finance general
+    - 0.6789
+  - - finance
+    - 0.5784
+  - - bachelor degree
+    - 0.5699
+  - - degree
+    - 0.486
+  - - bachelor
+    - 0.463
+  - - general
+    - 0.2824
+  location: Lehigh
+  time_since: 120.0
+  title: Bachelor's degree, Finance, General
+  toDate: 12/2013
+- description: Trusted advisor to Vanguard's Investment Management Groups to provide
+    oversight and steward material mutual fund cash flows driven by Vanguard's Institutional
+    & Retail clients. -Supported high pressure investment decisions utilizing cash
+    and risk management techniques. -Developed and communicated rigorous data analysis
+    to implement process improvements. -Established needs, performed tests, & shared
+    feedback for new IT system being built by developers.
+  duration: 12.0
+  fromDate: 12/2018
+  institution: Lund University
+  keywords:
+  - - degree finance
+    - 0.766
+  - - finance general
+    - 0.7136
+  - - finance
+    - 0.6365
+  - - master degree
+    - 0.5761
+  - - degree
+    - 0.4834
+  - - general
+    - 0.3454
+  - - master
+    - 0.3244
+  location: Lund
+  time_since: 47.0
+  title: Master's degree, Finance, General
+  toDate: 12/2019
+experience:
+- company: Inter IKEA Group
+  description: ""
+  duration: 35.0
+  fromDate: 01/2020
+  keywords:
+  - - business analyst
+    - 1.0
+  - - analyst
+    - 0.8447
+  - - business
+    - 0.5957
+  location: "\xC4lmhult, Sweden"
+  time_since: 0.0
+  title: Business Analyst
+  toDate: Present
+- company: Vanguard
+  description: -Applied and acted on investment knowledge regarding Mutual Funds,
+    ETFs, Stocks, Bonds and Derivative Contracts to individual investors. -Analyzed
+    investment suitability and asset allocation to manage decision risk of novice
+    investors. -Promoted a high performing culture, mentored colleagues, and advocated
+    for impactful updates.
+  duration: 26.0
+  fromDate: 07/2013
+  keywords: []
+  location: Malvern, Pennsylvania
+  time_since: 88.0
+  title: Brokerage Associate
+  toDate: 09/2015
+- company: Vanguard
+  description: '-Evaluated performance of investment decisions makers of Vanguard
+    Mutual Funds through return calculation, macro & micro attribution, quality of
+    benchmark, and risk identification. -Identified investment skill and recommended
+    action regarding Vanguard''s Manager Selection Policies to the firm''s Board of
+    Directors and Senior Staff. -Performed and communicated ad-hoc projects and analysis
+    to deliver insights regarding Vanguard''s products and overall market trends. '
+  duration: 14.0
+  fromDate: 05/2017
+  keywords: []
+  location: Malvern, Pennsylvania
+  time_since: 53.0
+  title: Investment Analyst
+  toDate: 07/2018
+- company: Vanguard
+  description: -Trusted advisor to Vanguard's Investment Management Groups to provide
+    oversight and steward material mutual fund cash flows driven by Vanguard's Institutional
+    & Retail clients. -Supported high pressure investment decisions utilizing cash
+    and risk management techniques. -Developed and communicated rigorous data analysis
+    to implement process improvements. -Established needs, performed tests, & shared
+    feedback for new IT system being built by developers.
+  duration: 20.0
+  fromDate: 09/2015
+  keywords: []
+  location: Malvern, Pennsylvania
+  time_since: 68.0
+  title: Financial Analyst
+  toDate: 05/2017
+- company: Snow Capital Management L.P.
+  description: -Provided support across firm in areas such as Equity Research, Excel
+    Modeling, Trading, Marketing and Data Analysis.
+  duration: 2.0
+  fromDate: 05/2012
+  keywords: []
+  location: Pittsburgh, Pennsylvania
+  time_since: 126.0
+  title: Business Intern
+  toDate: 07/2012
+skills:
+- keywords:
+  - Customer Service (5.0)
+  name: Soft Skills
+- keywords:
+  - Investments (5.0)
+  - Finance (5.0)
+  name: Hard Skills

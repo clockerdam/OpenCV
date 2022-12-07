@@ -1,0 +1,321 @@
+{
+    "title": "Data Scientist at McKinsey Solutions",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Analytics professional with client facing experience and strong, diverse technical background including machine learning and AI solutions. Delivering business impact through a combination of practical problem-solving, application of best practice Advanced Analytics and leadership mindset.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "McKinsey & Company",
+                    "title": "Data Scientist",
+                    "location": "Boston, Massachusetts, United States",
+                    "fromDate": "October 2016",
+                    "toDate": "February 2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "AIR Worldwide",
+                    "title": "Senior Risk Consultant",
+                    "location": "",
+                    "fromDate": "March 2015",
+                    "toDate": "October 2016",
+                    "description": "- Utilized non-parametric regression techniques to estimate future fatalities caused by pandemic events."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "AIR Worldwide",
+                    "title": "Risk Consultant",
+                    "location": "",
+                    "fromDate": "August 2012",
+                    "toDate": "March 2015",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Northeastern University",
+                    "title": "Teaching Assistant",
+                    "location": "",
+                    "fromDate": "September 2006",
+                    "toDate": "July 2012",
+                    "description": "- Lectured in Manufacturing System course for 4 semesters - Lectured in Engineering Problem Solving and Computation course for 2 semesters - Assisted in preparation of term and design projects - Developed course material and provided assistance for Manufacturing System (undergraduate), Mass Customization (graduate and undergraduate) Page 1 of 3 and Artificial Intelligence and Neural Network (graduate and undergraduate) courses"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Northeastern University",
+                    "title": "Research ASsistant",
+                    "location": "",
+                    "fromDate": "September 2008",
+                    "toDate": "June 2013",
+                    "description": "Member of IRIS Research Group - Developed Reinforcement Learning procedure for Kanban Routing in an disassembly/assembly setting - Applied machine learning techniques to various manufacturing problems for optimization purposes - Integrated Neural Network framework to conventional Reinforcement Learning procedure in order to enable application of Reinforcement Learning to problems with large state/action spaces - Proposed Reinforcement Learning framework for various Markov Decision Processes for optimal sequential decision making - Designed simulation models for RFID systems - Proposed a modularity metric for agile, adaptive and hybrid supply chains"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Northeastern University",
+                    "location": "Boston",
+                    "title": "Doctor of Philosphy (PhD), Industrial Engineering",
+                    "fromDate": "2008",
+                    "toDate": "2012",
+                    "description": "Dissertation Title Reinforcement Learning-Based Approach for Disassembly and Remanufacturing Problems Proposed Application - Optimizing process efficiency in assembly/disassembly and production facilities - Introducing AI techniques to attain maximum autonomy with minimum human supervision - Enabling optimal decision making in constantly changing dynamic and uncertain environments - Proposed solution methodology is applicable to areas such as manufacturing/ production, logistics, healthcare and quality control"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Northeastern University",
+                    "location": "Boston",
+                    "title": "Master of Science (M.Sc.), Engineering Management",
+                    "fromDate": "2006",
+                    "toDate": "2008",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Middle East Technical University",
+                    "location": "",
+                    "title": "Bachelor's degree, Geological/Geophysical Engineering",
+                    "fromDate": "2001",
+                    "toDate": "2005",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [
+            {
+                "value": "Football",
+                "label": 0
+            },
+            {
+                "value": "Travelling",
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "Turkish",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "German",
+                    "proficiency": 2
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [
+            {
+                "value": {
+                    "title": " Tuncel E., Ozbek Y., Kamarthi S., Zeid A. (2014). Inventory control in an appliance disassembly line using Reinforcement Learning",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "- Tuncel E., Kamarthi S., Zeid A. (2012). Solving Disassembly Line Balancing Problem using Reinforcement Learning, Journal of Intelligent Manufacturing",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "- Wang X., Tuncel E., Kamarthi S., Zeid A. (2011). Solving disassembly line balancing problem using immune algorithm, Proceedings for Computers and Industrial Engineers, Los Angeles",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "- Tuncel E., Kamarthi S., Zeid A. (2012). Inventory Management in Multi- Product, Multi-Demand Disassembly Line using Reinforcement Learning, Industrial Engineers and Operations Management, Istanbul",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "- Tuncel E. (2013). An advanced approach to Insurance Portfolio Optimization using Artificial Intelligence, AIR Currents, AIR Worldwide, http://www.air- worldwide.com/Publications/AIR-Currents/2013/An-Advanced-Approach-to- Insurance-Portfolio-Optimization-Using-Artificial-Intelligence/",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "- Tuncel E., Dalis K. (2015). Optimizing Your Cat Bond Portfolio with a New LP Framework, AIR Currents, AIR Worldwide, http://www.air-worldwide.com/ Publications/AIR-Currents/2015/Optimizing-Your-Cat-Bond-Portfolio-with-a- New-LP-Framework/",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Leadership",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Eager to learn",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Algortihms",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Matlab",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Statistics",
+                    "proficiency": 4
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "Certified Catastrophe Modeler",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Statistical Inference",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "edX Honor Code Certificate for Tackling the Challenges of Big Dat",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Regression Models",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Exploratory Data Analysis",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

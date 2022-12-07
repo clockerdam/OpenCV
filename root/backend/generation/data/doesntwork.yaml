@@ -1,0 +1,177 @@
+---
+"$schema": https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json
+basics:
+  name: Noah Mautner
+  label: M.Sc Business Informatics at University of Mannheim | Exchange Student at
+    Seoul National University | Software Engineer at SprintEins
+  image: ''
+  email: noah@mautner.de
+  phone: ''
+  url: ''
+  summary: ''
+  location:
+    countryCode: US
+    address: Germany
+  profiles:
+  - network: LinkedIn
+    username: noahmautner
+    url: https://www.linkedin.com/in/noahmautner/
+work:
+- name: SprintEins
+  position: Software Engineer
+  startDate: '2020-09-30'
+  endDate: ''
+  highlights: []
+  summary: Fullstack application development using Vue.js, Java, PostgreSQL and Docker
+    among other technologies
+  url: https://www.linkedin.com/company/13976518
+  location: Stuttgart, Baden-Württemberg, Germany
+- name: Wenrix
+  position: Business Development Intern
+  startDate: '2020-03-31'
+  endDate: '2020-07-31'
+  highlights: []
+  summary:
+  url: https://www.linkedin.com/company/18318097
+  location: Tel Aviv, Israel
+- name: BMW Group
+  position: Value Stream Management / Supply Chain Consulting Intern
+  startDate: '2019-03-31'
+  endDate: '2019-08-31'
+  highlights: []
+  summary:
+  url: https://www.linkedin.com/company/2387
+  location: Munich Area, Germany
+- name: Krämer Automotive Systems GmbH
+  position: Working Student
+  startDate: '2018-02-28'
+  endDate: '2019-02-28'
+  highlights: []
+  summary: Logistics and quality assurance
+  url: https://www.linkedin.com/company/7226674
+  location: Reutlingen, Germany
+volunteer:
+- organization: ESB Student Consulting e. V.
+  position: Consultant
+  startDate: '2020-10-31'
+  endDate: '2021-01-31'
+  summary:
+  highlights: []
+  url: https://www.linkedin.com/company/16264472
+- organization: Reutlingen University
+  position: Mentor for International Students
+  startDate: '2020-09-30'
+  endDate: '2021-08-31'
+  summary:
+  highlights: []
+  url: https://www.linkedin.com/company/15094019
+education:
+- institution: Reutlingen University
+  area: Business Informatics
+  studyType: Bachelor of Science - BS
+  startDate: '2017-12-31'
+  endDate: '2021-12-31'
+  score: ''
+  courses: []
+- institution: University of Mannheim
+  area: Business Informatics
+  studyType: Master of Science - MS
+  startDate: '2021-09-30'
+  endDate: '2023-06-30'
+  score: ''
+  courses: []
+- institution: Reichman University (IDC Herzliya)
+  area: Business Administration & Data Analytics
+  studyType: B.Sc. Exchange Studies
+  startDate: '2019-10-31'
+  endDate: '2020-08-31'
+  score: ''
+  courses: []
+- institution: Seoul National University
+  area: Data Science
+  studyType: M.Sc. Exchange Studies
+  startDate: '2022-09-30'
+  endDate: '2022-12-31'
+  score: ''
+  courses: []
+awards: []
+certificates: []
+publications: []
+skills:
+- name: Software Development
+  level: ''
+  keywords: []
+- name: Java
+  level: ''
+  keywords: []
+- name: Product Strategy
+  level: ''
+  keywords: []
+- name: Sales Strategy
+  level: ''
+  keywords: []
+- name: Analytical Skills
+  level: ''
+  keywords: []
+- name: Data Analysis
+  level: ''
+  keywords: []
+- name: Front-end Development
+  level: ''
+  keywords: []
+- name: Market Analysis
+  level: ''
+  keywords: []
+- name: Business Development
+  level: ''
+  keywords: []
+- name: Machine Learning
+  level: ''
+  keywords: []
+- name: JavaScript
+  level: ''
+  keywords: []
+- name: PostgreSQL
+  level: ''
+  keywords: []
+- name: Relational Databases
+  level: ''
+  keywords: []
+- name: Vue.js
+  level: ''
+  keywords: []
+- name: Visual Basic for Applications (VBA)
+  level: ''
+  keywords: []
+- name: MySQL
+  level: ''
+  keywords: []
+- name: Business Strategy
+  level: ''
+  keywords: []
+- name: SQL
+  level: ''
+  keywords: []
+- name: Creative Problem Solving
+  level: ''
+  keywords: []
+- name: Python (Programming Language)
+  level: ''
+  keywords: []
+languages:
+- language: English
+  fluency: Native Speaker
+- fluency: Full Professional
+  language: Englisch
+- fluency: Native Speaker
+  language: German
+- fluency: Elementary
+  language: Hebrew
+- fluency: Elementary
+  language: Italienisch
+interests: []
+references: []
+projects: []
+meta:
+  version: v1.0.0
+  canonical: https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json

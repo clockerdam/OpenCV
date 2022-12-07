@@ -1,0 +1,129 @@
+{
+    "title": "Business Analyst at IKEA of Sweden",
+    "contactInfo": [
+        {
+            "address": "Älmhultsvägen 110",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/michael- vuono-cfa-23b543b2",
+            "name": "Michael Vuono",
+            "phoneNumber": "111222333444",
+            "email": "michaelvuono@gmail.com",
+            "github": "",
+            "birthday": "",
+            "family": ""
+        }
+        ],
+    "summary": "",
+    "experience": [
+        {
+            "company": "Inter IKEA Group",
+            "title": "Business Analyst",
+            "location": "Älmhult, Sweden",
+            "fromDate": "January 2020",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Vanguard",
+            "title": "Investment Analyst",
+            "location": "Malvern, Pennsylvania",
+            "fromDate": "May 2017",
+            "toDate": "July 2018",
+            "description": "-Evaluated performance of investment decisions makers of Vanguard Mutual Funds through return calculation, macro & micro attribution, quality of benchmark, and risk identification. -Identified investment skill and recommended action regarding Vanguard's Manager Selection Policies to the firm's Board of Directors and Senior Staff. -Performed and communicated ad-hoc projects and analysis to deliver insights regarding Vanguard's products and overall market trends. "
+        },
+        {
+            "company": "Vanguard",
+            "title": "Financial Analyst",
+            "location": "Malvern, Pennsylvania",
+            "fromDate": "September 2015",
+            "toDate": "May 2017",
+            "description": "-Trusted advisor to Vanguard's Investment Management Groups to provide oversight and steward material mutual fund cash flows driven by Vanguard's Institutional & Retail clients. -Supported high pressure investment decisions utilizing cash and risk management techniques. -Developed and communicated rigorous data analysis to implement process improvements. -Established needs, performed tests, & shared feedback for new IT system being built by developers."
+        },
+        {
+            "company": "Vanguard",
+            "title": "Brokerage Associate",
+            "location": "Malvern, Pennsylvania",
+            "fromDate": "July 2013",
+            "toDate": "September 2015",
+            "description": "-Applied and acted on investment knowledge regarding Mutual Funds, ETFs, Stocks, Bonds and Derivative Contracts to individual investors. -Analyzed investment suitability and asset allocation to manage decision risk of novice investors. -Promoted a high performing culture, mentored colleagues, and advocated for impactful updates."
+        },
+        {
+            "company": "Snow Capital Management L.P.",
+            "title": "Business Intern",
+            "location": "Pittsburgh, Pennsylvania",
+            "fromDate": "May 2012",
+            "toDate": "July 2012",
+            "description": "-Provided support across firm in areas such as Equity Research, Excel Modeling, Trading, Marketing and Data Analysis."
+        }
+        ],
+    "education": [
+        {
+            "institution": "Lund University",
+            "location": "Lund",
+            "title": "Master's degree, Finance, General",
+            "fromDate": "2018",
+            "toDate": "2019",
+            "description": ""
+        },
+        {
+            "institution": "Lehigh University",
+            "location": "Lehigh",
+            "title": "Bachelor's degree, Finance, General",
+            "fromDate": "2009",
+            "toDate": "2013",
+            "description": ""
+        }
+        
+        ],
+    "interests": [],
+    "accomplishments": [],
+    "languages": [],
+    "projects": [
+        ],
+    "softSkills": [
+        {
+                "name": "Customer Service",
+                "proficiency": 5
+        }
+    ],
+    "hardSkills": [
+        {
+                "name": "Investments",
+                "proficiency": 5
+        },
+        {
+                "name": "Finance",
+                "proficiency": 5
+        }
+    ],
+    "certifications": [
+        {
+            "title": "Series 7",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Chartered Financial Analyst (CFA)",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Series 63",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Bloomberg Certified",
+            "level": "",
+            "description": "",
+            "date": ""
+        }
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

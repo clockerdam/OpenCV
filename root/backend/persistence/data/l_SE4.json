@@ -1,0 +1,326 @@
+{
+    "title": "Software Engineer at Lendo AB | experienced finance professional",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Aspiring software engineer with a focus on integration maintenance and release management. With a formal education in linguistics, commerce and accountancy, I have been an efficient self-learner in software engineering during the past couple years with a scope ever broadening. Previously demonstrated my skills in various finance roles across Europe (Sweden, Ireland, Slovakia and Hungary).",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Lendo AB",
+                    "title": "Software Engineer",
+                    "location": "Stockholm, Stockholm County, Sweden",
+                    "fromDate": "October 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Klarna",
+                    "title": "Software Engineer",
+                    "location": "Stockholm, Stockholm County, Sweden",
+                    "fromDate": "April 2019",
+                    "toDate": "September 2022",
+                    "description": "\u25cf assuming the tasks of the Release Manager role \u25cf working as part of a backend developer team \u25cf taking on-call duty, responding to alerts and queries, participating in incident mitigation \u25cf performing platform & integration maintenance work \u25cf focusing on vulnerability and violation management \u25cf technologies & tools used: Java, Spring Boot, Gradle, Git, Agile, Bitbucket, Jenkins, Docker, AWS EC2, Splunk, Datadog, JavaScript, Groovy, Provenir"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Klarna",
+                    "title": "Release Manager",
+                    "location": "Stockholm, Stockholm County, Sweden",
+                    "fromDate": "September 2018",
+                    "toDate": "April 2019",
+                    "description": "\u25cf ownership of a deployment pipeline and coordinating its use by a large number of contributors \u25cf maintaining a weekly schedule for releasing changes in risk & fraud policies \u25cf supporting analysts throughout the release & validation progress \u25cf overseeing the review & approval procedure \u25cf liaising between engingeering and analytics teams"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Klarna",
+                    "title": "Debt Collection Specialist",
+                    "location": "Stockholm, Stockholm County, Sweden",
+                    "fromDate": "October 2017 ",
+                    "toDate": "September 2018",
+                    "description": "\u25cf resolving B2C & B2B customer inquiries received via phone and email \u25cf dispute handling, liaising with merchants and other external parties \u25cf negotiating payment agreements, offering long-term financing solutions aligned with the customer's economy \u25cf proactively monitoring ongoing payment plans/agreements, following up with late-paying customers, collaboration with external debt collection agencies, law firms and municipal councils \u25cf market covered: Finland (communication in Finnish)"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Accenture",
+                    "title": "Credit Collections Analyst",
+                    "location": "Dublin, Leinster, Ireland",
+                    "fromDate": "September 2016",
+                    "toDate": "October 2017",
+                    "description": "\u25cf managing a B2B customer portfolio, proactively keeping in touch with the assigned key customers, following up on outstanding receivables \u25cf aged debt analysis, reporting & tracking collection activities \u25cf dispute handling, liaising with account managers \u25cf cash application support \u25cf market covered: EMEA"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Johnson Controls",
+                    "title": "Accounts Receivable Analyst",
+                    "location": "Bratislava, Bratislava Region, Slovak Republic",
+                    "fromDate": "March 2016",
+                    "toDate": "July 2016",
+                    "description": "\u25cf managing the AR portfolio of various US branch offices, being in daily touch with key B2B customers \u25cf dispute resolution and escalation handling, follow-up with late-paying customers \u25cf leading monthly conference calls, presenting progress of aged receivables to internal stakeholders \u25cf cash application support \u25cf market covered: United States"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Johnson Controls",
+                    "title": "Accounts Payable Accountant",
+                    "location": "Bratislava, Bratislava Region, Slovak Republic",
+                    "fromDate": "March 2013",
+                    "toDate": "March 2016",
+                    "description": "\u25cf coordinating various stages of the procure-to-pay workflow with a number of teams and stakeholders within a centralised AP department as well as local branches \u25cf resolving incoming vendor queries and keeping internal stakeholders updated (via phone and email) \u25cf following up on processed invoices, coordinating payment run approvals, negotiation with external agencies \u25cf participating in various knowledge transfers and supporting stabilisation phases \u25cf market covered: Nordics, Central Europe (communication in Finnish, English and Hungarian)"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Tata Consultancy Services",
+                    "title": "Accounts Payable Accountant",
+                    "location": "Budapest, Budapest, Hungary",
+                    "fromDate": "June 2011",
+                    "toDate": "March 2013",
+                    "description": "\u25cf processing high volume of multi-currency invoices and travel expense notes \u25cf executing and booking manual payments \u25cf bank and vendor account reconciliations \u25cf monitoring and reporting project performance to client's head office \u25cf market covered: Nordics (communication in Finnish and English)"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Freelance",
+                    "title": "Script Translator",
+                    "location": "Budapest, Budapest, Hungary",
+                    "fromDate": "November 2007",
+                    "toDate": "December 2010",
+                    "description": "\u25cf translating motion picture scripts from English to Hungarian \u25cf preparing and adjusting final scripts for recording sessions"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Udemy",
+                    "location": "",
+                    "title": "Certificate of Completion, Full Stack Development Bootcamp",
+                    "fromDate": "2022",
+                    "toDate": "2022",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "PwC Academy",
+                    "location": "",
+                    "title": "ACCA FIA Certificate, Financial and Management Accounting",
+                    "fromDate": "2015",
+                    "toDate": "2016",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Tanosveny Education Centre",
+                    "location": "Russia",
+                    "title": "OKJ Europass Certificate, Commercial Management & Entrepreneurship",
+                    "fromDate": "2010",
+                    "toDate": "2011",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "University of Jyv\u00e4skyl\u00e4",
+                    "location": "Finland",
+                    "title": "CIMO Scholarship Certificate, Finnish philology & culture studies",
+                    "fromDate": "2008",
+                    "toDate": "2008",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "E\u00f6tv\u00f6s Lor\u00e1nd University",
+                    "location": "Greece",
+                    "title": "Master of Arts coursework completed, Finnish philology & culture studies | Estonian philology & culture studies | Double major",
+                    "fromDate": "2005",
+                    "toDate": "2010",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [
+            {
+                "value": "Competetive programming",
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "Certificate of Appreciation",
+                    "fromDate": "2018-02-27",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Outstanding Performance Certificate",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Finnish",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Agile Methodolgies",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Java",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Spring Boot",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "Sales Clerk Certificate",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Lean Six Sigma Yellow Belt Certificate",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Building Modern Web Applications with Go (Golang) Completion Certificate",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Financial and Management Accounting Certificate",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Commercial Manager Certificate",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

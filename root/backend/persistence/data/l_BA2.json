@@ -1,0 +1,174 @@
+{
+    "title": "Business Analyst at Tesla",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Tesla",
+                    "title": "Business Analyst",
+                    "location": "Chaoyang Qu, Beijing, China",
+                    "fromDate": "March 2021",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Li Auto",
+                    "title": "Sales & Production Planning Analyst",
+                    "location": "Beijing City, China",
+                    "fromDate": "April 2020",
+                    "toDate": "March 2021",
+                    "description": "\u2022 Demand plan \u2022 Customer order analysis & forecasting \u2022 Vehicle stock analysis & supervision \u2022 Operation dashboard modeling"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "BAIC Group(Beijing Automotive Group CO.,Ltd)",
+                    "title": "Business Operations Analyst",
+                    "location": "Beijing City, China",
+                    "fromDate": "July 2018",
+                    "toDate": "April 2020",
+                    "description": "\u2022 Operation Data Analysis \u2022 Market Research \u2022 Project Management"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Mercedes-Benz China",
+                    "title": "Product Management (I)",
+                    "location": "Chaoyang District, Beijing, China",
+                    "fromDate": "February 2018",
+                    "toDate": "July 2018",
+                    "description": "\u2022 Production info update of new generation car \u2022 Competitor info digging & analysis \u2022 Projects coordination"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "American Chamber of Commerce in China (AmCham China)",
+                    "title": "Project Management (I)",
+                    "location": "Chaoyang District, Beijing, China",
+                    "fromDate": "June 2017",
+                    "toDate": "November 2017",
+                    "description": "\u2022 Chinese agriculture & food policies research & translation \u2022 Projects coordination for International Conference & roundtable"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Technical University of Munich",
+                    "location": "Munich",
+                    "title": "Master of Science, Economics and Policy",
+                    "fromDate": "2015",
+                    "toDate": "2018",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "German",
+                    "proficiency": 1
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Chinese",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Project Management",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Data Analysis",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "SQL",
+                    "proficiency": 4
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

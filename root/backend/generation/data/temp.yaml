@@ -1,0 +1,101 @@
+contactInfo:
+  address: ''
+  birthday: 24 December 1985
+  email: monica@music.co.kr
+  family: ''
+  github: monicamusic123
+  linkedin: linkedin.com/in/me123
+  name: Monica Music
+  phoneNumber: '01012345'
+  profiles:
+  - network: LinkedIn
+    url: linkedin.com/in/me123
+    username: linkedin.com/in/me123
+  - network: Github
+    url: monicamusic123
+    username: monicamusic123
+  website: my-website.com
+education:
+- description: Can't handle empty descriptions yet
+  fromDate: 12/2010
+  institution: "Kungliga tekniska h\xF6gskolan"
+  location: Sweden
+  title: Master of Science (MSc) (unfinished), Systems, Control and Robotics
+  toDate: 12/2013
+- description: Can't handle empty descriptions yet
+  fromDate: 12/2009
+  institution: ITMO University
+  location: Sweden
+  title: Master of Science (MSc), Automation and control
+  toDate: 12/2011
+- description: Can't handle empty descriptions yet
+  fromDate: 12/2005
+  institution: ITMO University
+  location: Sweden
+  title: Bachelor of Science (BSc), Automation and control
+  toDate: 12/2009
+experience:
+- company: Meta
+  description: Can't handle empty descriptions yet
+  fromDate: 07/2022
+  location: Stockholm, Sweden
+  title: Audio Research Software Engineer
+  toDate: Present
+- company: Arena Personal AB
+  description: Software development at Meta Reality Labs Audio Research
+  fromDate: 08/2021
+  location: Stockholm, Sweden
+  title: CW Software Engineer onsite at Meta
+  toDate: 06/2022
+- company: Tobii
+  description: '- Developing Tobii Ocumen. https://vr.tobii.com/sdk/solutions/tobii-ocumen/
+    - Foveated video streaming. - Exploring eye tracking features in VR. https://vr.tobii.com/sdk/
+    - Integrating eye tracking features into computer games. https:// tobiigaming.com/games/
+    - Idea, development and software architecture for Tobii Ghost (eye tracking bubble
+    overlay) and Twitch Extension. https://gaming.tobii.com/software/ghost/ - Developing
+    Tobii Game Hub and Unity mods. - Developing Tobii Unity SDK. https://developer.tobii.com/pc-gaming/unity-sdk/
+    - Generating product ideas. - Fast prototyping new concepts and demos. - Generating
+    leads for software partnership/game integrations. - Supervising student projects.
+    - Developer support on Tobii Developer Zone. - Helping out with Tobii Eye Tracker
+    media reviews.'
+  fromDate: 09/2013
+  location: Stockholm, Sweden
+  title: Software Developer
+  toDate: 07/2021
+- company: Scania
+  description: Development of pedestrian tracking and collision warning algorithms.
+  fromDate: 06/2013
+  location: "S\xF6dert\xE4lje, Sweden"
+  title: Summer Worker
+  toDate: 08/2013
+- company: Scania Group
+  description: 'Development of a pedestrian tracking algorithm, which utilizes data
+    from a ToF camera: - Multiple objects tracking using an array of Kalman filters
+    - Tracking in absolute coordinates using truck''s odometry data received through
+    CANbus - Merging data from multiple ToF cameras and a laser scanner'
+  fromDate: 09/2012
+  location: "S\xF6dert\xE4lje, Sweden"
+  title: Master Thesis Student
+  toDate: 03/2013
+- company: KTH
+  description: Working on an international robotics research project CogX Dora by
+    testing, debugging and implementing new features in navigation and AI.
+  fromDate: 02/2012
+  location: ''
+  title: Research Engineer
+  toDate: 07/2012
+skills:
+- keywords:
+  - C# (5)
+  - Unity (5)
+  - Scrum (5)
+  name: Hard Skills
+- keywords:
+  - English (5)
+  - Swedish (3)
+  name: Languages
+summary: '- Software development - C#, .NET, Unity, VR, Unreal Engine (Basic skills),
+  Rust (Basic skills), C++, git, SCRUM, React (Basic skills), Node.js (Basic skills)
+  - Generating product ideas. Fast prototyping new concepts and demos. Generating
+  leads for software partnership. - Reverse engineering - Unity modding, HarmonyLib,
+  dnSpy, IDA Pro, Cheat Engine, ReClass.'

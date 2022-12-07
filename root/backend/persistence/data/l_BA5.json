@@ -1,0 +1,297 @@
+{
+    "title": "Business Analyst at Google",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Having a growth mindset I easily adapt to new challenges. This has allowed me to build a broad range of skills and expertise which help me to be a creative problem solver and thought leader. As an analyst, my profile is founded on technical and mathematical skills and attention to detail. From identifying problems via generating insights to communicating findings I am experienced in the full analytical process.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Google",
+                    "title": "Business Analyst",
+                    "location": "Boulder, Colorado, United States",
+                    "fromDate": "July 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Google",
+                    "title": "Senior Compensation Analyst/ Technical Program Manager",
+                    "location": "Boulder, Colorado, United States",
+                    "fromDate": "August 2021",
+                    "toDate": "July 2022",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Google",
+                    "title": "Compensation Analyst",
+                    "location": "Boulder, Colorado, United States",
+                    "fromDate": "April 2020",
+                    "toDate": "July 2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "-",
+                    "title": "Parental Leave",
+                    "location": "",
+                    "fromDate": "July 2018",
+                    "toDate": "April 2020",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "University of Reading",
+                    "title": "PHD Researcher",
+                    "location": "Reading, United Kingdom",
+                    "fromDate": "October 2016",
+                    "toDate": "July 2018",
+                    "description": "- Ethics: As ethics is becoming an essential topic for data-driven businesses, I built my expertise in this field by working with the international research network on The History of Human Freedom and Dignity in Western Civilization - Project management: Completed my PhD in only 80% of regular time due to rigorously implementing my ambitious work plan - Award: Won the German National Academic Foundation Scholarship for top 1% students based on merit of my thesis"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "University of Kent",
+                    "title": "PhD Researcher/ Lecturer",
+                    "location": "Canterbury, United Kingdom",
+                    "fromDate": "October 2014",
+                    "toDate": "September 2016",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Google",
+                    "title": "Industry Analyst",
+                    "location": "Hamburg",
+                    "fromDate": "January 2013",
+                    "toDate": "September 2014",
+                    "description": "- Data Analysis: Brought cutting-edge Google data analysis to 20+ global retailers, e.g. semantic search query analysis to understand customer journeys; generated insights from multiple data sources and formats to create competitive advantages through big data, e.g., understanding the influence of weather on online behavior - Tools and reporting: Build and maintained tools and dashboards to process, aggregate and visualize data for my team to manage client portfolio growth; developed scalable reports and new visualization formats to enable and forster data based decision making for my clients; this resulted in my team hitting or surpassing (by up to 15%) sales targets in 6 of 7 quarters - Digital Business development: Supported my clients to develop and build digital business models; conducted 5 workshops on digital customer behaviour and strategic data usage for senior management; developed a model for digital customer journey to help clients build holistic consumer communication - Stakeholder management: Negotiated use of Worldbank data in Google Market Finder which grew from a Retail project to a global, fully engineered tool"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Atheneum",
+                    "title": "Market Research Analyst",
+                    "location": "Berlin Area, Germany",
+                    "fromDate": "April 2012",
+                    "toDate": "July 2012",
+                    "description": "- Market analysis: Combined qualitative market data through interviews with 20+ senior executives from global companies and quantitative 3rd party data to analyze healthcare, car manufacturing and mining industries - Communication: Wrote 3 market reports to advise investment companies on market entry as well as Merger & Acquisition strategies - Collaboration: Successfully worked with an international team of analysts and consultants in a fast paced and highly competitive market"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Fraunhofer-Institut f\u00fcr Software- und Systemtechnik ISST",
+                    "title": "Researcher",
+                    "location": "Berlin Area, Germany",
+                    "fromDate": "October 2008",
+                    "toDate": "July 2009",
+                    "description": "- Industry analysis: Designed and conducted quantitative study on the use of web technology in businesses which was published by German government - Stakeholder management: Conducted multiple workshops with 3 industry partners, 1 development partner and 1 research partner - Product development: Supported design and development of web-based knowledge management platform ickewiki.de. - Publications: - A comparative study on the use of Web 2.0 in enterprises, in: Proceedings of I-KNOW'09, Graz 2009. - WEB 2.0 in produzierenden kleinen und mittelst\u00e4ndischen Unternehmen, Fraunhofer Verlag, Munich 2010."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "University of Reading",
+                    "location": "Reading",
+                    "title": "Doctor of Philosophy - PhD, Cultural History",
+                    "fromDate": "2016",
+                    "toDate": "2018",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "University of Kent",
+                    "location": "Kent",
+                    "title": "Cultural History",
+                    "fromDate": "2014",
+                    "toDate": "2016",
+                    "description": "VALUE"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Bielefeld University",
+                    "location": "Bielefeld",
+                    "title": "Master of Arts (M.A.), History",
+                    "fromDate": "2004",
+                    "toDate": "2012",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "German Academic Scholarship Foundation - Scholarship",
+                    "fromDate": "2021-10-10",
+                    "toDate": "Today",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "French",
+                    "proficiency": 3
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "German",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [
+            {
+                "value": {
+                    "title": "Web 2.0 in small-medium manufacturing companies",
+                    "fromDate": "2022-01-01",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "A comparative study on the use of Web 2.0 in enterprises",
+                    "fromDate": "2021-10-10",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Research",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Qualitative & Quantitative Research Methodologies",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Data Analysis",
+                    "proficiency": 4
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "Machine Learning",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "How Google does Machine Learning",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Launching into Machine Learning",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

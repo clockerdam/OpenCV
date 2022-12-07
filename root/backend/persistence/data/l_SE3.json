@@ -1,0 +1,291 @@
+{
+    "title": "Senior Software Engineer at Zoom Video Communications",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "- Associate Senior Software Engineer at Cerner Corporation. - MS in Computer Engineering from Syracuse University. - Graduate Teaching Assistant at Syracuse University for Software Modelling and Analysis and Object Oriented Design course. - Completed an internship in Summer 2016 at Syrasoft LLC where I designed and developed their Storage Management Software as a Web Solution from scratch. - Worked for Amdocs DVCI, Pune, India for 4.8 years as Software Developer. - Experienced in all the phases of SDLC including testing and production support. - Mentored and trained inexperienced employees working on the project. - Have worked for various major telecom service providers like Telstra (Australia), Rogers (Canada), Astro (Malaysia), and AMX (Columbia and Chile). Skills: C, C++, Java, JavaScript, jQuery, JSP, SQL, HTML, XML, CSS, Familiar with C#, Underscore.js, Backbone.js, Require.js, Chart.js, jQuery, NGINX, Grunt. Proficient in using Linux commands and shell scripting, Agile\u2013SCRUM, Mentoring and training freshmen.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Zoom",
+                    "title": "Senior Software Engineer",
+                    "location": "Chicago, Illinois, United States",
+                    "fromDate": "September 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Target",
+                    "title": "Senior Engineer",
+                    "location": "",
+                    "fromDate": "March 2022",
+                    "toDate": "September 2022",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Cerner Corporation",
+                    "title": "Software Engineer II",
+                    "location": "Kansas City, Missouri, United States",
+                    "fromDate": "March 2021",
+                    "toDate": "March 2022",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Cerner Corporation",
+                    "title": "Software Engineer",
+                    "location": "Kansas City, Missouri Area",
+                    "fromDate": "July 2017",
+                    "toDate": "March 2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Syracuse University",
+                    "title": "Graduate Teaching Assistant",
+                    "location": "Syracuse, New York Area",
+                    "fromDate": "September 2016",
+                    "toDate": "May 2017",
+                    "description": "Graduate Teaching Assistant for SMA (Software Modelling and Analysis) and OOD(Object Oriented Design) course at Syracuse University."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Syrasoft Self Storage Software",
+                    "title": "Software Engineer Intern",
+                    "location": "",
+                    "fromDate": "May 2016",
+                    "toDate": "August 2016",
+                    "description": "Designed and developed Syrasoft Product website from scratch including technology stack selection, architecture development, and server configuration. Used Backbone.js, Require.js, jQuery as primary technologies and Nginx as Server."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Amdocs",
+                    "title": "Software Developer (Advanced) | AMSS",
+                    "location": "",
+                    "fromDate": "July 2014",
+                    "toDate": "July 2015",
+                    "description": "Worked on the deliveries of AMSS (Amdocs Self Service Suite). AMSS facilitates end user to order clients' services from an online portal. It is basically an e-commerce product for telecom service providers. \u2022 Designed and built a web portal for Astro (Malaysia) using Amdocs' proprietary UXF (User Experience Framework) based on MVVM architecture and Underscore.js, Backbone.js, and Require.js JavaScript modules. \u2022 Developed backend business logic code as RESTful services in Java. \u2022 Wrote a Shell script named \u201cContact Finder\u201d to find all relevant customer records from database for any type of customer possible in the system. \u2022 Interacted with clients on site (Kuala Lumpur) while supporting integration with 3rd party systems and Go Live production deployments."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Amdocs",
+                    "title": "Senior Subject Matter Expert | ASMS - OSS",
+                    "location": "",
+                    "fromDate": "November 2012",
+                    "toDate": "June 2014",
+                    "description": "- Customized Claro's web portal for their operations in Columbia and Chile using Core Java and J2EE technologies. - Developed code for exposing and consuming 3rd party web services. Deployed in production with zero defects. - Mentored and groomed inexperienced employees working on the project while handling independent modules."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Amdocs",
+                    "title": "Subject Matter Expert | ASMS - OSS",
+                    "location": "Pune Area, India",
+                    "fromDate": "October 2010",
+                    "toDate": "October 2012",
+                    "description": "Developed and supported requirements of ASMS (Amdocs Service Management Suite) which is a software product built on top of Clarify framework and provides capabilities like Service Order Management and Service Assurance in telecom domain."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Syracuse University",
+                    "location": "Pune Area, India",
+                    "title": "Master of Science (M.S.), Computer Engineering",
+                    "fromDate": "2015",
+                    "toDate": "2017",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Acropolis Institute of Technology and Research, Indore (M.P.)",
+                    "location": "Athens",
+                    "title": "Bachelor of Engineering, Information Technology",
+                    "fromDate": "2006",
+                    "toDate": "2010",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "The Everest English Higher Secondary School, Dewas (M.P.)",
+                    "location": "",
+                    "title": "Higher Secondary (12th), PCM",
+                    "fromDate": "2004",
+                    "toDate": "2006",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "SSVM Dewas (M.P.)",
+                    "location": "",
+                    "title": "Senior Secondary (10th)",
+                    "fromDate": "1994",
+                    "toDate": "2004",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "Astro Star Award",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Significant Contributor Award",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Certificate of Appreciation",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "title": "Graduate Award",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Hindi",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Unix",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Weblogic",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Core Java",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "Try Git",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

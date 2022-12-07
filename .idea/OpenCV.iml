@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="Flask">
+    <option name="enabled" value="true" />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/root" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/root/backend" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/root/backend/persistence" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/root/backend/persistence/models" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/root/backend/prediction" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/root/frontend" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/root/backend/generation" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/root/backend/generation/builder" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/templates" />
+      </list>
+    </option>
+  </component>
+</module>

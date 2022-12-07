@@ -1,0 +1,117 @@
+{
+    "title": "Data Scientist",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/filip- hedén-823682171",
+            "name": "Filip Hedén",
+            "phoneNumber": "07001234567",
+            "email": "filipheden@gmail.com",
+            "github": "headhunter.github.com",
+            "birthday": "1995-01-01",
+            "family": "Single"
+        }
+        ,
+    "summary": "",
+    "experience": [
+        {
+            "company": "Debricked",
+            "title": "Data Scientist",
+            "location": "Malmö, Skåne County, Sweden",
+            "fromDate": "September 2022",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Debricked",
+            "title": "Master Thesis Student",
+            "location": "Malmö, Skåne County, Sweden",
+            "fromDate": "February 2022",
+            "toDate": "September 2022",
+            "description": "Researching semantic code search with the data science team."
+        },
+        {
+            "company": "Ericsson",
+            "title": "Research And Development Intern",
+            "location": "Lund, Skane County, Sweden",
+            "fromDate": "June 2021",
+            "toDate": "August 2021",
+            "description": "Developed internal tools for testing and analysis in Python and C with a team consisting of 5 students and 3 full-time employees. A lot of focus was put on working as a self-organizing team, code quality and properly tested code."
+        },{
+            "company": "Ericsson",
+            "title": "Research And Development Intern",
+            "location": "Lund, Skane County, Sweden",
+            "fromDate": "June 2020",
+            "toDate": "September 2020",
+            "description": "Worked with 5 other students on extending an internal analysis tool written in Python with SciPy, Matplotlib, NumPy and TkInter."
+        },{
+            "company": "Tetra Pak",
+            "title": "Student Consultant / Summer Trainee",
+            "location": "Lund, Skane County, Sweden",
+            "fromDate": "June 2019",
+            "toDate": "May 2020",
+            "description": "Working with application development, UX and data analysis at Tetra Pak Services & Solutions, Methods Management."
+        },{
+            "company": "ARKAD",
+            "title": "Internal Systems Developer",
+            "location": "Lund, Skane County, Sweden",
+            "fromDate": "April 2019",
+            "toDate": "December 2019",
+            "description": ""
+        },{
+            "company": "ICA Supermarket",
+            "title": "Cashier / Store Emlpoyee",
+            "location": "Lysekil, Sweden",
+            "fromDate": "June 2016",
+            "toDate": "September 2017",
+            "description": ""
+        },{
+            "company": "Fishmarket Lysekil",
+            "title": "Store Employee",
+            "location": "Lysekil, Sweden",
+            "fromDate": "August 2014",
+            "toDate": "September 2015",
+            "description": "Sold fish"
+        }
+        ],
+    "education": [
+        {
+            "institution": "The Faculty of Engineering at Lund University",
+            "location": "Lund, Sweden",
+            "title": "Master of Science - MS, Computer Science and Engineering",
+            "fromDate": "2018",
+            "toDate": "2022",
+            "description": ""
+        }   
+        ],
+    "interests": [
+        ],
+    "accomplishments": [
+        ],
+    "languages": [
+        ],
+    "projects": [],
+    "softSkills": [
+        ],
+    "hardSkills": [
+         {
+                "name": "Java",
+                "proficiency": 5
+        },
+        {
+                "name": "Python",
+                "proficiency": 5
+        },
+        {
+                "name": "Linux",
+                "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

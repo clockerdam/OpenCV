@@ -1,0 +1,124 @@
+{
+    "title": "Business Intelligence Analyst at Boston Consulting Group (BCG)",
+    "contactInfo": [
+        {
+            "address": "Syracuse, New York, United States",
+            "website": "https://public.tableau.com/profile/lalit.mohan#!/",
+            "linkedin": "www.linkedin.com/in/mohan-lalit",
+            "name": "Lalit Mohan",
+            "phoneNumber": "",
+            "email": "",
+            "github": "https://github.com/iamlalitmohan",
+            "birthday": "",
+            "family": ""
+        }
+        ],
+    "summary": "Experienced Data Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Database, Business Intelligence, Data Engineering. A strong business development professional with a Certificate of Advanced Study focused on Data Science and currently pursuing a Masters in Information Management from Syracuse University.",
+    "experience": [
+        {
+            "company": "Boston Consulting Group (BCG)",
+            "title": "Senior Business Intelligence Analyst",
+            "location": "Atlanta, Georgia, United States",
+            "fromDate": "June 2021",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "iConsult Collaborative at Syracuse University",
+            "title": "Analyst",
+            "location": "Syracuse, New York Area",
+            "fromDate": "August 2019",
+            "toDate": "August 2020",
+            "description": ""
+        },
+        {
+            "company": "Accenture",
+            "title": "Data Engineer",
+            "location": "Bengaluru",
+            "fromDate": "March 2016 ",
+            "toDate": "June 2019",
+            "description": "*Developed and Tested ODI Interface for performing extract, transform and Load(ETL) on Big Data. This involved end to end development, from design, development to testing. Used of ODI increased the efficiency of the process by 50-60%. *Gathered business requirements, developed interactive dashboards using Tableau. The Project involved designing dashboard for the clients, providing important insight, saved resource utilization by 30-40%. *Interacted with Key stakeholders and Business users for gathering requirements and implemented data solutions to deliver business goals. *Ad-hoc data extraction from Oracle database and report preparation based on end-user requirements. *Providing subject matter expertise to users and the wider business on the e2e process and the Regulatory Reporting Application. *Automated reports by creating SQL jobs, this ended all the manual efforts and reduces resource hours. *Created & implemented changes to the database, used IMT to design interface for these databases and created Control M jobs to automate the schedule of jobs. *Developed and supported dashboards on QlikView and OBIEE. Implemented projects using Agile methodology. *Provided technical support for any data related issues on the production environment and change requests, documentation of findings and suggested possible resolution. *Worked independently in analysis, development and testing phases of the SDLC. *Lead Innovation & New IT News Letter Team for the project. The team was responsible for researching on New Technologies and coming up with a new edition every month."
+        }
+        ],
+    "education": [
+        {
+            "institution": "Syracuse University",
+            "location": "Syracuse",
+            "title": "Master's degree, Information Management ",
+            "fromDate": "2019",
+            "toDate": "2021",
+            "description": ""
+        },
+        {
+            "institution": "Syracuse University",
+            "location": "Syracuse",
+            "title": "Certificate of Advanced Study , Data Science",
+            "fromDate": "2019",
+            "toDate": "2021",
+            "description": ""
+        },
+        {
+            "institution": "GITAM University",
+            "location": "Syracuse",
+            "title": "Bachelor of Technology - BTech, Computer Science",
+            "fromDate": "",
+            "toDate": "",
+            "description": ""
+        }
+        ],
+    "interests": [],
+    "accomplishments": [],
+    "languages": [],
+    "projects": [
+        ],
+    "softSkills": [
+        {
+                "name": "Customer Service",
+                "proficiency": 5
+        }
+    ],
+    "hardSkills": [
+        {
+                "name": "Tableau",
+                "proficiency": 5
+        },
+        {
+                "name": "ETL",
+                "proficiency": 5
+        },
+        {
+                "name": "PL/SQL",
+                "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        {
+            "title": "Microsoft Certified: Azure Fundamentals",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Tableau Desktop Specialist",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Oracle Business Intelligence Foundation Suite 11g Certified Implementation Specialist",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Oracle Data Integrator 12c Certified Implementation Specialist",
+            "level": "",
+            "description": "",
+            "date": ""
+        }
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

@@ -1,0 +1,131 @@
+meta:
+  version: v2.2.1
+  lastModified: "2020-05-26"
+  name: resume
+  role: backend-software-engineer
+  focus: python
+  company:
+  notes:
+  theme: elegant
+basics:
+  name: Joe Black
+  label: Experienced backend software engineer & python enthusiast
+  email: me@joeblack.nyc
+  phone: (646) 924-7718
+  website: https://joeblack.nyc
+  picture: https://avatars1.githubusercontent.com/u/1109300
+  location:
+    address: 15 Stanton St, Unit 1B
+    city: New York
+    region: NY
+    postalCode: "10002"
+    countryCode: US
+  summary: Passionate engineer and linux expert with 7 years of experience seeking a backend engineering role where my expertise in python will help drive the success of a team and product that I genuinely believe in.  I'm energetic, self-managed, determined, embody the principles of grit, and thrive in a fast-paced environment.
+  profiles:
+  - network: Github
+    username: joeblackwaslike
+    url: https://github.com/joeblackwaslike
+  - network: LinkedIn
+    username: joeblack949
+    url: https://www.linkedin.com/in/joeblack949
+Accomplishments:
+- title: Winner
+  date: "2014-01-01"
+  location: Palo Alto, CA
+  summary: Stanford Datajam, a hackathon sponsored by the US Department of Education.
+skills:
+- name: Hard Skills
+  keywords:
+  - Python (1)
+  - Bash (5)
+  - Javascript (5)
+  - GraphQL (5)
+  - Cypher (5)
+  - Solidity (5)
+  - Golang (5)
+  - Ruby/Rails (5)
+  - Django (5)
+  - Flask (5)
+- name: Soft Skills
+  keywords:
+  - Public Speaking (2)
+  - Negotiation (4)
+  - Humor (5)
+  - Intuition (5)
+- name: Languages
+  keywords:
+  - Greek (Native)
+  - English (Fluent)
+work:
+- position: Senior Python Engineer
+  company: Code & Theory
+  startDate: "2019-08-26"
+  endDate: "2020-03-12"
+  location: New York, NY
+  description: Digital-first agency where my project was to work on the CNN API/Datacloud project.
+  summary: Brought in to work on the CNN Datacloud, which powers John King's Magic Wall, a multi-touch interface for displaying real-time and historical election results and various data of a geospatial nature that changes over time, as well as the CNN election center website.
+  highlights:
+  - Brought the Datacloud from POC to a production ready release which included the development of new extract transform load pipelines in Airflow and Neo4j to implement new features such as FEC financial summaries for election candidates and election tracking poll data
+  # - Customized an ORM-like object graph mapper framework based on Neomodel to add new capabilities such as building it's own detailed markdown documentation from metadata attached to each model, it's properties, and relationships.
+  # - Architected and developed an ASGI geospatial-temporal data microservice that was critical to generating heat-maps of US election campaign donations by state, county, and congressional district as well as answering the question, "Given a geo-coordinate and date, who were my representatives at the local, state, and federal level." This microservice enabled high-performance point-in-polygon queries to be easily described in json as an array of filter objects that were parsed into an AST with arbitrary boolean expressions and included interactive documentation and playground.  Technologies leveraged python, postGIS, GeoAlchemy, Starlette, Fast-API, & Swagger.
+  # - Spearheaded an internal tech-leadership project that taught and mentored python engineers of all experience levels across multiple continents.
+  # - Architected and developed a declarative automation-testing framework in pytest and selenium that reduced the testing codebase by 90%, improved developer productivity by an order of magnitude, and reduced the number of regressions per month by over 60%.  This framework dynamically detected the front-end angular components and built all test cases dynamically in order to reduce repetition in the codebase and adapt automatically to front-end changes that would otherwise break numerous scattered tests.
+- position: Senior Software Engineer
+  company: See-Thru Healthcare
+  startDate: "2019-04-01"
+  endDate: "2019-08-01"
+  location: Brooklyn, NY
+  description: Pre-Seed, health-tech startup building a transparent marketplace for behavior health telemedicine.
+  summary: See-Thru Healthcare was a small (5 person, 2 dev), seed-funded, health-tech startup whose main product was a transparent marketplace with a multi-faceted search engine for discovering and booking appointments with behavior-health telemedicine providers.
+  highlights:
+  - Lead the architecture and development efforts for a new group tele-therapy platform to attract thousands of new providers and patients to our main product, the marketplace.
+  # - Drove key architectural decisions to maximize the productivity of a small development team such as integrating with zoom for our real-time video platform, the selection of GraphQL for our API and design of the GraphQL schema, and hosting the database and backend on AWS lambda by using Zappa to wrap Flask & Graphene.
+  # - Architected and implemented a unified identity provider using AWS Cognito, enabling a seamless user registration and login experience across products while directing growth to the core product.
+  #- Designed and implemented a GraphQL & Relay API using python and graphene that drove the development of more modular, declarative, and reusable componentry in the front-end react application.
+- position: Co-founder & Senior Software Engineer
+  company: Telephone
+  startDate: "2017-06-01"
+  endDate: "2018-12-01"
+  location: New York, NY
+  description: Pre-ICO telecommunications dapp in stealth-mode
+  summary: Co-founded a Pre-ICO start-up to research, fund, and develop a privacy-focused, decentralized communications and messaging app similar to Signal but unblockable by firewalls and not reliant on centralized hosting infrastructure and governance.
+  #highlights:
+  #- Performed extensive research in decentralized architecture, the ICO funding process, encryption, smart-contracts, decentralized identity and key recovery, etc.
+volunteer:
+- organization: Noisebridge Hackerspace
+  position: Mentor
+  website: https://noisebridge.net
+  startDate: "2013-01-01"
+  endDate: "2015-01-01"
+  location: San Francisco, CA
+  summary: Mentored hackers and students from local universities and code bootcamps with various engineering related projects and tasks.
+- organization: HackMiami Conference
+  position: Speaker
+  website: https://hackmiami.com
+  startDate: "2014-01-01"
+  endDate: "2014-01-01"
+  location: Miami, FL
+  summary: Delivered a bio-hacking talk discussing the usage of various technologies, proteins, and growth factors for cognitive enhancement.
+education:
+- institution: Ivy Tech College
+  area: B.Sc. Computer Science
+  startDate: "2014-01-01" 
+  endDate: "2017-01-01" 
+  location: Indianapolis, IN
+  summary: Graduated first in class
+- institution: Ivy Tech College
+  area: B.Sc. Computer Science
+  startDate: "2014-01-01" 
+  endDate: "2017-01-01" 
+  location: Indianapolis, IN
+  summary: Graduated first in class
+projects:
+- name: BTCPay-python
+  url: https://github.com/btcpayserver/btcpay-python
+  summary: The official python client for the BTCPay Server API, an open-source payment processor for bitcoin and litecoin.
+# - name: GPGKeyring
+#   url: https://github.com/joeblackwaslike/gpgkeyring
+#   summary: A pythonic, object-oriented interface to performing cryptography operations and key management using Gnu Privacy Guard (GPG).
+# - name: TmplD
+#   url: https://github.com/joeblackwaslike/tmpld
+#   summary: Advanced configuration templating in jinja2 using cluster state for self-configuring, containerized, microservice architectures.
