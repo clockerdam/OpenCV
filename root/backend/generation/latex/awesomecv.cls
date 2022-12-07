@@ -202,14 +202,14 @@
 % Configure styles for each CV elements
 % For fundamental structures
 
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{text} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{awesome} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{28pt}{1em}\headerfontlight\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{28pt}{1em}\headerfont\color{awesome} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{11pt}{1.2em}\bodyfont\color{awesome} #1}}
 % \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{8pt}{1em}\headerfont\color{text} #1}}
 % \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 % \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\color{lightergray} #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{13pt}{1em}\bodyfont\color{lightergray} #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1.1em}\bodyfontlight\upshape\color{text}}
 
@@ -222,6 +222,7 @@
 \newcommand*{\descriptionkeywordsstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\upshape\color{text} #1}}
 
 \newcommand*{\projectdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\upshape\color{graytext} #1}}
+\newcommand*{\projectpositionstyle}[1]{{\fontsize{11pt}{0.5em}\bodyfont\color{awesome} #1}}
 
 \newcommand*{\entrylinkstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\color{graytext} #1}}
 
@@ -552,6 +553,7 @@
   \begin{minipage}[c]{\headerphotowidth}%
     \ifthenelse{\equal{\@photoalign}{right}}{\raggedleft\drawphoto}{}
   \end{minipage}%
+\vspace{-5mm}
 
   % \newcommand{\acvSectionTopSkip}{3mm}
 }
@@ -593,7 +595,7 @@
 }{%
     \end{adjustwidth}
     \par
-    \vspace{-2mm}
+    \vspace{-4mm}
 }
 
 % Define an environment for cventry
@@ -601,7 +603,7 @@
   \begin{adjustwidth}{1em}{1em}
 }{%
   \end{adjustwidth}
-  \vspace{-2mm}
+  \vspace{-5mm}
 }
 
 % Define an entry of cv information
@@ -618,7 +620,7 @@
     \else
       \multicolumn{2}{L{\textwidth - 10em}}{\descriptionstyle{#5}} \\
     \fi
-  \end{tabular*}\vspace{2mm}
+  \end{tabular*}\vspace{1mm}
 }
 
 % Define an environment for cvitems(for cventry)
@@ -665,21 +667,18 @@
   \begin{adjustwidth}{1em}{1em}
 }{%
   \end{adjustwidth}
-  \vspace{-2mm}
+  \vspace{-4mm}
 }
-%
-%      {\entrypositionstyle{#1} & \entrydatestyle{#3} \\
-%      \entrytitlestyle{#2} & \entrylocationstyle{#4} \\}
+
 
 % Define an cv project
 % Usage: \cvproject{<name>}{<url>}{<short summary>}{<tech stack>}
 \newcommand*{\cvproject}[4]{%
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
-      \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}}\\
-  \end{tabular*}\vspace{2mm}
+\begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+     \entrypositionstyle{#1} & \entrydatestyle{#2} \\
+     \end{tabular*}%
 }
 
 % Define an environment for cvcerts
@@ -687,7 +686,7 @@
   \begin{adjustwidth}{1em}{1em}
 }{%
   \end{adjustwidth}
-  \vspace{-2mm}
+  \vspace{-4mm}
 }
 %
 %      {\entrypositionstyle{#1} & \entrydatestyle{#3} \\
@@ -696,36 +695,14 @@
 % Define an cv certifications
 % Usage: \cvcerts{<name>}{<url>}{<short summary>}{<tech stack>}
 \newcommand*{\cvcert}[4]{%
+%  \entrypositionstyle{#1} \entrydatestyle{#2} \\
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{0pt}
-  \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
-      \entrypositionstyle{#1} & \entrydatestyle{#2} \\
-      \multicolumn{2}{L{\textwidth - 2em}}{\ifthenelse{\isempty{#3}}{}{\projectdescriptionstyle{#3}}}\\
-  \end{tabular*}\vspace{2mm}
+      \begin{tabular*}{\textwidth - 2em}{L{\textwidth - 4cm - 2em} R{4cm}}
+%     \begin{tabular*}{\textwidth - 2em}{ L{\textwidth - 2in - 3.5em} R{2in}}
+     \entrypositionstyle{#1} & \entrydatestyle{#2} \\
+     \end{tabular*}%
 }
-
-%% Define an environment for cvhonor
-%\newenvironment{cvhonors}{%
-%%   \vspace{\acvSectionContentTopSkip}
-%%   \vspace{-2mm}
-%  \begin{adjustwidth}{1em}{1em}
-%    \setlength\tabcolsep{0pt}
-%    \setlength{\extrarowheight}{0pt}
-%    \begin{tabular*}{\textwidth + 5em}{@{\extracolsep{\fill}} L{1.2in} L{\textwidth - 1.9in - 4em} R{1in}}
-%}{%
-%    \end{tabular*}%
-%  \end{adjustwidth}
-%  \vspace{-2mm}
-%}
-%% Define a line of cv information(honor, award or something else)
-%% Usage: \cvhonor{<position>}{<title>}{<date>}{<location>}
-%\newcommand*{\cvhonor}[4]{%
-%    % \setlength\tabcolsep{0pt}
-%    % \setlength{\extrarowheight}{0pt}
-%    % \begin{tabular*}{\textwidth - 2em}{@{\extracolsep{\fill}} L{\textwidth - 2in - 2em} R{2in}}
-%    \honorpositionstyle{#2} & \honortitlestyle{#3} \hspace{.1em} \honordatestyle{(#1)} \\
-%    % \end{tabular*}%
-%}
 
 % Define an environment for cvproject
 \newenvironment{cvhonors}{%

@@ -14,7 +14,7 @@ from .commands import (
     Certification,
     MakeCVHeader,
 )
-from .environments import Paragraph, Accomplishments, Skills, Entries, Projects, Items
+from .environments import Paragraph, Accomplishments, Skills, Entries, Projects, Certifications,Items
 
 FILEPATH = os.path.join(os.getcwd(), 'tmp')
 JSON_FILE = os.path.join(FILEPATH, 'temp.json')
@@ -155,7 +155,7 @@ class ResumeDocument(Document):
 
         if should_be_rendered("certifications"):
             doc.add_section("Certifications")
-            with doc.create(Projects()) as entries:
+            with doc.create(Certifications()) as entries:
                 for item in resume["certifications"]:
                     entry = Certification.from_jsonresume(item)
                     entries.append(entry)

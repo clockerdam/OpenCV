@@ -202,15 +202,18 @@ class OSProject(Project):
         # data["keywords"] = jsonresume.stringify_sequence(dict_.get("keywords"))
         return cls(**data)
 
-class Certification(Project):
+class Certification(BaseObject):
     _date_range_format = "%m/%Y"
+    _latex_name = "cvcert"
+    _props = "title date description keywords"
+
+    def __init__(self, title="", date="", description="", keywords=""):
+        lcls = locals()
+        lcls.pop("self")
+        BaseObject.__init__(self, **lcls)
     @classmethod
     def from_jsonresume(cls, dict_):
-        data = jsonresume.parse_common("title description", dict_)
-        data["dates"] = jsonresume.format_date_range(
-            start=dict_.get("fromDate"),
-            end=dict_.get("toDate", "Present"),
-            fmt=cls._date_range_format,
-        )
+        data = jsonresume.parse_common("title", dict_)
+        data["date"] = jsonresume.format_date(dict_.get("date", ""), fmt="%m/%Y")
         # data["keywords"] = jsonresume.stringify_sequence(dict_.get("keywords"))
         return cls(**data)
