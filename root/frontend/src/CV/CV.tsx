@@ -152,4 +152,5 @@ export class CV {
     patents: LabelledStrings = new LabelledStrings();
     extracurriculars: LabelledExtracurriculars = new LabelledExtracurriculars();
     stats: Stats = new Stats();
+    description: string = '';
 }

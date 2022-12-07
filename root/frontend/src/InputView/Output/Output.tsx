@@ -6,6 +6,7 @@ import { MoonLoader } from "react-spinners";
 import { getAnalysis, getUnlabeled } from "../../api/api";
 import { CV, LabelledCertification, LabelledEducation, LabelledExperience, LabelledItem, LabelledSkill, LabelledString } from "../../CV/CV";
 import cvContext from "../../cvContext";
+import { exampleCV } from "./example";
 
 type OutputLoadingState = "loading" | "done";
 
@@ -32,16 +33,8 @@ function Output() {
     Extracurriculars = "extracurriculars",
   }
 
-  function fetchRandomAndAnalyze() {
-    getUnlabeled().then((unlabeledCV: CV) => {
-      console.log(unlabeledCV);
-      setCV(unlabeledCV);
-      getAnalysis(JSON.stringify(unlabeledCV)).then((analyzedCV: CV) => {
-        console.log(analyzedCV);
-        setOutputLoadingState("done");
-        setAnalyzedCV(analyzedCV);
-      });
-    });
+  function fetchExampleCV() {
+    setCV(exampleCV)
   }
 
   function analyzeCV() {
@@ -75,18 +68,29 @@ function Output() {
         <h3>Missing keywords:</h3>
         {displayKeywordList(cvAnalyzed.stats.missing_keywords)}
       </div>
-      <div>
-        <h3>Removed keywords:</h3>
-        {displayKeywordList(cvAnalyzed.stats.removed_keywords)}
-      </div>
     </div>
   }
 
+  let excludedFields = ["title", "summary", "stats", "contactInfo", "_id", "description"]
   return (
     <div>
       <div className="split left">
+        <div>
+          <input 
+            name="title"
+            placeholder="Title"
+            value={cv.title}
+            onChange={(e) => setCV((prevState: CV) => ({ ...prevState, title: e.target.value}))}
+          />
+        </div>
+        <div>
+          <textarea 
+            value={cv.description} 
+            onChange={(e) => setCV((prevState: CV) => ({ ...prevState, description: e.target.value}))}
+          />
+        </div>
         {displayKeywords()}
-        <button onClick={() => fetchRandomAndAnalyze()}>Analyze random CV</button>
+        <button onClick={() => fetchExampleCV()}>Fetch example CV</button>
         <button onClick={() => analyzeCV()}>Analyze CV</button>
         <label>
           <h1>Input CV:</h1>
@@ -100,7 +104,7 @@ function Output() {
             <p className="item">{cv.summary.value}</p>
           </div>
         </div>
-        {mapFields(cv, false)}
+        {mapFields(excludedFields, cv, false)}
       </div>
       <div className="bar"></div>
       <div className="split right">
@@ -125,34 +129,38 @@ function Output() {
             <label>
               <h2>{cvAnalyzed.title}</h2>
             </label>
-            <div className="section">
-              <h2 className="item">Summary</h2>
-              <div className="rating">
-                <p className="item">{cvAnalyzed.summary.value}</p>
-                {showLabel(cvAnalyzed.summary, true)}
-              </div>
-            </div>
-            {mapFields(cvAnalyzed, true)}
+            {displaySummary()}
+            {mapFields(excludedFields, cvAnalyzed, true)}
           </>
         )}
       </div>
     </div>
   );
 
-  function mapFields(cv: CV, output: boolean) {
+  function displaySummary() {
+    if (cvAnalyzed.summary === undefined) {
+      return null
+    }
+    return <div className="section">
+      <h2 className="item">Summary</h2>
+      <div className="rating">
+        <p className="item">{cvAnalyzed.summary.value}</p>
+        {showLabel(cvAnalyzed.summary, true)}
+      </div>
+    </div>
+  }
+
+  function mapFields(excludedFields: string[], cv: CV, output: boolean) {
     return (
       <div>
         {Object.keys(cv).map((field) => {
-          if (field === "title" || field === "summary" || field === "_id" || field === "stats") {
-            return null;
-          }
-          if (field === "contactInfo") {
-            return null; //mapField(field)
+          if (excludedFields.includes(field)) {
+            return null
           }
           return mapNestedField(cv, field, output);
         })}
       </div>
-    );
+    )
   }
 
   function mapNestedField(cv: CV, field: string, output: boolean) {

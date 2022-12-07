@@ -49,15 +49,6 @@ function Form() {
     return <form onSubmit={handleSubmit}>
         <div>
             <label>
-                <p>Title</p>
-                <input 
-                    name="title"
-                    placeholder="Title"
-                    value={cv.title}
-                    onChange={(e) => setCV((prevState: CV) => ({ ...prevState, title: e.target.value}))}
-                />
-            </label>
-            <label>
                 <p>Summary</p>
                 <input 
                     name="summary"
