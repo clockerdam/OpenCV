@@ -1,0 +1,200 @@
+{
+    "accomplishments": {
+        "label": 0,
+        "value": []
+    },
+    "certifications": {
+        "label": 0,
+        "value": []
+    },
+    "contactInfo": {
+        "address": "",
+        "birthday": "24 December 1985",
+        "email": "monica@music.co.kr",
+        "family": "",
+        "github": "monicamusic123",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "website": "my-website.com"
+    },
+    "education": {
+        "label": 0,
+        "value": [
+            {
+                "label": 0,
+                "value": {
+                    "description": "",
+                    "fromDate": "2010",
+                    "institution": "Kungliga tekniska h\u00f6gskolan",
+                    "location": "Sweden",
+                    "title": "Master of Science (MSc) (unfinished), Systems, Control and Robotics",
+                    "toDate": "2013"
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "description": "",
+                    "fromDate": "2009",
+                    "institution": "ITMO University",
+                    "location": "Sweden",
+                    "title": "Master of Science (MSc), Automation and control",
+                    "toDate": "2011"
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "description": "",
+                    "fromDate": "2005",
+                    "institution": "ITMO University",
+                    "location": "Sweden",
+                    "title": "Bachelor of Science (BSc), Automation and control",
+                    "toDate": "2009"
+                }
+            }
+        ]
+    },
+    "experience": {
+        "label": 0,
+        "value": [
+            {
+                "label": 0,
+                "value": {
+                    "company": "Meta",
+                    "description": "",
+                    "fromDate": "July 2022",
+                    "location": "Stockholm, Sweden",
+                    "title": "Audio Research Software Engineer",
+                    "toDate": "Present"
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "company": "Arena Personal AB",
+                    "description": "Software development at Meta Reality Labs Audio Research",
+                    "fromDate": "August 2021",
+                    "location": "Stockholm, Sweden",
+                    "title": "CW Software Engineer onsite at Meta",
+                    "toDate": "June 2022"
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "company": "Tobii",
+                    "description": "- Developing Tobii Ocumen. https://vr.tobii.com/sdk/solutions/tobii-ocumen/ - Foveated video streaming. - Exploring eye tracking features in VR. https://vr.tobii.com/sdk/ - Integrating eye tracking features into computer games. https:// tobiigaming.com/games/ - Idea, development and software architecture for Tobii Ghost (eye tracking bubble overlay) and Twitch Extension. https://gaming.tobii.com/software/ghost/ - Developing Tobii Game Hub and Unity mods. - Developing Tobii Unity SDK. https://developer.tobii.com/pc-gaming/unity-sdk/ - Generating product ideas. - Fast prototyping new concepts and demos. - Generating leads for software partnership/game integrations. - Supervising student projects. - Developer support on Tobii Developer Zone. - Helping out with Tobii Eye Tracker media reviews.",
+                    "fromDate": "September 2013",
+                    "location": "Stockholm, Sweden",
+                    "title": "Software Developer",
+                    "toDate": "July 2021"
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "company": "Scania",
+                    "description": "Development of pedestrian tracking and collision warning algorithms.",
+                    "fromDate": "June 2013",
+                    "location": "S\u00f6dert\u00e4lje, Sweden",
+                    "title": "Summer Worker",
+                    "toDate": "August 2013"
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "company": "Scania Group",
+                    "description": "Development of a pedestrian tracking algorithm, which utilizes data from a ToF camera: - Multiple objects tracking using an array of Kalman filters - Tracking in absolute coordinates using truck's odometry data received through CANbus - Merging data from multiple ToF cameras and a laser scanner",
+                    "fromDate": "September 2012",
+                    "location": "S\u00f6dert\u00e4lje, Sweden",
+                    "title": "Master Thesis Student",
+                    "toDate": "March 2013"
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "company": "KTH",
+                    "description": "Working on an international robotics research project CogX Dora by testing, debugging and implementing new features in navigation and AI.",
+                    "fromDate": "February 2012",
+                    "location": "",
+                    "title": "Research Engineer",
+                    "toDate": "July 2012"
+                }
+            }
+        ]
+    },
+    "extracurriculars": {
+        "label": 0,
+        "value": []
+    },
+    "hardSkills": {
+        "label": 0,
+        "value": [
+            {
+                "label": 0,
+                "value": {
+                    "name": "C#",
+                    "proficiency": 5
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "name": "Unity",
+                    "proficiency": 5
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "name": "Scrum",
+                    "proficiency": 5
+                }
+            }
+        ]
+    },
+    "interests": {
+        "label": 0,
+        "value": []
+    },
+    "languages": {
+        "label": 0,
+        "value": [
+            {
+                "label": 0,
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                }
+            },
+            {
+                "label": 0,
+                "value": {
+                    "name": "Swedish",
+                    "proficiency": 3
+                }
+            }
+        ]
+    },
+    "patents": {
+        "label": 0,
+        "value": []
+    },
+    "projects": {
+        "label": 0,
+        "value": []
+    },
+    "softSkills": {
+        "label": 0,
+        "value": []
+    },
+    "summary": {
+        "label": 0,
+        "value": "- Software development - C#, .NET, Unity, VR, Unreal Engine (Basic skills), Rust (Basic skills), C++, git, SCRUM, React (Basic skills), Node.js (Basic skills) - Generating product ideas. Fast prototyping new concepts and demos. Generating leads for software partnership. - Reverse engineering - Unity modding, HarmonyLib, dnSpy, IDA Pro, Cheat Engine, ReClass."
+    },
+    "title": "Audio Research Software Engineer at Meta Reality Labs"
+}

@@ -1,0 +1,107 @@
+{
+    "title": "Software Engineer at Naver",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/nhp0712",
+            "name": "Phuong Harry Nguyen",
+            "phoneNumber": "",
+            "email": "",
+            "github": "",
+            "birthday": "",
+            "family": ""
+        }
+        ,
+    "summary": "Software Engineer with some experience of working in the software industry. And I have a huge passion about Artificial Intelligence and Big Data. Technologies: C++, Java, Python, Node.js, React.js,, MySQL/SQL Server, AWS, etc.",
+    "experience": [
+        {
+            "company": "NAVER VIETNAM",
+            "title": "Software Engineer",
+            "location": "",
+            "fromDate": "September 2022",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "MEGAZONECLOUD",
+            "title": "Software Engineer",
+            "location": "Vietnam",
+            "fromDate": "January 2021",
+            "toDate": "September 2022",
+            "description": ""
+        },
+        {
+            "company": "Korean IT School (KITS) - Multicampus/Samsung SDS",
+            "title": "Trainee",
+            "location": "Hanoi, Hanoi, Vietnam",
+            "fromDate": "July 2020",
+            "toDate": "October 2020",
+            "description": "• Intensely got trained in Java Web Services using Spring framework including Spring Boot, Spring Hibernate and REST API. • Also got trained in Big Data using Spark with Hadoop environment to execute several tasks. • Practically got trained in Machine Learning and Deep Learning using R and Python with modern algorithms including K –Nearest Neighbors (KNN), K-means clustering, Support Vector Machine (SVM linear and SVM rbf), Convolutional Neutral Network (CNN)."
+        },
+        {
+            "company": "Advanced Digital Opportunities for Rapid Success (ADORS)",
+            "title": "Web Development Intern",
+            "location": "Toledo, Ohio, United States",
+            "fromDate": "May 2019",
+            "toDate": "August 2019",
+            "description": "• Created web design analysis reports and developed a counseling website for students in Vietnam to assist them in applying to educational programs in the United States. • Worked within Node.js and SQL server to develop simple and clean solutions."
+        },
+        {
+            "company": "Agile Software Factory (ASF)",
+            "title": "Software Engineer - Scrum Master",
+            "location": "Bowling Green, Ohio, United States",
+            "fromDate": "October 2018",
+            "toDate": "May 2019",
+            "description": "• Worked within the Computer Science Department at Bowling Green State University to create the 50th anniversary website for the department. • Assumed the position of scrum master and managed five separate teams of developers. • Measured success of teams using Agile methodologies in terms of project growth, adaptability and outcomes."
+        }
+        ],
+    "education": [
+        {
+            "institution": "Bowling Green State University",
+            "location": "USA",
+            "title": "Bachelor of Science (B.S.), Computer Science (Specialization in Software Engineering)",
+            "fromDate": "2015",
+            "toDate": "2019",
+            "description": ""
+        }   
+        ],
+    "interests": [
+        ],
+    "accomplishments": [
+        ],
+    "languages": [
+{
+                "name": "English",
+                "proficiency": 4
+        },
+        {
+                "name": "Greek",
+                "proficiency": 5
+        }
+    ],
+    "projects": [
+        ],
+    "softSkills": [
+        ],
+    "hardSkills": [
+        {
+                "name": "Apache Kafka",
+                "proficiency": 5
+        },
+        {
+                "name": "Java",
+                "proficiency": 5
+        },
+        {
+                "name": "Python",
+                "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

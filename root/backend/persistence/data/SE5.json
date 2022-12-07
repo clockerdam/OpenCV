@@ -1,0 +1,120 @@
+{
+    "title": "Software Engineer at Tesla",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/xinxinhuo",
+            "name": "Xinxin Huo",
+            "phoneNumber": "VALUE",
+            "email": "xinxin@gmail.com",
+            "github": "github.com/SE5",
+            "birthday": "",
+            "family": ""
+        }
+        ,
+    "summary": "Experienced in delivering high quality, large scale services. Skilled in performing detailed data analysis, generating comprehensive reports, and validating results for accuracy. Strong ability to learn new technologies and adopt solutions along with proven debugging skills. Proficient in algorithms and data structures.",
+    "experience": [
+        {
+            "company": "Tesla",
+            "title": "Software Engineer",
+            "location": "",
+            "fromDate": "May 2021",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Fortinet",
+            "title": "Software Engineer",
+            "location": "San Francisco Bay Area",
+            "fromDate": "May 2018",
+            "toDate": "May 2021",
+            "description": ""
+        },
+        {
+            "company": "State University of New York, Korea (SUNY Korea)",
+            "title": "Teaching Assistant",
+            "location": "",
+            "fromDate": "August 2016",
+            "toDate": "December 2016",
+            "description": "• Played a lead role in developing and conducting training sessions for students in regard to Java concepts along with assisting in administering tests"
+        },
+        {
+            "company": "X-MOL",
+            "title": "Research Intern",
+            "location": "Shanghai City, China",
+            "fromDate": "December 2015",
+            "toDate": "July 2016",
+            "description": "• Coordinated research logistics within a fast-paced environment which included gathering and analyzing company review data using Python Scrapy. • Played a lead role in the design and implementation of a software system used to analyze data and plot results which resulted in a reduction of time/ labor costs by 30%"
+        }
+        ],
+    "education": [
+        {
+            "institution": "Stony Brook University Graduate School",
+            "location": "USA",
+            "title": "Master of Science - MS, Computer Science",
+            "fromDate": "",
+            "toDate": "",
+            "description": ""
+        },
+        {
+            "institution": "SUNY Korea",
+            "location": "Korea",
+            "title": "Computer Science",
+            "fromDate": "",
+            "toDate": "",
+            "description": ""
+        } ,
+        {
+            "institution": "Farmingdale State University of New York",
+            "location": "New York",
+            "title": "Bachelor of Engineering - BE, Computer Software Technology/Technician",
+            "fromDate": "",
+            "toDate": "",
+            "description": ""
+        } ,
+        {
+            "institution": "Jiangxi University of Science and Technology",
+            "location": "Jiangxi",
+            "title": "Bachelor of Science - BS, Computer Science",
+            "fromDate": "",
+            "toDate": "",
+            "description": ""
+        }    
+        ],
+    "interests": [
+        ],
+    "accomplishments": [
+        ],
+    "languages": [
+        {
+                "name": "Chinese",
+                "proficiency": 5
+        },
+        {
+                "name": "English",
+                "proficiency": 5
+        }
+
+    ],
+    "projects": [
+        ],
+    "softSkills": [
+        ],
+    "hardSkills": [
+        {
+                "name": "Research",
+                "proficiency": 5
+        },
+        {
+                "name": "Microsoft Office",
+                "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

@@ -1,0 +1,182 @@
+{
+    "title": "Software Engineer at Tesla",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Experienced in delivering high quality, large scale services. Skilled in performing detailed data analysis, generating comprehensive reports, and validating results for accuracy. Strong ability to learn new technologies and adopt solutions along with proven debugging skills. Proficient in algorithms and data structures.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Tesla",
+                    "title": "Software Engineer",
+                    "location": "",
+                    "fromDate": "May 2021",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Fortinet",
+                    "title": "Software Engineer",
+                    "location": "San Francisco Bay Area",
+                    "fromDate": "May 2018",
+                    "toDate": "May 2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "State University of New York, Korea (SUNY Korea)",
+                    "title": "Teaching Assistant",
+                    "location": "",
+                    "fromDate": "August 2016",
+                    "toDate": "December 2016",
+                    "description": "\u2022 Played a lead role in developing and conducting training sessions for students in regard to Java concepts along with assisting in administering tests"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "X-MOL",
+                    "title": "Research Intern",
+                    "location": "Shanghai City, China",
+                    "fromDate": "December 2015",
+                    "toDate": "July 2016",
+                    "description": "\u2022 Coordinated research logistics within a fast-paced environment which included gathering and analyzing company review data using Python Scrapy. \u2022 Played a lead role in the design and implementation of a software system used to analyze data and plot results which resulted in a reduction of time/ labor costs by 30%"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Stony Brook University Graduate School",
+                    "location": "USA",
+                    "title": "Master of Science - MS, Computer Science",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "SUNY Korea",
+                    "location": "Korea",
+                    "title": "Computer Science",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Farmingdale State University of New York",
+                    "location": "New York",
+                    "title": "Bachelor of Engineering - BE, Computer Software Technology/Technician",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Jiangxi University of Science and Technology",
+                    "location": "Jiangxi",
+                    "title": "Bachelor of Science - BS, Computer Science",
+                    "fromDate": "",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "Chinese",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Research",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Microsoft Office",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

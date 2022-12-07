@@ -1,0 +1,185 @@
+{
+    "title": "Data Scientist",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Debricked",
+                    "title": "Data Scientist",
+                    "location": "Malm\u00f6, Sk\u00e5ne County, Sweden",
+                    "fromDate": "September 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Debricked",
+                    "title": "Master Thesis Student",
+                    "location": "Malm\u00f6, Sk\u00e5ne County, Sweden",
+                    "fromDate": "February 2022",
+                    "toDate": "September 2022",
+                    "description": "Researching semantic code search with the data science team."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Ericsson",
+                    "title": "Research And Development Intern",
+                    "location": "Lund, Skane County, Sweden",
+                    "fromDate": "June 2021",
+                    "toDate": "August 2021",
+                    "description": "Developed internal tools for testing and analysis in Python and C with a team consisting of 5 students and 3 full-time employees. A lot of focus was put on working as a self-organizing team, code quality and properly tested code."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Ericsson",
+                    "title": "Research And Development Intern",
+                    "location": "Lund, Skane County, Sweden",
+                    "fromDate": "June 2020",
+                    "toDate": "September 2020",
+                    "description": "Worked with 5 other students on extending an internal analysis tool written in Python with SciPy, Matplotlib, NumPy and TkInter."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Tetra Pak",
+                    "title": "Student Consultant / Summer Trainee",
+                    "location": "Lund, Skane County, Sweden",
+                    "fromDate": "June 2019",
+                    "toDate": "May 2020",
+                    "description": "Working with application development, UX and data analysis at Tetra Pak Services & Solutions, Methods Management."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "ARKAD",
+                    "title": "Internal Systems Developer",
+                    "location": "Lund, Skane County, Sweden",
+                    "fromDate": "April 2019",
+                    "toDate": "December 2019",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "ICA Supermarket",
+                    "title": "Cashier / Store Emlpoyee",
+                    "location": "Lysekil, Sweden",
+                    "fromDate": "June 2016",
+                    "toDate": "September 2017",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Fishmarket Lysekil",
+                    "title": "Store Employee",
+                    "location": "Lysekil, Sweden",
+                    "fromDate": "August 2014",
+                    "toDate": "September 2015",
+                    "description": "Sold fish"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "The Faculty of Engineering at Lund University",
+                    "location": "Lund, Sweden",
+                    "title": "Master of Science - MS, Computer Science and Engineering",
+                    "fromDate": "2018",
+                    "toDate": "2022",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Java",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Python",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Linux",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

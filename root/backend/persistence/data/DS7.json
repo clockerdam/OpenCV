@@ -1,0 +1,167 @@
+{
+    "title": "Data Scientist at Thales",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/daria-la- rocca-5960719b",
+            "name": "Daria La Rocca",
+            "phoneNumber": "07171771771",
+            "email": "rocktheLA@hotmail.com",
+            "github": "github.com/therock",
+            "birthday": "",
+            "family": "Husband and two friends"
+        }
+        ,
+    "summary": "",
+    "experience": [
+        {
+            "company": "Thales",
+            "title": "Data Scientist",
+            "location": "Palaiseau",
+            "fromDate": "September 2018",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Neurospin - CEA Saclay",
+            "title": "Postdoctoral fellow",
+            "location": "",
+            "fromDate": "September 2015",
+            "toDate": "August 2018",
+            "description": ""
+        },
+        {
+            "company": "Fondazione Santa Lucia, Neuroeletrical Imaging and Brain Computer Interface Laboratory",
+            "title": "Term Contract",
+            "location": "Rome",
+            "fromDate": "October 2008",
+            "toDate": "December 2008",
+            "description": "Application of high resolution EEG techniques and multivariate models for the brain connectivity estimation in healthy and patient subjects."
+        },
+        {
+            "company": "Fondazione Santa Lucia",
+            "title": "Engineering Trainee",
+            "location": "",
+            "fromDate": "Mars 2008",
+            "toDate": "September 2008",
+            "description": "Linear Inverse techniques for high resolution EEG and brain hyper- connectivity estimation in healthy subjects"
+        }
+        ],
+    "education": [
+        {
+            "institution": "Università degli Studi di Roma Tre",
+            "location": "Rome, Italy",
+            "title": "Doctor of Philosophy - PhD, Biometry/Biometrics",
+            "fromDate": "2012",
+            "toDate": "2015",
+            "description": "PhD with European Label in Biomedical electronics, electromagnetics and telecommunications Thesis – Automatic user recognition based on EEG signals. Main tasks: design of EEG recording protocols; signal acquisition; preprocessing for the enhancement of SNR; EEG analysis applying advanced signal processing methods for feature engineering; machine learning approaches for BCI and biometry applications."
+        },
+        {
+            "institution": "Sapienza Università di Roma",
+            "location": "Rome, Italy",
+            "title": "Master's degree, Ingénierie biomédicale / médicale",
+            "fromDate": "2008",
+            "toDate": "2011",
+            "description": ""
+        } ,
+        {
+            "institution": "Fundació Politècnica de Catalunya",
+            "location": "Spain",
+            "title": "Diploma de posgrado, Obtención y Procesamiento de Señales e Imágenes Biomédicas, Instrumentación Biomédica",
+            "fromDate": "2006",
+            "toDate": "2007",
+            "description": ""
+        } ,
+        {
+            "institution": "Universitat Politècnica de Catalunya",
+            "location": "Spain",
+            "title": "Regulación Automatica",
+            "fromDate": "2006",
+            "toDate": "2007",
+            "description": ""
+        }    
+        ],
+    "interests": [
+            "Medicine",
+            "Languages"
+        ],
+    "accomplishments": [
+            {
+                    "title": "Best Master's Degree Thesis on Disability",
+                    "fromDate": "2017-07-23",
+                    "toDate": "",
+                    "description": ""
+            },
+            {
+                    "title": "European Biometrics Research Award",
+                    "fromDate": "2021-03-20",
+                    "toDate": "",
+                    "description": ""
+            },
+            {
+                    "title": "CEA enhanced eurotalent - Marie Sklodowska-Curie Actions Programme",
+                    "fromDate": "2022-01-20",
+                    "toDate": "Today",
+                    "description": ""
+            }
+        ],
+    "languages": [
+        {
+                "name": "English",
+                "proficiency": 5
+        },
+        {
+                "name": "Italian",
+                "proficiency": 5
+        },
+        {
+                "name": "Spanish",
+                "proficiency": 4
+        },
+        {
+                "name": "French",
+                "proficiency": 4
+        }
+        ],
+    "projects": [
+         {
+                "title": "Academic Paper published",
+                "fromDate": "2022-10-02",
+                "toDate": "",
+                "description": "https://scholar.google.com/citations? user=P5v6hRUAAAAJ&hl=fr"
+        }
+        ],
+    "softSkills": [
+        {
+                "name": "Languages",
+                "proficiency": 5
+        }
+    ],
+    "hardSkills": [
+        {
+                "name": "Signal processing",
+                "proficiency": 5
+        },
+        {
+                "name": "Matlab",
+                "proficiency": 4
+        },
+        {
+                "name": "Algorithms",
+                "proficiency": 3
+        }
+        ],  
+    "certifications": [
+        {
+            "title": "Machine learning with PySpark",
+            "level": "",
+            "description": "",
+            "date": ""
+        }
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        ]
+}

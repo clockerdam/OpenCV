@@ -1,0 +1,172 @@
+{
+    "title": "Analyst Intern @ BCG | Student @ Northwestern",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Boston Consulting Group (BCG)",
+                    "title": "RMS Business Analyst Intern",
+                    "location": "Chicago, Illinois, United States",
+                    "fromDate": "February 2022",
+                    "toDate": "Present",
+                    "description": "Global Specialty Services - RMS and Knowledge Team (KT)"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "U.S. International Development Finance Corporation",
+                    "title": "Business Development Intern",
+                    "location": "Washington DC-Baltimore Area",
+                    "fromDate": "June 2022",
+                    "toDate": "September 2022",
+                    "description": "Office of Structured Finance and Insurance"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Boston College",
+                    "title": "Undergraduate Research Assistant",
+                    "location": "Chestnut Hill, Massachusetts",
+                    "fromDate": "September 2020",
+                    "toDate": "August 2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Acton Debate Institute",
+                    "title": "Director",
+                    "location": "Acton, Massachusetts",
+                    "fromDate": "January 2019",
+                    "toDate": " August 2021",
+                    "description": "Founded speech and debate education Limited Partnership serving 250+ students in 5 US states"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "United Nations Association of Greater Boston",
+                    "title": "Intern",
+                    "location": "Boston, Massachusetts, United States",
+                    "fromDate": "July 2018",
+                    "toDate": "August 2018",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Northwestern University",
+                    "location": "Boston",
+                    "title": "Bachelor of Arts - BA, Political Science and Learning & Organizational Change, Minor in Business Institutions",
+                    "fromDate": "2021",
+                    "toDate": "2024",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Boston College",
+                    "location": "Boston",
+                    "title": "Bachelor of Arts - BA, Economics and Applied Psychology and Human Development, Minor in Accounting for Finance & Consulting",
+                    "fromDate": "2020",
+                    "toDate": "2021",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "Acton-Boxborough Regional High School",
+                    "location": "Acton",
+                    "title": "High School Diploma",
+                    "fromDate": "2016",
+                    "toDate": "2020",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "The President's Volunteer Service Gold Award, Academic All-American, Dean's List, First Honors Dean's List",
+                    "fromDate": "2020-05-10",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [],
+        "label": 0
+    },
+    "certifications": {
+        "value": [
+            {
+                "value": {
+                    "title": "Social/Behavioral Human Research Certification",
+                    "level": "",
+                    "description": "",
+                    "date": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

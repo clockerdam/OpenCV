@@ -1,0 +1,151 @@
+{
+    "title": "Data and Applied Scientist at Microsoft",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "",
+            "linkedin": "www.linkedin.com/in/aytekinar",
+            "name": "Arda Aytekin",
+            "phoneNumber": "",
+            "email": "arda123@gmail.com",
+            "github": "arda123.github.com",
+            "birthday": "",
+            "family": ""
+        }
+        ,
+    "summary": "Machine-Learning Engineer. I have both theoretical and practical tools needed to analyze, design, and implement optimization algorithms for solving different classes of data-driven machine- learning problems. I have hands-on experience in various computing platforms that range from low-power embedded devices to supercomputers and cloud-based solutions. I am an open-source enthusiast in both my personal and professional life.",
+    "experience": [
+        {
+            "company": "Microsoft",
+            "title": "Data and Applied Scientist",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "October 2022",
+            "toDate": "Present",
+            "description": ""
+        },
+        {
+            "company": "Microsoft",
+            "title": "Senior Data Scientist",
+            "location": "Stockholm, Stockholm County, Sweden",
+            "fromDate": "February 2022",
+            "toDate": "September 2022",
+            "description": ""
+        },
+        {
+            "company": "Ericsson",
+            "title": "Senior Data Scientist",
+            "location": "Västerort, Stockholm County, Sweden",
+            "fromDate": "December 2020",
+            "toDate": "Januari 2022",
+            "description": ""
+        },
+        {
+            "company": "Ericsson",
+            "title": "Data Scientist",
+            "location": "Västerort, Stockholm County, Sweden",
+            "fromDate": "November 2019",
+            "toDate": "November 2020",
+            "description": ""
+        }
+        ],
+    "education": [
+        {
+            "institution": "KTH Royal Institute of Technology",
+            "location": "Stockholm, Sweden",
+            "title": "Postdoctoral Researcher",
+            "fromDate": "April 2019",
+            "toDate": "October 2019",
+            "description": ""
+        },
+        {
+            "institution": "KTH Royal Institute of Technology",
+            "location": "Stockholm, Sweden",
+            "title": "Doctoral Student",
+            "fromDate": "2013",
+            "toDate": "2019",
+            "description": ""
+        },
+        {
+            "institution": "Koç University",
+            "location": "Istanbul, Turkey",
+            "title": "Master of Science - MS, Mechanical Engineering",
+            "fromDate": "2010",
+            "toDate": "2013",
+            "description": ""
+        },
+        {
+            "institution": "Istanbul Technical University",
+            "location": "Istanbul, Turkey",
+            "title": "Bachelor of Science - BS, Automatic Control",
+            "fromDate": "2006",
+            "toDate": "2010",
+            "description": ""
+        },
+        {
+            "institution": "Istanbul Technical University",
+            "location": "Istanbul, Turkey",
+            "title": "Bachelor of Science - BS, Mechanical Engineering",
+            "fromDate": "2005",
+            "toDate": "2009",
+            "description": ""
+        }   
+        ],
+    "interests": [
+],
+    "accomplishments": [
+],
+    "languages": [
+],
+    "projects": [
+        {
+                "title": "Built a website for teaching machine learning to children.",
+                "fromDate": "2021-03-15",
+                "toDate": "",
+                "description": ""
+        }
+        ],
+    "softSkills": [
+        {
+            "name": "Pedagogical",
+            "proficiency": 5
+        }
+        ],
+    "hardSkills": [
+        {
+                "name": "Go",
+                "proficiency": 5
+        },
+        {
+                "name": "Microsoft Azure",
+                "proficiency": 5
+        },
+        {
+                "name": "Amazon EC2",
+                "proficiency": 5
+        }
+        ],  
+    "certifications": [
+        {
+            "title": "Agile Foundations",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Scrum: The Basics",
+            "level": "Basic",
+            "description": "",
+            "date": ""
+        }
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        {
+                "title": "High school tutor",
+                "fromDate": "2022-04-20",
+                "toDate": "Today",
+                "description": "Taught high school student math after school to increase their interests in engineering."
+        }
+        ]
+}

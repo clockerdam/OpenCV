@@ -1,0 +1,200 @@
+{
+    "title": "Audio Research Software Engineer at Meta Reality Labs",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "- Software development - C#, .NET, Unity, VR, Unreal Engine (Basic skills), Rust (Basic skills), C++, git, SCRUM, React (Basic skills), Node.js (Basic skills) - Generating product ideas. Fast prototyping new concepts and demos. Generating leads for software partnership. - Reverse engineering - Unity modding, HarmonyLib, dnSpy, IDA Pro, Cheat Engine, ReClass.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Meta",
+                    "title": "Audio Research Software Engineer",
+                    "location": "Stockholm, Sweden",
+                    "fromDate": "July 2022",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Arena Personal AB",
+                    "title": "CW Software Engineer onsite at Meta",
+                    "location": "Stockholm, Sweden",
+                    "fromDate": "August 2021",
+                    "toDate": "June 2022",
+                    "description": "Software development at Meta Reality Labs Audio Research"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Tobii",
+                    "title": "Software Developer",
+                    "location": "Stockholm, Sweden",
+                    "fromDate": "September 2013",
+                    "toDate": "July 2021",
+                    "description": "- Developing Tobii Ocumen. https://vr.tobii.com/sdk/solutions/tobii-ocumen/ - Foveated video streaming. - Exploring eye tracking features in VR. https://vr.tobii.com/sdk/ - Integrating eye tracking features into computer games. https:// tobiigaming.com/games/ - Idea, development and software architecture for Tobii Ghost (eye tracking bubble overlay) and Twitch Extension. https://gaming.tobii.com/software/ghost/ - Developing Tobii Game Hub and Unity mods. - Developing Tobii Unity SDK. https://developer.tobii.com/pc-gaming/unity-sdk/ - Generating product ideas. - Fast prototyping new concepts and demos. - Generating leads for software partnership/game integrations. - Supervising student projects. - Developer support on Tobii Developer Zone. - Helping out with Tobii Eye Tracker media reviews."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Scania",
+                    "title": "Summer Worker",
+                    "location": "S\u00f6dert\u00e4lje, Sweden",
+                    "fromDate": "June 2013",
+                    "toDate": "August 2013",
+                    "description": "Development of pedestrian tracking and collision warning algorithms."
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "Scania Group",
+                    "title": "Master Thesis Student",
+                    "location": "S\u00f6dert\u00e4lje, Sweden",
+                    "fromDate": "September 2012",
+                    "toDate": "March 2013",
+                    "description": "Development of a pedestrian tracking algorithm, which utilizes data from a ToF camera: - Multiple objects tracking using an array of Kalman filters - Tracking in absolute coordinates using truck's odometry data received through CANbus - Merging data from multiple ToF cameras and a laser scanner"
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "company": "KTH",
+                    "title": "Research Engineer",
+                    "location": "",
+                    "fromDate": "February 2012",
+                    "toDate": "July 2012",
+                    "description": "Working on an international robotics research project CogX Dora by testing, debugging and implementing new features in navigation and AI."
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Kungliga tekniska h\u00f6gskolan",
+                    "location": "Sweden",
+                    "title": "Master of Science (MSc) (unfinished), Systems, Control and Robotics",
+                    "fromDate": "2010",
+                    "toDate": "2013",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "ITMO University",
+                    "location": "Sweden",
+                    "title": "Master of Science (MSc), Automation and control",
+                    "fromDate": "2009",
+                    "toDate": "2011",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "ITMO University",
+                    "location": "Sweden",
+                    "title": "Bachelor of Science (BSc), Automation and control",
+                    "fromDate": "2005",
+                    "toDate": "2009",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Swedish",
+                    "proficiency": 3
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "C#",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Unity",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Scrum",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [],
+        "label": 0
+    }
+}

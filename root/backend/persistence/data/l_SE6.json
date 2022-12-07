@@ -1,0 +1,169 @@
+{
+    "title": "Software Engineer at Google",
+    "contactInfo": {
+        "address": "Abraham Lincoln Street 1, Chicago, IL",
+        "website": "my-website.com",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "email": "monica@music.co.kr",
+        "github": "monicamusic123",
+        "birthday": "24 December 1985",
+        "family": "5 kids, divorced"
+    },
+    "summary": {
+        "value": "Interested in software engineering and data science. Specialized in software engineering and programming principles across multiple platforms. Experienced in front end and back end development in LAMP stack and Microsoft .NET stack environment. Professional in object- oriented programming, developing, and testing. Specialized in algorithm design, and distributed systems and networks design. Experienced in big data processing with Hadoop on docker. Have strong ability to master new technologies; Successful to work in teams as well as self-directed settings. I enjoy coding and building software; I am self-motivated and would always like to learn new technology. I also have an excellent work ethic, personality, and tenacious attitude.",
+        "label": 0
+    },
+    "experience": {
+        "value": [
+            {
+                "value": {
+                    "company": "Google",
+                    "title": "Software Engineer",
+                    "location": "San Francisco Bay Area",
+                    "fromDate": "August 2017",
+                    "toDate": "Present",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "education": {
+        "value": [
+            {
+                "value": {
+                    "institution": "Boston University",
+                    "location": "Boston",
+                    "title": "Master's degree, Electrical and computer engineering",
+                    "fromDate": "2015",
+                    "toDate": "2017",
+                    "description": ""
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "institution": "The Hong Kong Polytechnic University",
+                    "location": "Hong Kong",
+                    "title": "Bachelor's degree, Computer Engineering",
+                    "fromDate": "2011",
+                    "toDate": "2015",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "interests": {
+        "value": [
+            {
+                "value": "Competetive Programming",
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "accomplishments": {
+        "value": [
+            {
+                "value": {
+                    "title": "Student Dean's Award for Acadamic Performance",
+                    "fromDate": "2019-02-10",
+                    "toDate": "",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "languages": {
+        "value": [
+            {
+                "value": {
+                    "name": "English",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Chinese",
+                    "proficiency": 5
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "projects": {
+        "value": [
+            {
+                "value": {
+                    "title": "My master thesis within .NET stack enviroment.",
+                    "fromDate": "2021-03-10",
+                    "toDate": "2021-05-05",
+                    "description": ""
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "softSkills": {
+        "value": [],
+        "label": 0
+    },
+    "hardSkills": {
+        "value": [
+            {
+                "value": {
+                    "name": "Hadoop",
+                    "proficiency": 4
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "Java",
+                    "proficiency": 5
+                },
+                "label": 0
+            },
+            {
+                "value": {
+                    "name": "C++",
+                    "proficiency": 2
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    },
+    "certifications": {
+        "value": [],
+        "label": 0
+    },
+    "patents": {
+        "value": [],
+        "label": 0
+    },
+    "extracurriculars": {
+        "value": [
+            {
+                "value": {
+                    "title": "Hackathon Organizer",
+                    "fromDate": "2019-02-15",
+                    "toDate": "2019-09-15",
+                    "description": "Organized Hackathons for kids in my hometown"
+                },
+                "label": 0
+            }
+        ],
+        "label": 0
+    }
+}

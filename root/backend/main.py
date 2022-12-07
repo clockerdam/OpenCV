@@ -1,8 +1,8 @@
 import json
 import os
-
+import glob
 from bson import json_util
-from flask import Flask, request, Response, jsonify, send_from_directory
+from flask import Flask, Response, request, send_file, after_this_request
 from flasgger import Swagger
 from flasgger.utils import swag_from
 
@@ -11,7 +11,7 @@ from flask_cors import CORS
 from api_specs import *
 from prediction import improve_cv
 from persistence import Connection as Database
-from persistence.models import Resume
+from generation import render_from_json
 
 app = Flask(__name__)
 app.config['SWAGGER'] = {
@@ -28,6 +28,44 @@ db = Database()
 def main():
     print("hello response")
     return "Hello World"
+
+@app.post("/generate")
+def generate_pdf():
+    resume = request.get_json()
+
+    try:
+        file_prefix = render_from_json(resume)
+        print(file_prefix)
+
+        @after_this_request
+        def remove_file(response):
+            try:
+                fileList = glob.glob(f"{file_prefix}*")
+                # Iterate over the list of filepaths & remove each file.
+                for filePath in fileList:
+                    try:
+                        # os.remove(filePath)
+                        pass
+                    except:
+                        print("Error while deleting file : ", filePath)
+            except Exception as error:
+                print("Error removing or closing downloaded file handle")
+                print(error)
+
+            return response
+
+
+        print("sending file now")
+        return send_file(f"{file_prefix}.pdf")
+
+    except Exception as e: 
+        print("Got an error in the request")
+        print(e)
+        return {
+                "error": "Could not generate the pdf"
+            }
+
+
 
 
 @app.route("/pdf")

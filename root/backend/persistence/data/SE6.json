@@ -1,0 +1,102 @@
+{
+    "title": "Software Engineer at Google",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "myUIwebsite.com",
+            "linkedin": "www.linkedin.com/in/jxtian",
+            "name": "Jiaxing TIAN",
+            "phoneNumber": "001001001001",
+            "email": "jiaxing@gmail.com",
+            "github": "github.com/SE6",
+            "birthday": "",
+            "family": ""
+        }
+        ,
+    "summary": "Interested in software engineering and data science. Specialized in software engineering and programming principles across multiple platforms. Experienced in front end and back end development in LAMP stack and Microsoft .NET stack environment. Professional in object- oriented programming, developing, and testing. Specialized in algorithm design, and distributed systems and networks design. Experienced in big data processing with Hadoop on docker. Have strong ability to master new technologies; Successful to work in teams as well as self-directed settings. I enjoy coding and building software; I am self-motivated and would always like to learn new technology. I also have an excellent work ethic, personality, and tenacious attitude.",
+    "experience": [
+        {
+            "company": "Google",
+            "title": "Software Engineer",
+            "location": "San Francisco Bay Area",
+            "fromDate": "August 2017",
+            "toDate": "Present",
+            "description": ""
+        }
+        ],
+    "education": [
+        {
+            "institution": "Boston University",
+            "location": "Boston",
+            "title": "Master's degree, Electrical and computer engineering",
+            "fromDate": "2015",
+            "toDate": "2017",
+            "description": ""
+        } ,
+        {
+            "institution": "The Hong Kong Polytechnic University",
+            "location": "Hong Kong",
+            "title": "Bachelor's degree, Computer Engineering",
+            "fromDate": "2011",
+            "toDate": "2015",
+            "description": ""
+        }   
+        ],
+    "interests": [
+            "Competetive Programming"
+        ],
+    "accomplishments": [
+        {
+                "title": "Student Dean's Award for Acadamic Performance",
+                "fromDate": "2019-02-10",
+                "toDate": "",
+                "description": ""
+        }
+        ],
+    "languages": [
+        {
+                "name": "English",
+                "proficiency": 5
+        },
+        {
+                "name": "Chinese",
+                "proficiency": 5
+        }
+    ],
+    "projects": [
+        {
+                "title": "My master thesis within .NET stack enviroment.",
+                "fromDate": "2021-03-10",
+                "toDate": "2021-05-05",
+                "description": ""
+        }
+        ],
+    "softSkills": [
+        ],
+    "hardSkills": [
+        {
+                "name": "Hadoop",
+                "proficiency": 4
+        },
+        {
+                "name": "Java",
+                "proficiency": 5
+        },
+        {
+                "name": "C++",
+                "proficiency": 2
+        }
+        ],  
+    "certifications": [
+        ],
+    "patents": [
+        ],
+    "extracurriculars": [
+        {
+                "title": "Hackathon Organizer",
+                "fromDate": "2019-02-15",
+                "toDate": "2019-09-15",
+                "description": "Organized Hackathons for kids in my hometown"
+        }
+        ]
+}

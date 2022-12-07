@@ -1,0 +1,318 @@
+certifications:
+- contact_heuristic: 0.0
+  covered_keywords:
+  - deep learning
+  date: ''
+  description: ''
+  education_heuristic: 0.0
+  experience_heuristic: 0.0
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.5
+  keywords:
+  - - deep learning
+    - 1.0
+  level: ''
+  raw_keywords:
+  - deep learning
+  score: 1.77
+  title: Neural Networks and Deep Learning
+- contact_heuristic: 0.0
+  covered_keywords: []
+  date: ''
+  description: ''
+  education_heuristic: 0.0
+  experience_heuristic: 0.0
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - triplebyte certified data scientist
+    - 1.0
+  level: ''
+  raw_keywords:
+  - triplebyte certified data scientist
+  score: 0.4563792055649674
+  title: Triplebyte Certified Data Scientist
+contactInfo:
+  address: Chicago, IL
+  birthday: 24 December 1985
+  contact_heuristic: .inf
+  covered_keywords: []
+  education_heuristic: 0.0
+  email: monica@music.co.kr
+  experience_heuristic: 0.0
+  family: 5 kids, divorced
+  github: monicamusic123
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - monica music
+    - 1.0
+  linkedin: linkedin.com/in/me123
+  name: Monica Music
+  phoneNumber: '01012345'
+  profiles:
+  - network: LinkedIn
+    url: linkedin.com/in/me123
+    username: linkedin.com/in/me123
+  - network: Github
+    url: monicamusic123
+    username: monicamusic123
+  raw_keywords:
+  - monica music
+  score: .inf
+  website: my-website.com
+education:
+- contact_heuristic: 0.0
+  covered_keywords: []
+  description: ''
+  duration: 48.0
+  education_heuristic: 0.03
+  experience_heuristic: 0.0
+  fromDate: 12/2005
+  institution: Sharif University of Technology
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - bachelor of science - bs
+    - 1.0
+  - - mechanical engineering
+    - 1.0
+  location: Sharif
+  raw_keywords:
+  - bachelor of science - bs
+  - mechanical engineering
+  score: 0.3029493666221521
+  time_since: 169.0
+  title: Bachelor of Science - BS, Mechanical Engineering
+  toDate: 12/2009
+experience:
+- company: Apple
+  contact_heuristic: 0.0
+  covered_keywords: []
+  description: ''
+  duration: 6.0
+  education_heuristic: 0.0
+  experience_heuristic: 0.014
+  fromDate: 06/2022
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - data scientist
+    - 1.0
+  location: San Francisco
+  raw_keywords:
+  - data scientist
+  score: 1.014
+  time_since: 0.0
+  title: Data Scientist
+  toDate: Present
+- company: iRobot
+  contact_heuristic: 0.0
+  covered_keywords: []
+  description: Developing data mining solutions to create practical insights for optimizing
+    Direct-to-Customer plans and activities. Improving product quality by analyzing
+    customer and product data to identify issues and improvement areas. Built a 52%
+    more accurate demand and sales forecasting model through better model selection
+    and feature engineering. Producing dashboards and Decision Support Systems to
+    help stakeholders in data-driven decision-making
+  duration: 9.0
+  education_heuristic: 0.0
+  experience_heuristic: 0.0
+  fromDate: 08/2021
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - data scientist developing
+    - 1.0
+  - - decision support systems
+    - 1.0
+  location: Boston
+  raw_keywords:
+  - data scientist developing
+  - decision support systems
+  score: 0.32152466745014485
+  time_since: 7.0
+  title: Data Scientist
+  toDate: 05/2022
+- company: UMass Boston College of Management
+  contact_heuristic: 0.0
+  covered_keywords: []
+  description: In my research, I design experiments, conduct exploratory data analysis,
+    apply statistical methods, and develop Machine Learning models to study human
+    behaviors and to produce results with practical insights of value in a business
+    context. Built an ML pipeline to predict online review effectiveness through personalization
+    and feature engineering with NLP (Python). Applied NLP to extract new features
+    through sentiment analysis and topic modeling (NLTK & Gensim). Developed XGBoost,
+    Random Forest, and Poisson Regression (log-linear) models to predict customers
+    decision. Developed and enhanced time series and RNN models of sequential human
+    decisions through behavioral modeling (Python). Built and tuned ARIMA and LSTM
+    models using new behavioral features and improved prediction RMSE by 5.8% (statsmodels
+    & sklearn & keras). Developed a stock market portfolio recommender model using
+    cluster analysis and association rule mining (R & SQL).
+  duration: 59.0
+  education_heuristic: 0.0
+  experience_heuristic: 0.0
+  fromDate: 09/2016
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - graduate research
+    - 1.0
+  - - machine learning
+    - 1.0
+  - - nltk & gensim
+    - 1.0
+  - - xgboost
+    - 1.0
+  - - random forest
+    - 1.0
+  - - poisson regression
+    - 1.0
+  - - rnn
+    - 1.0
+  - - python
+    - 1.0
+  - - 5.8%
+    - 1.0
+  - - statsmodels & sklearn & keras
+    - 1.0
+  location: Boston
+  raw_keywords:
+  - graduate research
+  - machine learning
+  - nltk & gensim
+  - xgboost
+  - random forest
+  - poisson regression
+  - rnn
+  - python
+  - 5.8%
+  - statsmodels & sklearn & keras
+  score: 0.30150173466172203
+  time_since: 16.0
+  title: Graduate Research Assistant
+  toDate: 08/2021
+- company: Babson College
+  contact_heuristic: 0.0
+  covered_keywords: []
+  description: Teaching courses in Quantitative Methods, Business Analytics, Data
+    Mining, and Statistical Learning
+  duration: 9.0
+  education_heuristic: 0.0
+  experience_heuristic: 0.0
+  fromDate: 08/2020
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - quantitative methods, business analytics
+    - 1.0
+  - - data mining
+    - 1.0
+  - - statistical learning
+    - 1.0
+  location: Wellesley
+  raw_keywords:
+  - quantitative methods, business analytics
+  - data mining
+  - statistical learning
+  score: 0.7624471602398873
+  time_since: 19.0
+  title: Quantitative Methods Fellow
+  toDate: 05/2021
+- company: Plymouth Rock Assurance
+  contact_heuristic: 0.0
+  covered_keywords:
+  - machine learning
+  - python
+  description: I was using the company's big data to build advanced analytical solutions
+    and Machine Learning models to improve the predictive performance of the risk
+    and pricing models. Improved performance of the XGBoost model for price & risk
+    prediction through feature engineering (Python, SAS). Decreased unmatched customer
+    records by 42% by performing entity resolution (Python, SQL, SAS)
+  duration: 6.0
+  education_heuristic: 0.0
+  experience_heuristic: 0.014
+  fromDate: 07/2020
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 1.0
+  keywords:
+  - - machine learning
+    - 1.0
+  - - python
+    - 1.0
+  - - sas
+    - 1.0
+  - - 42%
+    - 1.0
+  - - sql
+    - 1.0
+  location: Boston
+  raw_keywords:
+  - machine learning
+  - python
+  - sas
+  - 42%
+  - sql
+  score: 1.666
+  time_since: 23.0
+  title: Data Science Intern
+  toDate: 01/2021
+- company: Trigo
+  contact_heuristic: 0.0
+  covered_keywords: []
+  description: Used Keras and YOLO in embedded systems to do object recognition in
+    rounabouts. The results were sent to GCP where they where further analyzed with
+    high dimension classifiers.
+  duration: 5.0
+  education_heuristic: 0.0
+  experience_heuristic: 0.0
+  fromDate: 01/2013
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - yolo
+    - 1.0
+  - - gcp
+    - 1.0
+  location: Oslo
+  raw_keywords:
+  - yolo
+  - gcp
+  score: 0.8999999999999999
+  time_since: 115.0
+  title: Master Thesis Writer
+  toDate: 06/2013
+projects:
+- contact_heuristic: 0.0
+  covered_keywords: []
+  description: ''
+  education_heuristic: 0.0
+  experience_heuristic: 0.0
+  fromDate: 05/2021
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - suppliers learning
+    - 1.0
+  raw_keywords:
+  - suppliers learning
+  score: 0.6943241382695337
+  title: 'Suppliers Learning: Aggregate and Individual Levels'
+  toDate: 01/2022
+- contact_heuristic: 0.0
+  covered_keywords: []
+  description: ""
+  education_heuristic: 0.0
+  experience_heuristic: 0.0
+  fromDate: 05/2021
+  interest_heuristic: 0.0
+  keyword_cover_heuristic: 0.0
+  keywords:
+  - - ai
+    - 1.0
+  raw_keywords:
+  - ai
+  score: 0.43
+  title: Role of interaction quality and trust in use of AI-based voice-assistant
+    systems
+  toDate: 01/2022

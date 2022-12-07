@@ -1,0 +1,242 @@
+{
+    "title": "Data Scientist",
+    "contactInfo":
+        {
+            "address": "",
+            "website": "https://smritimishrain.wordpress.com",
+            "linkedin": "www.linkedin.com/in/smritimishra",
+            "name": "Smriti Mishra",
+            "phoneNumber": "0701567423",
+            "email": "smritimishra@gmail.com",
+            "github": "",
+            "birthday": "1988-12-12",
+            "family": ""
+        },
+    "summary": "Background in artificial intelligence, machine learning, technology, computer vision, computational neuroscience, product management, startups, entrepreneurship and tech/career mentorship. I am passionate about finding patterns and making predictions from empirical data that not only revolutionize the day-to-day work process but also help humanity overcome its most critical challenges such as climate change, healthcare challenges and the problem of lack of diversity and inclusion within technology.I will soon be joining Adage AB as a consultant where I will work on data science and data engineering projects to help companies with their data and analytics transformation. Previously, I worked as the head of AI at Earthbanc where she was advocating for innovation in the fight against Climate Change using her knowledge of tech and AI. I worked on creating a dynamic, reliable and accessible Carbon Monitoring, Reporting and Verification (MRV) model which would help make the MRV service accessible to landowners with a small area of land (patent-pending). My ultimate vision is to create an inclusive international AI community that extends access to knowledge and resources to more diverse groups such as women, the LGBTQ+ community and the youth, and I am working on numerous projects and initiatives to further this vision.",
+    "experience": [
+        {
+            "company": "Google",
+            "title": "Startup Mentor",
+            "location": "Stockholm, Sweden",
+            "fromDate": "October 2022",
+            "toDate": "Present",
+            "description": "I am a mentor at Google’s Accelerator Mentor community."
+        },
+        {
+            "company": "AI4Diversity",
+            "title": "Director",
+            "location": "Stockholm, Sweden",
+            "fromDate": "December 2021",
+            "toDate": "Present",
+            "description": "- I am a Director at AI4Diversity Sweden. - AI4Diversity is the fastest-growing nonprofit global initiative that engages and educates diverse communities about AI to benefit global society. - We believe AI makers need to be from diverse backgrounds to provide equal opportunities to everyone. - Our mission is to increase a more diverse representation and participation in AI. - We are a community-driven initiative bringing empowerment, knowledge, and active collaboration via education, research, events, and blogging."
+        },
+        {
+            "company": "Nova",
+            "title": "Nova Member",
+            "location": "Stockholm, Sweden",
+            "fromDate": "March 2022",
+            "toDate": "Present",
+            "description": "- Nova Talent is a global by-invitation talent network comprising the top 3% of talents in their fields from over 72+ countries. - Nova allows the world's most talented professionals and students to share, learn, and connect with forward-thinking businesses in order to find their dream employment. - All Nova members were chosen through a rigorous selection procedure that emphasised personal traits as well as professional and academic achievements."
+        },
+        {
+            "company": "KTH Royal Institute of Technology",
+            "title": "Applied AI and Data Science Researcher",
+            "location": "Stockholm, Sweden",
+            "fromDate": "April 2022",
+            "toDate": "July 2022",
+            "description": "- Analyzing climate change adaptation and sustainable development using AI. - Developing AI-driven systems for carbon sequestration measurement. Creating innovative AI-driven carbon reduction systems to enable true reduction activities and to achieve the net-zero carbon goal. - Analyzing the change in forest carbon and its correlation with different types of forestry techniques. - Performing ecological assessments for climate neutrality goals for several different sectors including agriculture and forestry, energy, biotechnology, and water ecosystems."
+        },
+        {
+            "company": "Earthbanc",
+            "title": "Head of Artificial Intelligence",
+            "location": "Stockholm, Sweden",
+            "fromDate": "August 2020",
+            "toDate": "April 2022",
+            "description": "- Earthbanc is the world's first Carbon & ESG Reporting provider, that delivers Sustainable Finance AI advisory products and services to banks, financial institutions and asset managers, with a high degree of confidence propagation with bayesian neural networks. - As the head of Artificial Intelligence at Earthbanc, my roles include implementing Artificial Intelligence and Machine Learning techniques for remote sensing for verification of carbon sequestration. - I work with data collection using GIS (Geographical Information Systems), data pre-processing and building & testing of predictive model using AI and ML algorithms. - Also working towards Sustainable Development Goals (SDGs) such as climate change, no poverty, gender equality, zero hunger, decent work and economic growth, reduced inequalities and life on land."
+        },
+        {
+            "company": "Google Developers",
+            "title": "Technology and Career Mentor",
+            "location": "Stockholm, Sweden",
+            "fromDate": "February 2022",
+            "toDate": "March 2022 ",
+            "description": "- A technology/career mentor at the Women Developer Academy Europe. - The goal is to equip women in tech with the skills, resources and support they need to become leaders in the industry through public speaking and other community contributions."
+        },
+        {
+            "company": "Katalysen & Partners",
+            "title": "Data Scientist",
+            "location": "Stockholm, Sweden",
+            "fromDate": "October 2020",
+            "toDate": "February 2021",
+            "description": "- Building a deep learning model employing Convolutional Neural Network (CNN) to predict clinical outcomes after shoulder arthroplastery. - The model employs minimal dataset and minimum number of features. - This model aims to predict the red flags (when the operation should not be performed), which equates to the progress being lesser than the MCD."
+        },
+        {
+            "company": "KTH Royal Institute of Technology",
+            "title": "Artificial Intelligence Researcher",
+            "location": "Stockholm, Sweden",
+            "fromDate": "August 2019",
+            "toDate": "June 2020",
+            "description": "- Implemented Bayesian Confidence Propagation Neural Network (BCPNN) & sequence learning in a non-spiking attractor neural network. - Analysed the behaviour of non-orthogonal sequences as well as implemented representation and sequential overlapping on the BCPNN model. - Presented that the proposed network model will be able to encode and reproduce temporal aspects of the input, and offers internal control of the recall dynamics by gain modulation."
+        },
+        {
+            "company": "KTH Royal Institute of Technology",
+            "title": "Visiting Researcher (Bachelor's Thesis)",
+            "location":"Stockholm, Sweden",
+            "fromDate": "January 2019",
+            "toDate": "April 2019",
+            "description": "- Bachelor's Thesis between KTH Royal Institute of Technology and PES University on Computational Neuroscience using BCPNN algorithm. - Studied how we process thoughts in the brain and why people lose memory in diseases like Amnesia and Dementia. - Studied and analysed overlapping sequences in the brain."
+        },
+        {
+            "company": "Indian Institute of Science (IISc)",
+            "title": "Summer Research Intern",
+            "location":"Bengaluru Area, India",
+            "fromDate": "June 2018",
+            "toDate": "August 2018",
+            "description": "- Worked on implementation of Non-Thermal Plasma in Environmental Remediation by performingNOxTreatment. - Studied and analysed different types of electric discharges."
+        },
+        {
+            "company": "ISRO - Indian Space Research Organization",
+            "title": "Summer Research Intern",
+            "location":"Bengaluru Area, India",
+            "fromDate": "May 2017",
+            "toDate": "August 2017",
+            "description": "- Internship between PES University and Indian Space Research Organisation. - Was involved in the lauch of one of the first all student satellites in India. - Worked on the attitude determination and the control system (ADCS) of the of PISAT satellite andimplemented Q-method, QUEST and TRIAD algorithms for 3-axis attitude determination. - Worked on statistical analysis in open loop condition."
+        }
+    ],
+    "education": [
+        {
+            "institution": "PES University",
+            "location":"Bengaluru Area, India",
+            "title": "Bachelor of Technology - BTech, Electronics and Communications",
+            "fromDate": "2015",
+            "toDate": "2019",
+            "description": ""
+        }   
+        ],
+    "interests": [
+            "Social Media",
+            "Spreading knowledge"
+        ],
+    "accomplishments": [
+        {
+                "title": "Honoured as an AI Expert at Big Innovation Centre",
+                "fromDate": "",
+                "toDate": "",
+                "description": ""
+        },{
+                "title": "Interview with Smriti Mishra, Head of AI at Earthbanc",
+                "fromDate": "",
+                "toDate": "",
+                "description": ""
+        },{
+                "title": "Best Product at ROCKIT Vilnius Impact Accelerator",
+                "fromDate": "",
+                "toDate": "",
+                "description": ""
+        },{
+                "title": "Overall Winner at Mastercard Lighthouse",
+                "fromDate": "",
+                "toDate": "",
+                "description": ""
+        },{
+                "title": "Nordic Women in Tech Awards Finalist",
+                "fromDate": "",
+                "toDate": "",
+                "description": ""
+        }
+    ],
+    "languages": [
+        {
+                "name": "Hindi",
+                "proficiency": 5
+        },
+        {
+                "name": "English",
+                "proficiency": 5
+        }
+    ],
+    "projects": [
+        {
+                "title": "The Consciousness of AI",
+                "fromDate": "",
+                "toDate": "",
+                "description": ""
+        },
+        {
+                "title": "In-Orbit Performance of PISAT Detumbling and Advanced B-Dot Implementation to Tackle Challenges in Active Detumbling Magnetic Control System of Nanosatellites",
+                "fromDate": "",
+                "toDate": "",
+                "description": ""
+        },{
+                "title": "How AI can help understand our minds",
+                "fromDate": "",
+                "toDate": "",
+                "description": ""
+        }
+    ],
+    "softSkills": [
+        {
+                "name": "Public Speaking",
+                "proficiency": 5
+        },
+        {
+                "name": "Negotiation",
+                "proficiency": 4
+        }
+        ],
+    "hardSkills": [
+        {
+                "name": "Natural Language Processing",
+                "proficiency": 5
+        },
+        {
+                "name": "Machine Learning",
+                "proficiency": 5
+        },
+        {
+                "name": "Scrum",
+                "proficiency": 3
+        },
+        {
+                "name": "Linux",
+                "proficiency": 2
+        }
+        ],  
+    "certifications": [
+        {
+            "title": "Genome Assembly Programming Challenge",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Fundamentals of Reinforcement Learning",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Robotics",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Deep Learning Specialization",
+            "level": "",
+            "description": "",
+            "date": ""
+        },
+        {
+            "title": "Mentor Development Program",
+            "level": "",
+            "description": "",
+            "date": ""
+        }
+        ],
+    "patents": [
+        "System And Method For Measuring Carbon Sequestration"
+        ],
+    "extracurriculars": [
+        ]
+}
