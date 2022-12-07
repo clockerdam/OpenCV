@@ -1,3 +1,0 @@
-PyLaTeX
-PyYAML
-invoke

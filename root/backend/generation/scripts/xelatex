@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# This script is a wrapper around a custom texlive docker image so that I
-# can use a specific proven latex distribution that's been shown to work
-# with no formatting issues.
-
-docker run -i --rm -v $PWD/latex:/mnt/system joeblackwaslike/texlive:2016 xelatex "$@"

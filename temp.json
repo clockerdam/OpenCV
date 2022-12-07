@@ -1,0 +1,298 @@
+{
+    "_id": "hejhej123",
+    "accomplishments": {
+        "label": 0,
+        "value": []
+    },
+    "certifications": {
+        "label": 0,
+        "value": [
+            {
+                "label": 1.27,
+                "value": {
+                    "date": "",
+                    "description": "",
+                    "level": "",
+                    "title": "Neural Networks and Deep Learning"
+                }
+            },
+            {
+                "label": 0.4563792055649673,
+                "value": {
+                    "date": "",
+                    "description": "",
+                    "level": "",
+                    "title": "Triplebyte Certified Data Scientist"
+                }
+            }
+        ]
+    },
+    "contactInfo": {
+        "address": "Chicago, IL",
+        "birthday": "24 December 1985",
+        "email": "monica@music.co.kr",
+        "family": "5 kids, divorced",
+        "github": "monicamusic123",
+        "linkedin": "linkedin.com/in/me123",
+        "name": "Monica Music",
+        "phoneNumber": "01012345",
+        "website": "my-website.com"
+    },
+    "education": {
+        "label": 0,
+        "value": [
+            {
+                "label": 0.1921123912924304,
+                "value": {
+                    "description": "",
+                    "fromDate": "2016",
+                    "institution": "University of Massachusetts Boston",
+                    "location": "Boston",
+                    "title": "Doctor of Philosophy (Ph.D.), Information Systems for Data Science (STEM)",
+                    "toDate": "2021"
+                }
+            },
+            {
+                "label": 0.2729493666221522,
+                "value": {
+                    "description": "",
+                    "fromDate": "2005",
+                    "institution": "Sharif University of Technology",
+                    "location": "Sharif",
+                    "title": "Bachelor of Science - BS, Mechanical Engineering",
+                    "toDate": "2009"
+                }
+            }
+        ]
+    },
+    "experience": {
+        "label": 0,
+        "value": [
+            {
+                "label": 1.0,
+                "value": {
+                    "company": "Apple",
+                    "description": "",
+                    "fromDate": "June 2022",
+                    "location": "San Francisco",
+                    "title": "Data Scientist",
+                    "toDate": "Present"
+                }
+            },
+            {
+                "label": 0.32152466745014485,
+                "value": {
+                    "company": "iRobot",
+                    "description": "Developing data mining solutions to create practical insights for optimizing Direct-to-Customer plans and activities. Improving product quality by analyzing customer and product data to identify issues and improvement areas. Built a 52% more accurate demand and sales forecasting model through better model selection and feature engineering. Producing dashboards and Decision Support Systems to help stakeholders in data-driven decision-making",
+                    "fromDate": "August 2021",
+                    "location": "Boston",
+                    "title": "Data Scientist",
+                    "toDate": "May 2022"
+                }
+            },
+            {
+                "label": 0.30150173466172203,
+                "value": {
+                    "company": "UMass Boston College of Management",
+                    "description": "In my research, I design experiments, conduct exploratory data analysis, apply statistical methods, and develop Machine Learning models to study human behaviors and to produce results with practical insights of value in a business context. Built an ML pipeline to predict online review effectiveness through personalization and feature engineering with NLP (Python). Applied NLP to extract new features through sentiment analysis and topic modeling (NLTK & Gensim). Developed XGBoost, Random Forest, and Poisson Regression (log-linear) models to predict customers decision. Developed and enhanced time series and RNN models of sequential human decisions through behavioral modeling (Python). Built and tuned ARIMA and LSTM models using new behavioral features and improved prediction RMSE by 5.8% (statsmodels & sklearn & keras). Developed a stock market portfolio recommender model using cluster analysis and association rule mining (R & SQL).",
+                    "fromDate": "September 2016",
+                    "location": "Boston",
+                    "title": "Graduate Research Assistant",
+                    "toDate": "August 2021"
+                }
+            },
+            {
+                "label": 0.7624471602398875,
+                "value": {
+                    "company": "Babson College",
+                    "description": "Teaching courses in Quantitative Methods, Business Analytics, Data Mining, and Statistical Learning",
+                    "fromDate": "August 2020",
+                    "location": "Wellesley",
+                    "title": "Quantitative Methods Fellow",
+                    "toDate": "May 2021"
+                }
+            },
+            {
+                "label": 0.6519999999999999,
+                "value": {
+                    "company": "Plymouth Rock Assurance",
+                    "description": "I was using the company's big data to build advanced analytical solutions and Machine Learning models to improve the predictive performance of the risk and pricing models. Improved performance of the XGBoost model for price & risk prediction through feature engineering (Python, SAS). Decreased unmatched customer records by 42% by performing entity resolution (Python, SQL, SAS)",
+                    "fromDate": "July 2020",
+                    "location": "Boston",
+                    "title": "Data Science Intern",
+                    "toDate": "January 2021"
+                }
+            },
+            {
+                "label": 0.8999999999999999,
+                "value": {
+                    "company": "Trigo",
+                    "description": "Used Keras and YOLO in embedded systems to do object recognition in rounabouts. The results were sent to GCP where they where further analyzed with high dimension classifiers.",
+                    "fromDate": "January 2013",
+                    "location": "Oslo",
+                    "title": "Master Thesis Writer",
+                    "toDate": "June 2013"
+                }
+            }
+        ]
+    },
+    "extracurriculars": {
+        "label": 0,
+        "value": []
+    },
+    "hardSkills": {
+        "label": 0,
+        "value": []
+    },
+    "interests": {
+        "label": 0,
+        "value": []
+    },
+    "languages": {
+        "label": 0,
+        "value": []
+    },
+    "patents": {
+        "label": 0,
+        "value": []
+    },
+    "projects": {
+        "label": 0,
+        "value": [
+            {
+                "label": 0.6943241382695339,
+                "value": {
+                    "description": "",
+                    "fromDate": "2021-05-20",
+                    "title": "Suppliers Learning: Aggregate and Individual Levels",
+                    "toDate": "2022-01-01"
+                }
+            },
+            {
+                "label": 0.43,
+                "value": {
+                    "description": "",
+                    "fromDate": "2021-05-20",
+                    "title": "Role of interaction quality and trust in use of AI-based voice-assistant systems",
+                    "toDate": "2022-01-01"
+                }
+            }
+        ]
+    },
+    "softSkills": {
+        "label": 0,
+        "value": []
+    },
+    "stats": {
+        "all_original_keywords": [
+            "data mining",
+            "statistical learning",
+            "bi",
+            "the interaction and trust",
+            "physics",
+            "data scientist",
+            "poisson regression",
+            "suppliers learning",
+            "42%",
+            "machine learning",
+            "statistical inference",
+            "bachelor of science - bs",
+            "random forest",
+            "ai-based voice assistant systems:",
+            "rnn",
+            "sas",
+            "monica music",
+            "# 56",
+            "more than five years",
+            "xgboost",
+            "second",
+            "mathematics discipline",
+            "data scientist developing",
+            "decision support systems",
+            "5.8%",
+            "national entrance exam of universities",
+            "python",
+            "sql",
+            "english",
+            "persian",
+            "customer relationship management",
+            "ai",
+            "stem",
+            "sql & r",
+            "erp",
+            "nltk & gensim",
+            "quantitative methods, business analytics",
+            "mechanical engineering",
+            "diploma",
+            "information systems for",
+            "triplebyte certified data scientist",
+            "statsmodels & sklearn & keras",
+            "yolo",
+            "deep learning",
+            "gcp",
+            "approximately 450,000",
+            "graduate research",
+            "dean's fellowship award for phd program"
+        ],
+        "included_keywords": [
+            "deep learning",
+            "machine learning",
+            "python"
+        ],
+        "missing_keywords": [
+            "tensorflow"
+        ],
+        "removed_keywords": [
+            "data mining",
+            "statistical learning",
+            "bi",
+            "the interaction and trust",
+            "physics",
+            "data scientist",
+            "poisson regression",
+            "suppliers learning",
+            "42%",
+            "statistical inference",
+            "bachelor of science - bs",
+            "random forest",
+            "ai-based voice assistant systems:",
+            "rnn",
+            "sas",
+            "monica music",
+            "# 56",
+            "more than five years",
+            "xgboost",
+            "second",
+            "mathematics discipline",
+            "data scientist developing",
+            "decision support systems",
+            "5.8%",
+            "national entrance exam of universities",
+            "sql",
+            "english",
+            "persian",
+            "customer relationship management",
+            "ai",
+            "stem",
+            "sql & r",
+            "erp",
+            "nltk & gensim",
+            "quantitative methods, business analytics",
+            "mechanical engineering",
+            "diploma",
+            "information systems for",
+            "triplebyte certified data scientist",
+            "statsmodels & sklearn & keras",
+            "yolo",
+            "gcp",
+            "approximately 450,000",
+            "graduate research",
+            "dean's fellowship award for phd program"
+        ]
+    },
+    "summary": {
+        "label": 0.26940578982065133,
+        "value": "With a Ph.D. in data science and more than five years of working in data science and analytical roles, I have significant experience in creating actionable insights and data-driven solutions through research, experimentation, data analysis, and developing advanced analytical and machine learning models. I collaborated with different teams and managed cross- functional projects to provide innovative solutions to challenging problems and advise executives on operations, product, marketing, and customer experience strategies."
+    },
+    "title": "Data Scientist"
+}
