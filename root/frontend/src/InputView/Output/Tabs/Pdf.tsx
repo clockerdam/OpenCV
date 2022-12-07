@@ -1,5 +1,4 @@
-import { useContext, useEffect, useState } from 'react';
-import { getPdfData } from '../../../api/api';
+import { useContext, } from 'react';
 import cvContext from '../../../cvContext';
 import './tabs.css'
 
