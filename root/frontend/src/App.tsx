@@ -4,18 +4,24 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import { Home } from './Home/Home';
+import  Home from './HomePage/components/Hometext';
 import { CV } from './CV/CV';
 import { useState } from 'react';
 import cvContext from './cvContext';
 import { Output } from './InputView/Output/Output';
 import Navbar from './HomePage/components/Navbar';
+import Footer from './HomePage/components/Footer';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home></Home>,
-    errorElement: <p>Page not found.</p>
+    element:
+    <>
+    <Navbar />
+     <Home></Home>
+     <Footer/>
+     </>
+    
   },
   {
     path: "/label",
@@ -27,7 +33,7 @@ const router = createBrowserRouter([
       <Navbar />
         <Output/>
       <Footer/>
-    </>,
+    </>
   },
 ]);
 

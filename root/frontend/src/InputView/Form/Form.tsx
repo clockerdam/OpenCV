@@ -50,10 +50,6 @@ function Form() {
     const ref = useRef();
    
     return <form onSubmit={handleSubmit}>
-<<<<<<< HEAD:root/frontend/src/InputView/Form/Form.tsx
-        <div>
-            <button onSubmit={(e) => handleSubmit(e)}>Submit</button>
-=======
        
         <div className="toptext"> Fill in the fields below. Nothings is mandatory but the more information you provide
          us the better your resume will be. After you completed the form, you can click on "Go to profile" to visit your profile page.</div>
@@ -64,10 +60,9 @@ function Form() {
                     name="title"
                     placeholder="Title"
                     value={cv.title}
-                    onChange={(e) => setCV(prevState => ({ ...prevState, title: e.target.value}))}
+                    onChange={(e) => setCV((prevState: any)=> ({ ...prevState, title: e.target.value}))}
                 />
             </label>
->>>>>>> 7cd7cde (styling frontend):root/frontend/src/Form/Form.tsx
             <label>
                 <p>Summary</p>
                 <input 
@@ -489,16 +484,11 @@ function Form() {
                 <button className="buttonForm" onClick={() => add(Field.Extracurriculars)}>Add extracurricular</button>
             </label>
         </div>
-<<<<<<< HEAD
-<<<<<<< HEAD:root/frontend/src/InputView/Form/Form.tsx
-        {/* <button onSubmit={(e) => handleSubmit(e)}>Submit</button> */}
-=======
-        <button  className="buttonForm" onSubmit={(e) => handleSubmit(e)}>Submit</button>
->>>>>>> 7cd7cde (styling frontend):root/frontend/src/Form/Form.tsx
-=======
+
+
         <button  className="buttonForm_submit" onSubmit={(e) => handleSubmit(e)}>Submit</button>
         
->>>>>>> 615b8e7 (styling frontend)
+
     </form>
             
 

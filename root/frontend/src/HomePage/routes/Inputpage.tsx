@@ -1,8 +1,8 @@
 import Navbar from '../components/Navbar'
 import React  from 'react';
 
-import Footer from '../components/footer';
-import { Form } from '../../Form/Form';
+import Footer from '../components/Footer';
+import { Form } from '../../InputView/Form/Form';
 function Home(){
     return (
         <>

@@ -1,5 +1,5 @@
 import './footer.css';
-function footer(){
+function Footer(){
     return(
     <>
     <body>
@@ -20,4 +20,4 @@ function footer(){
     </>
     )
 }
-export default footer;
+export default Footer;
