@@ -10,6 +10,7 @@ function Job() {
 
   function analyzeCV() {
     console.log(cv)
+    setLoading("loading")
     getAnalysis(JSON.stringify(cv)).then((analyzedCV: CV) => {
 
       console.log(analyzedCV);
@@ -26,26 +27,26 @@ function Job() {
     });
   }
 
-    return <div className="jobcontainer">
+  return <div className="jobcontainer">
 
-        <div className="Template_job">
-        <p className="jd">Input the job title and description below.</p>
-        <input
-            name="title"
-            placeholder="Input the job title"
-            value={cv.title}
-            onChange={(e) => setCV((prevState: CV) => ({ ...prevState, title: e.target.value}))}
-        />
-        
-        <textarea
+    <div className="Template_job">
+      <p className="jd">Input the job title and description below.</p>
+      <input
+        name="title"
+        placeholder="Input the job title"
+        value={cv.title}
+        onChange={(e) => setCV((prevState: CV) => ({ ...prevState, title: e.target.value }))}
+      />
+
+      <textarea
         className="textArea" name="description" placeholder="Input the job description" value={cv.description}
-        onChange={(e) => setCV((prevState: CV) => ({ ...prevState, description: e.target.value}))}>
-        </textarea>
-  
-        </div>
-        <button className= "job_button" onClick={() => analyzeCV()}>Analyze CV</button>
-        <p className="finaltext"> press the button "Analyze CV" to get your resume tailored to the job description.</p>
-        </div>
+        onChange={(e) => setCV((prevState: CV) => ({ ...prevState, description: e.target.value }))}>
+      </textarea>
+
+    </div>
+    <button className="job_button" onClick={() => analyzeCV()}>Analyze CV</button>
+    <p className="finaltext"> press the button "Analyze CV" to get your resume tailored to the job description.</p>
+  </div>
 
 }
 

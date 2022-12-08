@@ -16,11 +16,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element:
-      <>
-        <Navbar />
-        <Home></Home>
-        <Footer />
-      </>
+      <Home></Home>
 
   },
   {
@@ -30,9 +26,7 @@ const router = createBrowserRouter([
   {
     path: "/improve",
     element: <>
-      <Navbar />
       <Output />
-      <Footer />
     </>
   },
 ]);
@@ -40,11 +34,15 @@ const router = createBrowserRouter([
 function App() {
   const [cv, setCV] = useState(new CV())
   const [analyzedCV, setAnalyzedCV] = useState(new CV())
-  const [loading, setLoading] = useState("loading")
+  const [loading, setLoading] = useState("not_started")
   const [pdfData, setPdfData] = useState("")
 
   return <cvContext.Provider value={{ cv, setCV, analyzedCV, setAnalyzedCV, loading, setLoading, pdfData, setPdfData }}>
-    <RouterProvider router={router} />
+    <div >
+      <Navbar />
+      <RouterProvider router={router} />
+      <Footer />
+    </div>
   </cvContext.Provider>
 }
 

@@ -21,10 +21,17 @@
 }
 
 
+#pdf-viewer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
 .FirstTab{
-    margin-top: 5%;
-    align-items: center;
-    margin-left: 15%;
+    /* margin-top: 5%; */
+    /* align-items: center; */
+    /* margin-left: 15%; */
+  padding: 10px;
     
 }
 object.First{

@@ -10,7 +10,7 @@ import cvContext from "../../cvContext";
 
 function Output() {
   const [activeTab, setActiveTab] = useState("tab1");
-  const { loading } = useContext(cvContext)
+  const { loading, analyzedCV } = useContext(cvContext)
 
   //  Functions to handle Tab Switching
   const handleTab1 = () => {
@@ -24,50 +24,59 @@ function Output() {
 
   return (
 
-    <div>
+    <div >
       <div className="split left">
         <Job />
         <Profile />
       </div>
       <div className="split right">
-        
-          <div className="Tabs">
-            <ul className="nav">
-              <li
-                className={activeTab === "tab1" ? "active" : ""}
-                onClick={handleTab1}
-              >
-                Difference
-              </li>
-              <li
-                className={activeTab === "tab2" ? "active" : ""}
-                onClick={handleTab2}
-              >
-                PDF
-              </li>
-            </ul>
-            <div className="outlet">
 
-              {
-                loading === "loading" ?
-                  <div
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      display: "flex",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                  >
-                    <MoonLoader color="#36d7b7" />
-                  </div>
-                  :
-                  <>{activeTab === "tab1" ? <Diff /> : <Pdf />}</>
-              }
+        <div className="Tabs">
+          <ul className="nav">
+            <li
+              className={activeTab === "tab1" ? "active" : ""}
+              onClick={handleTab1}
+            >
+              Difference
+            </li>
+            <li
+              className={activeTab === "tab2" ? "active" : ""}
+              onClick={handleTab2}
+            >
+              PDF
+            </li>
+          </ul>
+          <div className="outlet">
+            {
+              loading === "not_started" ?
+                "Start analyzing to see your result here"
+                :
 
-            </div>
+                <>
+
+                  {
+                    loading === "loading" ?
+                      <div
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <MoonLoader color="#36d7b7" />
+                      </div>
+                      :
+                      <>{activeTab === "tab1" ? <Diff /> : <Pdf />}</>
+                  }
+                </>
+
+            }
+
           </div>
-        
+        </div>
+
       </div>
     </div>
   );

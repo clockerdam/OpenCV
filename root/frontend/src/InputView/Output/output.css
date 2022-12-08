@@ -6,17 +6,26 @@
 
 .Tabs {
     /* width: 80%; */
-    height: auto;
-    min-height: 400px;
+    height: 100%;
     background:white;
+    display: flex;
+    flex-direction: column;
     /* margin: 3.5rem auto 1.5rem; */
-    padding: 2rem 1rem;
+    padding: 1em;
+  padding-bottom: 10%;
     /* color: #E8F0F2; */
    
     @media (max-width: 769px) {
         padding: 2rem 0;
     }
 }  
+
+.outlet {
+  flex-grow: 1;
+  padding-bottom: 5px;
+  overflow: scroll;
+  height: 100%;
+}
 
 ul.nav {
   width: 100%;
@@ -25,6 +34,7 @@ ul.nav {
   border: 1px solid grey ;
   border-radius: 5px;
   padding-left: 0px;
+  margin: 5px 0;
   @media (max-width: 768px) {
     width: 90%;
   
@@ -108,9 +118,10 @@ p.item{
 
 /* Control the left side */
 .left {
-  margin-top: 5%;
+  /* margin-top: 5%; */
   border-right: 2px solid #2d68fe94 ;
   background-color:white;
+  max-height: 95%;
   
 }
 
