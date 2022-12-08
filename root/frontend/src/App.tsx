@@ -4,24 +4,24 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import  Home from './HomePage/components/Hometext';
+import Home from './HomePage/components/Hometext';
 import { CV } from './CV/CV';
 import { useState } from 'react';
 import cvContext from './cvContext';
 import { Output } from './InputView/Output/Output';
 import Navbar from './HomePage/components/Navbar';
-import Footer from './HomePage/components/Footer';
+import Footer from './HomePage/components/footer';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element:
-    <>
-    <Navbar />
-     <Home></Home>
-     <Footer/>
-     </>
-    
+      <>
+        <Navbar />
+        <Home></Home>
+        <Footer />
+      </>
+
   },
   {
     path: "/label",
@@ -31,8 +31,8 @@ const router = createBrowserRouter([
     path: "/improve",
     element: <>
       <Navbar />
-        <Output/>
-      <Footer/>
+      <Output />
+      <Footer />
     </>
   },
 ]);
