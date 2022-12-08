@@ -10,7 +10,7 @@ import cvContext from "../../cvContext";
 
 function Output() {
   const [activeTab, setActiveTab] = useState("tab1");
-  const { loading, analyzedCV } = useContext(cvContext)
+  const { loading } = useContext(cvContext)
 
   //  Functions to handle Tab Switching
   const handleTab1 = () => {
