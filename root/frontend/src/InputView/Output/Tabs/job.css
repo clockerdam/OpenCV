@@ -1,0 +1,67 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hiddden;
+}
+.Template_job {
+   
+    z-index: 1;
+    
+    background-color: white;
+    margin-bottom: 10%;
+    @media (max-width: 769px) {
+        padding: 2rem 0;
+    }
+    
+} 
+
+.textArea {
+    
+    display: inline-block;
+    float:left;
+    height: 225px;
+    width: 600px;
+    resize: none;
+    margin-bottom: 0%;
+    
+
+    }
+    
+.textArea::placeholder {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+       
+    }
+.job_button{
+        border-radius: 0.6rem;
+        padding: 0.7rem 1rem;;
+        border:none;
+        cursor: pointer;
+        background-color:#2D68FE ;
+        color:white;
+        margin-left:2%;
+        font-size: 14px;
+        margin-bottom: 2%;
+        margin-top: -15%;
+    }
+
+p.jd{
+    margin-top: 2%;
+    width: 100%;
+    border-bottom: 0px;
+    
+}
+.jobcontainer{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.414);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    max-height: 60%;
+    
+}
+p.finaltext{
+    width: 90%;
+    border-bottom: 0px;
+    margin-bottom: 10%;
+}

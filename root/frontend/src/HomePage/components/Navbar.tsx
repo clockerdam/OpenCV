@@ -7,7 +7,8 @@ class Navbar extends Component{
         return(
             <nav className="NavbarItems">
                 
-                <h1 className="Navbarlogo"> <img src={logo}></img> <a>OpenCV </a></h1>
+                <h1 className="Navbarlogo"> <img src={logo}></img> </h1>
+                <h1 className="naam">OpenCV</h1>
                 <ul className="Navmenu">
                     {MenuItems.map((item,index)=>{
                         return(

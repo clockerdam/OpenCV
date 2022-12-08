@@ -17,7 +17,7 @@ function Pdf() {
       {/* <embed src="CV.pdf" width="100%" height="600px" /> */}
       {pdfData !== "" &&
         <>
-          <object style={{ width: "100%" }} data={pdfData} type="application/pdf" width="500px" height="1000px">
+          <object style={{ width: "100%" }} data={pdfData} type="application/pdf" width="500px" height="800px">
             The object tag is not supported in your browser
           </object>
         </>

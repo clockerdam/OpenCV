@@ -1,0 +1,61 @@
+.gotoprofile{
+    border-radius: 0.6rem;
+    padding: 0.7rem 1rem;
+    border:none;
+    cursor: pointer;
+    background-color:#2D68FE ;
+    color:white;
+    margin-top: 0%;
+    margin-left:2%;
+
+}
+
+
+.profile_top_button{
+    border-radius: 0.6rem;
+    padding: 0.7rem 1rem;
+    border:none;
+    cursor: pointer;
+    background-color:#2D68FE ;
+    color:white;
+    margin-top: 0%;
+    margin-left:2%;
+
+}
+.Template_profile{
+    
+
+    
+}
+
+.gotoprofile{
+    font-size: 14px;
+    margin-left: 4%;
+    border-radius: 0.6rem;
+    padding: 0.7rem 1rem;
+    border:none;
+    cursor: pointer;
+    background-color:#2D68FE ;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+p.item{
+    width:100%;
+    border-bottom: none;
+    font-size: 16px;
+    
+}
+h2.item{
+    font-weight: bold;
+}
+.section{
+    border-radius: 5px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.keywords{
+    margin-left:2%;
+    border-radius: 5px;
+    margin-right:2%;
+}

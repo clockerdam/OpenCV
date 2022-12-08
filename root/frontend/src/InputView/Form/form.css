@@ -5,17 +5,18 @@
 textarea{
     resize: none;
     max-width: 80%;
-    margin-left: 3%;
+    margin-left: 2%;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid #CCCCCC;
 }
 .toptext{
-    margin-top: 8%;
+    margin-top: 5%;
     text-align: left;
     margin-bottom: 0%;
-    max-width: 40%;
-    margin-left: 2%;
+    max-width: 90%;
+    margin-left: 4%;
+    
 }
 .container{
     margin-top: 4%;
@@ -24,8 +25,8 @@ label {
     
     margin-bottom: 1%;
     display: block;
-    margin-left: 2%;
-    max-width: 40%;
+    margin-left: 4%;
+    max-width: 100%;
 }
 
 input {
@@ -35,7 +36,7 @@ input {
     border: 1px solid #CCCCCC;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;  
-    margin-left: 3%; 
+    margin-left: 2%; 
     margin-top: 1%;    
     margin-bottom:3%;
     padding-top: 4px;
@@ -54,7 +55,7 @@ input {
     cursor: pointer;
     background-color:#2D68FE ;
     color:white;
-    margin-left:3%;
+    margin-left:2%;
     margin-top:1%;
     margin-bottom: 3%;
     font-size: 14px;
@@ -64,11 +65,31 @@ input {
     padding-bottom: 5px;
 }
 
+.buttonForm_submit{
+    border-radius: 0.4rem;
+    font-weight:600;
+    border:none;
+    cursor: pointer;
+    background-color:#2D68FE ;
+    color:white;
+    margin-right: 5%;
+    margin-top:3%;
+    margin-bottom: 20%;
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 20%;
+    text-align: center;
+    float: right;
+}
+
 p{
     border-bottom: 1px solid rgba(45, 104, 254, 0.899);
     padding-bottom: 5px;
     width: 32%;
-    margin-left: 3%;
+    margin-left: 2%;
     
 }
 

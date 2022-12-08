@@ -9,7 +9,7 @@ function footer(){
     <div className='OpenCV'> OpenCV
     </div>
     <div className='tekst'>
-    <p className='tekstpara'>About   Contact   Blog   Home Terms    Legal   Privacy</p>
+    About   Contact   Blog   Home Terms    Legal   Privacy
         
     </div>
    

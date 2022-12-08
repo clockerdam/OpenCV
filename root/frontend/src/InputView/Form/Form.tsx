@@ -56,7 +56,7 @@ function Form() {
 =======
        
         <div className="toptext"> Fill in the fields below. Nothings is mandatory but the more information you provide
-         us the better your resume will be.</div>
+         us the better your resume will be. After you completed the form, you can click on "Go to profile" to visit your profile page.</div>
         <div className="container">
             <label>
                 <p>Title</p>
@@ -489,11 +489,16 @@ function Form() {
                 <button className="buttonForm" onClick={() => add(Field.Extracurriculars)}>Add extracurricular</button>
             </label>
         </div>
+<<<<<<< HEAD
 <<<<<<< HEAD:root/frontend/src/InputView/Form/Form.tsx
         {/* <button onSubmit={(e) => handleSubmit(e)}>Submit</button> */}
 =======
         <button  className="buttonForm" onSubmit={(e) => handleSubmit(e)}>Submit</button>
 >>>>>>> 7cd7cde (styling frontend):root/frontend/src/Form/Form.tsx
+=======
+        <button  className="buttonForm_submit" onSubmit={(e) => handleSubmit(e)}>Submit</button>
+        
+>>>>>>> 615b8e7 (styling frontend)
     </form>
             
 

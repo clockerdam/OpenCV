@@ -1,15 +1,6 @@
-body{
-    z-index: 1;
-    margin-right: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
-   
-    width: 100%;
-}
+
 .footer-content{
-    
+    background-color: aqua;
     background-color:rgb(45, 104, 254);
     height: 150px;
     width: auto;
@@ -34,8 +25,5 @@ body{
     text-align: center;
     align-items: center;
     width: 100%;
-}
-.tekst .tekstpara{
-    width: 100%;
-    text-align: center;
+    
 }

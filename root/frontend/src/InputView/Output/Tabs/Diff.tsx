@@ -2,8 +2,8 @@ import { useContext } from "react";
 import './tabs.css'
 import { MoonLoader } from "react-spinners";
 import cvContext from "../../../cvContext";
-import { displaySummary, mapFields } from "../Displayer/displayer";
 
+import { displaySummary, mapFields } from "../Displayer/displayer";
 function Diff() {
   const {analyzedCV, loading} = useContext(cvContext);
 
@@ -30,10 +30,18 @@ function Diff() {
             <label>
               <h2>{analyzedCV.title}</h2>
             </label>
+            
             {displaySummary(analyzedCV)}
+            
+            <div className="score">
             {mapFields(excludedFields, analyzedCV, analyzedCV, true)}
+            </div>
           </>
         )}
+        <br></br>
+        <br></br>
+        <br></br>
+        
     </div>
   );
 }
