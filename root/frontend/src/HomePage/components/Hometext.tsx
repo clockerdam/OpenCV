@@ -50,14 +50,14 @@ function Hometext() {
           Download your resume.<br></br>
           Land the job you have always wanted.</li>
           <button className="smallbutton" onClick={() => navigate('/improve')}> Get started</button></div>
-        <div className="arrow1"><img src={arrow}></img></div>
-        <div className="keyboard"><img src={keyboard}></img></div>
-        <div className="arrow2"><img src={arrow}></img></div>
-        <div className="process"><img src={process}></img></div>
-        <div className="arrow3"><img src={arrow}></img></div>
-        <div className="download"><img src={download}></img></div>
-        <div className="arrow4"><img src={arrow}></img></div>
-        <div className="hired"><img src={hired}></img></div>
+        <div className="arrow1"><img alt="" src={arrow}></img></div>
+        <div className="keyboard"><img alt="" src={keyboard}></img></div>
+        <div className="arrow2"><img alt="" src={arrow}></img></div>
+        <div className="process"><img alt="" src={process}></img></div>
+        <div className="arrow3"><img alt="" src={arrow}></img></div>
+        <div className="download"><img alt="" src={download}></img></div>
+        <div className="arrow4"><img alt="" src={arrow}></img></div>
+        <div className="hired"><img alt="" src={hired}></img></div>
       </div>
 
     </>
