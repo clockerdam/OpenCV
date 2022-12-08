@@ -6,7 +6,7 @@ const cvContext = createContext({
   setCV: (cv: any) => { },
   analyzedCV: new CV(),
   setAnalyzedCV: (cv: any) => { },
-  loading: 'loading',
+  loading: 'not_started',
   setLoading: (loading: string) => { },
   pdfData: "",
   setPdfData: (pdfData: string) => { },

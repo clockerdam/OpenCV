@@ -54,29 +54,29 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
       return;
     }
 
-    // Map field values
-    return (
-      <div className="section" key={field}>
-        <h2 className="item">{field}</h2>
-        {cv[field].value.map((listItem, index) => {
-          return (
-            <div className="rating" key={index}>
-              <div className={color(analyzedCV, cv, field, index)}>
-                {Object.keys(listItem.value).map((key, index) => {
-                  return (
-                    <p key={index}>
-                      <b>{key}: </b> {Object.values(listItem.value)[index]}
-                    </p>
-                  );
-                })}
-              </div>
-              {showLabel(cv[field].value.map((item) => {return item.label}), listItem, field, output)}
+  // Map field values
+  return (
+    <div className="section" key={field}>
+      <h2 className="item">{field}</h2>
+      {cv[field].value.map((listItem, index) => {
+        return (
+          <div className="rating" key={index}>
+            <div className={color(analyzedCV, cv, field, index)}>
+              {Object.keys(listItem.value).map((key, index) => {
+                return (
+                  <p key={index}>
+                    <b>{key}: </b> {Object.values(listItem.value)[index]}
+                  </p>
+                );
+              })}
             </div>
-          );
-        })}
-      </div>
-    );
-  }
+            {showLabel(cv[field].value.map((item) => {return item.label}), listItem, field, output)}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
 
   function showLabel(labels: number[], item: LabelledString | LabelledItem | LabelledSkill | LabelledExperience | LabelledCertification | LabelledEducation, field: string, output: boolean) {
     if (!output) {
@@ -142,7 +142,10 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
       <div className="rating">
         <p className="item">{cv.summary.value}</p>
       </div>
+     
     </div>
+    
+    
   }
 
   export { mapFields, showLabel, displaySummary }

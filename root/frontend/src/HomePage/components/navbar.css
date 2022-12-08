@@ -1,0 +1,106 @@
+
+.NavbarItems{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    position:fixed;
+    height:80px;
+    z-index: 1;
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0%;
+    top:0%;
+    
+    
+}
+.naam{
+    margin-left: -18%;
+    margin-top:0%;
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: 0%;
+    cursor: pointer;
+}
+.naam :hover{
+    color:#2D68FE;
+
+}
+.Navbarlogo{
+    font-weight: 300;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    top:-5px;
+    margin-right: 0%;
+}
+
+
+.Navbarlogo :hover{
+    color:#2D68FE;
+    
+}
+
+.Navmenu{
+   
+    display:flex;
+    grid-template-columns: repeat(6,auto);
+    grid-gap: 10px ;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    font-family: 'lato';
+    border-bottom: 1px solid rgba(45, 104, 254, 0.3);
+    
+}
+
+.Navmenu li{
+    text-decoration: none;
+    font-size:24px;
+    font-weight: 100;
+    padding:0.5rem 1rem;
+    white-space: nowrap;
+    width: 120px;
+    align-items: center;
+    text-align: center;
+    cursor:pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ 
+}
+.Navmenu a{
+    text-decoration: none;
+    color:black;
+    
+}
+
+.Navmenu :hover{
+    background-color: #2D68FE;
+    color:white;
+    border-radius:4px;
+}
+
+.navbarbutton{
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight:600;
+    border:none;
+    cursor: pointer;
+    background-color:#2D68FE ;
+    color:white;
+    margin-top: 0%;
+    margin-left:0%;
+    
+    
+}
+
+img{
+    height: 50px; 
+    width: 50px;
+    align-items: center; 
+    object-fit: fill;
+    margin-top: 40%;
+    
+}

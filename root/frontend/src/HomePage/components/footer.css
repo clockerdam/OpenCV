@@ -1,0 +1,29 @@
+
+.footer-content{
+    background-color: aqua;
+    background-color:rgb(45, 104, 254);
+    height: 150px;
+    width: auto;
+    color:white;
+    padding-top: 10px;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+     width: 100%;
+
+}
+.OpenCV{
+    font-size: 48px;
+    text-align: center;
+    align-items: center;
+}
+.tekst{
+    margin-top: 1%;
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 50px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    
+}

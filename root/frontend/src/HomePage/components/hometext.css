@@ -1,0 +1,185 @@
+
+.maintext{
+    margin-left: 7%;
+    max-width: 100%;
+
+}
+.bigtext{
+    
+    font-size:40px;
+    font-weight: 700;
+    margin-top: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.smalltext{
+    
+    font-size: 16px;
+    font-weight: 300;
+    width:600px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.picture{
+    width: 360px;
+    height: 470px;
+    border:1px solid grey;
+    margin-left: 60%;
+    margin-top: -25%;
+    background-image: url("./assets/CV_template.png") ;
+    background-size:contain;
+    margin-right: 0%;
+    
+}
+
+img{
+    object-fit: fill;
+    margin-right: 0%;
+    
+}
+
+.smalltext .bigbutton{
+    padding: 0.7rem 1rem;
+    border-radius: 0.6rem;
+    font-size: 40px;
+    font-weight:600;
+    border:none;
+    cursor: pointer;
+    background-color:#2D68FE ;
+    color:white;
+    margin-top: 5%;
+    
+}
+.offer{
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:lighter;
+    margin-right: 0%;
+    
+    
+}
+
+.offer ul {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+    
+  }
+  
+ .offer ul li::before {
+    content: "\2022";
+    color:#2D68FE;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 0%;
+    margin-left: 7%;
+  }
+  .offer ul li{
+    padding-top: 10px;
+    margin-right: 0%;
+    
+  }
+p.stylefortitles{
+    border-bottom: 1px solid rgba(45, 104, 254, 0.899);
+    width:400px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 24px;
+    margin-left: 7%;
+    
+  }
+  
+.offer .whydescr{
+    
+    padding-bottom: 20px;
+    margin-right: 0%;
+    margin-left: 7%;
+    
+}
+.offer .howdescr{
+    
+    margin-right: 0%;
+    margin-left: 7%;
+    
+}
+  .offer .whydescr li{
+    list-style: none;
+    padding-top: 15px ;
+    margin-right: 0%;
+  }
+  .offer .howdescr li{
+    list-style: none;
+    padding-top:15px;
+    margin-right: 0%;
+    margin-bottom:10% ;
+  }
+  .offer .howdescr .smallbutton{
+    padding: 0.7rem 1rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight:600;
+    border:none;
+    cursor: pointer;
+    background-color:#2D68FE ;
+    color:white;
+    position:absolute;
+    left:520px;
+    top:1173px;
+    margin-right: 0%;
+    margin-top: 2%;
+  }
+
+.offer .arrow1{
+    position:absolute;
+    left:710px;
+    top:1185px;
+    margin-right: 0%;
+}
+.offer .keyboard{
+    position:absolute;
+    left:785px;
+    top:1185px;
+    margin-right: 0%;
+}
+.offer .arrow2{
+    position:absolute;
+    left:870px;
+    top:1185px;
+    margin-right: 0%;
+}
+.offer .process{
+    position:absolute;
+    left:945px;
+    top:1185px;
+    margin-right: 0%;
+}
+.offer .arrow3{
+    position:absolute;
+    left:1020px;
+    top:1185px;
+    margin-right: 0%;
+}
+.offer .download{
+    position:absolute;
+    left:1095px;
+    top:1185px;
+    margin-right: 0%;
+    padding-right: 0px;
+}
+.offer .arrow4{
+    position:absolute;
+    left:1170px;
+    top:1185px;
+    margin-right: 0%;
+    padding-right: 0px;
+}
+.offer .hired{
+    position:absolute;
+    left:1240px;
+    top:1185px;
+    margin-right: 0%;
+    padding-right: 0px;
+    
+}

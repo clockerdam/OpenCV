@@ -1,128 +1,41 @@
-.Template {
-    /* width: 80%; */
-    height: auto;
-    min-height: 400px;
-    background: #F1C40F ;
-    /* margin: 3.5rem auto 1.5rem; */
-    padding: 2rem 1rem;
-    /* color: #E8F0F2; */
-    border-radius: 2rem;
-    @media (max-width: 769px) {
-        padding: 2rem 0;
-    }
-} 
-
-
-label {
-    margin-bottom: 1%;
-    margin-left: 3%;
-    margin-top: 3%;
-    display: block
-}
-  
-.textArea {
-margin-left: 2%;
-margin-top: 2%;
-display: inline-block;
-height: 225px;
-width: 95%;
-text-align: top;
-}
-
-.textArea::placeholder {
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    font-weight: bold;
-    opacity: .5;
-    color: black;
-}
-
-/* 
-textInput{
-    height: 40;
-    width: 200;
-    justifyContent: 'center';
-    alignItems: 'center';
-    alignSelf: 'center';
-    borderColor: 'gray';
-    borderWidth: 1;
- } */
-
-.section {
-background-color: whitesmoke;
-border-top: 1px solid gray;
-}
-
-.item {
-margin-left: 2%;
-width: 50%;
-display: inline-block;
-padding: 10px;
-}
-
-.rating {
-display:flex;
-align-items:center;
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 100%;
 }
 
 
-/* If you want the content centered horizontally and vertically */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    }
+
+
+
+.Template .profile_top_button{
+    border-radius: 0.6rem;
+    padding: 0.7rem 1rem;;
+    border:none;
+    cursor: pointer;
+    background-color:#2D68FE ;
+    color:white;
+    margin-top: 0%;
+    margin-left:2%;
+    font-size: 14px;
+
+}
+
+
+#pdf-viewer {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.FirstTab{
+    /* margin-top: 5%; */
+    /* align-items: center; */
+    /* margin-left: 15%; */
+  padding: 10px;
     
-/* Style the image inside the centered container, if needed */
-.centered img {
-width: 150px;
-border-radius: 50%;
 }
-
-
-.light {
-    background-color: gainsboro;
-}
-
-.dark {
-    background-color: lightgray;
-}
-
-.lightRed {
-    background-color: lightcoral;
-}
-
-.darkRed {
-    background-color: orangered;
-}
-
-.firstBracket {
-    color: green;
-}
-
-.secondBracket {
-    color: orange;
-}
-
-.thirdBracket {
-    color: red;
-}
-
-.label {
-    margin: auto;
-    width: 12%;
-    text-align: center;
-}
-
-.ratingNumber {
-    margin: 3px
-}
-
-.maxRating {
-    color: rgb(127, 140, 141);
+object.First{
+    align-items: center;
 }
 
 hr {
@@ -130,3 +43,89 @@ hr {
     background-color: rgb(127, 140, 141);
     margin: 0
 }
+.section {
+    margin-top: 2%;
+    background-color: white;
+    margin-right: 2%;
+    border: 1px solid gray;
+    width: 85%;
+    margin-bottom:30px;
+
+    }
+    
+    .item {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    width: 0%;
+    display: inline-block;
+    padding: 10px;
+    
+    }
+    
+    .rating {
+    display:flex;
+    align-items:center;
+    }
+    
+    
+    /* If you want the content centered horizontally and vertically */
+    .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        
+        }
+        
+    /* Style the image inside the centered container, if needed */
+    .centered img {
+    width: 150px;
+    border-radius: 50%;
+    }
+    
+    
+    .light {
+        background-color: gainsboro;
+    }
+    
+    .dark {
+        background-color: lightgray;
+    }
+    
+    .lightRed {
+        background-color: lightcoral;
+    }
+    
+    .darkRed {
+        background-color: orangered;
+    }
+    
+    .firstBracket {
+        color: green;
+    }
+    
+    .secondBracket {
+        color: orange;
+    }
+    
+    .thirdBracket {
+        color: red;
+    }
+    
+    .label {
+       margin-right: 0%;
+        width: 100%;
+        text-align: center;
+        
+    }
+    
+    .ratingNumber {
+        margin: 3px
+    }
+    
+    .maxRating {
+        color: rgb(127, 140, 141);
+        
+    }

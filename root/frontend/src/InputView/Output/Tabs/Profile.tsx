@@ -1,9 +1,10 @@
 import { useContext, useState } from "react";
-import './tabs.css'
+
 import cvContext from "../../../cvContext";
 import { exampleCV } from "../example";
 import { displaySummary, mapFields } from "../Displayer/displayer";
 import { Form } from "../../Form/Form";
+import './profile.css'
 
 function Profile() {
   const {cv, setCV, analyzedCV} = useContext(cvContext); 
@@ -52,14 +53,16 @@ function Profile() {
   let excludedFields = ["title", "summary", "stats", "contactInfo", "_id", "description"]
   if (currentPage === Page.Form) {
     return <div>
-        <button onClick={() => setCurrentPage(Page.Profile)}>Go to profile</button>
+      <button className="gotoprofile"onClick={() => setCurrentPage(Page.Profile)}>Go to profile</button>
         <Form></Form>
+       
+        
       </div>
   }
 
-  return <div className="Template">
-      <button onClick={() => setCurrentPage(Page.Form)}>Edit profile</button>
-      <button onClick={() => fetchExampleCV()}>Fetch example CV</button>
+  return <div className="Template_profile">
+      <button className="profile_top_button" onClick={() => setCurrentPage(Page.Form)}>Edit profile</button>
+      <button className="profile_top_button" onClick={() => fetchExampleCV()}>Fetch example CV</button>
       {displayKeywords()}
       <label>
         <h1>Your input:</h1>
