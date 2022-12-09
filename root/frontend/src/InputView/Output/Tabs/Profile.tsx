@@ -34,18 +34,10 @@ function Profile() {
   }
 
   function displayKeywords() {
-    return <div className="keywords">
-      <div>
-        <h3>Included keywords:</h3>
-        {displayKeywordList(analyzedCV.stats.included_keywords)}
-      </div>
-      <div>
-        <h3>Missing keywords:</h3>
+    return <div className="section">
+      <div className="keywords">
+        <h3><b>Missing keywords:</b></h3>
         {displayKeywordList(analyzedCV.stats.missing_keywords)}
-      </div>
-      <div>
-        <h3>Removed keywords:</h3>
-        {displayKeywordList(analyzedCV.stats.removed_keywords)}
       </div>
     </div>
   }
@@ -55,8 +47,6 @@ function Profile() {
     return <div>
       <button className="gotoprofile"onClick={() => setCurrentPage(Page.Profile)}>Go to profile</button>
         <Form></Form>
-       
-        
       </div>
   }
 
@@ -65,7 +55,7 @@ function Profile() {
       <button className="profile_top_button" onClick={() => fetchExampleCV()}>Fetch example CV</button>
       {displayKeywords()}
       <label>
-        <h1>Your input:</h1>
+        <h1><b>Your input:</b></h1>
       </label>
       <label>
         <h2>{cv.title}</h2>
