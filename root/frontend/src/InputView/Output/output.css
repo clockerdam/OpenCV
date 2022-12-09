@@ -71,8 +71,6 @@ input {
 
 .section {
   width: 95%;
- 
-  
 }
 
 .item {
@@ -80,15 +78,12 @@ input {
   width: 50%;
   display: inline-block;
   padding: 10px;
-  
-  
+  border-radius: 5px;
 }
 p.item{
   width: 100%;
-  
 }
 .rating {
- 
   display:flex;
   align-items:center;
 }
@@ -107,7 +102,6 @@ p.item{
 .bar {
   height: 100%;
   width: 1%;
-  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -117,7 +111,6 @@ p.item{
 
 /* Control the left side */
 .left {
-  /* margin-top: 5%; */
   border-right: 2px solid #2d68fe94 ;
   background-color:white;
   max-height: 95%;
@@ -147,7 +140,6 @@ text-align: center;
 width: 150px;
 border-radius: 50%;
 }
-
 
 .light {
   background-color: gainsboro;
@@ -180,8 +172,7 @@ border-radius: 50%;
 .label {
     margin: auto;
     width: 200px;
-    text-align: center;
-    
+    text-align: center; 
 }
 
 .ratingNumber {
@@ -192,7 +183,6 @@ border-radius: 50%;
 
 .maxRating {
     color: rgb(127, 140, 141);
-    
 }
 
 hr {
@@ -205,6 +195,7 @@ hr {
     padding: 10px;
     background-color: white;
 }
+
 p{
   width:100%;
 }

@@ -98,7 +98,7 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
 
   function color(analyzedCV: CV, cv: CV, field: string, index: number): string {
     if (analyzedCV.title === "" || cv.title === "") {
-      return index % 2 === 0 ? "item light" : "item dark"
+      return "item light"//index % 2 === 0 ? "item light" : "item dark"
     }
 
     // Verify field
@@ -116,7 +116,7 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
       case Field.Education:
         break;
       default:
-        return index % 2 === 0 ? "item light" : "item dark"
+        return "item light"//index % 2 === 0 ? "item light" : "item dark"
     }
 
     let itemToCheck = cv[field].value[index].value
@@ -128,9 +128,9 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
 
     let exists = items.includes(true)
     if (exists) {
-      return index % 2 === 0 ? "item light" : "item dark"
+      return "item light"//index % 2 === 0 ? "item light" : "item dark"
     }
-    return index % 2 === 0 ? "item lightRed" : "item darkRed"
+    return "item lightRed"//index % 2 === 0 ? "item lightRed" : "item darkRed"
   }
 
   function displaySummary(cv: CV) {
@@ -142,10 +142,7 @@ function mapFields(excludedFields: string[], analyzedCV: CV, cv: CV, output: boo
       <div className="rating">
         <p className="item">{cv.summary.value}</p>
       </div>
-     
-    </div>
-    
-    
+    </div> 
   }
 
   export { mapFields, showLabel, displaySummary }

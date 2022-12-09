@@ -9,24 +9,32 @@ import { CV } from './CV/CV';
 import { useState } from 'react';
 import cvContext from './cvContext';
 import { Output } from './InputView/Output/Output';
-import Navbar from './HomePage/components/Navbar';
+import { Navbar } from './HomePage/components/Navbar';
 import Footer from './HomePage/components/footer';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element:
+    element: <>
+      <Navbar />
       <Home></Home>
-
+      <Footer/>
+      </>
   },
   {
     path: "/label",
-    element: <Labeller></Labeller>,
+    element: <>
+      <Navbar />
+      <Labeller />
+      <Footer />
+    </>
   },
   {
     path: "/improve",
     element: <>
+      <Navbar />
       <Output />
+      <Footer />
     </>
   },
 ]);
@@ -39,9 +47,7 @@ function App() {
 
   return <cvContext.Provider value={{ cv, setCV, analyzedCV, setAnalyzedCV, loading, setLoading, pdfData, setPdfData }}>
     <div >
-      <Navbar />
       <RouterProvider router={router} />
-      <Footer />
     </div>
   </cvContext.Provider>
 }
