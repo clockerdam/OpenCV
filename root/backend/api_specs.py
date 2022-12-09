@@ -1506,3 +1506,33 @@ label_unlabeled_resume_spec = {
         }
     }
 }
+generate_pdf_spec = {
+    "tags": [
+        "Generation"
+    ],
+    "parameters": [
+        {
+            "name": "body",
+            "in": "body",
+            "schema": {
+                "$ref": "#/definitions/Resume"
+            },
+            "required": "true",
+            "default": {}
+        }
+    ],
+    "definitions": {
+        "Resume": {
+            "type": "object",
+            "properties": unlabeled_resume_dict
+        },
+    },
+    "responses": {
+        "201": {
+            "description": "Upload successful",
+        },
+        "400": {
+            "description": "Upload unsuccessful. Check the resume format.",
+        }
+    }
+}

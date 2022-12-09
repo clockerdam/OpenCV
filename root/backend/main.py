@@ -30,6 +30,7 @@ def main():
     return "Hello World"
 
 @app.post("/generate")
+@swag_from(generate_pdf_spec)
 def generate_pdf():
     resume = request.get_json()
 
