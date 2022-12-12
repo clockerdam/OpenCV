@@ -1,17 +1,17 @@
-name: CI/CD pipeline
+name: CI/CD dev-pipeline
 on:
   push:
-    branches: ["main"]
+    branches: ["dev"]
 
 jobs:
   backend:
     runs-on: ubuntu-latest
     env:
       ATLAS_URI: "${{ secrets.ATLAS_URI }}"
-      DB: "${{ secrets.DB }}"
+      DB: "${{ secrets.DEV_DB }}"
       UNLABELED_RESUME_COLLECTION: "${{ secrets.UNLABELED_RESUME_COLLECTION }}"
       LABELED_RESUME_COLLECTION: "${{ secrets.LABELED_RESUME_COLLECTION }}"
-      STORAGE_BUCKET: "p4ds-group2-job-title-kw-bucket"
+      STORAGE_BUCKET: "dev-p4ds-job-title-kw"
     steps:
       - uses: actions/checkout@v3
 
@@ -33,5 +33,5 @@ jobs:
       - id: "deploy"
         uses: "google-github-actions/deploy-appengine@v0"
         with:
-          working_directory: ./root/backend/deployment/prod
+          working_directory: ./root/backend/deployment/dev
           deliverables: app.yaml

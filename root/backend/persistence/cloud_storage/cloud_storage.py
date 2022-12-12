@@ -1,10 +1,12 @@
 from google.cloud import storage
+from dotenv import dotenv_values
 from model.Job import Job
 
+config = dotenv_values(".env")
 
 def read_job_keywords(job_title: str) -> str:
     storage_client = storage.Client()
-    bucket_name = "p4ds-group2-job-title-kw-bucket"
+    bucket_name = config["STORAGE_BUCKET"]
     bucket = storage_client.bucket(bucket_name)
     
     file_name = f"{job_title}.csv"
