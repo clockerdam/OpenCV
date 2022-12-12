@@ -10,11 +10,7 @@ function Hometext() {
   const navigate = useNavigate()
   return (
     <>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+      <div className="body">
       <div className="maintext">
         <div className='bigtext'>
           Get an AI-generated resume<br></br>
@@ -49,17 +45,23 @@ function Hometext() {
           Give us a second to process it.<br></br>
           Download your resume.<br></br>
           Land the job you have always wanted.</li>
-          <button className="smallbutton" onClick={() => navigate('/improve')}> Get started</button></div>
-        <div className="arrow1"><img alt="" src={arrow}></img></div>
-        <div className="keyboard"><img alt="" src={keyboard}></img></div>
-        <div className="arrow2"><img alt="" src={arrow}></img></div>
-        <div className="process"><img alt="" src={process}></img></div>
-        <div className="arrow3"><img alt="" src={arrow}></img></div>
-        <div className="download"><img alt="" src={download}></img></div>
-        <div className="arrow4"><img alt="" src={arrow}></img></div>
-        <div className="hired"><img alt="" src={hired}></img></div>
+          <div className="animation">
+            <ul>
+              <li><button className="smallbutton" onClick={() => navigate('/improve')}> Get started</button></li>
+            <li className="arrow1"><img alt="" src={arrow}></img></li>
+            <li className="keyboard"><img alt="" src={keyboard}></img></li>
+            <li className="arrow2"><img alt="" src={arrow}></img></li>
+            <li className="process"><img alt="" src={process}></img></li>
+            <li className="arrow3"><img alt="" src={arrow}></img></li>
+            <li className="download"><img alt="" src={download}></img></li>
+            <li className="arrow4"><img alt="" src={arrow}></img></li>
+            <li className="hired"><img alt="" src={hired}></img></li>
+            </ul>
+          
+          </div>
+          </div>
       </div>
-
+      </div>
     </>
   )
 }

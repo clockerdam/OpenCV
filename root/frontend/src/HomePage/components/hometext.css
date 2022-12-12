@@ -1,7 +1,13 @@
 
+.body{
+    background-color: #f5f5f5;
+}
+
 .maintext{
     margin-left: 7%;
     max-width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 
 }
 .bigtext{
@@ -115,7 +121,22 @@ p.stylefortitles{
     margin-right: 0%;
     margin-bottom:10% ;
   }
-  .offer .howdescr .smallbutton{
+  
+
+.offer .howdescr .animation ul li{
+    float:left;
+    margin-left: 2%;
+}
+
+.animation{
+    margin-left: 40%;
+    margin-top: -20%;
+    list-style: none;
+}
+
+
+
+.animation .smallbutton{
     padding: 0.7rem 1rem;
     border-radius: 0.6rem;
     font-size: 1rem;
@@ -124,62 +145,16 @@ p.stylefortitles{
     cursor: pointer;
     background-color:#2D68FE ;
     color:white;
-    position:absolute;
-    left:520px;
-    top:1173px;
-    margin-right: 0%;
-    margin-top: 2%;
-  }
-
-.offer .arrow1{
-    position:absolute;
-    left:710px;
-    top:1185px;
-    margin-right: 0%;
-}
-.offer .keyboard{
-    position:absolute;
-    left:785px;
-    top:1185px;
-    margin-right: 0%;
-}
-.offer .arrow2{
-    position:absolute;
-    left:870px;
-    top:1185px;
-    margin-right: 0%;
-}
-.offer .process{
-    position:absolute;
-    left:945px;
-    top:1185px;
-    margin-right: 0%;
-}
-.offer .arrow3{
-    position:absolute;
-    left:1020px;
-    top:1185px;
-    margin-right: 0%;
-}
-.offer .download{
-    position:absolute;
-    left:1095px;
-    top:1185px;
-    margin-right: 0%;
-    padding-right: 0px;
-}
-.offer .arrow4{
-    position:absolute;
-    left:1170px;
-    top:1185px;
-    margin-right: 0%;
-    padding-right: 0px;
-}
-.offer .hired{
-    position:absolute;
-    left:1240px;
-    top:1185px;
-    margin-right: 0%;
-    padding-right: 0px;
+    margin-top: 10%;
     
-}
+  }
+.offer .animation ul li::before {
+    content: "\2022";
+    color:rgb(45, 104, 254,0);
+    display: inline-block; 
+    width: 0;
+    list-style: none;
+    margin-left: -1em;
+    margin-right: 0%;
+    margin-left: 7%;
+  }

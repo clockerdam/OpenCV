@@ -16,13 +16,14 @@ textarea{
     margin-bottom: 0%;
     max-width: 90%;
     margin-left: 4%;
+    font-size: 18px;
     
 }
 .container{
     margin-top: 4%;
 }
 label {
-    
+    font-size: 18px;
     margin-bottom: 1%;
     display: block;
     margin-left: 4%;

@@ -4,9 +4,6 @@
 }
 
 
-
-
-
 .Template .profile_top_button{
     border-radius: 0.6rem;
     padding: 0.7rem 1rem;;
@@ -40,7 +37,7 @@ object.First{
 
 hr {
     height: 1px;
-    background-color: rgb(127, 140, 141);
+    background-color: #f5f5f5;
     margin: 0
 }
 .section {
