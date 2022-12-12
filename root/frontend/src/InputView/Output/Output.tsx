@@ -24,7 +24,7 @@ function Output() {
 
   return (
 
-    <div >
+    <div className= "containeroutput">
       <div className="split left">
         <Job />
         <Profile />

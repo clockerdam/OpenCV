@@ -6,14 +6,12 @@
     padding: 0 30px;
     width: 100%;
     position:fixed;
-    height:80px;
     z-index: 1;
-    background-color: white;
+    background-color: #f5f5f5;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-top: 0%;
-    top:0%;
-    
-    
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 2px solid #2D68FE;    
 }
 .naam{
     margin-left: -18%;
@@ -31,8 +29,7 @@
     font-weight: 300;
     font-size: 32px;
     cursor: pointer;
-    position: relative;
-    top:-5px;
+    margin-top: -1%;
     margin-right: 0%;
 }
 
@@ -43,16 +40,14 @@
 }
 
 .Navmenu{
-   
+    cursor: pointer;
     display:flex;
     grid-template-columns: repeat(6,auto);
     grid-gap: 10px ;
     list-style: none;
     align-items: center;
     text-align: center;
-    font-family: 'lato';
-    border-bottom: 1px solid rgba(45, 104, 254, 0.3);
-    
+    font-family: 'lato'; 
 }
 
 .Navmenu li{
@@ -60,7 +55,6 @@
     font-size:24px;
     font-weight: 100;
     padding:0.5rem 1rem;
-    white-space: nowrap;
     width: 120px;
     align-items: center;
     text-align: center;
@@ -76,8 +70,10 @@
 
 .Navmenu :hover{
     background-color: #2D68FE;
-    color:white;
     border-radius:4px;
+}
+.Navmenu a :hover{
+    background-color:#2D68FE;
 }
 
 .navbarbutton{
