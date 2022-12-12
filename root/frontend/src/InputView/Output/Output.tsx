@@ -9,7 +9,7 @@ import { MoonLoader } from "react-spinners";
 import cvContext from "../../cvContext";
 
 function Output() {
-  const [activeTab, setActiveTab] = useState("tab1");
+  const [activeTab, setActiveTab] = useState("tab2");
   const { loading } = useContext(cvContext)
 
   //  Functions to handle Tab Switching
