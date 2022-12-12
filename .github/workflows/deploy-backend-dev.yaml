@@ -1,7 +1,7 @@
 name: CI/CD dev-pipeline
 on:
   push:
-    branches: ["dev"]
+    branches: ["dev", "feat/staging-env"]
 
 jobs:
   backend:
