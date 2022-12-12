@@ -28,7 +28,7 @@ jobs:
       - run: gcloud auth configure-docker
 
       - id: "docker_build"
-        run: make build-and-deploy-image
+        run: make build-and-deploy-dev-image
 
       - id: "deploy"
         uses: "google-github-actions/deploy-appengine@v0"
