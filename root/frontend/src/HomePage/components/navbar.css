@@ -75,6 +75,9 @@
 .Navmenu a :hover{
     background-color:#2D68FE;
 }
+.Navmenu li a {
+    background-color: transparent;
+}
 
 .navbarbutton{
     padding: 0.7rem 1rem;
