@@ -7,7 +7,7 @@ function Navbar() {
 
   return <nav className="NavbarItems">
       <h1 className="Navbarlogo" onClick={() => navigate('/')}> <img alt="" src={logo}></img> </h1>
-      <h1 className="naam" onClick={() => navigate('/')}>OpenCV</h1>
+      <h1 className="naam" onClick={() => navigate('/')}>OpenCV <b className="red">DEV</b></h1>
       <ul className="Navmenu">
         {MenuItems.map((item, index) => {
           return (
